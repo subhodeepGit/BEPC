@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-06-30 16:32:25.584137",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "reading_image",
+  "meter_reading",
+  "site_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Id"
+  },
+  {
+   "fieldname": "reading_image",
+   "fieldtype": "Attach Image",
+   "label": "Reading Image"
+  },
+  {
+   "fieldname": "meter_reading",
+   "fieldtype": "Float",
+   "label": "Meter reading"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Select",
+   "label": "Site Name",
+   "options": "\nOption 1\nOption 2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-06-30 16:35:24.934090",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Electricity Consumption Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

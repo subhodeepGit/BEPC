@@ -1,0 +1,43 @@
+{
+ "category": "Modules",
+ "charts": [],
+ "creation": "2022-06-30 16:37:18.737897",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "BEPC",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Survey Form",
+   "link_to": "Survey Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Survey Questionnaire Template",
+   "link_to": "Survey Questionnaire Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-06-30 16:37:18.737897",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "BEPC",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": []
+}
