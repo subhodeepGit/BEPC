@@ -6,46 +6,77 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "question_1",
-  "question_2",
-  "question_3",
-  "question_4",
-  "question_5"
+  "title_of_the_document",
+  "date_of_upload",
+  "column_break_8",
+  "full_name",
+  "email_id",
+  "column_break_9",
+  "upload_the_document",
+  "upload_the_image",
+  "description",
+  "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "question_1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Question 1",
-   "reqd": 1
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Survey Form",
+   "print_hide": 1,
+   "read_only": 1
   },
   {
-   "fieldname": "question_2",
+   "fieldname": "title_of_the_document",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title of the document"
+  },
+  {
+   "fieldname": "date_of_upload",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of upload"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "E-mail Id"
+  },
+  {
+   "fieldname": "upload_the_document",
    "fieldtype": "Attach",
-   "in_list_view": 1,
-   "label": "Question 2",
-   "reqd": 1
+   "label": "Upload the document"
   },
   {
-   "fieldname": "question_3",
+   "fieldname": "upload_the_image",
    "fieldtype": "Attach Image",
-   "label": "Question 3"
+   "label": "Upload the Image"
   },
   {
-   "fieldname": "question_4",
-   "fieldtype": "Data",
-   "label": "Question 4"
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "question_5",
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
    "fieldtype": "Data",
-   "label": "Question 5"
+   "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2022-06-23 11:21:00.862783",
+ "modified": "2022-06-29 11:03:56.511995",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Survey Form",
