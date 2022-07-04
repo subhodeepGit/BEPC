@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "SQT-#####",
  "creation": "2022-06-30 15:00:09.713808",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -60,7 +61,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-06-30 15:13:36.362143",
+ "modified": "2022-06-30 16:55:56.217710",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Survey Questionnaire Template",

@@ -19,3 +19,10 @@ class SurveyForm(Document):
 	print("\n\n\n\n\n\n")
 	print(frappe.session.user)
 
+    # if frappe.session.user =="Approver 1" and frappe.session.user =="Approver 2":
+	# 	self.title_of_the_document.enable = True
+	# 	self.date_of_upload.enable = True
+	# 	self.full_name.enable = True
+	# 	self.email.enable = True
+	# 	self.title_of_the_document.enable = True
+	
