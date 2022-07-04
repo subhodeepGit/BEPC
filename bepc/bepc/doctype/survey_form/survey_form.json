@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "title_of_the_document",
+  "kra_template",
   "date_of_upload",
   "column_break_8",
   "full_name",
@@ -15,23 +16,18 @@
   "upload_the_document",
   "upload_the_image",
   "description",
+  "section_break_11",
+  "electricity_consumption_reading",
+  "internet_use",
   "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Survey Form",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
    "fieldname": "title_of_the_document",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Title of the document"
+   "label": "Title of the document",
+   "reqd": 1
   },
   {
    "fieldname": "date_of_upload",
@@ -71,12 +67,45 @@
    "fieldname": "description",
    "fieldtype": "Data",
    "label": "Description"
+  },
+  {
+   "depends_on": "kra_template",
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "kra_template",
+   "fieldtype": "Link",
+   "label": "Survey Questionnaire Template",
+   "options": "Survey Questionnaire Template",
+   "reqd": 1
+  },
+  {
+   "fieldname": "electricity_consumption_reading",
+   "fieldtype": "Table",
+   "label": "Electricity Consumption Details",
+   "options": "Electricity Consumption Details"
+  },
+  {
+   "fieldname": "internet_use",
+   "fieldtype": "Table",
+   "label": "Internet Consumption Details",
+   "options": "Internet Consumption Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Survey Form",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-06-29 11:03:56.511995",
+ "modified": "2022-07-04 16:46:22.276256",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Survey Form",
