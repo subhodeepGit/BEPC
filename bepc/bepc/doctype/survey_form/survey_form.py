@@ -7,16 +7,28 @@ import frappe
 from frappe.model.db_query import get_date_range
 from frappe.model.document import Document
 from frappe.utils.data import getdate
+from datetime import datetime
 
 class SurveyForm(Document):
 	def validate(self):
-		self.validate_dates()
+		if (self.planned_start_date >= self.planned_end_date):
+			frappe.throw("Planned Start date should be less Planned End date")
 		
-	def validate_dates(self):
-		if self.date_of_upload and getdate(self.date_of_upload) > getdate():
-			frappe.throw(frappe._("Date of Upload cannot be greater than today's date."))
+		if (self.actual_start_date >= self.actual_end_date):
+			frappe.throw("Actual Start date should be less than Actual End date")
 
-	print("\n\n\n\n\n\n")
-	print(frappe.session.user)
-
+		date_format = "%Y-%m-%d"
+		a = datetime.strptime(self.planned_start_date, date_format)
+		b = datetime.strptime(self.actual_start_date, date_format)
+		delta = b - a
+		# frappe.db.set_value("Survey Form",self.name,"time_to_complete",delta)
+		self.time_to_complete = delta.days
+		
+		print("\n\n\n\n\n\n")
+		print(delta.days)
+		print(self.actual_start_date)
+		print(self.actual_end_date)
+		print(self.planned_start_date)	
+		print(self.planned_end_date)	
+		print("\n\n\n\n\n\n")
     
