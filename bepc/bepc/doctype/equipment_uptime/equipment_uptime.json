@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "EU._.#####",
+ "creation": "2022-07-05 12:45:10.246471",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment_name",
+  "equipment_type",
+  "mac_id",
+  "from_date_and_time",
+  "to_date_and_time",
+  "site_name",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipment_name",
+   "fieldtype": "Data",
+   "label": "Equipment Name"
+  },
+  {
+   "fieldname": "equipment_type",
+   "fieldtype": "Data",
+   "label": "Equipment Type"
+  },
+  {
+   "fieldname": "mac_id",
+   "fieldtype": "Data",
+   "label": "Mac Id"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Select",
+   "label": "Site name"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status"
+  },
+  {
+   "fieldname": "to_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "To Date and Time"
+  },
+  {
+   "fieldname": "from_date_and_time",
+   "fieldtype": "Datetime",
+   "label": "From Date and Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-05 13:09:24.603652",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Equipment Uptime",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
