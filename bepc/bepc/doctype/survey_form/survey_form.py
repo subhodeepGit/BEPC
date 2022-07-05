@@ -23,12 +23,3 @@ class SurveyForm(Document):
 		delta = b - a
 		# frappe.db.set_value("Survey Form",self.name,"time_to_complete",delta)
 		self.time_to_complete = delta.days
-		
-		print("\n\n\n\n\n\n")
-		print(delta.days)
-		print(self.actual_start_date)
-		print(self.actual_end_date)
-		print(self.planned_start_date)	
-		print(self.planned_end_date)	
-		print("\n\n\n\n\n\n")
-    
