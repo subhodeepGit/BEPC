@@ -16,6 +16,14 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Survey",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Survey Form",
    "link_to": "Survey Form",
    "link_type": "DocType",
@@ -30,14 +38,105 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Electricity Data Management",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Electricity Consumption Record",
+   "link_to": "Electricity Consumption Record",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Internet Data Management",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Internet consumption Record",
+   "link_to": "Internet consumption Record",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Survey Status Report",
+   "link_to": "Survey Status Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "District Wise Survey Status Report",
+   "link_to": "District Wise Survey Status Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-06-30 16:37:18.737897",
+ "modified": "2022-07-05 17:14:43.888478",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",
  "owner": "Administrator",
  "pin_to_bottom": 0,
  "pin_to_top": 0,
- "shortcuts": []
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "Survey Form",
+   "link_to": "Survey Form",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Internet consumption Record",
+   "link_to": "Internet consumption Record",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Electricity Consumption Record",
+   "link_to": "Electricity Consumption Record",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Survey Status Report",
+   "link_to": "Survey Status Report",
+   "type": "Report"
+  },
+  {
+   "doc_view": "Calendar",
+   "label": "District Wise Survey Status Report",
+   "link_to": "District Wise Survey Status Report",
+   "type": "Report"
+  }
+ ]
 }

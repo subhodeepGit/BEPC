@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "SVY.-.######",
  "creation": "2022-06-23 11:07:39.800486",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,9 +10,22 @@
   "title_of_the_document",
   "kra_template",
   "date_of_upload",
+  "planned_start_date",
+  "planned_end_date",
   "column_break_8",
   "full_name",
+  "status",
   "email_id",
+  "actual_start_date",
+  "actual_end_date",
+  "time_to_complete",
+  "site_adress_section",
+  "site_address",
+  "address_line_1",
+  "district",
+  "state",
+  "pin_code",
+  "column_break_18",
   "column_break_9",
   "upload_the_document",
   "upload_the_image",
@@ -30,20 +44,22 @@
    "reqd": 1
   },
   {
+   "default": "Today",
    "fieldname": "date_of_upload",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Date of upload"
+   "label": "Date of Upload",
+   "read_only": 1
   },
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full Name"
+   "label": "Surveyor Full Name"
   },
   {
    "fieldname": "email_id",
    "fieldtype": "Data",
-   "label": "E-mail Id"
+   "label": "Surveyor E-mail Id"
   },
   {
    "fieldname": "upload_the_document",
@@ -61,7 +77,8 @@
   },
   {
    "fieldname": "column_break_9",
-   "fieldtype": "Column Break"
+   "fieldtype": "Heading",
+   "label": "Upload Document"
   },
   {
    "fieldname": "description",
@@ -93,6 +110,46 @@
    "options": "Internet Consumption Details"
   },
   {
+   "fieldname": "planned_start_date",
+   "fieldtype": "Date",
+   "label": "Planned Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "planned_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Planned End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nYet to Start\nIn Progress\nCompleted"
+  },
+  {
+   "fieldname": "actual_start_date",
+   "fieldtype": "Date",
+   "label": "Actual Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "actual_end_date",
+   "fieldtype": "Date",
+   "label": "Actual End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_to_complete",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Time to Complete",
+   "read_only": 1
+  },
+  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -100,12 +157,48 @@
    "options": "Survey Form",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "site_adress_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "District"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_address",
+   "fieldtype": "Heading",
+   "label": "Site Address"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-07-04 16:46:22.276256",
+ "modified": "2022-07-05 17:11:25.758191",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Survey Form",
