@@ -76,6 +76,23 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Equipment Uptime Management",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Equipment Uptime",
+   "link_to": "Equipment Uptime",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Reports",
    "link_type": "DocType",
    "onboard": 0,
@@ -98,9 +115,18 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Equpiment Uptime Report",
+   "link_to": "Equpiment Uptime Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-07-05 17:14:43.888478",
+ "modified": "2022-07-05 18:02:30.651171",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",
