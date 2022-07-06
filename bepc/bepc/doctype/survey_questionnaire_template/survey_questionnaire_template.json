@@ -23,19 +23,21 @@
    "label": "Template Title"
   },
   {
+   "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "label": "Date",
+   "read_only": 1
   },
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full name"
+   "label": "Surveyor Full name"
   },
   {
    "fieldname": "email_id",
    "fieldtype": "Data",
-   "label": "Email id"
+   "label": "Surveyor Email id"
   },
   {
    "fieldname": "description",
@@ -61,7 +63,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-04 16:30:11.899138",
+ "modified": "2022-07-06 14:03:50.013411",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Survey Questionnaire Template",

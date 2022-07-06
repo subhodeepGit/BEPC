@@ -20,13 +20,14 @@
   "actual_end_date",
   "time_to_complete",
   "site_adress_section",
-  "site_address",
+  "site_name",
   "address_line_1",
+  "address_line_2",
+  "column_break_17",
   "district",
   "state",
   "pin_code",
   "column_break_18",
-  "column_break_9",
   "upload_the_document",
   "upload_the_image",
   "description",
@@ -52,11 +53,13 @@
    "read_only": 1
   },
   {
+   "fetch_from": "kra_template.full_name",
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "Surveyor Full Name"
   },
   {
+   "fetch_from": "kra_template.email_id",
    "fieldname": "email_id",
    "fieldtype": "Data",
    "label": "Surveyor E-mail Id"
@@ -74,11 +77,6 @@
   {
    "fieldname": "column_break_8",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_9",
-   "fieldtype": "Heading",
-   "label": "Upload Document"
   },
   {
    "fieldname": "description",
@@ -160,14 +158,17 @@
   },
   {
    "fieldname": "site_adress_section",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Address"
   },
   {
+   "fetch_from": "site_name.address_line_1",
    "fieldname": "address_line_1",
    "fieldtype": "Data",
    "label": "Address Line 1"
   },
   {
+   "fetch_from": "site_name.district",
    "fieldname": "district",
    "fieldtype": "Data",
    "in_global_search": 1,
@@ -176,29 +177,43 @@
    "label": "District"
   },
   {
+   "fetch_from": "site_name.pin_code",
    "fieldname": "pin_code",
    "fieldtype": "Data",
    "label": "Pin Code"
   },
   {
    "fieldname": "column_break_18",
-   "fieldtype": "Column Break"
+   "fieldtype": "Section Break",
+   "label": "Upload Document"
   },
   {
-   "fieldname": "site_address",
-   "fieldtype": "Heading",
-   "label": "Site Address"
-  },
-  {
+   "fetch_from": "site_name.state",
    "fieldname": "state",
    "fieldtype": "Data",
    "label": "State"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Link",
+   "label": "Site Name",
+   "options": "Site"
+  },
+  {
+   "fetch_from": "site_name.address_line_2",
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-07-05 17:11:25.758191",
+ "modified": "2022-07-06 17:15:19.012032",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Survey Form",
