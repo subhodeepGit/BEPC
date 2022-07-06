@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-06 16:29:00.543614",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_the_teacher",
+  "contact_number",
+  "email_id",
+  "training_on",
+  "date",
+  "time"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_the_teacher",
+   "fieldtype": "Data",
+   "label": "Name Of the Teacher"
+  },
+  {
+   "fieldname": "training_on",
+   "fieldtype": "Small Text",
+   "label": "Training on"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Int",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-06 16:35:34.339814",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Teacher Training",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

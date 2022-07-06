@@ -27,51 +27,15 @@ frappe.ui.form.on('Survey Form', {
 frappe.ui.form.on("Survey Form", {	
     onload:function(frm){		     
     if(frappe.session.user_fullname == "Data Entry Operator"  ){
-		alert("Hi Data Entry Operator ")
+		//alert("Hi Data Entry Operator ")
         frm.set_df_property("title_of_the_document","read_only",0);	
 		frm.set_df_property("kra_template","read_only",0);	
 		frm.set_df_property("full_name","read_only",0);	
 		frm.set_df_property("email_id","read_only",0);	
 		frm.set_df_property("date_of_upload","read_only",0);
     };
-	// if(frappe.session.user_fullname == "Data Entry Operator" && frm.doc.workflow_state == "Pending Approval by Approver I" ){
-	// 	alert("Hi Data Entry Operator ")
-    //     frm.set_df_property("title_of_the_document","read_only",1);	
-	// 	frm.set_df_property("kra_template","read_only",1);	
-	// 	frm.set_df_property("full_name","read_only",1);	
-	// 	frm.set_df_property("email_id","read_only",1);	
-	// 	frm.set_df_property("date_of_upload","read_only",1);
-    // };
-	
-
-	if(frappe.session.user_fullname == "Approver 1" ){
-		alert("Hi Approver 1 ")
-        frm.set_df_property("title_of_the_document","read_only",1);	
-		frm.set_df_property("kra_template","read_only",0);	
-		frm.set_df_property("full_name","read_only",0);	
-		frm.set_df_property("email_id","read_only",0);	
-		frm.set_df_property("date_of_upload","read_only",0);
-    };
-	// if(frappe.session.user_fullname == "Approver 1" ){
-
-	// 	alert("Hi Approver 1 ")
-    //     frm.set_df_property("title_of_the_document","read_only",1);	
-	// 	frm.set_df_property("kra_template","read_only",1);	
-	// 	frm.set_df_property("full_name","read_only",1);	
-	// 	frm.set_df_property("email_id","read_only",1);	
-	// 	frm.set_df_property("date_of_upload","read_only",1);
-    // };
-	
-	if(frappe.session.user_fullname == "Approver 2" ){
-	
-        frm.set_df_property("title_of_the_document","read_only",1);	
-		frm.set_df_property("kra_template","read_only",0);	
-		frm.set_df_property("full_name","read_only",0);	
-		frm.set_df_property("email_id","read_only",0);	
-		frm.set_df_property("date_of_upload","read_only",0);
-    };
-	if(frappe.session.user_fullname == "Approver 2" && frm.doc.workflow_state == "Pending Approval by Approver II" ){
-		alert("Hi Approver 2 ")
+	if(frappe.session.user_fullname == "Data Entry Operator" && frm.doc.workflow_state == "Pending Approval by Approver I" ){
+		//alert("Hi Data Entry Operator ")
         frm.set_df_property("title_of_the_document","read_only",1);	
 		frm.set_df_property("kra_template","read_only",1);	
 		frm.set_df_property("full_name","read_only",1);	
@@ -79,13 +43,53 @@ frappe.ui.form.on("Survey Form", {
 		frm.set_df_property("date_of_upload","read_only",1);
     };
 	
-	// if(frappe.session.user == "Administrator"){
+
+	if(frappe.session.user_fullname == "Approver 1" ){
+		//alert("Hi Approver 1 ")
+        frm.set_df_property("title_of_the_document","read_only",1);	
+		frm.set_df_property("kra_template","read_only",0);	
+		frm.set_df_property("full_name","read_only",0);	
+		frm.set_df_property("email_id","read_only",0);	
+		frm.set_df_property("date_of_upload","read_only",0);
+    };
+	if(frappe.session.user_fullname == "Approver 1" && frm.doc.workflow_state == "Pending Approval by Approver II"){
+
+		//alert("Hi Approver 1 ")
+        frm.set_df_property("title_of_the_document","read_only",1);	
+		frm.set_df_property("kra_template","read_only",1);	
+		frm.set_df_property("full_name","read_only",1);	
+		frm.set_df_property("email_id","read_only",1);	
+		frm.set_df_property("date_of_upload","read_only",1);
+    };
+	
+	if(frappe.session.user_fullname == "Approver 2" && frm.doc.workflow_state == "Pending Approval by Approver II" ){
+	
+        frm.set_df_property("title_of_the_document","read_only",1);	
+		frm.set_df_property("kra_template","read_only",1);	
+		frm.set_df_property("full_name","read_only",1);	
+		frm.set_df_property("email_id","read_only",1);	
+		frm.set_df_property("date_of_upload","read_only",1);
+    };
+	if(frappe.session.user_fullname == "Approver 2" && frm.doc.workflow_state == "Approved by Approver II" ){
+		//alert(frm.doc.workflow_state)
+        frm.set_df_property("title_of_the_document","read_only",1);	
+		frm.set_df_property("kra_template","read_only",1);	
+		frm.set_df_property("full_name","read_only",1);	
+		frm.set_df_property("email_id","read_only",1);	
+		frm.set_df_property("date_of_upload","read_only",1);
+		frm.set_df_property("date_of_upload","read_only",0);
+    };
+	
+
+	//working code
+	// if(frappe.session.user == "Administrator" && frm.doc.workflow_state == "Pending Approval by Approver II" ){
 	// 	alert("hi Administrator")
-    //     frm.set_df_property("title_of_the_document","read_only",0);	
-	// 	frm.set_df_property("kra_template","read_only",0);	
-	// 	frm.set_df_property("full_name","read_only",0);	
-	// 	frm.set_df_property("email_id","read_only",0);	
-	// 	frm.set_df_property("date_of_upload","read_only",0);
+	// 	alert(frm.doc.workflow_state)
+    //     frm.set_df_property("title_of_the_document","read_only",1);	
+	// 	frm.set_df_property("kra_template","read_only",1);	
+	// 	frm.set_df_property("full_name","read_only",1);	
+	// 	frm.set_df_property("email_id","read_only",1);	
+	// 	frm.set_df_property("date_of_upload","read_only",1);
     // };
 
 }
