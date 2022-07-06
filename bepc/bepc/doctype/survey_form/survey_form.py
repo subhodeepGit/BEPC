@@ -8,6 +8,7 @@ from frappe.model.db_query import get_date_range
 from frappe.model.document import Document
 from frappe.utils.data import getdate
 from datetime import datetime
+from frappe.utils import date_diff
 
 class SurveyForm(Document):
 	def validate(self):
@@ -18,8 +19,12 @@ class SurveyForm(Document):
 			frappe.throw("Actual Start date should be less than Actual End date")
 
 		date_format = "%Y-%m-%d"
-		a = datetime.strptime(self.planned_start_date, date_format)
-		b = datetime.strptime(self.actual_start_date, date_format)
-		delta = b - a
+		delta = date_diff(self.actual_start_date, self.planned_start_date)
+		# a = datetime.strptime(self.planned_start_date, date_format)
+		# b = datetime.strptime(self.actual_start_date, date_format)
+		# delta = b - a
 		# frappe.db.set_value("Survey Form",self.name,"time_to_complete",delta)
-		self.time_to_complete = delta.days
+
+		print("\n\n\n\n\n\n")
+		print(delta)
+		self.time_to_complete = delta

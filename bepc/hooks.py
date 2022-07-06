@@ -147,11 +147,20 @@ app_license = "MIT"
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
 
+
+after_migrate = [
+        'bepc.patches.migrate_patch.add_roles',
+		'bepc.patches.migrate_patch.add_module_profile',
+]
+
 # fixtures = [
 # 	{"dt" : "Workflow"},
 # 	{"dt": "Workflow Action Master"},
 # 	{"dt" : "Workflow State"},
-
+# 	{"dt" : "User"},
+# 	{"dt" : "Role"},
+# 	{"dt" : "Module Profile"},
+# 	{"dt" : "Role Profile"},
 # ]
 
 # User Data Protection
