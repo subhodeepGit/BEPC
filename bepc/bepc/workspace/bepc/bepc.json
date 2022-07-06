@@ -119,8 +119,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Equpiment Uptime Report",
-   "link_to": "Equpiment Uptime Report",
+   "label": "Equipment Uptime report",
+   "link_to": "Equipment Uptime report",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
@@ -163,6 +163,12 @@
    "label": "District Wise Survey Status Report",
    "link_to": "District Wise Survey Status Report",
    "type": "Report"
+  },
+  {
+   "doc_view": "Calendar",
+   "label": "Survey form Calendar wise",
+   "link_to": "Survey Form",
+   "type": "DocType"
   }
  ]
 }
