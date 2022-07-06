@@ -4,7 +4,7 @@ import json
 import sys
 
 def add_roles():
-    with open(frappe.get_app_path("ed_tec","fixtures","role.json")) as f:
+    with open(frappe.get_app_path("bepc","fixtures","role.json")) as f:
         for d in json.load(f):
             if len(frappe.get_all('Role',{'role_name':d.get('role_name')}))==0:
                 role=frappe.new_doc('Role')
@@ -14,7 +14,7 @@ def add_roles():
 
 #   bench execute ed_tec.patches.migrate_patch.add_roles
 def add_module_profile():
-    with open(frappe.get_app_path("ed_tec","fixtures","module_profile.json")) as f:
+    with open(frappe.get_app_path("bepc","fixtures","module_profile.json")) as f:
         for d in json.load(f):
             if len(frappe.get_all('Module Profile',{'name':d.get('name')}))==0:
                 mp=frappe.new_doc('Module Profile')
