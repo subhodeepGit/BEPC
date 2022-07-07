@@ -181,8 +181,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Electricty Data",
-   "link_to": "Electricty Data",
+   "label": "Electricity Data",
+   "link_to": "Electricity Data",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -214,7 +214,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-07-07 14:54:51.921099",
+ "modified": "2022-07-07 14:57:55.177714",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",

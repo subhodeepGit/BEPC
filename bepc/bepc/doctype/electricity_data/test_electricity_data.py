@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestElectrictyData(unittest.TestCase):
+class TestElectricityData(unittest.TestCase):
 	pass
