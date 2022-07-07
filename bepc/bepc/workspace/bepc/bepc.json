@@ -172,24 +172,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Internet master",
-   "link_to": "Internet Data",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Electricity Data",
-   "link_to": "Electricity Data",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Operation Management Master",
    "link_type": "DocType",
    "onboard": 0,
@@ -214,7 +196,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-07-07 14:57:55.177714",
+ "modified": "2022-07-07 15:47:51.940312",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",

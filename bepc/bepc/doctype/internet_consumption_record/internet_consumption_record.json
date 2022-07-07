@@ -12,7 +12,7 @@
   "data_limit",
   "data_usage",
   "siteschool_name",
-  "amended_from"
+  "connection"
  ],
  "fields": [
   {
@@ -38,24 +38,21 @@
   },
   {
    "fieldname": "siteschool_name",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Site/School name",
-   "options": "\nOption 1\nOption 2"
+   "options": "Site"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Internet consumption Record",
-   "print_hide": 1,
-   "read_only": 1
+   "fieldname": "connection",
+   "fieldtype": "Select",
+   "label": "Connection",
+   "options": "\nWired\nWireless"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-07-04 11:53:42.358355",
+ "modified": "2022-07-07 15:53:37.809947",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",
