@@ -17,6 +17,9 @@ frappe.ui.form.on('Survey Form', {
 						if(!r.message.internet_use){
 							frm.set_df_property('internet_use', 'hidden', 1);
 						}
+						if(!r.message.equipment_uptime_details){
+							frm.set_df_property('equipment_uptime_details', 'hidden', 1);
+						}
 					}
 				}
 			});

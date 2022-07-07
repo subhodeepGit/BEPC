@@ -36,7 +36,7 @@
   "section_break_11",
   "electricity_consumption_reading",
   "internet_use",
-  "amended_from"
+  "equipment_uptime_details"
  ],
  "fields": [
   {
@@ -215,19 +215,16 @@
    "label": "Question Sample"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Survey Form",
-   "print_hide": 1,
-   "read_only": 1
+   "fieldname": "equipment_uptime_details",
+   "fieldtype": "Table",
+   "label": "Equipment Uptime details",
+   "options": "Equipment Uptime Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-07-07 12:49:05.499248",
+ "modified": "2022-07-07 14:21:41.912418",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Survey Form",

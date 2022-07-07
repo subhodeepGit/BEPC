@@ -14,12 +14,14 @@
   "description",
   "section_break_6",
   "electricity_consumption_reading",
-  "internet_use"
+  "internet_use",
+  "equipment_uptime_details"
  ],
  "fields": [
   {
    "fieldname": "template_title",
    "fieldtype": "Data",
+   "in_preview": 1,
    "label": "Template Title"
   },
   {
@@ -59,11 +61,17 @@
    "fieldname": "internet_use",
    "fieldtype": "Check",
    "label": "Internet use "
+  },
+  {
+   "default": "0",
+   "fieldname": "equipment_uptime_details",
+   "fieldtype": "Check",
+   "label": "Equipment Uptime details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-07 12:49:21.063114",
+ "modified": "2022-07-07 14:36:48.124294",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Survey Questionnaire Template",
@@ -83,5 +91,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "template_title"
 }
