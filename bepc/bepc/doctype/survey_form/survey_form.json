@@ -35,7 +35,8 @@
   "upload_documents_item",
   "section_break_11",
   "electricity_consumption_reading",
-  "internet_use"
+  "internet_use",
+  "amended_from"
  ],
  "fields": [
   {
@@ -72,7 +73,8 @@
   {
    "depends_on": "kra_template",
    "fieldname": "section_break_11",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Please Enter the details"
   },
   {
    "fieldname": "kra_template",
@@ -211,12 +213,21 @@
    "fieldname": "question_sample_section",
    "fieldtype": "Section Break",
    "label": "Question Sample"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Survey Form",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-07-07 12:02:40.070334",
+ "modified": "2022-07-07 12:49:05.499248",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Survey Form",
