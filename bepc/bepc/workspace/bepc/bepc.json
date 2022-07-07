@@ -115,18 +115,9 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Equipment Uptime report",
-   "link_to": "Equipment Uptime report",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
   }
  ],
- "modified": "2022-07-07 12:07:29.200055",
+ "modified": "2022-07-07 12:11:42.072926",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",
