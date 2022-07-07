@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-07 14:42:24.869886",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment_name",
+  "equipment_type",
+  "year_of_manufacture",
+  "upload_theft_related_doc",
+  "insurance_details",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipment_name",
+   "fieldtype": "Data",
+   "label": "Equipment name"
+  },
+  {
+   "fieldname": "equipment_type",
+   "fieldtype": "Data",
+   "label": "Equipment Type"
+  },
+  {
+   "fieldname": "year_of_manufacture",
+   "fieldtype": "Data",
+   "label": "Year of manufacture"
+  },
+  {
+   "fieldname": "upload_theft_related_doc",
+   "fieldtype": "Data",
+   "label": "Upload Theft related doc"
+  },
+  {
+   "fieldname": "insurance_details",
+   "fieldtype": "Data",
+   "label": "Insurance Details"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-07 14:42:24.869886",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Theft Case monitoring",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
