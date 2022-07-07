@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ELD.-.#####",
+ "creation": "2022-07-07 14:54:32.417835",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "provider",
+  "equipments_installed",
+  "unis",
+  "previous_meter_reading",
+  "current_meter_reading",
+  "site"
+ ],
+ "fields": [
+  {
+   "fieldname": "provider",
+   "fieldtype": "Data",
+   "label": "Provider"
+  },
+  {
+   "fieldname": "equipments_installed",
+   "fieldtype": "Data",
+   "label": "Equipments Installed"
+  },
+  {
+   "fieldname": "unis",
+   "fieldtype": "Data",
+   "label": "Unis"
+  },
+  {
+   "fieldname": "previous_meter_reading",
+   "fieldtype": "Data",
+   "label": "Previous meter reading"
+  },
+  {
+   "fieldname": "current_meter_reading",
+   "fieldtype": "Data",
+   "label": "Current meter reading"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Site"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-07 14:54:32.417835",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Electricty Data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

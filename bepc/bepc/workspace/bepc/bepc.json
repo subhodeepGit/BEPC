@@ -136,15 +136,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Internet master",
-   "link_to": "Internet Data",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Surveyor",
    "link_to": "Surveyor",
    "link_type": "DocType",
@@ -181,6 +172,24 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Internet master",
+   "link_to": "Internet Data",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Electricty Data",
+   "link_to": "Electricty Data",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Operation Management Master",
    "link_type": "DocType",
    "onboard": 0,
@@ -205,7 +214,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-07-07 14:47:03.880480",
+ "modified": "2022-07-07 14:54:51.921099",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",
