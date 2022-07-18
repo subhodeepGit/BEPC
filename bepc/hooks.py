@@ -153,7 +153,7 @@ after_migrate = [
 		'bepc.patches.migrate_patch.add_module_profile',
 ]
 
-# fixtures = [
+fixtures = [
 # 		{"dt": "Custom DocPerm", "filters": [
 # 		[
 # 			"parent", "not in", [
@@ -166,8 +166,8 @@ after_migrate = [
 # # 	{"dt" : "Workflow State"},
 # # 	{"dt" : "Role"},
 # # 	{"dt" : "Module Profile"},
-# 	{"dt" : "Role Profile"},
-# ]
+	{"dt" : "Role Profile"},
+]
 
 # User Data Protection
 # --------------------
