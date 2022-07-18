@@ -7,7 +7,9 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "trainer",
   "name_of_the_teacher",
+  "column_break_3",
   "contact_number",
   "email_id",
   "date",
@@ -16,34 +18,77 @@
  ],
  "fields": [
   {
+   "fetch_from": "trainer.instructor_name",
    "fieldname": "name_of_the_teacher",
    "fieldtype": "Data",
-   "label": "Name Of the Teacher"
+   "label": "Name"
   },
   {
    "fieldname": "training_on",
    "fieldtype": "Small Text",
-   "label": "Training on"
+   "label": "Training Topic"
   },
   {
    "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Date"
+   "fieldtype": "Datetime",
+   "label": "From Date"
   },
   {
-   "fieldname": "time",
-   "fieldtype": "Time",
-   "label": "Time"
-  },
-  {
+   "fetch_from": "trainer.contact_number",
    "fieldname": "contact_number",
    "fieldtype": "Int",
    "label": "Contact Number"
   },
   {
+   "fetch_from": "trainer.email",
    "fieldname": "email_id",
    "fieldtype": "Data",
    "label": "Email Id"
+  },
+  {
+   "fieldname": "training_details_section",
+   "fieldtype": "Section Break",
+   "label": "Training Details"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Datetime",
+   "label": "End date "
+  },
+  {
+   "fieldname": "participants_section",
+   "fieldtype": "Section Break",
+   "label": "Participants"
+  },
+  {
+   "fieldname": "teachers_group",
+   "fieldtype": "Link",
+   "label": "Teachers Group",
+   "options": "Teacher Group"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Link",
+   "label": "Trainer",
+   "options": "Instructor"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
