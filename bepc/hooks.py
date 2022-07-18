@@ -154,11 +154,18 @@ after_migrate = [
 ]
 
 # fixtures = [
-# 	{"dt" : "Workflow"},
-# 	{"dt": "Workflow Action Master"},
-# 	{"dt" : "Workflow State"},
-# 	{"dt" : "Role"},
-# 	{"dt" : "Module Profile"},
+# 		{"dt": "Custom DocPerm", "filters": [
+# 		[
+# 			"parent", "not in", [
+# 				"DocType"
+# 			]
+# 		]
+# 	]},
+# # 	{"dt" : "Workflow"},
+# # 	{"dt": "Workflow Action Master"},
+# # 	{"dt" : "Workflow State"},
+# # 	{"dt" : "Role"},
+# # 	{"dt" : "Module Profile"},
 # 	{"dt" : "Role Profile"},
 # ]
 

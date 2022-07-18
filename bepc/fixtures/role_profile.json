@@ -2,30 +2,6 @@
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2022-07-06 11:44:04.170006",
-  "name": "Data Entry Approve",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "role_profile": "Data Entry Approver",
-  "roles": [
-   {
-    "parent": "Data Entry Approve",
-    "parentfield": "roles",
-    "parenttype": "Role Profile",
-    "role": "Approver I"
-   },
-   {
-    "parent": "Data Entry Approve",
-    "parentfield": "roles",
-    "parenttype": "Role Profile",
-    "role": "Approver II"
-   }
-  ]
- },
- {
-  "docstatus": 0,
-  "doctype": "Role Profile",
   "modified": "2022-07-06 11:46:22.820582",
   "name": "Data Entry Operator",
   "parent": null,
@@ -38,6 +14,30 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "Data Entry Operator"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2022-07-18 12:17:41.598690",
+  "name": "Data Entry Approver",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "role_profile": "Data Entry Approver",
+  "roles": [
+   {
+    "parent": "Data Entry Approver",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Approver I"
+   },
+   {
+    "parent": "Data Entry Approver",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Approver II"
    }
   ]
  }
