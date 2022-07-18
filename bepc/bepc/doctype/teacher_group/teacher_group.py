@@ -5,45 +5,46 @@ import frappe
 from frappe.model.document import Document
 
 class TeacherGroup(Document):
+    pass
 
-	@frappe.whitelist()
-	def get_teachers(academic_year, group_based_on, program=None, course=None):
+	# @frappe.whitelist()
+	# def get_teachers(academic_year, group_based_on, program=None, course=None):
 
-    	enrolled_teachers = get_teacher_enrollment(academic_year,program)
+    # 	enrolled_teachers = get_teacher_enrollment(academic_year,program)
 
-        if enrolled_teachers:
-        teacher_list = []
-        for s in enrolled_teachers:
-            if frappe.db.get_value("Teacher", s.name1, "enabled"):
-                s.update({"active": 1})
-            else:
-                s.update({"active": 0})
-            teacher_list.append(s)
-        return teacher_list
-    else:
-        frappe.msgprint("No teacher found")
-        return []
+    #     if enrolled_teachers:
+    #     teacher_list = []
+    #     for s in enrolled_teachers:
+    #         if frappe.db.get_value("Teacher", s.name1, "enabled"):
+    #             s.update({"active": 1})
+    #         else:
+    #             s.update({"active": 0})
+    #         teacher_list.append(s)
+    #     return teacher_list
+    # else:
+    #     frappe.msgprint("No teacher found")
+    #     return []
 
-	def get_teacher_enrollment(academic_year,program=None):
-    condition1 = " "
-    condition2 = " "
-    if academic_year:
-        condition1 += " and pe.academic_year = %(academic_year)s"
-    if program:
-        condition1 += " and pe.program = %(program)s"
+	# def get_teacher_enrollment(academic_year,program=None):
+    # condition1 = " "
+    # condition2 = " "
+    # if academic_year:
+    #     condition1 += " and pe.academic_year = %(academic_year)s"
+    # if program:
+    #     condition1 += " and pe.program = %(program)s"
     
-    return frappe.db.sql('''
-        select
-            pe.name1
-        from
-            `tabTeacher ` pe {condition2}
-        where
-            (pe.is_provisional_admission IS NULL or pe.is_provisional_admission="No") and
-            pe.academic_year = %(academic_year)s  {condition1}
-        order by
-            pe.name1 asc
-        '''.format(condition1=condition1, condition2=condition2),
-                ({"academic_year": academic_year, "program": program}), as_dict=1)
+    # return frappe.db.sql('''
+    #     select
+    #         pe.name1
+    #     from
+    #         `tabTeacher ` pe {condition2}
+    #     where
+    #         (pe.is_provisional_admission IS NULL or pe.is_provisional_admission="No") and
+    #         pe.academic_year = %(academic_year)s  {condition1}
+    #     order by
+    #         pe.name1 asc
+    #     '''.format(condition1=condition1, condition2=condition2),
+    #             ({"academic_year": academic_year, "program": program}), as_dict=1)
 	
 
 	# @frappe.whitelist()
