@@ -27,6 +27,7 @@
   "district",
   "state",
   "pin_code",
+  "color",
   "question_sample_section",
   "q1",
   "q2",
@@ -36,7 +37,8 @@
   "section_break_11",
   "electricity_consumption_reading",
   "internet_use",
-  "equipment_uptime_details"
+  "equipment_uptime_details",
+  "amended_from"
  ],
  "fields": [
   {
@@ -118,13 +120,13 @@
   },
   {
    "fieldname": "actual_start_date",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Actual Start Date",
    "reqd": 1
   },
   {
    "fieldname": "actual_end_date",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Actual End Date",
    "reqd": 1
   },
@@ -219,12 +221,26 @@
    "fieldtype": "Table",
    "label": "Equipment Uptime details",
    "options": "Equipment Uptime Details"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Survey Form",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-07-07 14:21:41.912418",
+ "modified": "2022-07-08 11:45:17.056516",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Survey Form",

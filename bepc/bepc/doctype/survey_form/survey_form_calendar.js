@@ -1,10 +1,11 @@
 frappe.views.calendar["Survey Form"] = {
 	field_map: {
-		"start": "actual_end_date",
-		"end": "time_to_complete",
+		"start": "actual_start_date",
+		"end": "actual_end_date",
 		"id": "name",
 		"title": "title_of_the_document",
 		"allDay": "allDay",
+		"color": "color"
 	},
 	gantt: false,
 	order_by: "schedule_date",
@@ -22,5 +23,4 @@ frappe.views.calendar["Survey Form"] = {
 			"label": __("Site")
 		}
 	],
-	// get_events_method: "erpnext.education.api.get_course_schedule_events"
 }
