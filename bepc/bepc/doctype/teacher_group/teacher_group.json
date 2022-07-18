@@ -7,18 +7,18 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "group_based_on",
   "academic_year",
   "program",
-  "course",
-  "group_based_on",
+  "department",
+  "column_break_5",
   "teacher_group_name",
-  "max_strength",
   "instructors_section",
-  "get_teacher",
   "teacher_list"
  ],
  "fields": [
   {
+   "depends_on": "eval:doc.group_based_on == 'Academic Year'",
    "fieldname": "academic_year",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -30,7 +30,7 @@
    "fieldname": "group_based_on",
    "fieldtype": "Select",
    "label": "Group Based On",
-   "options": "\nAcademic Year\nProgram\nCourse"
+   "options": "\nAcademic Year\nProgram\nDepartment"
   },
   {
    "fieldname": "teacher_group_name",
@@ -38,23 +38,13 @@
    "label": "Teacher Group Name"
   },
   {
+   "depends_on": "eval:doc.group_based_on == 'Program'",
    "fieldname": "program",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Program",
    "options": "Program",
    "reqd": 1
-  },
-  {
-   "fieldname": "course",
-   "fieldtype": "Link",
-   "label": "Course",
-   "options": "Course"
-  },
-  {
-   "fieldname": "max_strength",
-   "fieldtype": "Int",
-   "label": "Max Strength"
   },
   {
    "fieldname": "instructors_section",
@@ -65,17 +55,24 @@
    "fieldname": "teacher_list",
    "fieldtype": "Table",
    "label": "Teacher List",
-   "options": "Teacher"
+   "options": "Teachers List"
   },
   {
-   "fieldname": "get_teacher",
-   "fieldtype": "Button",
-   "label": "Get Teacher"
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.group_based_on == 'Department'",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-08 15:12:57.526633",
+ "modified": "2022-07-18 16:53:18.396882",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Group",

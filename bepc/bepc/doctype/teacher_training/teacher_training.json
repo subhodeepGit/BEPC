@@ -12,9 +12,15 @@
   "column_break_3",
   "contact_number",
   "email_id",
+  "training_details_section",
+  "venue",
+  "training_on",
+  "column_break_9",
   "date",
-  "time",
-  "training_on"
+  "end_date",
+  "participants_section",
+  "teachers_group",
+  "color"
  ],
  "fields": [
   {
@@ -93,7 +99,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-11 10:52:49.151095",
+ "modified": "2022-07-18 13:55:53.942452",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",
