@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Prompt",
+ "creation": "2022-07-19 16:23:18.796302",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_2",
+  "time",
+  "section_break_4",
+  "item_stolen",
+  "description_of_stolen_item",
+  "incident_description",
+  "supporting_documents_for_theft_case",
+  "additional_info"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_stolen",
+   "fieldtype": "Data",
+   "label": "Item Stolen"
+  },
+  {
+   "description": "size, color, brand etc.",
+   "fieldname": "description_of_stolen_item",
+   "fieldtype": "Small Text",
+   "label": "Description of Stolen Item"
+  },
+  {
+   "description": "any report of theft occurring (if any)",
+   "fieldname": "incident_description",
+   "fieldtype": "Small Text",
+   "label": "Incident Description"
+  },
+  {
+   "fieldname": "additional_info",
+   "fieldtype": "Small Text",
+   "label": "Additional Info"
+  },
+  {
+   "fieldname": "supporting_documents_for_theft_case",
+   "fieldtype": "Table",
+   "label": "Supporting Documents for Theft Case",
+   "options": "Theft Case Support Documents"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-19 16:43:31.216301",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Theft Incident",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

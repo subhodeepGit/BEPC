@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestTheftCasemonitoring(unittest.TestCase):
+class TestTheftCaseSupportDocuments(unittest.TestCase):
 	pass
