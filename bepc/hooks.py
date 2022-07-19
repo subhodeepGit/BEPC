@@ -151,9 +151,10 @@ app_license = "MIT"
 after_migrate = [
         'bepc.patches.migrate_patch.add_roles',
 		'bepc.patches.migrate_patch.add_module_profile',
+		'bepc.patches.migrate_patch.set_custom_role_permission',
 ]
 
-fixtures = [
+# fixtures = [
 # 		{"dt": "Custom DocPerm", "filters": [
 # 		[
 # 			"parent", "not in", [
@@ -161,13 +162,13 @@ fixtures = [
 # 			]
 # 		]
 # 	]},
-# # 	{"dt" : "Workflow"},
-# # 	{"dt": "Workflow Action Master"},
-# # 	{"dt" : "Workflow State"},
-# # 	{"dt" : "Role"},
-# # 	{"dt" : "Module Profile"},
-	{"dt" : "Role Profile"},
-]
+# 	# {"dt" : "Workflow"},
+# 	# {"dt": "Workflow Action Master"},
+# 	# {"dt" : "Workflow State"},
+# 	{"dt" : "Role"},
+# 	# {"dt" : "Module Profile"},
+# 	{"dt" : "Role Profile"},
+# ]
 
 # User Data Protection
 # --------------------
