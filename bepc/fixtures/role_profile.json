@@ -1,0 +1,56 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2022-07-19 15:20:32.543619",
+  "name": "Support Team",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "role_profile": "Support Team",
+  "roles": [
+   {
+    "parent": "Support Team",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Projects User"
+   },
+   {
+    "parent": "Support Team",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Support Team"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2022-07-19 15:21:19.480926",
+  "name": "HelpDesk Admin",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "role_profile": "HelpDesk Admin",
+  "roles": [
+   {
+    "parent": "HelpDesk Admin",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Projects User"
+   },
+   {
+    "parent": "HelpDesk Admin",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Support Team"
+   },
+   {
+    "parent": "HelpDesk Admin",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Employee"
+   }
+  ]
+ }
+]
