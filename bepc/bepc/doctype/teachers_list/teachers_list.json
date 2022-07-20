@@ -31,7 +31,7 @@
   {
    "fetch_from": "teacher.contact_number",
    "fieldname": "contact_number",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Contact Number"
   },
   {
@@ -50,7 +50,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-07-18 16:40:12.430855",
+ "modified": "2022-07-18 17:20:39.520282",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teachers List",

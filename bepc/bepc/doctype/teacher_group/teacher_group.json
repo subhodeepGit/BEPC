@@ -23,14 +23,14 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Academic Year",
-   "options": "Academic Year",
-   "reqd": 1
+   "options": "Academic Year"
   },
   {
    "fieldname": "group_based_on",
    "fieldtype": "Select",
    "label": "Group Based On",
-   "options": "\nAcademic Year\nProgram\nDepartment"
+   "options": "\nAcademic Year\nProgram\nDepartment",
+   "reqd": 1
   },
   {
    "fieldname": "teacher_group_name",
@@ -43,8 +43,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Program",
-   "options": "Program",
-   "reqd": 1
+   "options": "Program"
   },
   {
    "fieldname": "instructors_section",
@@ -66,13 +65,12 @@
    "fieldname": "department",
    "fieldtype": "Link",
    "label": "Department",
-   "options": "Department",
-   "reqd": 1
+   "options": "Department"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-18 16:53:18.396882",
+ "modified": "2022-07-20 13:10:25.720141",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Group",
