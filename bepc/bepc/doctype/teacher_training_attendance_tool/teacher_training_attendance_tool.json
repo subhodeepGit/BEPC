@@ -6,9 +6,12 @@
  "engine": "InnoDB",
  "field_order": [
   "date",
-  "department",
+  "group_based_on",
   "column_break_3",
-  "teacher_group",
+  "department",
+  "department1",
+  "program",
+  "academic_year",
   "unmarked_attendance_section",
   "employees_html",
   "marked_attendance_section",
@@ -24,8 +27,8 @@
   {
    "fieldname": "department",
    "fieldtype": "Link",
-   "label": "Department",
-   "options": "Department"
+   "label": "Teacher Group",
+   "options": "Teacher Group"
   },
   {
    "fieldname": "column_break_3",
@@ -55,16 +58,43 @@
    "label": "Marked Attendance HTML"
   },
   {
-   "fieldname": "teacher_group",
+   "depends_on": "eval:doc.group_based_on == 'Department'",
+   "fetch_from": "department.department",
+   "fieldname": "department1",
    "fieldtype": "Link",
-   "label": "Teacher Group",
-   "options": "Teacher Group"
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.group_based_on == 'Program'",
+   "fetch_from": "department.program",
+   "fieldname": "program",
+   "fieldtype": "Link",
+   "label": "Program",
+   "options": "Program",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.group_based_on == 'Academic Year'",
+   "fetch_from": "department.academic_year",
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "group_based_on",
+   "fieldtype": "Select",
+   "label": "Group Based on",
+   "options": "\nDepartment\nProgram\nAcademic Year"
   }
  ],
  "hide_toolbar": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-07-20 12:46:34.163847",
+ "modified": "2022-07-21 17:04:18.497062",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training Attendance Tool",

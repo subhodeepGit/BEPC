@@ -1,32 +1,25 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:name1",
  "creation": "2022-07-18 14:51:48.474952",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "teacher",
+  "employee_id",
   "name1",
-  "gender",
   "contact_number",
-  "email_id"
+  "email_id",
+  "date_of_joining",
+  "department"
  ],
  "fields": [
   {
    "fetch_from": "teacher.instructor_name",
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Teacher Name",
-   "unique": 1
-  },
-  {
-   "fetch_from": "teacher.gender",
-   "fieldname": "gender",
-   "fieldtype": "Select",
-   "label": "Gender",
-   "options": "\nMale\nFemale\nOther"
+   "label": "Teacher Name"
   },
   {
    "fetch_from": "teacher.contact_number",
@@ -45,12 +38,30 @@
    "fieldtype": "Link",
    "label": "Teacher",
    "options": "Instructor"
+  },
+  {
+   "fetch_from": "teacher.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fetch_from": "teacher.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fetch_from": "teacher.employee",
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "label": "Employee ID"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-07-18 17:20:39.520282",
+ "modified": "2022-07-21 15:03:02.556426",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teachers List",

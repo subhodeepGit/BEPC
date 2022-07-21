@@ -9,15 +9,34 @@ frappe.ui.form.on('Teacher Training Attendance Tool', {
 	
 		onload: function(frm) {
 			frm.set_value("date", frappe.datetime.get_today());
-			erpnext.employee_attendance_tool.load_employees(frm);
-		// 	frm.set_query("branch", function() {
-		// 		return {
-		// 			"filters": {
-		// 				"group_based_on": frm.doc.department,
-		// 			}
-		// 		};
-		// 	});
+			// /opt/bench/frappe-bench/apps/bepc/bepc/bepc/doctype/teacher_training_attendance_tool/teacher_training_attendance_tool.js
+			bepc.employee_attendance_tool.load_employees(frm);
+			// frm.set_query("department", function() {
+			// 	return {
+			// 		"filters": {
+			// 			"group_based_on": frm.doc.group_based_on
+			// 		}
+			// 	};
+			// });
+			frm.set_query("department", function () {
+				return {
+					filters: [
+						["Teacher Group", "group_based_on", "=", frm.doc.group_based_on],
+					]
+				}
+			});
 		},
+
+		group_based_on: function(frm) {
+			frm.set_query("department", function () {
+				return {
+					filters: [
+						["Teacher Group", "group_based_on", "=", frm.doc.group_based_on],
+					]
+				}
+			});
+		},
+
 	
 		date: function(frm) {
 			erpnext.employee_attendance_tool.load_employees(frm);
@@ -47,8 +66,9 @@ frappe.ui.form.on('Teacher Training Attendance Tool', {
 					
 					args: {
 						date: frm.doc.date,
-						department: frm.doc.department,
+						department: frm.doc.department,  //teacher group
 						// program: frm.doc.branch
+						// group:frm.doc.teacher_group
 					},
 					callback: function(r) {
 						if(r.message['unmarked'].length > 0) {
@@ -110,7 +130,7 @@ frappe.ui.form.on('Teacher Training Attendance Tool', {
 					<label class="marked-employee-label"><span class="%(icon)s"></span>\
 					%(employee)s</label>\
 					</div>', {
-						employee: m.employee_name,
+						employee: m.instructor_name,
 						icon: attendance_icon,
 						color_class: color_class
 					})).appendTo(row);
@@ -277,7 +297,7 @@ frappe.ui.form.on('Teacher Training Attendance Tool', {
 					<div class="checkbox">\
 					<label><input type="checkbox" class="employee-check" employee="%(employee)s"/>\
 					%(employee)s</label>\
-					</div></div>', {employee: m.employee_name})).appendTo(row);
+					</div></div>', {employee: m.instructor_name})).appendTo(row);
 			});
 	
 			mark_employee_toolbar.appendTo($(this.wrapper));

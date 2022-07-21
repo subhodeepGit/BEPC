@@ -17,17 +17,8 @@
   "leave_application",
   "column_break0",
   "attendance_date",
-  "company",
   "department",
   "attendance_request",
-  "details_section",
-  "shift",
-  "in_time",
-  "out_time",
-  "column_break_18",
-  "late_entry",
-  "early_exit",
-  "amended_from",
   "amended_from"
  ],
  "fields": [
@@ -126,16 +117,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "company",
-   "fieldtype": "Link",
-   "label": "Company",
-   "oldfieldname": "company",
-   "oldfieldtype": "Link",
-   "options": "Company",
-   "remember_last_selected_value": 1,
-   "reqd": 1
-  },
-  {
    "fetch_from": "employee.department",
    "fieldname": "department",
    "fieldtype": "Link",
@@ -151,57 +132,6 @@
    "read_only": 1
   },
   {
-   "fieldname": "details_section",
-   "fieldtype": "Section Break",
-   "label": "Details"
-  },
-  {
-   "fieldname": "shift",
-   "fieldtype": "Link",
-   "label": "Shift",
-   "options": "Shift Type"
-  },
-  {
-   "depends_on": "shift",
-   "fieldname": "in_time",
-   "fieldtype": "Datetime",
-   "label": "In Time",
-   "read_only": 1
-  },
-  {
-   "depends_on": "shift",
-   "fieldname": "out_time",
-   "fieldtype": "Datetime",
-   "label": "Out Time",
-   "read_only": 1
-  },
-  {
-   "fieldname": "column_break_18",
-   "fieldtype": "Column Break"
-  },
-  {
-   "default": "0",
-   "fieldname": "late_entry",
-   "fieldtype": "Check",
-   "label": "Late Entry"
-  },
-  {
-   "default": "0",
-   "fieldname": "early_exit",
-   "fieldtype": "Check",
-   "label": "Early Exit"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "ignore_user_permissions": 1,
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Attendance",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -214,7 +144,7 @@
  "icon": "fa fa-ok",
  "is_submittable": 1,
  "links": [],
- "modified": "2022-07-19 15:46:29.734310",
+ "modified": "2022-07-21 13:19:44.428832",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training Attendance",

@@ -22,30 +22,25 @@ class TeacherTrainingAttendanceTool(Document):
 
 
 @frappe.whitelist()
-def get_employees(date, department = None, branch = None, company = None):
+# def get_employees(date, department = None, branch = None, company = None):
+def get_employees(date=None,department=None):	
 	attendance_not_marked = []
 	attendance_marked = []
-	filters = {"status": "Active", "date_of_joining": ["<=", date]}
-
-	for field, value in {'department': department}.items():
-		if value:
-			filters[field] = value
-
-	employee_list = frappe.get_list("Employee", fields=["employee", "employee_name"], filters=filters, order_by="employee_name")
-
+	list_emp=frappe.get_all("Teachers List",{"parent":department},["employee_id"])
+	list_emp_no=[]
+	for t in list_emp:
+		list_emp_no.append(t['employee_id'])
+	list_emp=frappe.get_all("Instructor",filters=[["employee","in",tuple(list_emp_no)],["status","=","Active"],["date_of_joining","<=", date]],fields=['employee',"instructor_name"])
 	marked_employee = {}
-	for emp in frappe.get_list("Teacher Training Attendance", fields=["employee", "status"],
-							   filters={"attendance_date": date}):
+	for emp in frappe.get_list("Teacher Training Attendance", fields=["employee", "status"],filters={"attendance_date": date}):
 		marked_employee[emp['employee']] = emp['status']
 
-	for employee in employee_list:
+	for employee in list_emp:
 		employee['status'] = marked_employee.get(employee['employee'])
 		if employee['employee'] not in marked_employee:
 			attendance_not_marked.append(employee)
 		else:
 			attendance_marked.append(employee)
-	print(attendance_marked)
-	print(attendance_not_marked)
 	return {
 		"marked": attendance_marked,
 		"unmarked": attendance_not_marked

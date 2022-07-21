@@ -20,7 +20,9 @@
   "end_date",
   "participants_section",
   "teachers_group",
-  "color"
+  "color",
+  "column_break_15",
+  "recording"
  ],
  "fields": [
   {
@@ -95,11 +97,20 @@
   {
    "fieldname": "column_break_3",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "recording",
+   "fieldtype": "Attach",
+   "label": "Recording"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-18 13:55:53.942452",
+ "modified": "2022-07-21 17:54:32.791888",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",

@@ -13,6 +13,7 @@
   "department",
   "column_break_5",
   "teacher_group_name",
+  "group_creation_date",
   "instructors_section",
   "teacher_list"
  ],
@@ -21,13 +22,15 @@
    "depends_on": "eval:doc.group_based_on == 'Academic Year'",
    "fieldname": "academic_year",
    "fieldtype": "Link",
-   "in_list_view": 1,
+   "in_global_search": 1,
+   "in_standard_filter": 1,
    "label": "Academic Year",
    "options": "Academic Year"
   },
   {
    "fieldname": "group_based_on",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Group Based On",
    "options": "\nAcademic Year\nProgram\nDepartment",
    "reqd": 1
@@ -35,13 +38,19 @@
   {
    "fieldname": "teacher_group_name",
    "fieldtype": "Data",
-   "label": "Teacher Group Name"
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Teacher Group Name",
+   "reqd": 1
   },
   {
    "depends_on": "eval:doc.group_based_on == 'Program'",
    "fieldname": "program",
    "fieldtype": "Link",
-   "in_list_view": 1,
+   "in_global_search": 1,
+   "in_standard_filter": 1,
    "label": "Program",
    "options": "Program"
   },
@@ -64,13 +73,23 @@
    "depends_on": "eval:doc.group_based_on == 'Department'",
    "fieldname": "department",
    "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
    "label": "Department",
    "options": "Department"
+  },
+  {
+   "default": "Today",
+   "fieldname": "group_creation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Group Creation Date",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-20 13:10:25.720141",
+ "modified": "2022-07-21 17:07:28.619644",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Group",
@@ -89,6 +108,8 @@
    "write": 1
   }
  ],
+ "search_fields": "teacher_group_name",
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "teacher_group_name"
 }
