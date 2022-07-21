@@ -9,18 +9,30 @@
  "field_order": [
   "date",
   "column_break_2",
-  "time",
+  "employee",
+  "employee_name",
   "section_break_4",
+  "site",
+  "address_line_1",
+  "state",
+  "column_break_9",
+  "site_name",
+  "address_line_2",
+  "pincode",
+  "section_break_8",
   "item_stolen",
   "description_of_stolen_item",
   "incident_description",
   "supporting_documents_for_theft_case",
-  "additional_info"
+  "additional_info",
+  "insurance_status_section",
+  "insurance",
+  "insurance_id"
  ],
  "fields": [
   {
    "fieldname": "date",
-   "fieldtype": "Date",
+   "fieldtype": "Datetime",
    "label": "Date"
   },
   {
@@ -28,13 +40,9 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "time",
-   "fieldtype": "Time",
-   "label": "Time"
-  },
-  {
    "fieldname": "section_break_4",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Site Details"
   },
   {
    "fieldname": "item_stolen",
@@ -63,11 +71,89 @@
    "fieldtype": "Table",
    "label": "Supporting Documents for Theft Case",
    "options": "Theft Case Support Documents"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Site"
+  },
+  {
+   "fetch_from": "site.site_name",
+   "fieldname": "site_name",
+   "fieldtype": "Read Only",
+   "label": "Site Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "site.address_line_1",
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.address_line_2",
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.state",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.pin_code",
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insurance_status_section",
+   "fieldtype": "Section Break",
+   "label": "Insurance Status"
+  },
+  {
+   "fieldname": "insurance",
+   "fieldtype": "Select",
+   "label": "Insurance",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.insurance=='Yes';",
+   "fieldname": "insurance_id",
+   "fieldtype": "Data",
+   "label": "Insurance ID"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-19 16:43:31.216301",
+ "modified": "2022-07-20 15:16:50.694509",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Incident",
