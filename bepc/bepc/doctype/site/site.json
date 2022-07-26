@@ -15,6 +15,7 @@
   "address_line_2",
   "post_office",
   "police_station",
+  "column_break_9",
   "state",
   "district",
   "pin_code"
@@ -23,7 +24,10 @@
   {
    "fieldname": "site_name",
    "fieldtype": "Data",
-   "label": "Site Name"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Site Name",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_2",
@@ -62,24 +66,33 @@
   {
    "fieldname": "district",
    "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
    "label": "District",
    "options": "Districts"
   },
   {
    "fieldname": "state",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "State",
    "options": "State"
   },
   {
    "fieldname": "pin_code",
    "fieldtype": "Data",
-   "label": "Pin Code"
+   "label": "Pin Code",
+   "length": 6
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-06 17:13:39.231386",
+ "modified": "2022-07-22 14:45:20.097131",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Site",
@@ -99,5 +112,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "site_name"
 }

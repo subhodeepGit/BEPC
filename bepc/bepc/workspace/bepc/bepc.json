@@ -172,7 +172,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Operation Management Master",
+   "label": "School Masters",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -180,26 +180,26 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Instructor",
+   "link_to": "Instructor",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Students List",
+   "link_to": "Students List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Teacher Group",
    "link_to": "Teacher Group",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Theft Incident",
-   "link_to": "Theft Incident",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Insurance Details",
-   "link_to": "Insurance Details",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -238,9 +238,70 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Theft & Insurance Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Company",
+   "link_to": "Insurance Company",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Theft & Insurance Transaction",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Theft Incident",
+   "link_to": "Theft Incident",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Details",
+   "link_to": "Insurance Detail Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Claim Status",
+   "link_to": "Insurance Claim Status",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-07-21 18:02:05.757694",
+ "modified": "2022-07-25 11:43:43.892962",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",

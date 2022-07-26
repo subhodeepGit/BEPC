@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "INS.DTL.-.######",
+ "creation": "2022-07-07 14:57:04.790398",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "insurerd_details_section",
+  "insured_name",
+  "column_break_3",
+  "insured_address",
+  "insurance_for_section",
+  "item",
+  "item_name",
+  "item_purchase_price",
+  "insurance_details_section",
+  "insurance_comapny",
+  "company_name",
+  "insurance_comapny_branch",
+  "time_of_insurance",
+  "column_break_13",
+  "date_and_time",
+  "policy_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "insured_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Insured Name"
+  },
+  {
+   "fieldname": "insured_address",
+   "fieldtype": "Data",
+   "label": "Insured Address"
+  },
+  {
+   "fieldname": "insurance_comapny",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Insurance Company",
+   "options": "Insurance Company"
+  },
+  {
+   "fieldname": "date_and_time",
+   "fieldtype": "Date",
+   "label": "Date of Insurance"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item.item_group",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item.standard_rate",
+   "fieldname": "item_purchase_price",
+   "fieldtype": "Data",
+   "label": "Item Purchase Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "policy_number",
+   "fieldtype": "Data",
+   "label": "Policy Number"
+  },
+  {
+   "fieldname": "insurerd_details_section",
+   "fieldtype": "Section Break",
+   "label": "Insurerd Details"
+  },
+  {
+   "fetch_from": "insurance_comapny.branch",
+   "fieldname": "insurance_comapny_branch",
+   "fieldtype": "Data",
+   "label": "Insurance Comapny Branch",
+   "read_only": 1
+  },
+  {
+   "fieldname": "insurance_for_section",
+   "fieldtype": "Section Break",
+   "label": "Insurance for"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insurance_details_section",
+   "fieldtype": "Section Break",
+   "label": "Insurance Details"
+  },
+  {
+   "fieldname": "time_of_insurance",
+   "fieldtype": "Data",
+   "label": "Time of Insurance: (In Years)"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "insurance_comapny.company_name",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-22 15:25:03.929504",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Insurance Detail Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "item,insured_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "item"
+}

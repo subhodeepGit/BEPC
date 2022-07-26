@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestInsuranceDetails(unittest.TestCase):
+class TestInsuranceDetailForm(unittest.TestCase):
 	pass

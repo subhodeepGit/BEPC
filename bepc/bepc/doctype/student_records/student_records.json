@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-22 11:21:14.046947",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "student_name",
+  "roll_number",
+  "conatct_number",
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Student name"
+  },
+  {
+   "fieldname": "roll_number",
+   "fieldtype": "Data",
+   "label": "Roll Number"
+  },
+  {
+   "fieldname": "conatct_number",
+   "fieldtype": "Data",
+   "label": "Conatct Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-22 11:21:14.046947",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Student records",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
