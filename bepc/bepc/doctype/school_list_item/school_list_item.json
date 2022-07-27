@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-27 14:41:44.138468",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "site",
+  "site_name",
+  "district",
+  "principal_name",
+  "principla_mobile_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Site",
+   "options": "Site",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "site.site_name",
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "label": "Site Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.principal_name",
+   "fieldname": "principal_name",
+   "fieldtype": "Data",
+   "label": "Principal Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.principle_mobile_number",
+   "fieldname": "principla_mobile_number",
+   "fieldtype": "Data",
+   "label": "Principla Mobile Number",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-27 14:47:34.031883",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "School List Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

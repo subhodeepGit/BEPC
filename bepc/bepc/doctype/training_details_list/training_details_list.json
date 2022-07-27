@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-27 15:34:22.078336",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "teacher_training",
+  "batch",
+  "venue",
+  "project"
+ ],
+ "fields": [
+  {
+   "fieldname": "teacher_training",
+   "fieldtype": "Link",
+   "label": "Teacher Training",
+   "options": "Teacher Training"
+  },
+  {
+   "fetch_from": "teacher_training.teachers_group",
+   "fieldname": "batch",
+   "fieldtype": "Data",
+   "label": "Batch"
+  },
+  {
+   "fetch_from": "teacher_training.venue",
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue"
+  },
+  {
+   "fetch_from": "teacher_training.project",
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-27 15:38:23.680820",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Training details List",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,7 +1,7 @@
 // Copyright (c) 2022, SOUL and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Site', {
+frappe.ui.form.on('Venue', {
 	onload:function(frm)
     {
         frm.set_query("district", function() {

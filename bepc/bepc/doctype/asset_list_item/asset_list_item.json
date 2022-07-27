@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-27 15:04:12.626935",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "asset",
+  "asset_name",
+  "supplier",
+  "model_code",
+  "model_name",
+  "quantity"
+ ],
+ "fields": [
+  {
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Asset",
+   "options": "Asset",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "asset.asset_name",
+   "fieldname": "asset_name",
+   "fieldtype": "Data",
+   "label": "Asset name"
+  },
+  {
+   "fetch_from": "asset.supplier",
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": "Supplier"
+  },
+  {
+   "fetch_from": "asset.item_code",
+   "fieldname": "model_code",
+   "fieldtype": "Data",
+   "label": "Model code"
+  },
+  {
+   "fetch_from": "asset.item_name",
+   "fieldname": "model_name",
+   "fieldtype": "Data",
+   "label": "Model name"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-27 15:06:37.243518",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Asset List Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

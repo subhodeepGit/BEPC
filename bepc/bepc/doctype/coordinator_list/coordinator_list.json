@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-27 15:25:43.890619",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "coordinator",
+  "name1",
+  "mobile_number"
+ ],
+ "fields": [
+  {
+   "fetch_from": "coordinator.name1",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fetch_from": "coordinator.mobile_number",
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "coordinator",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Coordinator",
+   "options": "Coordinators",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-27 15:26:38.494639",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Coordinator List",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

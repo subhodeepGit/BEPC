@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-27 15:15:46.217269",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ticket_id",
+  "client",
+  "issue",
+  "current_status",
+  "reported_on",
+  "follow_up_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "ticket_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "TICKET ID",
+   "options": "Issue",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "ticket_id.customer",
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "ticket_id.subject",
+   "fieldname": "issue",
+   "fieldtype": "Data",
+   "label": "Issue"
+  },
+  {
+   "fetch_from": "ticket_id.status",
+   "fieldname": "current_status",
+   "fieldtype": "Data",
+   "label": "Current Status"
+  },
+  {
+   "fetch_from": "ticket_id.opening_date",
+   "fieldname": "reported_on",
+   "fieldtype": "Data",
+   "label": "Reported on"
+  },
+  {
+   "fetch_from": "ticket_id.first_responded_on",
+   "fieldname": "follow_up_date",
+   "fieldtype": "Data",
+   "label": "Follow up date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-27 15:21:50.966499",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Ticket List Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -8,17 +8,27 @@
  "engine": "InnoDB",
  "field_order": [
   "site_name",
+  "principal_name",
+  "principle_mobile_number",
   "column_break_2",
   "longitudelatitude",
   "address_section",
   "address_line_1",
   "address_line_2",
   "post_office",
-  "police_station",
+  "pin_code",
   "column_break_9",
   "state",
   "district",
-  "pin_code"
+  "block",
+  "assets_section",
+  "assets_list",
+  "tickets_section",
+  "tickets_list",
+  "coordinators",
+  "coordinator_list",
+  "training_details",
+  "training_details_list"
  ],
  "fields": [
   {
@@ -59,11 +69,6 @@
    "label": "Post Office"
   },
   {
-   "fieldname": "police_station",
-   "fieldtype": "Data",
-   "label": "Police Station"
-  },
-  {
    "fieldname": "district",
    "fieldtype": "Link",
    "in_global_search": 1,
@@ -88,11 +93,71 @@
   {
    "fieldname": "column_break_9",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "principal_name",
+   "fieldtype": "Data",
+   "label": "Principal Name"
+  },
+  {
+   "fieldname": "principle_mobile_number",
+   "fieldtype": "Data",
+   "label": "Principle Mobile number"
+  },
+  {
+   "fieldname": "assets_section",
+   "fieldtype": "Section Break",
+   "label": "Assets"
+  },
+  {
+   "fieldname": "assets_list",
+   "fieldtype": "Table",
+   "label": "Assets List",
+   "options": "Asset List Item"
+  },
+  {
+   "fieldname": "tickets_section",
+   "fieldtype": "Section Break",
+   "label": "Tickets"
+  },
+  {
+   "fieldname": "tickets_list",
+   "fieldtype": "Table",
+   "label": "Tickets List",
+   "options": "Ticket List Item"
+  },
+  {
+   "fieldname": "coordinators",
+   "fieldtype": "Section Break",
+   "label": "Coordinators"
+  },
+  {
+   "fieldname": "coordinator_list",
+   "fieldtype": "Table",
+   "label": "Coordinator List",
+   "options": "Coordinator List"
+  },
+  {
+   "fieldname": "training_details",
+   "fieldtype": "Section Break",
+   "label": "Training Details"
+  },
+  {
+   "fieldname": "training_details_list",
+   "fieldtype": "Table",
+   "label": "Training details List",
+   "options": "Training details List"
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Link",
+   "label": "Block",
+   "options": "Block"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-22 14:45:20.097131",
+ "modified": "2022-07-27 16:00:04.963416",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Site",
@@ -111,6 +176,7 @@
    "write": 1
   }
  ],
+ "search_fields": "site_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "site_name"

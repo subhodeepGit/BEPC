@@ -1,35 +1,46 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:district",
- "creation": "2022-07-06 16:45:07.857380",
+ "creation": "2022-07-27 15:55:34.154550",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "state",
-  "district"
+  "district",
+  "block"
  ],
  "fields": [
   {
-   "fieldname": "district",
-   "fieldtype": "Data",
-   "label": "District",
-   "unique": 1
-  },
-  {
    "fieldname": "state",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "State",
-   "options": "State"
+   "options": "State",
+   "reqd": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "District",
+   "options": "Districts",
+   "reqd": 1
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Block",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-27 16:04:39.177752",
+ "modified": "2022-07-27 16:04:09.310014",
  "modified_by": "Administrator",
  "module": "Bepc",
- "name": "Districts",
+ "name": "Block",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,0 +1,250 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PROJ.-.#####",
+ "creation": "2022-07-27 14:52:11.144963",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "client",
+  "value",
+  "start_date",
+  "total_institute",
+  "description",
+  "column_break_6",
+  "department",
+  "state",
+  "end_date",
+  "duration",
+  "implementation_date",
+  "resource_section",
+  "help_desk",
+  "technical_desk",
+  "zonal_manager",
+  "column_break_16",
+  "district_manager",
+  "school_instructortrianerteacher",
+  "service_agreement_section",
+  "agreement_ref_no",
+  "agreement_date",
+  "hardware_penalty",
+  "agreement",
+  "column_break_24",
+  "work_order_no",
+  "work_order_date",
+  "work_order",
+  "compliance_section",
+  "payment_terms",
+  "hr_clause",
+  "column_break_31",
+  "hardware_clause",
+  "technical_documents",
+  "school_list_section",
+  "schools"
+ ],
+ "fields": [
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "label": "Value"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "total_institute",
+   "fieldtype": "Data",
+   "label": "Total Institute"
+  },
+  {
+   "fieldname": "implementation_date",
+   "fieldtype": "Date",
+   "label": "Implementation Date"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "resource_section",
+   "fieldtype": "Section Break",
+   "label": "Resource"
+  },
+  {
+   "fieldname": "help_desk",
+   "fieldtype": "Data",
+   "label": "Help Desk"
+  },
+  {
+   "fieldname": "technical_desk",
+   "fieldtype": "Data",
+   "label": "Technical Desk"
+  },
+  {
+   "fieldname": "zonal_manager",
+   "fieldtype": "Data",
+   "label": "Zonal Manager"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district_manager",
+   "fieldtype": "Data",
+   "label": "District Manager"
+  },
+  {
+   "fieldname": "school_instructortrianerteacher",
+   "fieldtype": "Data",
+   "label": "School Instructor/Trianer/Teacher"
+  },
+  {
+   "fieldname": "service_agreement_section",
+   "fieldtype": "Section Break",
+   "label": "Service Agreement"
+  },
+  {
+   "fieldname": "agreement_ref_no",
+   "fieldtype": "Data",
+   "label": "Agreement Ref No."
+  },
+  {
+   "fieldname": "agreement_date",
+   "fieldtype": "Data",
+   "label": "Agreement Date"
+  },
+  {
+   "fieldname": "agreement",
+   "fieldtype": "Attach",
+   "label": "Agreement"
+  },
+  {
+   "fieldname": "hardware_penalty",
+   "fieldtype": "Data",
+   "label": "Hardware Penalty"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_order_no",
+   "fieldtype": "Data",
+   "label": "Work Order No."
+  },
+  {
+   "fieldname": "work_order_date",
+   "fieldtype": "Data",
+   "label": "Work Order Date"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Attach",
+   "label": "Work Order"
+  },
+  {
+   "fieldname": "compliance_section",
+   "fieldtype": "Section Break",
+   "label": "Compliance"
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Attach",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "hr_clause",
+   "fieldtype": "Attach",
+   "label": "HR Clause"
+  },
+  {
+   "fieldname": "hardware_clause",
+   "fieldtype": "Attach",
+   "label": "Hardware Clause"
+  },
+  {
+   "fieldname": "technical_documents",
+   "fieldtype": "Attach",
+   "label": "Technical Documents"
+  },
+  {
+   "fieldname": "school_list_section",
+   "fieldtype": "Section Break",
+   "label": "School List"
+  },
+  {
+   "fieldname": "schools",
+   "fieldtype": "Table",
+   "label": "Schools",
+   "options": "School List Item"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-27 15:47:10.873529",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Projects BEPC",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "client",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "client",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

@@ -7,19 +7,26 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "project",
   "trainer",
   "name_of_the_teacher",
+  "total_institute",
   "column_break_3",
+  "school",
   "contact_number",
   "email_id",
   "training_details_section",
-  "venue",
-  "training_on",
-  "column_break_9",
+  "total_teacher_to_be_trained",
+  "training_days",
+  "per_session_hours",
   "date",
   "end_date",
+  "column_break_9",
+  "venue",
+  "training_on",
   "participants_section",
   "teachers_group",
+  "section_break_17",
   "color",
   "column_break_15",
   "recording"
@@ -29,7 +36,7 @@
    "fetch_from": "trainer.instructor_name",
    "fieldname": "name_of_the_teacher",
    "fieldtype": "Data",
-   "label": "Name"
+   "label": "Name of Trainer"
   },
   {
    "fieldname": "training_on",
@@ -64,8 +71,9 @@
   },
   {
    "fieldname": "venue",
-   "fieldtype": "Data",
-   "label": "Venue"
+   "fieldtype": "Link",
+   "label": "Venue",
+   "options": "Venue"
   },
   {
    "fieldname": "end_date",
@@ -106,11 +114,49 @@
   {
    "fieldname": "column_break_15",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Projects BEPC"
+  },
+  {
+   "fieldname": "school",
+   "fieldtype": "Link",
+   "label": "School",
+   "options": "Site"
+  },
+  {
+   "fetch_from": "project.total_institute",
+   "fieldname": "total_institute",
+   "fieldtype": "Data",
+   "label": "Total Institute",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_teacher_to_be_trained",
+   "fieldtype": "Data",
+   "label": "Total teacher to be trained"
+  },
+  {
+   "fieldname": "training_days",
+   "fieldtype": "Data",
+   "label": "Training Days"
+  },
+  {
+   "fieldname": "per_session_hours",
+   "fieldtype": "Data",
+   "label": "Per session (Hours)"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-21 17:54:32.791888",
+ "modified": "2022-07-27 16:12:39.615227",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",
@@ -129,6 +175,7 @@
    "write": 1
   }
  ],
+ "search_fields": "project, venue, date",
  "sort_field": "modified",
  "sort_order": "DESC"
 }

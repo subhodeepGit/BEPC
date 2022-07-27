@@ -1,35 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:district",
- "creation": "2022-07-06 16:45:07.857380",
+ "creation": "2022-07-27 15:24:07.131988",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "state",
-  "district"
+  "name1",
+  "mobile_number"
  ],
  "fields": [
   {
-   "fieldname": "district",
+   "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "District",
-   "unique": 1
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
   },
   {
-   "fieldname": "state",
-   "fieldtype": "Link",
-   "label": "State",
-   "options": "State"
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile Number",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-27 16:04:39.177752",
+ "modified": "2022-07-27 15:24:07.131988",
  "modified_by": "Administrator",
  "module": "Bepc",
- "name": "Districts",
+ "name": "Coordinators",
  "owner": "Administrator",
  "permissions": [
   {
@@ -45,6 +46,8 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "track_changes": 1
 }
