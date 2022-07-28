@@ -2,7 +2,14 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Students List', {
-	// refresh: function(frm) {
-
-	// }
+	onload:function(frm)
+    {
+        frm.set_query("section", function() {
+            return {
+                filters: {
+                    "program":frm.doc.program
+                }
+            };
+        });
+    }
 });

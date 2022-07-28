@@ -8,9 +8,12 @@
  "engine": "InnoDB",
  "field_order": [
   "school",
+  "school_name",
+  "academic_year",
   "column_break_2",
   "program",
   "section",
+  "section_name",
   "section_break_5",
   "student_list"
  ],
@@ -46,11 +49,31 @@
    "fieldtype": "Table",
    "label": "Student List",
    "options": "Student records"
+  },
+  {
+   "fetch_from": "school.site_name",
+   "fieldname": "school_name",
+   "fieldtype": "Data",
+   "label": "School Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "section.section",
+   "fieldname": "section_name",
+   "fieldtype": "Data",
+   "label": "Section Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-22 11:21:25.735715",
+ "modified": "2022-07-28 15:59:55.432826",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Students List",
