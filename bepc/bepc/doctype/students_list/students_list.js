@@ -13,3 +13,11 @@ frappe.ui.form.on('Students List', {
         });
     }
 });
+frappe.ui.form.on('Students List', {
+    refresh:function(frm){
+        a=0;
+        a=frm.doc.student_list.length;
+        frm.set_value("total_student", a);
+        refresh_field("total_student");
+    }
+});

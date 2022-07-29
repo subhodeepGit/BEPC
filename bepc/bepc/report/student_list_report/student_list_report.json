@@ -1,5 +1,5 @@
 {
- "add_total_row": 0,
+ "add_total_row": 1,
  "columns": [],
  "creation": "2022-07-28 15:45:05.904870",
  "disable_prepared_report": 0,
@@ -10,15 +10,18 @@
  "idx": 0,
  "is_standard": "Yes",
  "json": "{}",
- "modified": "2022-07-28 15:45:05.904870",
+ "letter_head": "",
+ "modified": "2022-07-29 18:23:42.989395",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Student LIST Report",
  "owner": "Administrator",
  "prepared_report": 0,
+ "query": "select\n    sl.name as \"Name\",sl.school as \"School\", sl.school_name as \"School Name\", sl.academic_year as \"Academic Year\", sl.program as \"Program\", sl.section_name as \"Section Name\", sr.student_name as \"Student name\",sr.roll_number as \"Roll Number\", sr.conatct_number as \"Conatct Number\", sr.email as \"Email\"\nfrom\n    `tabStudents List`sl,\n    `tabStudent records`sr\n    \nwhere\nsr.parent = sl.name",
  "ref_doctype": "Students List",
+ "reference_report": "",
  "report_name": "Student LIST Report",
- "report_type": "Report Builder",
+ "report_type": "Query Report",
  "roles": [
   {
    "role": "System Manager"

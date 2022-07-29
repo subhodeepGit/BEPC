@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:block",
  "creation": "2022-07-27 15:55:34.154550",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -32,12 +33,13 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Block",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-27 16:04:09.310014",
+ "modified": "2022-07-29 11:56:56.653513",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Block",

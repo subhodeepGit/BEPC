@@ -14,7 +14,7 @@ frappe.ui.form.on('Venue', {
         frm.set_query("block", function() {
             return {
                 filters: {
-                    "district":frm.doc.state
+                    "district":frm.doc.district
                 }
             };
         });

@@ -7,24 +7,41 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "equipment_name",
+  "equipment_details_section",
   "equipment_type",
+  "equipment",
+  "column_break_4",
   "mac_id",
+  "equipment_name",
+  "site_details_section",
+  "site",
+  "site_name",
+  "column_break_11",
+  "district",
+  "equipment_uptime_section",
+  "from_time",
+  "to_time",
+  "column_break_14",
+  "total_uptime",
+  "equipment_downtime_section",
   "from_date_and_time",
   "to_date_and_time",
-  "site_name",
-  "status"
+  "column_break_9",
+  "total_downtime"
  ],
  "fields": [
   {
+   "fetch_from": "item.item_name",
    "fieldname": "equipment_name",
    "fieldtype": "Data",
    "label": "Equipment Name"
   },
   {
    "fieldname": "equipment_type",
-   "fieldtype": "Data",
-   "label": "Equipment Type"
+   "fieldtype": "Link",
+   "label": "Equipment Group",
+   "options": "Item Group",
+   "reqd": 1
   },
   {
    "fieldname": "mac_id",
@@ -32,31 +49,113 @@
    "label": "Mac Id"
   },
   {
+   "fetch_from": "site.site_name",
    "fieldname": "site_name",
    "fieldtype": "Select",
    "label": "Site name",
-   "options": "\nSite 1\nSite 2"
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "\nNot Started\nIn Progress\nCompleted"
+   "read_only": 1
   },
   {
    "fieldname": "to_date_and_time",
-   "fieldtype": "Datetime",
-   "label": "To Date and Time"
+   "fieldtype": "Date",
+   "label": "To Date and Time",
+   "reqd": 1
   },
   {
    "fieldname": "from_date_and_time",
-   "fieldtype": "Datetime",
-   "label": "From Date and Time"
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date and Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "equipment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Equipment Details"
+  },
+  {
+   "fieldname": "site_details_section",
+   "fieldtype": "Section Break",
+   "label": "Site Details"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Site",
+   "options": "Site",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "site.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District",
+   "read_only": 1
+  },
+  {
+   "fieldname": "equipment_downtime_section",
+   "fieldtype": "Section Break",
+   "label": "Equipment Downtime"
+  },
+  {
+   "fieldname": "total_downtime",
+   "fieldtype": "Int",
+   "label": "Total downtime",
+   "read_only": 1
+  },
+  {
+   "fieldname": "equipment_uptime_section",
+   "fieldtype": "Section Break",
+   "label": "Equipment Uptime"
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_uptime",
+   "fieldtype": "Int",
+   "label": "Total Uptime",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Link",
+   "label": "Equipment",
+   "options": "Item",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-07 14:21:21.241702",
+ "modified": "2022-07-29 18:21:29.295906",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Equipment Uptime",

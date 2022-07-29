@@ -8,12 +8,14 @@
  "engine": "InnoDB",
  "field_order": [
   "project",
+  "total_institute",
   "trainer",
   "name_of_the_teacher",
-  "total_institute",
+  "contact_number",
   "column_break_3",
   "school",
-  "contact_number",
+  "school_name",
+  "district",
   "email_id",
   "training_details_section",
   "total_teacher_to_be_trained",
@@ -26,6 +28,8 @@
   "training_on",
   "participants_section",
   "teachers_group",
+  "column_break_22",
+  "teacher_group_name",
   "section_break_17",
   "color",
   "column_break_15",
@@ -36,7 +40,8 @@
    "fetch_from": "trainer.instructor_name",
    "fieldname": "name_of_the_teacher",
    "fieldtype": "Data",
-   "label": "Name of Trainer"
+   "label": "Name of Trainer",
+   "read_only": 1
   },
   {
    "fieldname": "training_on",
@@ -51,14 +56,16 @@
   {
    "fetch_from": "trainer.contact_number",
    "fieldname": "contact_number",
-   "fieldtype": "Int",
-   "label": "Contact Number"
+   "fieldtype": "Data",
+   "label": "Contact Number",
+   "read_only": 1
   },
   {
    "fetch_from": "trainer.email",
    "fieldname": "email_id",
    "fieldtype": "Data",
-   "label": "Email Id"
+   "label": "Email Id",
+   "read_only": 1
   },
   {
    "fieldname": "training_details_section",
@@ -140,23 +147,48 @@
   },
   {
    "fieldname": "total_teacher_to_be_trained",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "Total teacher to be trained"
   },
   {
    "fieldname": "training_days",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "Training Days"
   },
   {
    "fieldname": "per_session_hours",
    "fieldtype": "Data",
    "label": "Per session (Hours)"
+  },
+  {
+   "fetch_from": "school.site_name",
+   "fieldname": "school_name",
+   "fieldtype": "Data",
+   "label": "School Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "school.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "teachers_group.teacher_group_name",
+   "fieldname": "teacher_group_name",
+   "fieldtype": "Data",
+   "label": "Teacher Group Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-27 16:12:39.615227",
+ "modified": "2022-07-29 12:55:55.355728",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",

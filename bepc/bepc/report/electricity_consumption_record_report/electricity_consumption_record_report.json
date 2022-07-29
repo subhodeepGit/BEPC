@@ -1,0 +1,39 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-07-28 18:23:10.500058",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-07-29 11:10:42.351393",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Electricity Consumption Record Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select \n    `tabElectricity Consumption Record`.site_name as \"Site Name:Data/Site Name\",\n    `tabElectricity Consumption Record`.state as \"State:Data/State\",\n    `tabElectricity Consumption Record`.district as \"District:Data/District\",\n    `tabElectricity Consumption Record`.electricty_provider as \"Electricty Provider:Data/Electricty Provider\",\n    `tabElectricity Consumption Record`.previous_meter_reading as \"Previous Meter reading:Float/Previous Meter reading\",\n    `tabElectricity Consumption Record`.meter_reading as \"Current Meter reading:Float/Current Meter reading\",\n    `tabElectricity Consumption Record`.powercut_frequency as \"Powercut frequency:Select/Powercut frequency\",\n    `tabElectricity Consumption Record`.total_billable_unit as \"Total Billable Unit:Select/Total Billable Unit\",\n    count(district) as \"total District\"\nfrom `tabElectricity Consumption Record`\nGroup by 'district';",
+ "ref_doctype": "Electricity Consumption Record",
+ "report_name": "Electricity Consumption Record Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Approver I"
+  },
+  {
+   "role": "Approver II"
+  },
+  {
+   "role": "Data Entry Approver"
+  },
+  {
+   "role": "Data Entry Operator"
+  }
+ ]
+}

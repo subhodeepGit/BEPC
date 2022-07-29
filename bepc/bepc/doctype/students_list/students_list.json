@@ -15,7 +15,8 @@
   "section",
   "section_name",
   "section_break_5",
-  "student_list"
+  "student_list",
+  "total_student"
  ],
  "fields": [
   {
@@ -69,11 +70,16 @@
    "fieldtype": "Link",
    "label": "Academic Year",
    "options": "Academic Year"
+  },
+  {
+   "fieldname": "total_student",
+   "fieldtype": "Int",
+   "label": "Total Student"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-28 15:59:55.432826",
+ "modified": "2022-07-29 17:00:06.190323",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Students List",

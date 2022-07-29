@@ -11,7 +11,9 @@
   "bandwidth",
   "data_limit",
   "data_usage",
+  "siteschool",
   "siteschool_name",
+  "district",
   "connection"
  ],
  "fields": [
@@ -24,35 +26,48 @@
   {
    "fieldname": "bandwidth",
    "fieldtype": "Float",
-   "label": "Bandwidth"
+   "label": "Bandwidth (Mbps)"
   },
   {
    "fieldname": "data_limit",
    "fieldtype": "Float",
-   "label": "Data Limit"
+   "label": "Data Limit (Gb)"
   },
   {
    "fieldname": "data_usage",
    "fieldtype": "Float",
-   "label": "Data Usage"
+   "label": "Data Usage (Gb)"
   },
   {
+   "fetch_from": "siteschool.site_name",
    "fieldname": "siteschool_name",
-   "fieldtype": "Link",
-   "label": "Site/School name",
-   "options": "Site"
+   "fieldtype": "Data",
+   "label": "Site School name",
+   "read_only": 1
   },
   {
    "fieldname": "connection",
    "fieldtype": "Select",
    "label": "Connection",
    "options": "\nWired\nWireless"
+  },
+  {
+   "fieldname": "siteschool",
+   "fieldtype": "Link",
+   "label": "Site School",
+   "options": "Site"
+  },
+  {
+   "fetch_from": "siteschool.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2022-07-07 15:53:37.809947",
+ "modified": "2022-07-29 11:39:46.706351",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",

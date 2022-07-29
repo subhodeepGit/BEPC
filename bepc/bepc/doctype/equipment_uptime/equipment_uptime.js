@@ -2,7 +2,14 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Equipment Uptime', {
-	// refresh: function(frm) {
-
-	// }
+	onload:function(frm)
+    {
+        frm.set_query("equipment", function() {
+            return {
+                filters: {
+                    "item_group":frm.doc.equipment_type
+                }
+            };
+        });
+    }
 });

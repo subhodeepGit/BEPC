@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "VEN.-.#####",
+ "autoname": "field:venue_name",
  "creation": "2022-07-27 15:54:36.125051",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -21,17 +21,23 @@
   {
    "fieldname": "venue_name",
    "fieldtype": "Data",
-   "label": "Venue Name"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Venue Name",
+   "unique": 1
   },
   {
    "fieldname": "state",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "State",
    "options": "State"
   },
   {
    "fieldname": "district",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "District",
    "options": "Districts"
   },
@@ -63,12 +69,13 @@
   {
    "fieldname": "pin_code",
    "fieldtype": "Data",
-   "label": "Pin Code"
+   "label": "Pin Code",
+   "length": 6
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-27 15:55:48.684355",
+ "modified": "2022-07-29 12:02:37.155741",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Venue",

@@ -7,12 +7,24 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "site",
   "site_name",
+  "address_line_1",
+  "address_line_2",
+  "pin_code",
+  "column_break_7",
+  "post_office",
+  "state",
+  "district",
+  "block",
+  "data_8",
   "electricty_provider",
   "reading_image",
   "meter_reading",
+  "column_break_14",
   "previous_meter_reading",
-  "powercut_frequency"
+  "powercut_frequency",
+  "total_billable_unit"
  ],
  "fields": [
   {
@@ -26,10 +38,10 @@
    "label": "Current Meter reading"
   },
   {
+   "fetch_from": "site.site_name",
    "fieldname": "site_name",
-   "fieldtype": "Link",
-   "label": "Site name",
-   "options": "Site"
+   "fieldtype": "Data",
+   "label": "Site Name"
   },
   {
    "fieldname": "previous_meter_reading",
@@ -46,11 +58,84 @@
    "fieldtype": "Select",
    "label": "Powercut frequency",
    "options": "\nLow\nMedium\nHigh"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Site"
+  },
+  {
+   "fieldname": "data_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "site.address_line_1",
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.address_line_2",
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.pin_code",
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin code",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.post_office",
+   "fieldname": "post_office",
+   "fieldtype": "Data",
+   "label": "Post Office",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.state",
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.block",
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_billable_unit",
+   "fieldtype": "Float",
+   "label": "Total Billable Unit",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-07 15:52:21.427009",
+ "modified": "2022-07-29 11:02:39.384148",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",

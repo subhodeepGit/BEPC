@@ -1,0 +1,32 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-07-28 17:14:10.124674",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"columns\":[{\"fieldtype\":\"Data\",\"options\":\"Instructor Name\",\"label\":\"Instructor Name\",\"fieldname\":\"instructor_name\",\"id\":\"instructor_name\",\"name\":\"Instructor Name\",\"width\":null,\"editable\":false,\"compareValue\":null},{\"fieldtype\":\"Date\",\"options\":\"Date of Joining\",\"label\":\"Date of Joining\",\"fieldname\":\"date_of_joining\",\"id\":\"date_of_joining\",\"name\":\"Date of Joining\",\"width\":null,\"editable\":false},{\"fieldtype\":\"Link\",\"options\":\"Department\",\"label\":\"Department\",\"fieldname\":\"department\",\"id\":\"department\",\"name\":\"Department\",\"width\":null,\"editable\":false,\"compareValue\":null},{\"fieldtype\":\"Link\",\"options\":\"Gender\",\"label\":\"Gender\",\"fieldname\":\"gender\",\"id\":\"gender\",\"name\":\"Gender\",\"width\":null,\"editable\":false,\"compareValue\":null},{\"fieldtype\":\"Data\",\"options\":\"Email\",\"label\":\"Email\",\"fieldname\":\"email\",\"id\":\"email\",\"name\":\"Email\",\"width\":null,\"editable\":false,\"compareValue\":null},{\"fieldtype\":\"Data\",\"options\":\"Contact Number\",\"label\":\"Contact Number\",\"fieldname\":\"contact_number\",\"id\":\"contact_number\",\"name\":\"Contact Number\",\"width\":null,\"editable\":false,\"compareValue\":null},{\"label\":\"Total Employees\",\"fieldname\":\"total_employees\",\"id\":\"total_employees\",\"name\":\"Total Employees\",\"width\":null,\"editable\":false,\"compareValue\":null}]}",
+ "modified": "2022-07-28 17:26:43.447431",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Teacher Enrollment Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select \n    `tabInstructor`.instructor_name as \"Instructor Name:Data/Instructor Name\",\n    `tabInstructor`.date_of_joining as \"Date of Joining:Date/Date of Joining\",\n    `tabInstructor`.department as \"Department:Link/Department\",\n    `tabInstructor`.gender as \"Gender:Link/Gender\",\n    `tabInstructor`.email as \"Email:Data/Email\",\n    `tabInstructor`.contact_number as \"Contact Number:Data/Contact Number\",\n    count(department) as \"Total Employees\"\nfrom `tabInstructor`\nGroup by department;",
+ "ref_doctype": "Instructor",
+ "reference_report": "Instructor List",
+ "report_name": "Teacher Enrollment Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Instructor"
+  },
+  {
+   "role": "Education Manager"
+  }
+ ]
+}
