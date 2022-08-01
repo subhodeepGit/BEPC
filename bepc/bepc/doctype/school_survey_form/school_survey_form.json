@@ -1,0 +1,827 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SSF.-###",
+ "creation": "2022-08-01 17:38:31.581639",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "school_code",
+  "name_of_school",
+  "column_break_3",
+  "udise",
+  "zone",
+  "address_section",
+  "address_line_1",
+  "address_line_2",
+  "near_landmark",
+  "postal_address",
+  "state",
+  "column_break_10",
+  "district",
+  "block",
+  "panchayat",
+  "pin_code",
+  "school_details_section",
+  "school_start_time",
+  "school_end_time",
+  "medium",
+  "column_break_20",
+  "school_typegovtgovt_aided",
+  "class_detailsfrom_to",
+  "education_typeboysgirlsco_ed",
+  "school_contacts_section",
+  "school_mail_id",
+  "school_contact_no",
+  "name_of_headmaster_head_mistress",
+  "headmaster_head_mistress_contact_no",
+  "name_of_asst_hmhms",
+  "asst_contact_no",
+  "column_break_27",
+  "name_of_incharge",
+  "incharge_contact_no",
+  "name_of_presidentsecretary",
+  "presidentsecretary_contact_no",
+  "class_wise_students_section",
+  "class",
+  "school_detail_section",
+  "total_class_rooms",
+  "select_room_condition",
+  "column_break_41",
+  "full_time_teacher",
+  "para_teachers",
+  "availibility_of_computer_teacher",
+  "it_infra_details_section",
+  "nos_of_computer_lab_in_school",
+  "nos_of_computer",
+  "nos_of_projector",
+  "nos_of_ups",
+  "nos_of_printer",
+  "column_break_51",
+  "othe_equipment",
+  "internet_availibility",
+  "internet_type",
+  "isp_name",
+  "section_break_55",
+  "name_of_existing_project_name",
+  "total_nos_of_teachers_using_project",
+  "year_of_start__project",
+  "electricity_details_section",
+  "connection__details",
+  "average_load_shedding",
+  "distance_from_meter_to_proposed_roomft",
+  "column_break_64",
+  "generator_facility_available_in_school",
+  "voltage_condition_in_school_and_room",
+  "earthling_condition_in_proposed_class_rooms",
+  "school_route_details_section",
+  "name_of_nearest_police_station",
+  "name_of_nearest_post_office",
+  "name_of_nearest_rail_station",
+  "column_break_72",
+  "name_of_nearest_bus_stand",
+  "nearest_landmark",
+  "best_route_to_reach_school",
+  "prefer_better_isp_section",
+  "prefer_better_isp",
+  "room_details_for_lab_1_section",
+  "room_no",
+  "room_condition",
+  "room_available_to_setup_computer_lab",
+  "selected_room_floor_no",
+  "room_dimensions_length_width_height",
+  "wall_type",
+  "column_break_85",
+  "ceiling_type",
+  "electricity_available_in_school",
+  "electricity_available_in_lab",
+  "total_nos_of_doors",
+  "total_nos_of_window",
+  "room_details_for_lab_2_section",
+  "room_no1",
+  "room_condition1",
+  "room_available_to_setup1_computer_lab",
+  "selected_room_floor_no1",
+  "room_dimensions_length_width_height1",
+  "wall_type1",
+  "column_break_98",
+  "ceiling_type1",
+  "electricity_available_in_school1",
+  "electricity_available_in_lab1",
+  "total_nos_of_doors1",
+  "total_nos_of_window1",
+  "safety_measures_section",
+  "theft_reported_in_last_05_years",
+  "night__guard_available",
+  "flood_status_in_last_five_year",
+  "column_break_108",
+  "types_of_flood_affect_at_school",
+  "availability_of_boundary_wall",
+  "bank_details_of_school_section",
+  "bank_name",
+  "ifsc_code",
+  "column_break_114",
+  "ac_name",
+  "ac_no",
+  "district_monitoring_section",
+  "name_of_the_deo",
+  "address",
+  "column_break_120",
+  "mob_no",
+  "office_no",
+  "teachers_name_for_training_section",
+  "name_1",
+  "contact_no1",
+  "name_2",
+  "contact_no11",
+  "column_break_128",
+  "name_3",
+  "contact_no111",
+  "remarks_section",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "school_code",
+   "fieldtype": "Link",
+   "label": "School code",
+   "options": "School"
+  },
+  {
+   "fetch_from": "school_code.site_name",
+   "fieldname": "name_of_school",
+   "fieldtype": "Data",
+   "label": "Name of School"
+  },
+  {
+   "fetch_from": "school_code.udise",
+   "fieldname": "udise",
+   "fieldtype": "Int",
+   "label": "UDISE"
+  },
+  {
+   "fetch_from": "school_code.zone",
+   "fieldname": "zone",
+   "fieldtype": "Data",
+   "label": "Zone"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "near_landmark",
+   "fieldtype": "Data",
+   "label": "Near Landmark "
+  },
+  {
+   "fieldname": "postal_address",
+   "fieldtype": "Data",
+   "label": "Postal Address"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block"
+  },
+  {
+   "fieldname": "panchayat",
+   "fieldtype": "Data",
+   "label": "Panchayat"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "school_details_section",
+   "fieldtype": "Section Break",
+   "label": "School Details"
+  },
+  {
+   "fieldname": "school_start_time",
+   "fieldtype": "Time",
+   "label": "School Start Timing"
+  },
+  {
+   "fieldname": "school_end_time",
+   "fieldtype": "Time",
+   "label": "School End Timing"
+  },
+  {
+   "fieldname": "medium",
+   "fieldtype": "Data",
+   "label": "Medium"
+  },
+  {
+   "fieldname": "school_typegovtgovt_aided",
+   "fieldtype": "Data",
+   "label": "School type(Govt/Govt. Aided)"
+  },
+  {
+   "fieldname": "class_detailsfrom_to",
+   "fieldtype": "Data",
+   "label": "Class Details(From to)"
+  },
+  {
+   "fieldname": "education_typeboysgirlsco_ed",
+   "fieldtype": "Data",
+   "label": "Education type(Boys/Girls/Co ed)"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "school_contacts_section",
+   "fieldtype": "Section Break",
+   "label": "School Contacts"
+  },
+  {
+   "fieldname": "school_mail_id",
+   "fieldtype": "Data",
+   "label": "School Mail Id",
+   "options": "Email"
+  },
+  {
+   "fieldname": "school_contact_no",
+   "fieldtype": "Data",
+   "label": "School Contact No."
+  },
+  {
+   "fieldname": "name_of_headmaster_head_mistress",
+   "fieldtype": "Data",
+   "label": "Name of Headmaster/ Head Mistress"
+  },
+  {
+   "fieldname": "headmaster_head_mistress_contact_no",
+   "fieldtype": "Data",
+   "label": "Headmaster/ Head Mistress Contact No"
+  },
+  {
+   "fieldname": "name_of_asst_hmhms",
+   "fieldtype": "Data",
+   "label": "Name of Asst Hm/Hms"
+  },
+  {
+   "fieldname": "asst_contact_no",
+   "fieldtype": "Data",
+   "label": "Asst Contact No"
+  },
+  {
+   "fieldname": "name_of_incharge",
+   "fieldtype": "Data",
+   "label": "Name of incharge"
+  },
+  {
+   "fieldname": "incharge_contact_no",
+   "fieldtype": "Data",
+   "label": "Incharge Contact No"
+  },
+  {
+   "fieldname": "name_of_presidentsecretary",
+   "fieldtype": "Data",
+   "label": "Name Of President/Secretary"
+  },
+  {
+   "fieldname": "presidentsecretary_contact_no",
+   "fieldtype": "Data",
+   "label": "President/Secretary Contact No"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "class_wise_students_section",
+   "fieldtype": "Section Break",
+   "label": "Class wise students"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Table",
+   "label": "Class",
+   "options": "Class"
+  },
+  {
+   "fieldname": "school_detail_section",
+   "fieldtype": "Section Break",
+   "label": "School Details"
+  },
+  {
+   "fieldname": "total_class_rooms",
+   "fieldtype": "Int",
+   "label": "Total class rooms"
+  },
+  {
+   "fieldname": "select_room_condition",
+   "fieldtype": "Data",
+   "label": "Select room condition"
+  },
+  {
+   "fieldname": "full_time_teacher",
+   "fieldtype": "Int",
+   "label": "Full time teacher"
+  },
+  {
+   "fieldname": "para_teachers",
+   "fieldtype": "Int",
+   "label": "Para Teachers"
+  },
+  {
+   "fieldname": "availibility_of_computer_teacher",
+   "fieldtype": "Int",
+   "label": "Availibility of computer teacher"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "it_infra_details_section",
+   "fieldtype": "Section Break",
+   "label": "IT Infra details"
+  },
+  {
+   "fieldname": "nos_of_computer_lab_in_school",
+   "fieldtype": "Int",
+   "label": "Nos of Computer lab in school"
+  },
+  {
+   "fieldname": "nos_of_computer",
+   "fieldtype": "Int",
+   "label": "Nos of Computer"
+  },
+  {
+   "fieldname": "nos_of_projector",
+   "fieldtype": "Int",
+   "label": "Nos of Projector"
+  },
+  {
+   "fieldname": "nos_of_ups",
+   "fieldtype": "Int",
+   "label": "Nos of UPS"
+  },
+  {
+   "fieldname": "nos_of_printer",
+   "fieldtype": "Int",
+   "label": "Nos of Printer"
+  },
+  {
+   "fieldname": "othe_equipment",
+   "fieldtype": "Select",
+   "label": "Othe Equipment",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "internet_availibility",
+   "fieldtype": "Select",
+   "label": "Internet availibility",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "internet_type",
+   "fieldtype": "Data",
+   "label": "Internet type"
+  },
+  {
+   "fieldname": "isp_name",
+   "fieldtype": "Data",
+   "label": "ISP Name"
+  },
+  {
+   "fieldname": "section_break_55",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_of_existing_project_name",
+   "fieldtype": "Data",
+   "label": "Name Of existing project Name"
+  },
+  {
+   "fieldname": "total_nos_of_teachers_using_project",
+   "fieldtype": "Data",
+   "label": "Total Nos of teachers using Project"
+  },
+  {
+   "fieldname": "year_of_start__project",
+   "fieldtype": "Date",
+   "label": "Year of Start  project "
+  },
+  {
+   "fieldname": "electricity_details_section",
+   "fieldtype": "Section Break",
+   "label": "Electricity details"
+  },
+  {
+   "fieldname": "connection__details",
+   "fieldtype": "Data",
+   "label": "Connection  Details"
+  },
+  {
+   "fieldname": "average_load_shedding",
+   "fieldtype": "Data",
+   "label": "Average Load shedding"
+  },
+  {
+   "fieldname": "distance_from_meter_to_proposed_roomft",
+   "fieldtype": "Data",
+   "label": "Distance from Meter to Proposed Room(Ft.)"
+  },
+  {
+   "fieldname": "generator_facility_available_in_school",
+   "fieldtype": "Data",
+   "label": "Generator Facility Available in School"
+  },
+  {
+   "fieldname": "voltage_condition_in_school_and_room",
+   "fieldtype": "Data",
+   "label": "Voltage Condition in School and Room"
+  },
+  {
+   "fieldname": "earthling_condition_in_proposed_class_rooms",
+   "fieldtype": "Data",
+   "label": "Earthling condition in Proposed Class Rooms"
+  },
+  {
+   "fieldname": "column_break_64",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "school_route_details_section",
+   "fieldtype": "Section Break",
+   "label": "School Route Details"
+  },
+  {
+   "fieldname": "name_of_nearest_police_station",
+   "fieldtype": "Data",
+   "label": "Name of Nearest Police Station"
+  },
+  {
+   "fieldname": "name_of_nearest_post_office",
+   "fieldtype": "Data",
+   "label": "Name of Nearest Post Office"
+  },
+  {
+   "fieldname": "name_of_nearest_rail_station",
+   "fieldtype": "Data",
+   "label": "Name of Nearest Rail Station"
+  },
+  {
+   "fieldname": "name_of_nearest_bus_stand",
+   "fieldtype": "Data",
+   "label": "Name of Nearest Bus Stand"
+  },
+  {
+   "fieldname": "nearest_landmark",
+   "fieldtype": "Data",
+   "label": "Nearest Landmark"
+  },
+  {
+   "fieldname": "best_route_to_reach_school",
+   "fieldtype": "Data",
+   "label": "BEST ROUTE TO REACH SCHOOL"
+  },
+  {
+   "fieldname": "column_break_72",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prefer_better_isp_section",
+   "fieldtype": "Section Break",
+   "label": "Prefer Better ISP"
+  },
+  {
+   "fieldname": "prefer_better_isp",
+   "fieldtype": "Data",
+   "label": "Prefer Better ISP"
+  },
+  {
+   "fieldname": "room_details_for_lab_1_section",
+   "fieldtype": "Section Break",
+   "label": "Room Details for Lab-1"
+  },
+  {
+   "fieldname": "room_no",
+   "fieldtype": "Data",
+   "label": "Room No"
+  },
+  {
+   "fieldname": "room_condition",
+   "fieldtype": "Data",
+   "label": "Room Condition"
+  },
+  {
+   "fieldname": "room_available_to_setup_computer_lab",
+   "fieldtype": "Data",
+   "label": "Room Available to Setup Computer lab"
+  },
+  {
+   "fieldname": "selected_room_floor_no",
+   "fieldtype": "Data",
+   "label": "Selected room Floor No"
+  },
+  {
+   "fieldname": "room_dimensions_length_width_height",
+   "fieldtype": "Data",
+   "label": "Room Dimensions Length* Width* Height "
+  },
+  {
+   "fieldname": "wall_type",
+   "fieldtype": "Data",
+   "label": "Wall Type"
+  },
+  {
+   "fieldname": "column_break_85",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ceiling_type",
+   "fieldtype": "Data",
+   "label": "Ceiling Type"
+  },
+  {
+   "fieldname": "electricity_available_in_school",
+   "fieldtype": "Data",
+   "label": "Electricity Available in school"
+  },
+  {
+   "fieldname": "electricity_available_in_lab",
+   "fieldtype": "Data",
+   "label": "Electricity Available in lab"
+  },
+  {
+   "fieldname": "total_nos_of_doors",
+   "fieldtype": "Int",
+   "label": "Total Nos of Doors"
+  },
+  {
+   "fieldname": "total_nos_of_window",
+   "fieldtype": "Int",
+   "label": "Total Nos of Window"
+  },
+  {
+   "fieldname": "room_details_for_lab_2_section",
+   "fieldtype": "Section Break",
+   "label": "Room Details for Lab-2"
+  },
+  {
+   "fieldname": "room_no1",
+   "fieldtype": "Data",
+   "label": "Room No"
+  },
+  {
+   "fieldname": "room_condition1",
+   "fieldtype": "Data",
+   "label": "Room Condition"
+  },
+  {
+   "fieldname": "room_available_to_setup1_computer_lab",
+   "fieldtype": "Data",
+   "label": "Room Available to Setup Computer lab"
+  },
+  {
+   "fieldname": "selected_room_floor_no1",
+   "fieldtype": "Data",
+   "label": "Selected room Floor No"
+  },
+  {
+   "fieldname": "room_dimensions_length_width_height1",
+   "fieldtype": "Data",
+   "label": "Room Dimensions Length Width Height"
+  },
+  {
+   "fieldname": "wall_type1",
+   "fieldtype": "Data",
+   "label": "Wall Type"
+  },
+  {
+   "fieldname": "column_break_98",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ceiling_type1",
+   "fieldtype": "Data",
+   "label": "Ceiling Type"
+  },
+  {
+   "fieldname": "electricity_available_in_school1",
+   "fieldtype": "Data",
+   "label": "Electricity Available in school"
+  },
+  {
+   "fieldname": "electricity_available_in_lab1",
+   "fieldtype": "Data",
+   "label": "Electricity Available in lab"
+  },
+  {
+   "fieldname": "total_nos_of_doors1",
+   "fieldtype": "Int",
+   "label": "Total Nos of Doors"
+  },
+  {
+   "fieldname": "total_nos_of_window1",
+   "fieldtype": "Int",
+   "label": "Total Nos of Window"
+  },
+  {
+   "fieldname": "safety_measures_section",
+   "fieldtype": "Section Break",
+   "label": "Safety measures"
+  },
+  {
+   "fieldname": "theft_reported_in_last_05_years",
+   "fieldtype": "Data",
+   "label": "Theft Reported in last 05 Years"
+  },
+  {
+   "fieldname": "night__guard_available",
+   "fieldtype": "Data",
+   "label": "Night  Guard Available"
+  },
+  {
+   "fieldname": "flood_status_in_last_five_year",
+   "fieldtype": "Data",
+   "label": "Flood status in last five year"
+  },
+  {
+   "fieldname": "types_of_flood_affect_at_school",
+   "fieldtype": "Data",
+   "label": "Types of Flood affect at school"
+  },
+  {
+   "fieldname": "availability_of_boundary_wall",
+   "fieldtype": "Data",
+   "label": "Availability of Boundary Wall"
+  },
+  {
+   "fieldname": "column_break_108",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bank_details_of_school_section",
+   "fieldtype": "Section Break",
+   "label": "Bank Details Of School"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "ifsc_code",
+   "fieldtype": "Data",
+   "label": "IFSC Code"
+  },
+  {
+   "fieldname": "column_break_114",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ac_name",
+   "fieldtype": "Data",
+   "label": "A/C Name"
+  },
+  {
+   "fieldname": "ac_no",
+   "fieldtype": "Int",
+   "label": "A/C No"
+  },
+  {
+   "fieldname": "district_monitoring_section",
+   "fieldtype": "Section Break",
+   "label": "District Monitoring "
+  },
+  {
+   "fieldname": "name_of_the_deo",
+   "fieldtype": "Data",
+   "label": "Name Of the DEO"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_120",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mob_no",
+   "fieldtype": "Data",
+   "label": "Mob No"
+  },
+  {
+   "fieldname": "office_no",
+   "fieldtype": "Data",
+   "label": "Office No"
+  },
+  {
+   "fieldname": "teachers_name_for_training_section",
+   "fieldtype": "Section Break",
+   "label": "Teachers name for training"
+  },
+  {
+   "fieldname": "name_1",
+   "fieldtype": "Data",
+   "label": "Name-1"
+  },
+  {
+   "fieldname": "contact_no1",
+   "fieldtype": "Data",
+   "label": "Contact No"
+  },
+  {
+   "fieldname": "name_2",
+   "fieldtype": "Data",
+   "label": "Name-2"
+  },
+  {
+   "fieldname": "contact_no11",
+   "fieldtype": "Data",
+   "label": "Contact-No"
+  },
+  {
+   "fieldname": "name_3",
+   "fieldtype": "Data",
+   "label": "Name-3"
+  },
+  {
+   "fieldname": "contact_no111",
+   "fieldtype": "Data",
+   "label": "Contact-No"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_128",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-01 18:44:25.302913",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "School Survey Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
