@@ -4,6 +4,10 @@
   {
    "chart_name": "Teacher Enrollment",
    "label": "Teacher Enrollment"
+  },
+  {
+   "chart_name": "Electricity Consumption Chart",
+   "label": "Electricity Consumption Chart"
   }
  ],
  "creation": "2022-08-01 11:38:49.461938",
@@ -36,12 +40,19 @@
    "type": "Link"
   }
  ],
- "modified": "2022-08-01 16:22:15.079741",
+ "modified": "2022-08-01 17:36:57.241339",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Reports & Analytics",
  "owner": "Administrator",
  "pin_to_bottom": 0,
  "pin_to_top": 0,
- "shortcuts": []
+ "shortcuts": [
+  {
+   "doc_view": "",
+   "label": "BEPC Dashboard",
+   "link_to": "BEPC Dashboard",
+   "type": "Dashboard"
+  }
+ ]
 }

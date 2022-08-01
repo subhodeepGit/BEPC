@@ -1,0 +1,32 @@
+{
+ "chart_name": "Theft cases",
+ "chart_type": "Report",
+ "creation": "2022-08-01 18:24:47.334256",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2022-08-01 18:24:53.803121",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Theft cases",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Theft Item Report",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Line",
+ "use_report_chart": 0,
+ "x_field": "site",
+ "y_axis": [
+  {
+   "color": "#CB2929",
+   "y_field": "quantity"
+  }
+ ]
+}

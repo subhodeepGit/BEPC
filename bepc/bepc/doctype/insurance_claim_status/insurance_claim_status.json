@@ -148,14 +148,14 @@
   {
    "fetch_from": "for_theft_incident.quantity",
    "fieldname": "quantity",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "Quantity"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-08-01 11:07:37.181806",
+ "modified": "2022-08-01 18:22:43.735789",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Insurance Claim Status",

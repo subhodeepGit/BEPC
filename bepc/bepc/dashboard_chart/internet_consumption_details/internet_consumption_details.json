@@ -1,0 +1,40 @@
+{
+ "chart_name": "Internet Consumption details",
+ "chart_type": "Report",
+ "creation": "2022-08-01 17:58:43.044965",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2022-08-01 18:09:17.307954",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Internet Consumption details",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Internet consumption Record Report",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "district",
+ "y_axis": [
+  {
+   "color": "#EC864B",
+   "y_field": "data_limit_(gb)"
+  },
+  {
+   "color": "#EC864B",
+   "y_field": "data_usage_(gb)"
+  },
+  {
+   "color": "#39E4A5",
+   "y_field": "bandwidth_(mbps)"
+  }
+ ]
+}
