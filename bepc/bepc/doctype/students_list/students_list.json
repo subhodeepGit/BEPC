@@ -22,12 +22,14 @@
   {
    "fieldname": "school",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "School",
    "options": "Site"
   },
   {
    "fieldname": "program",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Program",
    "options": "Program"
   },
@@ -55,6 +57,7 @@
    "fetch_from": "school.site_name",
    "fieldname": "school_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "School Name",
    "read_only": 1
   },
@@ -62,12 +65,14 @@
    "fetch_from": "section.section",
    "fieldname": "section_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Section Name",
    "read_only": 1
   },
   {
    "fieldname": "academic_year",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Academic Year",
    "options": "Academic Year"
   },
@@ -79,7 +84,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-29 17:00:06.190323",
+ "modified": "2022-08-01 10:42:51.075539",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Students List",
