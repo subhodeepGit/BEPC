@@ -83,7 +83,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Site",
-   "options": "Site",
+   "options": "School",
    "reqd": 1
   },
   {
@@ -155,7 +155,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-29 18:21:29.295906",
+ "modified": "2022-08-01 12:10:06.172980",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Equipment Uptime",

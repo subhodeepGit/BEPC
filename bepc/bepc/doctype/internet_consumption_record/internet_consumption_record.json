@@ -55,7 +55,7 @@
    "fieldname": "siteschool",
    "fieldtype": "Link",
    "label": "Site School",
-   "options": "Site"
+   "options": "School"
   },
   {
    "fetch_from": "siteschool.district",
@@ -67,7 +67,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-29 11:39:46.706351",
+ "modified": "2022-08-01 12:10:06.923259",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",

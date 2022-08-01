@@ -132,7 +132,7 @@
    "fieldname": "school",
    "fieldtype": "Link",
    "label": "School",
-   "options": "Site"
+   "options": "School"
   },
   {
    "fetch_from": "project.total_institute",
@@ -188,7 +188,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-29 12:55:55.355728",
+ "modified": "2022-08-01 12:10:05.539371",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",

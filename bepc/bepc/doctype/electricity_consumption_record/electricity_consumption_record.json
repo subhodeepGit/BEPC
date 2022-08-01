@@ -63,7 +63,7 @@
    "fieldname": "site",
    "fieldtype": "Link",
    "label": "Site",
-   "options": "Site"
+   "options": "School"
   },
   {
    "fieldname": "data_8",
@@ -135,7 +135,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-29 11:02:39.384148",
+ "modified": "2022-08-01 12:10:05.127249",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",

@@ -145,8 +145,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Site",
-   "link_to": "Site",
+   "label": "School",
+   "link_to": "School",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -346,16 +346,17 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Student List Report",
    "link_to": "Student LIST Report",
    "link_type": "Report",
    "onboard": 0,
+   "only_for": "",
    "type": "Link"
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Teacher Enrollment Report",
    "link_to": "Teacher Enrollment Report",
    "link_type": "Report",
@@ -364,7 +365,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Electricity Consumption Record",
    "link_to": "Electricity Consumption Record Report",
    "link_type": "Report",
@@ -373,7 +374,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Internet consumption Record",
    "link_to": "Internet consumption Record Report",
    "link_type": "Report",
@@ -382,7 +383,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Equipment detailed Report",
    "link_to": "Equipment detailed Report",
    "link_type": "Report",
@@ -391,15 +392,25 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Teacher Training Report",
    "link_to": "Teacher Training Report",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Theft Item Report",
+   "link_to": "Theft Item Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
   }
  ],
- "modified": "2022-08-01 09:18:54.578208",
+ "modified": "2022-08-01 15:05:44.287199",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",

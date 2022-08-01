@@ -98,7 +98,7 @@
    "fieldname": "site",
    "fieldtype": "Link",
    "label": "Site",
-   "options": "Site"
+   "options": "School"
   },
   {
    "fetch_from": "site.site_name",
@@ -191,7 +191,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-26 09:53:19.316543",
+ "modified": "2022-08-01 12:10:04.618086",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Incident",

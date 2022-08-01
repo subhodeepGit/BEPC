@@ -15,6 +15,7 @@
   {
    "fieldname": "program",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Program",
    "options": "Program"
   },
@@ -35,7 +36,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-22 11:18:13.065302",
+ "modified": "2022-08-01 15:43:16.197718",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Section",
@@ -54,6 +55,7 @@
    "write": 1
   }
  ],
+ "search_fields": "program, section",
  "sort_field": "modified",
  "sort_order": "DESC"
 }
