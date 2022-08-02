@@ -130,6 +130,7 @@
    "fetch_from": "school_code.site_name",
    "fieldname": "name_of_school",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Name of School",
    "read_only": 1
   },
@@ -144,6 +145,7 @@
    "fetch_from": "school_code.zone",
    "fieldname": "zone",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Zone",
    "read_only": 1
   },
@@ -708,7 +710,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-02 12:41:41.764981",
+ "modified": "2022-08-02 12:52:34.884304",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
