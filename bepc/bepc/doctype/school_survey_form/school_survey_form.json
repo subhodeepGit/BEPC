@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "SSF.-###",
+ "autoname": "SSF.-.#####",
  "creation": "2022-08-01 17:38:31.581639",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -121,26 +121,31 @@
   {
    "fieldname": "school_code",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "School code",
-   "options": "School"
+   "options": "School",
+   "reqd": 1
   },
   {
    "fetch_from": "school_code.site_name",
    "fieldname": "name_of_school",
    "fieldtype": "Data",
-   "label": "Name of School"
+   "label": "Name of School",
+   "read_only": 1
   },
   {
    "fetch_from": "school_code.udise",
    "fieldname": "udise",
    "fieldtype": "Int",
-   "label": "UDISE"
+   "label": "UDISE",
+   "read_only": 1
   },
   {
    "fetch_from": "school_code.zone",
    "fieldname": "zone",
    "fieldtype": "Data",
-   "label": "Zone"
+   "label": "Zone",
+   "read_only": 1
   },
   {
    "fieldname": "address_section",
@@ -148,53 +153,71 @@
    "label": "Address"
   },
   {
+   "fetch_from": "school_code.address_line_1",
    "fieldname": "address_line_1",
    "fieldtype": "Data",
-   "label": "Address Line 1"
+   "label": "Address Line 1",
+   "read_only": 1
   },
   {
+   "fetch_from": "school_code.address_line_2",
    "fieldname": "address_line_2",
    "fieldtype": "Data",
-   "label": "Address Line 2"
+   "label": "Address Line 2",
+   "read_only": 1
   },
   {
+   "fetch_from": "school_code.near_landmark",
    "fieldname": "near_landmark",
    "fieldtype": "Data",
-   "label": "Near Landmark "
+   "label": "Near Landmark ",
+   "read_only": 1
   },
   {
+   "fetch_from": "school_code.post_office",
    "fieldname": "postal_address",
    "fieldtype": "Data",
-   "label": "Postal Address"
+   "label": "Postal Address",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_10",
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "school_code.state",
    "fieldname": "state",
    "fieldtype": "Data",
-   "label": "State"
+   "label": "State",
+   "read_only": 1
   },
   {
+   "fetch_from": "school_code.district",
    "fieldname": "district",
    "fieldtype": "Data",
-   "label": "District"
+   "label": "District",
+   "read_only": 1
   },
   {
+   "fetch_from": "school_code.block",
    "fieldname": "block",
    "fieldtype": "Data",
-   "label": "Block"
+   "label": "Block",
+   "read_only": 1
   },
   {
+   "fetch_from": "school_code.panchayat",
    "fieldname": "panchayat",
    "fieldtype": "Data",
-   "label": "Panchayat"
+   "label": "Panchayat",
+   "read_only": 1
   },
   {
+   "fetch_from": "school_code.pin_code",
    "fieldname": "pin_code",
    "fieldtype": "Data",
-   "label": "Pin Code"
+   "label": "Pin Code",
+   "read_only": 1
   },
   {
    "fieldname": "school_details_section",
@@ -224,12 +247,12 @@
   {
    "fieldname": "class_detailsfrom_to",
    "fieldtype": "Data",
-   "label": "Class Details(From to)"
+   "label": "Class Details(From-to)"
   },
   {
    "fieldname": "education_typeboysgirlsco_ed",
    "fieldtype": "Data",
-   "label": "Education type(Boys/Girls/Co ed)"
+   "label": "Education type(Boys/Girls/Co-ed)"
   },
   {
    "fieldname": "column_break_20",
@@ -241,35 +264,48 @@
    "label": "School Contacts"
   },
   {
+   "fetch_from": "school_code.school_mail_id",
    "fieldname": "school_mail_id",
    "fieldtype": "Data",
    "label": "School Mail Id",
-   "options": "Email"
+   "options": "Email",
+   "read_only": 1
   },
   {
+   "fetch_from": "school_code.school_contact_no",
    "fieldname": "school_contact_no",
    "fieldtype": "Data",
-   "label": "School Contact No."
+   "label": "School Contact No.",
+   "length": 10,
+   "read_only": 1
   },
   {
+   "fetch_from": "school_code.principal_name",
    "fieldname": "name_of_headmaster_head_mistress",
    "fieldtype": "Data",
-   "label": "Name of Headmaster/ Head Mistress"
+   "label": "Name of Headmaster/ Head Mistress",
+   "read_only": 1
   },
   {
+   "fetch_from": "school_code.principle_mobile_number",
    "fieldname": "headmaster_head_mistress_contact_no",
    "fieldtype": "Data",
-   "label": "Headmaster/ Head Mistress Contact No"
+   "label": "Headmaster/ Head Mistress Contact No",
+   "length": 10,
+   "read_only": 1
   },
   {
+   "fetch_from": "school_code.name_of_asst_hmhms",
    "fieldname": "name_of_asst_hmhms",
    "fieldtype": "Data",
-   "label": "Name of Asst Hm/Hms"
+   "label": "Name of Asst Hm/Hms",
+   "read_only": 1
   },
   {
    "fieldname": "asst_contact_no",
    "fieldtype": "Data",
-   "label": "Asst Contact No"
+   "label": "Asst Contact No",
+   "length": 10
   },
   {
    "fieldname": "name_of_incharge",
@@ -279,17 +315,23 @@
   {
    "fieldname": "incharge_contact_no",
    "fieldtype": "Data",
-   "label": "Incharge Contact No"
+   "label": "Incharge Contact No",
+   "length": 10
   },
   {
+   "fetch_from": "school_code.name_of_president",
    "fieldname": "name_of_presidentsecretary",
    "fieldtype": "Data",
-   "label": "Name Of President/Secretary"
+   "label": "Name Of President/Secretary",
+   "read_only": 1
   },
   {
+   "fetch_from": "school_code.president_contact_no",
    "fieldname": "presidentsecretary_contact_no",
    "fieldtype": "Data",
-   "label": "President/Secretary Contact No"
+   "label": "President/Secretary Contact No",
+   "length": 10,
+   "read_only": 1
   },
   {
    "fieldname": "column_break_27",
@@ -588,7 +630,8 @@
   {
    "fieldname": "mob_no",
    "fieldtype": "Data",
-   "label": "Mob No"
+   "label": "Mob No",
+   "length": 10
   },
   {
    "fieldname": "office_no",
@@ -608,7 +651,8 @@
   {
    "fieldname": "contact_no1",
    "fieldtype": "Data",
-   "label": "Contact No"
+   "label": "Contact No",
+   "length": 10
   },
   {
    "fieldname": "name_2",
@@ -618,7 +662,8 @@
   {
    "fieldname": "contact_no11",
    "fieldtype": "Data",
-   "label": "Contact-No"
+   "label": "Contact-No",
+   "length": 10
   },
   {
    "fieldname": "name_3",
@@ -628,7 +673,8 @@
   {
    "fieldname": "contact_no111",
    "fieldtype": "Data",
-   "label": "Contact-No"
+   "label": "Contact-No",
+   "length": 10
   },
   {
    "fieldname": "remarks_section",
@@ -662,7 +708,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-02 11:27:44.638988",
+ "modified": "2022-08-02 12:41:41.764981",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
