@@ -3,7 +3,6 @@
 
 frappe.ui.form.on('Student Entry', {
 		final_score:function(frm, cdt, cdn){
-		print("hello")
 		var d = locals[cdt][cdn];
 		var total = 0;
 		let a= parseInt(total)

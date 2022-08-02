@@ -71,12 +71,13 @@
   {
    "fieldname": "total_student_per_school",
    "fieldtype": "Int",
-   "label": "Total Student Per School"
+   "label": "Total Student Per School",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-01 15:59:27.999139",
+ "modified": "2022-08-02 09:41:48.899876",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Student Entry",

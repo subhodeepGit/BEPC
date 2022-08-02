@@ -9,7 +9,8 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2022-08-01 18:45:17.971907",
+ "json": "{}",
+ "modified": "2022-08-02 09:55:01.751535",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Student List",
@@ -18,7 +19,7 @@
  "query": "select\n    `tabStudent Entry`.site as \"Site:Data/Site\",\nfrom `tabStudent Entry`;",
  "ref_doctype": "Student Entry",
  "report_name": "Student List",
- "report_type": "Query Report",
+ "report_type": "Report Builder",
  "roles": [
   {
    "role": "System Manager"
