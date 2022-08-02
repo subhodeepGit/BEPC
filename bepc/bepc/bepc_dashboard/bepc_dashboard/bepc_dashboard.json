@@ -22,7 +22,7 @@
    "width": "Half"
   },
   {
-   "chart": "Tecaher Training record",
+   "chart": "Teacher Training record",
    "width": "Half"
   },
   {
@@ -31,6 +31,10 @@
   },
   {
    "chart": "Insurance Claim",
+   "width": "Half"
+  },
+  {
+   "chart": "School Wise total Students",
    "width": "Half"
   }
  ],
@@ -41,7 +45,7 @@
  "idx": 0,
  "is_default": 1,
  "is_standard": 1,
- "modified": "2022-08-01 18:41:09.085872",
+ "modified": "2022-08-02 11:28:19.166496",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC Dashboard",

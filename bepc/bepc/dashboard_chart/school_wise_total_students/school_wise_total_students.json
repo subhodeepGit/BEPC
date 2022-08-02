@@ -1,0 +1,32 @@
+{
+ "chart_name": "School Wise total Students",
+ "chart_type": "Report",
+ "creation": "2022-08-02 11:28:10.837064",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2022-08-02 11:28:19.105254",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "School Wise total Students",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "School WIse Total Students",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Line",
+ "use_report_chart": 0,
+ "x_field": "school_name",
+ "y_axis": [
+  {
+   "color": "#4F9DD9",
+   "y_field": "total_student_per_school"
+  }
+ ]
+}
