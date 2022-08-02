@@ -85,32 +85,8 @@
   "best_route_to_reach_school",
   "prefer_better_isp_section",
   "prefer_better_isp",
-  "room_details_for_lab_1_section",
-  "room_no",
-  "room_condition",
-  "room_available_to_setup_computer_lab",
-  "selected_room_floor_no",
-  "room_dimensions_length_width_height",
-  "wall_type",
-  "column_break_85",
-  "ceiling_type",
-  "electricity_available_in_school",
-  "electricity_available_in_lab",
-  "total_nos_of_doors",
-  "total_nos_of_window",
-  "room_details_for_lab_2_section",
-  "room_no1",
-  "room_condition1",
-  "room_available_to_setup1_computer_lab",
-  "selected_room_floor_no1",
-  "room_dimensions_length_width_height1",
-  "wall_type1",
-  "column_break_98",
-  "ceiling_type1",
-  "electricity_available_in_school1",
-  "electricity_available_in_lab1",
-  "total_nos_of_doors1",
-  "total_nos_of_window1",
+  "room_details_for_lab_section",
+  "room_details_for_lab",
   "safety_measures_section",
   "theft_reported_in_last_05_years",
   "night__guard_available",
@@ -528,134 +504,6 @@
    "label": "Prefer Better ISP"
   },
   {
-   "fieldname": "room_details_for_lab_1_section",
-   "fieldtype": "Section Break",
-   "label": "Room Details for Lab-1"
-  },
-  {
-   "fieldname": "room_no",
-   "fieldtype": "Data",
-   "label": "Room No"
-  },
-  {
-   "fieldname": "room_condition",
-   "fieldtype": "Data",
-   "label": "Room Condition"
-  },
-  {
-   "fieldname": "room_available_to_setup_computer_lab",
-   "fieldtype": "Data",
-   "label": "Room Available to Setup Computer lab"
-  },
-  {
-   "fieldname": "selected_room_floor_no",
-   "fieldtype": "Data",
-   "label": "Selected room Floor No"
-  },
-  {
-   "fieldname": "room_dimensions_length_width_height",
-   "fieldtype": "Data",
-   "label": "Room Dimensions Length* Width* Height "
-  },
-  {
-   "fieldname": "wall_type",
-   "fieldtype": "Data",
-   "label": "Wall Type"
-  },
-  {
-   "fieldname": "column_break_85",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "ceiling_type",
-   "fieldtype": "Data",
-   "label": "Ceiling Type"
-  },
-  {
-   "fieldname": "electricity_available_in_school",
-   "fieldtype": "Data",
-   "label": "Electricity Available in school"
-  },
-  {
-   "fieldname": "electricity_available_in_lab",
-   "fieldtype": "Data",
-   "label": "Electricity Available in lab"
-  },
-  {
-   "fieldname": "total_nos_of_doors",
-   "fieldtype": "Int",
-   "label": "Total Nos of Doors"
-  },
-  {
-   "fieldname": "total_nos_of_window",
-   "fieldtype": "Int",
-   "label": "Total Nos of Window"
-  },
-  {
-   "fieldname": "room_details_for_lab_2_section",
-   "fieldtype": "Section Break",
-   "label": "Room Details for Lab-2"
-  },
-  {
-   "fieldname": "room_no1",
-   "fieldtype": "Data",
-   "label": "Room No"
-  },
-  {
-   "fieldname": "room_condition1",
-   "fieldtype": "Data",
-   "label": "Room Condition"
-  },
-  {
-   "fieldname": "room_available_to_setup1_computer_lab",
-   "fieldtype": "Data",
-   "label": "Room Available to Setup Computer lab"
-  },
-  {
-   "fieldname": "selected_room_floor_no1",
-   "fieldtype": "Data",
-   "label": "Selected room Floor No"
-  },
-  {
-   "fieldname": "room_dimensions_length_width_height1",
-   "fieldtype": "Data",
-   "label": "Room Dimensions Length Width Height"
-  },
-  {
-   "fieldname": "wall_type1",
-   "fieldtype": "Data",
-   "label": "Wall Type"
-  },
-  {
-   "fieldname": "column_break_98",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "ceiling_type1",
-   "fieldtype": "Data",
-   "label": "Ceiling Type"
-  },
-  {
-   "fieldname": "electricity_available_in_school1",
-   "fieldtype": "Data",
-   "label": "Electricity Available in school"
-  },
-  {
-   "fieldname": "electricity_available_in_lab1",
-   "fieldtype": "Data",
-   "label": "Electricity Available in lab"
-  },
-  {
-   "fieldname": "total_nos_of_doors1",
-   "fieldtype": "Int",
-   "label": "Total Nos of Doors"
-  },
-  {
-   "fieldname": "total_nos_of_window1",
-   "fieldtype": "Int",
-   "label": "Total Nos of Window"
-  },
-  {
    "fieldname": "safety_measures_section",
    "fieldtype": "Section Break",
    "label": "Safety measures"
@@ -799,11 +647,22 @@
   {
    "fieldname": "column_break_3",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "room_details_for_lab_section",
+   "fieldtype": "Section Break",
+   "label": "Room Details for Lab"
+  },
+  {
+   "fieldname": "room_details_for_lab",
+   "fieldtype": "Table",
+   "label": "Room Details for Lab",
+   "options": "Room Details for Lab"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-01 18:44:25.302913",
+ "modified": "2022-08-02 11:27:44.638988",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",

@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-02 11:22:34.442719",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "lab",
+  "room_no",
+  "room_condition",
+  "room_available_to_setup_computer_lab",
+  "selected_room_floor_no",
+  "room_dimensions_length_width_height",
+  "column_break_7",
+  "wall_type",
+  "ceiling_type",
+  "electricity_available_in_school",
+  "electricity_available_in_lab",
+  "total_nos_of_doors",
+  "total_nos_of_window"
+ ],
+ "fields": [
+  {
+   "fieldname": "room_no",
+   "fieldtype": "Data",
+   "label": "Room No"
+  },
+  {
+   "fieldname": "room_condition",
+   "fieldtype": "Data",
+   "label": "Room Condition"
+  },
+  {
+   "fieldname": "room_available_to_setup_computer_lab",
+   "fieldtype": "Data",
+   "label": "Room Available to Setup Computer lab"
+  },
+  {
+   "fieldname": "selected_room_floor_no",
+   "fieldtype": "Data",
+   "label": "Selected room Floor No"
+  },
+  {
+   "fieldname": "room_dimensions_length_width_height",
+   "fieldtype": "Data",
+   "label": "Room Dimensions Length* Width* Height"
+  },
+  {
+   "fieldname": "wall_type",
+   "fieldtype": "Data",
+   "label": "Wall Type"
+  },
+  {
+   "fieldname": "ceiling_type",
+   "fieldtype": "Data",
+   "label": "Ceiling Type"
+  },
+  {
+   "fieldname": "electricity_available_in_school",
+   "fieldtype": "Data",
+   "label": "Electricity Available in school"
+  },
+  {
+   "fieldname": "electricity_available_in_lab",
+   "fieldtype": "Data",
+   "label": "Electricity Available in lab"
+  },
+  {
+   "fieldname": "total_nos_of_doors",
+   "fieldtype": "Int",
+   "label": "Total Nos of Doors"
+  },
+  {
+   "fieldname": "total_nos_of_window",
+   "fieldtype": "Int",
+   "label": "Total Nos of Window"
+  },
+  {
+   "fieldname": "lab",
+   "fieldtype": "Int",
+   "label": "Lab"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-02 11:29:45.772418",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Room Details for Lab",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
