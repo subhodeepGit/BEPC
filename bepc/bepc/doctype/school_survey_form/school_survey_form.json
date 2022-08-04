@@ -457,7 +457,7 @@
   {
    "fieldname": "year_of_start__project",
    "fieldtype": "Date",
-   "label": "Year of Start  project "
+   "label": "Year of Start project "
   },
   {
    "fieldname": "electricity_details_section",
@@ -710,7 +710,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-02 12:52:34.884304",
+ "modified": "2022-08-04 10:50:09.115411",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
