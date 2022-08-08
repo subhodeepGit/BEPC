@@ -15,16 +15,16 @@ class InsuranceClaimStatus(Document):
 			self.indicator_color = "green"
 			self.indicator_title = ("Not Received")
 
-	def on_change(doc):
+	# def on_change(doc):
 
-		if doc.isurance_claim_status=="Received" and doc.docstatus==1:
-			mm = frappe.new_doc("Material Request")
-			mm.schedule_date = frappe.utils.nowdate()
-			mm.material_request_type = "Purchase"
-			mm.set_warehouse= doc.target_warehouse
-			mm.append("items",{
-				'item_code' : doc.item_code,
-				'qty' : doc.quantity,
-				'uom' : "Nos"
-			})
-			mm.save()
+	# 	if doc.isurance_claim_status=="Received" and doc.docstatus==1:
+	# 		mm = frappe.new_doc("Material Request")
+	# 		mm.schedule_date = frappe.utils.nowdate()
+	# 		mm.material_request_type = "Purchase"
+	# 		mm.set_warehouse= doc.target_warehouse
+	# 		mm.append("items",{
+	# 			'item_code' : doc.item_code,
+	# 			'qty' : doc.quantity,
+	# 			'uom' : "Nos"
+	# 		})
+	# 		mm.save()
