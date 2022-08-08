@@ -24,8 +24,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "School Survey Form",
-   "link_to": "School Survey Form",
+   "label": "Survey Form",
+   "link_to": "Survey Form",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -330,15 +330,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Material Request",
-   "link_to": "Material Request",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Reports",
    "link_type": "DocType",
    "onboard": 0,
@@ -410,7 +401,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-08-02 12:51:52.390944",
+ "modified": "2022-08-08 14:44:48.761983",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",
