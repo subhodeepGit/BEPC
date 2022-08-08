@@ -1,0 +1,163 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-20 11:28:34.351134",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_information_section",
+  "name1",
+  "address",
+  "phone_number",
+  "email",
+  "column_break_6",
+  "coordinator",
+  "status",
+  "product_feedback_section",
+  "product_usability_how_easy_and_effortless_is_to_use",
+  "setup",
+  "interface",
+  "responsive",
+  "key_features",
+  "satisfaction",
+  "expierence",
+  "enhancement",
+  "9attachments",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_information_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Information"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "product_feedback_section",
+   "fieldtype": "Section Break",
+   "label": "Product Feedback"
+  },
+  {
+   "fieldname": "product_usability_how_easy_and_effortless_is_to_use",
+   "fieldtype": "Rating",
+   "label": "1.Product Usability : How easy and effortless is to use?"
+  },
+  {
+   "fieldname": "setup",
+   "fieldtype": "Select",
+   "label": "2.Is the setup / integration easy and all the necessary instructions provided?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "interface",
+   "fieldtype": "Select",
+   "label": "3. How was the product iterface?",
+   "options": "\nIntuitive\nGood\nNeed Improvement"
+  },
+  {
+   "fieldname": "responsive",
+   "fieldtype": "Select",
+   "label": "4. Is the product fast and responsive?",
+   "options": "\nFast/Responsive\nNot Fast/Responsive"
+  },
+  {
+   "fieldname": "key_features",
+   "fieldtype": "Select",
+   "label": "5. Does it offer all the key features you require?",
+   "options": "\nEfficient\nInadequate"
+  },
+  {
+   "fieldname": "satisfaction",
+   "fieldtype": "Rating",
+   "label": "6.Overall, how satisfied you are with the product?"
+  },
+  {
+   "fieldname": "expierence",
+   "fieldtype": "Text",
+   "label": "7.Please summarize your experience with the product."
+  },
+  {
+   "fieldname": "enhancement",
+   "fieldtype": "Text",
+   "label": "8.What can we improve about the product?"
+  },
+  {
+   "fieldname": "9attachments",
+   "fieldtype": "Attach",
+   "label": "9.Attachments"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coordinator",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Co-ordinator",
+   "options": "Employee",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Issue Raised\nResolved",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Customer Feedback",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-07-20 16:07:22.997243",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Customer Feedback",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
