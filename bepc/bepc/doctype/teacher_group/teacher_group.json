@@ -25,7 +25,7 @@
    "in_global_search": 1,
    "in_standard_filter": 1,
    "label": "Academic Year",
-   "options": "Academic Year"
+   "options": "Sessional Year"
   },
   {
    "fieldname": "group_based_on",
@@ -76,7 +76,7 @@
    "in_global_search": 1,
    "in_standard_filter": 1,
    "label": "Department",
-   "options": "Department"
+   "options": "Departments"
   },
   {
    "default": "Today",
@@ -89,7 +89,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-21 17:07:28.619644",
+ "modified": "2022-08-08 09:50:23.884985",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Group",

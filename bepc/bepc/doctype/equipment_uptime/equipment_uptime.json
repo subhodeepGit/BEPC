@@ -8,8 +8,8 @@
  "engine": "InnoDB",
  "field_order": [
   "equipment_details_section",
-  "equipment_type",
   "equipment",
+  "equipment_type",
   "column_break_4",
   "mac_id",
   "equipment_name",
@@ -31,17 +31,16 @@
  ],
  "fields": [
   {
-   "fetch_from": "item.item_name",
+   "fetch_from": "equipment.item_name",
    "fieldname": "equipment_name",
    "fieldtype": "Data",
    "label": "Equipment Name"
   },
   {
+   "fetch_from": "equipment.item_group",
    "fieldname": "equipment_type",
-   "fieldtype": "Link",
-   "label": "Equipment Group",
-   "options": "Item Group",
-   "reqd": 1
+   "fieldtype": "Data",
+   "label": "Equipment Group"
   },
   {
    "fieldname": "mac_id",
@@ -149,13 +148,13 @@
    "fieldname": "equipment",
    "fieldtype": "Link",
    "label": "Equipment",
-   "options": "Item",
+   "options": "Items",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-01 12:10:06.172980",
+ "modified": "2022-08-04 17:30:32.277209",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Equipment Uptime",

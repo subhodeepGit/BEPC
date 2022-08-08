@@ -15,7 +15,7 @@ from frappe import _
 from frappe.model.document import Document
 from frappe.utils import cint, cstr, formatdate, get_datetime, getdate, nowdate
 
-from erpnext.hr.utils import get_holiday_dates_for_employee, validate_active_employee
+# from erpnext.hr.utils import get_holiday_dates_for_employee, validate_active_employee
 
 class TeacherTrainingAttendance(Document):
 	def validate(self):
@@ -100,6 +100,20 @@ def get_events(start, end, filters=None):
 	conditions = get_filters_cond("Attendance", filters, [])
 	add_attendance(events, start, end, conditions=conditions)
 	return events
+
+
+# def get_holiday_dates_for_employee(employee, start_date, end_date):
+# 	"""return a list of holiday dates for the given employee between start_date and end_date"""
+# 	# return only date
+# 	holidays = get_holidays_for_employee(employee, start_date, end_date)
+
+# 	return [cstr(h.holiday_date) for h in holidays]
+
+
+# def validate_active_employee(employee):
+# 	if frappe.db.get_value("Employee", employee, "status") == "Inactive":
+# 		frappe.throw(_("Transactions cannot be created for an Inactive Employee {0}.").format(
+# 			get_link_to_form("Employee", employee)), InactiveEmployeeStatusError)
 
 def add_attendance(events, start, end, conditions=None):
 	query = """select name, attendance_date, status
@@ -213,3 +227,4 @@ def get_unmarked_days(employee, month, exclude_holidays=0):
 			unmarked_days.append(date)
 
 	return unmarked_days
+

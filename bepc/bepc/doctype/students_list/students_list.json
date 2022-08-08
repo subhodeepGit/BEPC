@@ -31,7 +31,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Program",
-   "options": "Program"
+   "options": "Class List"
   },
   {
    "fieldname": "section",
@@ -74,7 +74,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Academic Year",
-   "options": "Academic Year"
+   "options": "Sessional Year"
   },
   {
    "fieldname": "total_student",
@@ -84,7 +84,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-01 12:10:06.605947",
+ "modified": "2022-08-04 17:21:22.518636",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Students List",
