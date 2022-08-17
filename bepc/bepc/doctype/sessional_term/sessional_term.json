@@ -20,7 +20,7 @@
    "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "Academic Year",
-   "options": "Academic Year",
+   "options": "Sessional Year",
    "reqd": 1
   },
   {
@@ -52,7 +52,7 @@
   }
  ],
  "links": [],
- "modified": "2022-08-08 16:38:14.451733",
+ "modified": "2022-08-09 09:54:35.006373",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Sessional Term",
