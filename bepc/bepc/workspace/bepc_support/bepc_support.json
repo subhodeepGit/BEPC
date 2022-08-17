@@ -175,23 +175,14 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Test 1",
-   "link_to": "Test1",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Custom",
-   "link_to": "ABCD",
+   "label": "Support",
+   "link_to": "Test 1",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2022-07-19 15:58:37.019229",
+ "modified": "2022-08-17 11:51:56.453863",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC-Support",
