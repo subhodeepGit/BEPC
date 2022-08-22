@@ -670,12 +670,12 @@
   },
   {
    "fieldname": "survey_start_date",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Survey Start date"
   },
   {
    "fieldname": "survey_end_date",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Survey End date"
   },
   {
@@ -695,7 +695,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-22 12:54:20.842161",
+ "modified": "2022-08-22 12:58:00.025502",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
