@@ -8,6 +8,8 @@
  "field_order": [
   "class",
   "section_name",
+  "total_boys",
+  "total_girls",
   "total_student"
  ],
  "fields": [
@@ -33,12 +35,22 @@
    "fieldtype": "Data",
    "label": "Section",
    "read_only": 1
+  },
+  {
+   "fieldname": "total_boys",
+   "fieldtype": "Data",
+   "label": "Total Boys"
+  },
+  {
+   "fieldname": "total_girls",
+   "fieldtype": "Data",
+   "label": "Total Girls"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-08-19 16:39:10.960389",
+ "modified": "2022-08-22 12:23:49.933087",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Class",
