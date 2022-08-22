@@ -1,0 +1,206 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TFT.REC.-.#####",
+ "creation": "2022-08-22 11:56:17.774260",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "udise_code",
+  "tcl_code",
+  "apple",
+  "column_break_5",
+  "district",
+  "block",
+  "pincode",
+  "amended_from",
+  "section_break_10",
+  "euipment_lost",
+  "equipment_name",
+  "date_of_incident",
+  "quantity_stolen",
+  "column_break_15",
+  "reason",
+  "equipment_insured",
+  "covered_under_insurance",
+  "attachments_section",
+  "fir_copy",
+  "ncr_copy",
+  "delivery_challan_receipt",
+  "column_break_23",
+  "insurance_receipt",
+  "insurance_claim_receipt"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "School",
+   "options": "School",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item.udise",
+   "fieldname": "udise_code",
+   "fieldtype": "Data",
+   "label": "UDISE code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tcl_code",
+   "fieldtype": "Data",
+   "label": "TCL Code"
+  },
+  {
+   "fetch_from": "item.site_name",
+   "fieldname": "apple",
+   "fieldtype": "Data",
+   "label": "School Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item.block",
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item.pin_code",
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Theft Case record",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "euipment_lost",
+   "fieldtype": "Link",
+   "label": "Equipment Lost",
+   "options": "Items"
+  },
+  {
+   "fetch_from": "euipment_lost.item_name",
+   "fieldname": "equipment_name",
+   "fieldtype": "Data",
+   "label": "Equipment Name"
+  },
+  {
+   "fieldname": "date_of_incident",
+   "fieldtype": "Datetime",
+   "label": "Date of Incident"
+  },
+  {
+   "fieldname": "quantity_stolen",
+   "fieldtype": "Data",
+   "label": "Quantity Stolen"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Select",
+   "label": "Reason",
+   "options": "\nTheft\nNatural Calamity\nRat Bitten\nPhysical Damage"
+  },
+  {
+   "fieldname": "equipment_insured",
+   "fieldtype": "Select",
+   "label": "Equipment Insured",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.equipment_insured == 'Yes'",
+   "fieldname": "covered_under_insurance",
+   "fieldtype": "Select",
+   "label": "Covered Under Insurance",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "fir_copy",
+   "fieldtype": "Attach",
+   "label": "FIR Copy"
+  },
+  {
+   "fieldname": "ncr_copy",
+   "fieldtype": "Attach",
+   "label": "NCR Copy"
+  },
+  {
+   "fieldname": "insurance_receipt",
+   "fieldtype": "Attach",
+   "label": "Insurance receipt"
+  },
+  {
+   "fieldname": "insurance_claim_receipt",
+   "fieldtype": "Attach",
+   "label": "Insurance Claim receipt"
+  },
+  {
+   "fieldname": "delivery_challan_receipt",
+   "fieldtype": "Attach",
+   "label": "Delivery Challan receipt"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-08-22 12:17:25.680586",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Theft Case record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

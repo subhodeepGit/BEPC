@@ -7,11 +7,15 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "school",
+  "site",
+  "udise_code",
+  "tcl_code",
   "school_name",
   "column_break_3",
-  "academic_year",
   "district",
+  "block",
+  "pin_code",
+  "academic_year",
   "section_break_5",
   "class",
   "section_break_8",
@@ -19,10 +23,11 @@
  ],
  "fields": [
   {
-   "fetch_from": "school.site_name",
+   "fetch_from": "site.site_name",
    "fieldname": "school_name",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "School Name",
    "read_only": 1,
    "reqd": 1
@@ -31,6 +36,7 @@
    "fieldname": "academic_year",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Academic Year",
    "options": "Academic Year",
    "reqd": 1
@@ -43,6 +49,7 @@
    "fieldname": "district",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "District",
    "options": "Districts",
    "reqd": 1
@@ -58,13 +65,6 @@
    "options": "Class"
   },
   {
-   "fieldname": "school",
-   "fieldtype": "Link",
-   "label": "School",
-   "options": "School",
-   "reqd": 1
-  },
-  {
    "fieldname": "section_break_8",
    "fieldtype": "Section Break"
   },
@@ -73,11 +73,41 @@
    "fieldtype": "Int",
    "label": "Total Student Per School",
    "read_only": 1
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "School",
+   "options": "School",
+   "reqd": 1
+  },
+  {
+   "fieldname": "udise_code",
+   "fieldtype": "Data",
+   "label": "UDISE Code"
+  },
+  {
+   "fieldname": "tcl_code",
+   "fieldtype": "Data",
+   "label": "TCL Code"
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Block"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-02 09:41:48.899876",
+ "modified": "2022-08-19 16:38:21.270901",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Student Entry",

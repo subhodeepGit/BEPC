@@ -8,9 +8,9 @@
  "engine": "InnoDB",
  "field_order": [
   "group_based_on",
-  "academic_year",
-  "program",
-  "department",
+  "school",
+  "district",
+  "block",
   "column_break_5",
   "teacher_group_name",
   "group_creation_date",
@@ -19,20 +19,11 @@
  ],
  "fields": [
   {
-   "depends_on": "eval:doc.group_based_on == 'Academic Year'",
-   "fieldname": "academic_year",
-   "fieldtype": "Link",
-   "in_global_search": 1,
-   "in_standard_filter": 1,
-   "label": "Academic Year",
-   "options": "Sessional Year"
-  },
-  {
    "fieldname": "group_based_on",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Group Based On",
-   "options": "\nAcademic Year\nProgram\nDepartment",
+   "options": "\nSchool\nDistrict\nBlock",
    "reqd": 1
   },
   {
@@ -44,15 +35,6 @@
    "in_standard_filter": 1,
    "label": "Teacher Group Name",
    "reqd": 1
-  },
-  {
-   "depends_on": "eval:doc.group_based_on == 'Program'",
-   "fieldname": "program",
-   "fieldtype": "Link",
-   "in_global_search": 1,
-   "in_standard_filter": 1,
-   "label": "Program",
-   "options": "Program"
   },
   {
    "fieldname": "instructors_section",
@@ -70,26 +52,44 @@
    "fieldtype": "Column Break"
   },
   {
-   "depends_on": "eval:doc.group_based_on == 'Department'",
-   "fieldname": "department",
-   "fieldtype": "Link",
-   "in_global_search": 1,
-   "in_standard_filter": 1,
-   "label": "Department",
-   "options": "Department"
-  },
-  {
    "default": "Today",
    "fieldname": "group_creation_date",
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Group Creation Date",
    "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.group_based_on == 'School'",
+   "fieldname": "school",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "School",
+   "options": "School"
+  },
+  {
+   "depends_on": "eval:doc.group_based_on == 'District'",
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "District",
+   "options": "Districts"
+  },
+  {
+   "depends_on": "eval:doc.group_based_on == 'Block'",
+   "fieldname": "block",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Block",
+   "options": "Block"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-17 14:46:10.080269",
+ "modified": "2022-08-19 17:04:30.717267",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Group",

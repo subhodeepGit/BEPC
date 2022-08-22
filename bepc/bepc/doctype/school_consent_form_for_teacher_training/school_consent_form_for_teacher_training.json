@@ -1,8 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "TCR.-.######",
- "creation": "2022-08-08 16:33:16.307667",
+ "creation": "2022-08-19 17:46:48.424118",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -16,64 +15,20 @@
   "block",
   "pin_code",
   "section_break_9",
-  "full_name",
-  "email",
-  "contact_number",
-  "column_break_13",
-  "status",
-  "gender"
+  "teacher_to_be_trained"
  ],
  "fields": [
-  {
-   "fieldname": "full_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Teacher Full Name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "\nActive\nInactive",
-   "reqd": 1
-  },
-  {
-   "fieldname": "gender",
-   "fieldtype": "Link",
-   "label": "Gender",
-   "options": "Gender"
-  },
-  {
-   "fieldname": "column_break_5",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "email",
-   "fieldtype": "Data",
-   "label": "Email",
-   "options": "Email",
-   "reqd": 1
-  },
-  {
-   "fieldname": "contact_number",
-   "fieldtype": "Data",
-   "label": "Contact number",
-   "reqd": 1
-  },
   {
    "fieldname": "site",
    "fieldtype": "Link",
    "label": "School",
-   "options": "School",
-   "reqd": 1
+   "options": "School"
   },
   {
    "fetch_from": "site.udise",
    "fieldname": "udise_code",
    "fieldtype": "Data",
-   "label": "UDISE Code"
+   "label": "UDISE code"
   },
   {
    "fieldname": "tcl_code",
@@ -84,31 +39,28 @@
    "fetch_from": "site.site_name",
    "fieldname": "school_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "School Name"
+   "label": "School name"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
   },
   {
    "fetch_from": "site.district",
    "fieldname": "district",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "District"
   },
   {
    "fetch_from": "site.block",
    "fieldname": "block",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Block"
   },
   {
    "fetch_from": "site.pin_code",
    "fieldname": "pin_code",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Pin Code"
   },
   {
@@ -116,16 +68,18 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "column_break_13",
-   "fieldtype": "Column Break"
+   "fieldname": "teacher_to_be_trained",
+   "fieldtype": "Table",
+   "label": "Teacher To be trained",
+   "options": "Teachers List"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-19 16:35:09.956860",
+ "modified": "2022-08-19 17:46:48.424118",
  "modified_by": "Administrator",
  "module": "Bepc",
- "name": "Teacher",
+ "name": "School Consent form for Teacher Training",
  "owner": "Administrator",
  "permissions": [
   {
@@ -142,6 +96,5 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC",
- "track_changes": 1
+ "sort_order": "DESC"
 }

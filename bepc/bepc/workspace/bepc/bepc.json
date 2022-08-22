@@ -24,26 +24,17 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "School Master Form",
+   "link_to": "School",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "School Survey Form",
    "link_to": "School Survey Form",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Survey Questionnaire Template",
-   "link_to": "Survey Questionnaire Template",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Survey Form",
-   "link_to": "Survey Form",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -145,33 +136,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "School",
-   "link_to": "School",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Project",
-   "link_to": "Projects BEPC",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Surveyor",
-   "link_to": "Surveyor",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "State",
    "link_to": "State",
    "link_type": "DocType",
@@ -207,8 +171,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Instructor",
-   "link_to": "Instructor",
+   "label": "Teacher",
+   "link_to": "Teacher",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -225,28 +189,11 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Students List",
-   "link_to": "Students List",
+   "label": "School Consent for TT",
+   "link_to": "School Consent form for Teacher Training",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Student Entry",
-   "link_to": "Student Entry",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Teacher Training",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
   },
   {
    "hidden": 0,
@@ -260,26 +207,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Training Venue",
-   "link_to": "Venue",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Teacher Training Attendance",
-   "link_to": "Teacher Training Attendance",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Teacher Training Attendance Tool",
-   "link_to": "Teacher Training Attendance Tool",
+   "label": "Student Entry",
+   "link_to": "Student Entry",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -317,6 +246,15 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Theft Case record",
+   "link_to": "Theft Case record",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   },
   {
    "hidden": 0,
@@ -419,7 +357,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-08-17 11:56:34.181780",
+ "modified": "2022-08-22 12:19:48.665747",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",
@@ -456,18 +394,6 @@
    "label": "Survey Status Report",
    "link_to": "Survey Status Report",
    "type": "Report"
-  },
-  {
-   "doc_view": "Calendar",
-   "label": "District Wise Survey Status Report",
-   "link_to": "District Wise Survey Status Report",
-   "type": "Report"
-  },
-  {
-   "doc_view": "Calendar",
-   "label": "Survey form Calendar wise",
-   "link_to": "Survey Form",
-   "type": "DocType"
   }
  ]
 }

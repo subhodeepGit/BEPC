@@ -7,16 +7,9 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "project",
-  "total_institute",
+  "schools",
+  "section_break_2",
   "trainer",
-  "name_of_the_teacher",
-  "contact_number",
-  "column_break_3",
-  "school",
-  "school_name",
-  "district",
-  "email_id",
   "training_details_section",
   "total_teacher_to_be_trained",
   "training_days",
@@ -24,25 +17,19 @@
   "date",
   "end_date",
   "column_break_9",
-  "venue",
   "training_on",
   "participants_section",
   "teachers_group",
   "column_break_22",
   "teacher_group_name",
   "section_break_17",
-  "color",
-  "column_break_15",
-  "recording"
+  "training_photos_attachment",
+  "training_attendance_attachment",
+  "training_recording_attachment",
+  "training_assessment_attachment",
+  "feedback_attachment"
  ],
  "fields": [
-  {
-   "fetch_from": "trainer.instructor_name",
-   "fieldname": "name_of_the_teacher",
-   "fieldtype": "Data",
-   "label": "Name of Trainer",
-   "read_only": 1
-  },
   {
    "fieldname": "training_on",
    "fieldtype": "Small Text",
@@ -54,20 +41,6 @@
    "label": "From Date"
   },
   {
-   "fetch_from": "trainer.contact_number",
-   "fieldname": "contact_number",
-   "fieldtype": "Data",
-   "label": "Contact Number",
-   "read_only": 1
-  },
-  {
-   "fetch_from": "trainer.email",
-   "fieldname": "email_id",
-   "fieldtype": "Data",
-   "label": "Email Id",
-   "read_only": 1
-  },
-  {
    "fieldname": "training_details_section",
    "fieldtype": "Section Break",
    "label": "Training Details"
@@ -75,12 +48,6 @@
   {
    "fieldname": "column_break_9",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "venue",
-   "fieldtype": "Link",
-   "label": "Venue",
-   "options": "Venue"
   },
   {
    "fieldname": "end_date",
@@ -99,51 +66,9 @@
    "options": "Teacher Group"
   },
   {
-   "fieldname": "color",
-   "fieldtype": "Color",
-   "label": "Color"
-  },
-  {
-   "fieldname": "trainer",
-   "fieldtype": "Link",
-   "label": "Trainer",
-   "options": "Instructor"
-  },
-  {
-   "fieldname": "column_break_3",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "recording",
-   "fieldtype": "Attach",
-   "label": "Recording"
-  },
-  {
-   "fieldname": "column_break_15",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "project",
-   "fieldtype": "Link",
-   "label": "Project",
-   "options": "Projects BEPC"
-  },
-  {
-   "fieldname": "school",
-   "fieldtype": "Link",
-   "label": "School",
-   "options": "School"
-  },
-  {
-   "fetch_from": "project.total_institute",
-   "fieldname": "total_institute",
-   "fieldtype": "Data",
-   "label": "Total Institute",
-   "read_only": 1
-  },
-  {
    "fieldname": "section_break_17",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Attachments"
   },
   {
    "fieldname": "total_teacher_to_be_trained",
@@ -161,20 +86,6 @@
    "label": "Per session (Hours)"
   },
   {
-   "fetch_from": "school.site_name",
-   "fieldname": "school_name",
-   "fieldtype": "Data",
-   "label": "School Name",
-   "read_only": 1
-  },
-  {
-   "fetch_from": "school.district",
-   "fieldname": "district",
-   "fieldtype": "Data",
-   "label": "District",
-   "read_only": 1
-  },
-  {
    "fetch_from": "teachers_group.teacher_group_name",
    "fieldname": "teacher_group_name",
    "fieldtype": "Data",
@@ -184,11 +95,57 @@
   {
    "fieldname": "column_break_22",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "schools",
+   "fieldtype": "Table",
+   "label": "Schools",
+   "options": "School List"
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Table",
+   "label": "Trainer",
+   "options": "Trainer Name"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "training_photos_attachment",
+   "fieldtype": "Table",
+   "label": "Training Photos Attachment",
+   "options": "Training Photos Attachment"
+  },
+  {
+   "fieldname": "training_attendance_attachment",
+   "fieldtype": "Table",
+   "label": "Training Attendance Attachment",
+   "options": "Training Attendance Attachment"
+  },
+  {
+   "fieldname": "training_recording_attachment",
+   "fieldtype": "Table",
+   "label": "Training Recording Attachment",
+   "options": "Training Recording Attachment"
+  },
+  {
+   "fieldname": "training_assessment_attachment",
+   "fieldtype": "Table",
+   "label": "Training Assessment Attachment",
+   "options": "Training Assessment Attachment"
+  },
+  {
+   "fieldname": "feedback_attachment",
+   "fieldtype": "Table",
+   "label": "Feedback Attachment",
+   "options": "Feedback Attachment"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-01 12:10:05.539371",
+ "modified": "2022-08-19 17:41:41.406588",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",
@@ -207,7 +164,6 @@
    "write": 1
   }
  ],
- "search_fields": "project, venue, date",
  "sort_field": "modified",
  "sort_order": "DESC"
 }

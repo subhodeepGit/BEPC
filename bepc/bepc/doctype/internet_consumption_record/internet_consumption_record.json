@@ -7,67 +7,90 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "network_provider",
-  "bandwidth",
-  "data_limit",
-  "data_usage",
-  "siteschool",
+  "site",
+  "udise_code",
+  "tcl_code",
   "siteschool_name",
+  "column_break_5",
   "district",
-  "connection"
+  "block",
+  "pin_code",
+  "section_break_9",
+  "internet_service_provider",
+  "data_usage",
+  "monthly_bill_amount"
  ],
  "fields": [
-  {
-   "fieldname": "network_provider",
-   "fieldtype": "Select",
-   "label": "Network Provider",
-   "options": "\nOption 1\nOption 2"
-  },
-  {
-   "fieldname": "bandwidth",
-   "fieldtype": "Float",
-   "label": "Bandwidth (Mbps)"
-  },
-  {
-   "fieldname": "data_limit",
-   "fieldtype": "Float",
-   "label": "Data Limit (Gb)"
-  },
   {
    "fieldname": "data_usage",
    "fieldtype": "Float",
    "label": "Data Usage (Gb)"
   },
   {
-   "fetch_from": "siteschool.site_name",
+   "fetch_from": "site.site_name",
    "fieldname": "siteschool_name",
    "fieldtype": "Data",
-   "label": "Site School name",
+   "label": "School name",
    "read_only": 1
   },
   {
-   "fieldname": "connection",
-   "fieldtype": "Select",
-   "label": "Connection",
-   "options": "\nWired\nWireless"
-  },
-  {
-   "fieldname": "siteschool",
-   "fieldtype": "Link",
-   "label": "Site School",
-   "options": "School"
-  },
-  {
-   "fetch_from": "siteschool.district",
+   "fetch_from": "site.district",
    "fieldname": "district",
    "fieldtype": "Data",
    "label": "District",
    "read_only": 1
+  },
+  {
+   "fieldname": "internet_service_provider",
+   "fieldtype": "Data",
+   "label": "Internet service provider"
+  },
+  {
+   "fieldname": "monthly_bill_amount",
+   "fieldtype": "Float",
+   "label": "Monthly Bill Amount"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "label": "School",
+   "options": "School"
+  },
+  {
+   "fetch_from": "site.udise",
+   "fieldname": "udise_code",
+   "fieldtype": "Data",
+   "label": "UDISE code"
+  },
+  {
+   "fieldname": "tcl_code",
+   "fieldtype": "Data",
+   "label": "TCL Code"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "site.block",
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block"
+  },
+  {
+   "fetch_from": "site.pin_code",
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin code"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-01 12:10:06.923259",
+ "modified": "2022-08-19 14:48:17.865497",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",

@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-19 12:36:29.023570",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "meter_number",
+  "previous_meter_reading",
+  "current_meter_reading",
+  "total_billable_unit",
+  "total_bill_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "meter_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Meter Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "previous_meter_reading",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Previous Meter reading",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_meter_reading",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Current meter reading",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_billable_unit",
+   "fieldtype": "Float",
+   "label": "Total Billable unit"
+  },
+  {
+   "fieldname": "total_bill_amount",
+   "fieldtype": "Float",
+   "label": "Total Bill Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-19 13:01:36.277955",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Sub Meter Records",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

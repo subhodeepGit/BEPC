@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TFT.REC.-.#####",
+ "creation": "2022-08-22 11:56:17.774260",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "udise_code",
+  "tcl_code",
+  "apple",
+  "column_break_5",
+  "district",
+  "block",
+  "pincode",
+  "amended_from",
+  "section_break_10",
+  "euipment_lost",
+  "equipment_name",
+  "date_of_incident",
+  "quantity_stolen",
+  "column_break_15",
+  "reason",
+  "equipment_insured",
+  "covered_under_insurance"
+ ],
+ "fields": [
+  {
+   "fetch_from": "item.site_name",
+   "fieldname": "apple",
+   "fieldtype": "Data",
+   "label": "School Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Apple",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "School",
+   "options": "School"
+  },
+  {
+   "fetch_from": "item.udise",
+   "fieldname": "udise_code",
+   "fieldtype": "Data",
+   "label": "UDISE code"
+  },
+  {
+   "fieldname": "tcl_code",
+   "fieldtype": "Data",
+   "label": "TCL Code"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fetch_from": "item.block",
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block"
+  },
+  {
+   "fetch_from": "item.pin_code",
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "euipment_lost",
+   "fieldtype": "Link",
+   "label": "Equipment Lost",
+   "options": "Items"
+  },
+  {
+   "fetch_from": "euipment_lost.item_name",
+   "fieldname": "equipment_name",
+   "fieldtype": "Data",
+   "label": "Equipment Name"
+  },
+  {
+   "fieldname": "date_of_incident",
+   "fieldtype": "Datetime",
+   "label": "Date of Incident"
+  },
+  {
+   "fieldname": "quantity_stolen",
+   "fieldtype": "Data",
+   "label": "Quantity Stolen"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Select",
+   "label": "Reason",
+   "options": "\nTheft\nNatural Calamity\nRat Bitten\nPhysical Damage"
+  },
+  {
+   "fieldname": "equipment_insured",
+   "fieldtype": "Select",
+   "label": "Equipment Insured",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.equipment_insured == 'Yes'",
+   "fieldname": "covered_under_insurance",
+   "fieldtype": "Data",
+   "label": "Covered Under Insurance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-08-22 12:08:27.416108",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Apple",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

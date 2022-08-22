@@ -6,7 +6,6 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "section",
   "class",
   "section_name",
   "total_student"
@@ -17,16 +16,8 @@
    "fieldname": "class",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Class Name",
+   "label": "Class ",
    "read_only": 1,
-   "reqd": 1
-  },
-  {
-   "fieldname": "section",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Class",
-   "options": "Section",
    "reqd": 1
   },
   {
@@ -40,14 +31,14 @@
    "fetch_from": "section.section",
    "fieldname": "section_name",
    "fieldtype": "Data",
-   "label": "Section name",
+   "label": "Section",
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-08-01 15:33:40.006289",
+ "modified": "2022-08-19 16:39:10.960389",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Class",

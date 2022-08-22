@@ -8,23 +8,23 @@
  "engine": "InnoDB",
  "field_order": [
   "site",
+  "udise_code",
+  "tcl_code",
   "site_name",
-  "address_line_1",
-  "address_line_2",
-  "pin_code",
   "column_break_7",
-  "post_office",
-  "state",
   "district",
   "block",
+  "pin_code",
   "data_8",
-  "electricty_provider",
-  "reading_image",
-  "meter_reading",
-  "column_break_14",
   "previous_meter_reading",
-  "powercut_frequency",
-  "total_billable_unit"
+  "meter_reading",
+  "total_billable_unit",
+  "column_break_14",
+  "reading_image",
+  "total_bill_amount",
+  "sub_meter_reading_section",
+  "table_17",
+  "submeter_total_current_unit"
  ],
  "fields": [
   {
@@ -35,73 +35,38 @@
   {
    "fieldname": "meter_reading",
    "fieldtype": "Float",
-   "label": "Current Meter reading"
+   "label": "Main meter Current Meter reading"
   },
   {
    "fetch_from": "site.site_name",
    "fieldname": "site_name",
    "fieldtype": "Data",
-   "label": "Site Name"
+   "label": "School Name",
+   "read_only": 1
   },
   {
    "fieldname": "previous_meter_reading",
    "fieldtype": "Float",
-   "label": "Previous Meter reading"
-  },
-  {
-   "fieldname": "electricty_provider",
-   "fieldtype": "Data",
-   "label": "Electricty Provider"
-  },
-  {
-   "fieldname": "powercut_frequency",
-   "fieldtype": "Select",
-   "label": "Powercut frequency",
-   "options": "\nLow\nMedium\nHigh"
+   "label": "Main meter Previous Meter reading"
   },
   {
    "fieldname": "site",
    "fieldtype": "Link",
-   "label": "Site",
-   "options": "School"
+   "in_list_view": 1,
+   "label": "School",
+   "options": "School",
+   "reqd": 1
   },
   {
    "fieldname": "data_8",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fetch_from": "site.address_line_1",
-   "fieldname": "address_line_1",
-   "fieldtype": "Data",
-   "label": "Address Line 1",
-   "read_only": 1
-  },
-  {
-   "fetch_from": "site.address_line_2",
-   "fieldname": "address_line_2",
-   "fieldtype": "Data",
-   "label": "Address Line 2",
-   "read_only": 1
+   "fieldtype": "Section Break",
+   "label": "Main meter reading"
   },
   {
    "fetch_from": "site.pin_code",
    "fieldname": "pin_code",
    "fieldtype": "Data",
    "label": "Pin code",
-   "read_only": 1
-  },
-  {
-   "fetch_from": "site.post_office",
-   "fieldname": "post_office",
-   "fieldtype": "Data",
-   "label": "Post Office",
-   "read_only": 1
-  },
-  {
-   "fetch_from": "site.state",
-   "fieldname": "state",
-   "fieldtype": "Data",
-   "label": "State",
    "read_only": 1
   },
   {
@@ -131,11 +96,44 @@
    "fieldtype": "Float",
    "label": "Total Billable Unit",
    "read_only": 1
+  },
+  {
+   "fetch_from": "site.udise",
+   "fieldname": "udise_code",
+   "fieldtype": "Data",
+   "label": "UDISE code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tcl_code",
+   "fieldtype": "Data",
+   "label": "TCL Code"
+  },
+  {
+   "fieldname": "total_bill_amount",
+   "fieldtype": "Data",
+   "label": "Total Bill Amount"
+  },
+  {
+   "fieldname": "sub_meter_reading_section",
+   "fieldtype": "Section Break",
+   "label": "Sub meter reading"
+  },
+  {
+   "fieldname": "table_17",
+   "fieldtype": "Table",
+   "options": "Sub Meter Records"
+  },
+  {
+   "fieldname": "submeter_total_current_unit",
+   "fieldtype": "Float",
+   "label": "Submeter Total Current Unit",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-01 12:10:05.127249",
+ "modified": "2022-08-19 13:27:00.510163",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",

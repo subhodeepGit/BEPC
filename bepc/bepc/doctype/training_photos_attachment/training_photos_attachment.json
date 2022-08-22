@@ -1,0 +1,35 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-19 17:38:04.811918",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attach_photos",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "attach_photos",
+   "fieldtype": "Attach Image",
+   "label": "Attach photos"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Data",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-19 17:38:04.811918",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Training Photos Attachment",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

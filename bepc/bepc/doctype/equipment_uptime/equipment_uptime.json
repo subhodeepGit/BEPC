@@ -7,17 +7,20 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "site",
+  "udise_code",
+  "tcl_code",
+  "site_name",
+  "column_break_5",
+  "district",
+  "block",
+  "pin_code",
   "equipment_details_section",
   "equipment",
   "equipment_type",
   "column_break_4",
   "mac_id",
   "equipment_name",
-  "site_details_section",
-  "site",
-  "site_name",
-  "column_break_11",
-  "district",
   "equipment_uptime_section",
   "from_time",
   "to_time",
@@ -51,7 +54,7 @@
    "fetch_from": "site.site_name",
    "fieldname": "site_name",
    "fieldtype": "Select",
-   "label": "Site name",
+   "label": "School name",
    "read_only": 1
   },
   {
@@ -73,21 +76,12 @@
    "label": "Equipment Details"
   },
   {
-   "fieldname": "site_details_section",
-   "fieldtype": "Section Break",
-   "label": "Site Details"
-  },
-  {
    "fieldname": "site",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Site",
+   "label": "School",
    "options": "School",
    "reqd": 1
-  },
-  {
-   "fieldname": "column_break_11",
-   "fieldtype": "Column Break"
   },
   {
    "fetch_from": "site.district",
@@ -150,11 +144,38 @@
    "label": "Equipment",
    "options": "Items",
    "reqd": 1
+  },
+  {
+   "fetch_from": "site.udise",
+   "fieldname": "udise_code",
+   "fieldtype": "Data",
+   "label": "UDISE code"
+  },
+  {
+   "fieldname": "tcl_code",
+   "fieldtype": "Data",
+   "label": "TCL Code"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "site.block",
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block"
+  },
+  {
+   "fetch_from": "site.pin_code",
+   "fieldname": "pin_code",
+   "fieldtype": "Data",
+   "label": "Pin Code"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-04 17:30:32.277209",
+ "modified": "2022-08-19 16:18:06.652276",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Equipment Uptime",
