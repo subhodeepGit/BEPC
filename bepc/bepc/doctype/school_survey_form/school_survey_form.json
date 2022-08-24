@@ -143,8 +143,7 @@
    "fieldname": "zone",
    "fieldtype": "Data",
    "label": "Zone",
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fieldname": "address_section",
@@ -163,8 +162,7 @@
    "fieldname": "postal_address",
    "fieldtype": "Data",
    "label": "Postal Address",
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fieldname": "column_break_10",
@@ -175,24 +173,21 @@
    "fieldname": "state",
    "fieldtype": "Data",
    "label": "State",
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fetch_from": "school_code.district",
    "fieldname": "district",
    "fieldtype": "Data",
    "label": "District",
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fetch_from": "school_code.block",
    "fieldname": "block",
    "fieldtype": "Data",
    "label": "Block",
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fetch_from": "school_code.panchayat",
@@ -206,8 +201,7 @@
    "fieldname": "pin_code",
    "fieldtype": "Data",
    "label": "Pin Code",
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fieldname": "school_details_section",
@@ -233,8 +227,7 @@
    "fieldname": "school_typegovtgovt_aided",
    "fieldtype": "Select",
    "label": "School type",
-   "options": "Government\nGovernment. Aided",
-   "reqd": 1
+   "options": "Government\nGovernment. Aided"
   },
   {
    "fieldname": "class_detailsfrom_to",
@@ -245,8 +238,7 @@
    "fieldname": "education_typeboysgirlsco_ed",
    "fieldtype": "Select",
    "label": "Education type",
-   "options": "\nBoys\nGirls\nCo-ed",
-   "reqd": 1
+   "options": "\nBoys\nGirls\nCo-ed"
   },
   {
    "fieldname": "column_break_20",
@@ -271,16 +263,14 @@
    "fieldtype": "Data",
    "label": "School Contact No.",
    "length": 10,
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fetch_from": "school_code.principal_name",
    "fieldname": "name_of_headmaster_head_mistress",
    "fieldtype": "Data",
    "label": "Name of Headmaster/ Head Mistress",
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fetch_from": "school_code.principle_mobile_number",
@@ -288,8 +278,7 @@
    "fieldtype": "Data",
    "label": "Headmaster/ Head Mistress Contact No",
    "length": 10,
-   "read_only": 1,
-   "reqd": 1
+   "read_only": 1
   },
   {
    "fetch_from": "school_code.name_of_asst_hmhms",
@@ -359,8 +348,7 @@
    "fieldname": "select_room_condition",
    "fieldtype": "Select",
    "label": "Room condition",
-   "options": "\nGood\nPoor",
-   "reqd": 1
+   "options": "\nGood\nPoor"
   },
   {
    "fieldname": "full_time_teacher",
@@ -695,7 +683,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-22 12:58:00.025502",
+ "modified": "2022-08-24 12:16:25.971094",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",

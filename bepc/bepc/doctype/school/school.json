@@ -54,8 +54,7 @@
   {
    "fieldname": "post_office",
    "fieldtype": "Data",
-   "label": "Postal Address",
-   "reqd": 1
+   "label": "Postal Address"
   },
   {
    "fieldname": "district",
@@ -63,8 +62,7 @@
    "in_global_search": 1,
    "in_standard_filter": 1,
    "label": "District",
-   "options": "Districts",
-   "reqd": 1
+   "options": "Districts"
   },
   {
    "fieldname": "state",
@@ -78,8 +76,7 @@
    "fieldname": "pin_code",
    "fieldtype": "Data",
    "label": "Pin Code",
-   "length": 6,
-   "reqd": 1
+   "length": 6
   },
   {
    "fieldname": "column_break_9",
@@ -88,22 +85,19 @@
   {
    "fieldname": "principal_name",
    "fieldtype": "Data",
-   "label": "Name of Headmaster/Head Mistress",
-   "reqd": 1
+   "label": "Name of Headmaster/Head Mistress"
   },
   {
    "fieldname": "principle_mobile_number",
    "fieldtype": "Data",
    "label": "Headmaster/Head Mistress Contact No",
-   "length": 10,
-   "reqd": 1
+   "length": 10
   },
   {
    "fieldname": "block",
    "fieldtype": "Link",
    "label": "Block",
-   "options": "Block",
-   "reqd": 1
+   "options": "Block"
   },
   {
    "fieldname": "udise",
@@ -114,8 +108,7 @@
   {
    "fieldname": "zone",
    "fieldtype": "Data",
-   "label": "Zone",
-   "reqd": 1
+   "label": "Zone"
   },
   {
    "fieldname": "panchayat",
@@ -125,8 +118,7 @@
   {
    "fieldname": "cluster_name",
    "fieldtype": "Data",
-   "label": "Cluster Name ",
-   "reqd": 1
+   "label": "Cluster Name "
   },
   {
    "fieldname": "near_landmark",
@@ -143,8 +135,7 @@
    "fieldname": "school_contact_no",
    "fieldtype": "Data",
    "label": "School Contact No.",
-   "length": 10,
-   "reqd": 1
+   "length": 10
   },
   {
    "fieldname": "name_of_asst_hmhms",
@@ -165,14 +156,12 @@
   {
    "fieldname": "latitude",
    "fieldtype": "Data",
-   "label": "Latitude",
-   "reqd": 1
+   "label": "Latitude"
   },
   {
    "fieldname": "longitude",
    "fieldtype": "Data",
-   "label": "Longitude",
-   "reqd": 1
+   "label": "Longitude"
   },
   {
    "fieldname": "data_33",
@@ -210,7 +199,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-19 17:02:45.012159",
+ "modified": "2022-08-24 12:14:37.062417",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
