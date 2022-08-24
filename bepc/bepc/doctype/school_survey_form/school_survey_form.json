@@ -28,8 +28,7 @@
   "medium",
   "school_typegovtgovt_aided",
   "column_break_20",
-  "class_detailsfrom_to",
-  "class_to",
+  "class_details",
   "education_typeboysgirlsco_ed",
   "school_contacts_section",
   "school_mail_id",
@@ -217,11 +216,6 @@
    "fieldtype": "Select",
    "label": "School type",
    "options": "Government\nGovernment. Aided"
-  },
-  {
-   "fieldname": "class_detailsfrom_to",
-   "fieldtype": "Data",
-   "label": "Class From"
   },
   {
    "fieldname": "education_typeboysgirlsco_ed",
@@ -650,11 +644,6 @@
    "label": "Survey End date"
   },
   {
-   "fieldname": "class_to",
-   "fieldtype": "Data",
-   "label": "Class To"
-  },
-  {
    "fieldname": "data_100",
    "fieldtype": "Table",
    "options": "Teacher Training Record"
@@ -667,11 +656,16 @@
    "fieldname": "school_timing",
    "fieldtype": "Data",
    "label": "School Timing"
+  },
+  {
+   "fieldname": "class_details",
+   "fieldtype": "Data",
+   "label": "Class Details(From-to)"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-24 15:37:53.127002",
+ "modified": "2022-08-24 15:42:20.418801",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",

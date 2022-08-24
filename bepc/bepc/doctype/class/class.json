@@ -18,23 +18,19 @@
    "fieldname": "class",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Class ",
-   "read_only": 1,
-   "reqd": 1
+   "label": "Class "
   },
   {
    "fieldname": "total_student",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Total Student",
-   "reqd": 1
+   "label": "Total Student"
   },
   {
    "fetch_from": "section.section",
    "fieldname": "section_name",
    "fieldtype": "Data",
-   "label": "Section",
-   "read_only": 1
+   "label": "Section"
   },
   {
    "fieldname": "total_boys",
@@ -50,7 +46,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-08-22 12:23:49.933087",
+ "modified": "2022-08-24 15:56:27.346663",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Class",
