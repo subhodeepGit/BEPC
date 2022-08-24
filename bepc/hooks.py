@@ -157,7 +157,7 @@ after_migrate = [
 		'bepc.patches.migrate_patch.set_custom_role_permission',
 ]
 
-# fixtures = [
+fixtures = [
 # 		{"dt": "Custom DocPerm", "filters": [
 # 		[
 # 			"parent", "not in", [
@@ -165,13 +165,13 @@ after_migrate = [
 # 			]
 # 		]
 # 	]},
-# 	{"dt" : "Workflow"},
-# 	# {"dt": "Workflow Action Master"},
-# 	# {"dt" : "Workflow State"},
+	{"dt" : "Workflow"},
+	{"dt": "Workflow Action Master"},
+	{"dt" : "Workflow State"},
 # 	{"dt" : "Role"},
 # 	# {"dt" : "Module Profile"},
 # 	{"dt" : "Role Profile"},
-# ]
+]
 
 # User Data Protection
 # --------------------
