@@ -133,7 +133,7 @@
   {
    "fetch_from": "school_code.udise",
    "fieldname": "udise",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "UDISE",
    "read_only": 1,
    "reqd": 1
@@ -262,7 +262,6 @@
    "fieldname": "school_contact_no",
    "fieldtype": "Data",
    "label": "School Contact No.",
-   "length": 10,
    "read_only": 1
   },
   {
@@ -277,7 +276,6 @@
    "fieldname": "headmaster_head_mistress_contact_no",
    "fieldtype": "Data",
    "label": "Headmaster/ Head Mistress Contact No",
-   "length": 10,
    "read_only": 1
   },
   {
@@ -290,8 +288,7 @@
   {
    "fieldname": "asst_contact_no",
    "fieldtype": "Data",
-   "label": "Asst Contact No",
-   "length": 10
+   "label": "Asst Contact No"
   },
   {
    "fieldname": "name_of_incharge",
@@ -301,8 +298,7 @@
   {
    "fieldname": "incharge_contact_no",
    "fieldtype": "Data",
-   "label": "Incharge Contact No",
-   "length": 10
+   "label": "Incharge Contact No"
   },
   {
    "fetch_from": "school_code.name_of_president",
@@ -316,7 +312,6 @@
    "fieldname": "presidentsecretary_contact_no",
    "fieldtype": "Data",
    "label": "President/Secretary Contact No",
-   "length": 10,
    "read_only": 1
   },
   {
@@ -618,8 +613,7 @@
   {
    "fieldname": "mob_no",
    "fieldtype": "Data",
-   "label": "Mob No",
-   "length": 10
+   "label": "Mob No"
   },
   {
    "fieldname": "office_no",
@@ -658,12 +652,12 @@
   },
   {
    "fieldname": "survey_start_date",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Survey Start date"
   },
   {
    "fieldname": "survey_end_date",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "label": "Survey End date"
   },
   {
@@ -683,7 +677,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-24 12:16:25.971094",
+ "modified": "2022-08-24 15:19:12.515745",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
