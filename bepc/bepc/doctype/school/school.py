@@ -5,20 +5,21 @@ import frappe
 from frappe.model.document import Document
 
 class School(Document):
-	def validate(doc):
-		# mobile_number_validation(doc)
-		# mobile_number(doc)
-		# number_validation(doc)
-		pincode(doc)
+	pass
+	# def validate(doc):
+	# 	# mobile_number_validation(doc)
+	# 	# mobile_number(doc)
+	# 	# number_validation(doc)
+	# 	pincode(doc)
 
-def pincode(doc):
-	if doc.pin_code:
-		if not (doc.pin_code).isdigit():
-			frappe.throw("Field <b>Pin Code</b> Accept Digits Only")
-		if len(doc.pin_code)>6:
-			frappe.throw("Field <b>Pin Code</b> must be 6 Digits")
-		if len(doc.pin_code)<6:
-			frappe.throw("Field <b>Pin Code</b> must be 6 Digits")
+# def pincode(doc):
+# 	if doc.pin_code:
+# 		if not (doc.pin_code).isdigit():
+# 			frappe.throw("Field <b>Pin Code</b> Accept Digits Only")
+# 		if len(doc.pin_code)>6:
+# 			frappe.throw("Field <b>Pin Code</b> must be 6 Digits")
+# 		if len(doc.pin_code)<6:
+# 			frappe.throw("Field <b>Pin Code</b> must be 6 Digits")
 
 # def mobile_number_validation(doc):
 # 	if doc.school_contact_no:

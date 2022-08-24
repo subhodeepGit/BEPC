@@ -90,8 +90,7 @@
   {
    "fieldname": "principle_mobile_number",
    "fieldtype": "Data",
-   "label": "Headmaster/Head Mistress Contact No",
-   "length": 10
+   "label": "Headmaster/Head Mistress Contact No"
   },
   {
    "fieldname": "block",
@@ -134,8 +133,7 @@
   {
    "fieldname": "school_contact_no",
    "fieldtype": "Data",
-   "label": "School Contact No.",
-   "length": 10
+   "label": "School Contact No."
   },
   {
    "fieldname": "name_of_asst_hmhms",
@@ -150,8 +148,7 @@
   {
    "fieldname": "president_contact_no",
    "fieldtype": "Data",
-   "label": "President Contact No",
-   "length": 10
+   "label": "President Contact No"
   },
   {
    "fieldname": "latitude",
@@ -199,7 +196,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-24 12:14:37.062417",
+ "modified": "2022-08-24 13:24:15.212842",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
