@@ -75,8 +75,7 @@
   {
    "fieldname": "pin_code",
    "fieldtype": "Data",
-   "label": "Pin Code",
-   "length": 6
+   "label": "Pin Code"
   },
   {
    "fieldname": "column_break_9",
@@ -196,7 +195,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-24 13:24:15.212842",
+ "modified": "2022-08-24 14:19:12.932430",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
