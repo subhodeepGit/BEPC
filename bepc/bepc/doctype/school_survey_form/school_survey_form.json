@@ -43,12 +43,20 @@
   "name_of_presidentsecretary",
   "presidentsecretary_contact_no",
   "class_wise_students_section",
-  "class",
+  "class_vbg",
+  "class_vibg",
+  "class_viibg",
+  "class_viiibg",
+  "column_break_41",
+  "class_ixbg",
+  "class_xbg",
+  "class_xibg",
+  "class_xiibg",
   "school_detail_section",
   "total_class_rooms",
   "select_room_condition",
   "availibility_of_computer_teacher",
-  "column_break_41",
+  "column_break_50",
   "full_time_teacher",
   "para_teachers",
   "it_infra_details_section",
@@ -305,12 +313,6 @@
    "fieldname": "class_wise_students_section",
    "fieldtype": "Section Break",
    "label": "Class wise students"
-  },
-  {
-   "fieldname": "class",
-   "fieldtype": "Table",
-   "label": "Class",
-   "options": "Class"
   },
   {
    "fieldname": "school_detail_section",
@@ -625,7 +627,7 @@
   {
    "fieldname": "room_details_for_lab_section",
    "fieldtype": "Section Break",
-   "label": "Room Details for Lab"
+   "label": "Room Details for Lab-1"
   },
   {
    "fieldname": "room_details_for_lab",
@@ -661,11 +663,55 @@
    "fieldname": "class_details",
    "fieldtype": "Data",
    "label": "Class Details(From-to)"
+  },
+  {
+   "fieldname": "class_vbg",
+   "fieldtype": "Data",
+   "label": "Class V(B/G)"
+  },
+  {
+   "fieldname": "class_vibg",
+   "fieldtype": "Data",
+   "label": "Class VI(B/G)"
+  },
+  {
+   "fieldname": "class_viibg",
+   "fieldtype": "Data",
+   "label": "Class VII(B/G)"
+  },
+  {
+   "fieldname": "class_viiibg",
+   "fieldtype": "Data",
+   "label": "Class VIII(B/G)"
+  },
+  {
+   "fieldname": "class_ixbg",
+   "fieldtype": "Data",
+   "label": "Class IX(B/G)"
+  },
+  {
+   "fieldname": "class_xbg",
+   "fieldtype": "Data",
+   "label": "Class X(B/G)"
+  },
+  {
+   "fieldname": "class_xibg",
+   "fieldtype": "Data",
+   "label": "Class XI(B/G)"
+  },
+  {
+   "fieldname": "class_xiibg",
+   "fieldtype": "Data",
+   "label": "Class XII(B/G)"
+  },
+  {
+   "fieldname": "column_break_50",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-24 15:42:20.418801",
+ "modified": "2022-08-24 17:00:09.913169",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
