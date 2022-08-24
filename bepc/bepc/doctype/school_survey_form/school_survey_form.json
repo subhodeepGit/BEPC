@@ -24,8 +24,7 @@
   "pin_code",
   "near_landmark",
   "school_details_section",
-  "school_start_time",
-  "school_end_time",
+  "school_timing",
   "medium",
   "school_typegovtgovt_aided",
   "column_break_20",
@@ -207,16 +206,6 @@
    "fieldname": "school_details_section",
    "fieldtype": "Section Break",
    "label": "School Details"
-  },
-  {
-   "fieldname": "school_start_time",
-   "fieldtype": "Time",
-   "label": "School Start Timing"
-  },
-  {
-   "fieldname": "school_end_time",
-   "fieldtype": "Time",
-   "label": "School End Timing"
   },
   {
    "fieldname": "medium",
@@ -673,11 +662,16 @@
   {
    "fieldname": "column_break_61",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "school_timing",
+   "fieldtype": "Data",
+   "label": "School Timing"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-24 15:19:12.515745",
+ "modified": "2022-08-24 15:37:53.127002",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
