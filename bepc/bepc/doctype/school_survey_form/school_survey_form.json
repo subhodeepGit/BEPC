@@ -423,9 +423,8 @@
   },
   {
    "fieldname": "internet_availibility",
-   "fieldtype": "Select",
-   "label": "Internet availibility",
-   "options": "\nYes\nNo"
+   "fieldtype": "Data",
+   "label": "Internet availibility"
   },
   {
    "fieldname": "internet_type",
@@ -741,7 +740,7 @@
   },
   {
    "fieldname": "room_condition",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Room Condition"
   },
   {
@@ -898,7 +897,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 12:12:42.632130",
+ "modified": "2022-08-25 13:36:29.964124",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
