@@ -289,7 +289,7 @@
   {
    "fetch_from": "school_code.school_contact_no",
    "fieldname": "school_contact_no",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "School Contact No.",
    "read_only": 1
   },
@@ -303,7 +303,7 @@
   {
    "fetch_from": "school_code.principle_mobile_number",
    "fieldname": "headmaster_head_mistress_contact_no",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Headmaster/ Head Mistress Contact No",
    "read_only": 1
   },
@@ -316,7 +316,7 @@
   },
   {
    "fieldname": "asst_contact_no",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Asst Contact No"
   },
   {
@@ -326,7 +326,7 @@
   },
   {
    "fieldname": "incharge_contact_no",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Incharge Contact No"
   },
   {
@@ -339,7 +339,7 @@
   {
    "fetch_from": "school_code.president_contact_no",
    "fieldname": "presidentsecretary_contact_no",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "President/Secretary Contact No",
    "read_only": 1
   },
@@ -897,7 +897,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 13:36:29.964124",
+ "modified": "2022-08-25 16:22:19.572804",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
