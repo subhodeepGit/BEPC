@@ -7,8 +7,19 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "item_code",
   "item_name",
-  "item_group"
+  "is_insured",
+  "data_3",
+  "item_group",
+  "manufacturer",
+  "insurance_details_section",
+  "ins_company",
+  "branch",
+  "address",
+  "column_break_11",
+  "insured_name",
+  "date_of_insurance"
  ],
  "fields": [
   {
@@ -16,20 +27,80 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Equipment Name"
+   "label": "Item Name"
   },
   {
    "fieldname": "item_group",
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Equipment Group",
+   "label": "Item Group",
    "options": "Equipment Group"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "data_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_insured",
+   "fieldtype": "Check",
+   "label": "Is Insured"
+  },
+  {
+   "fieldname": "insurance_details_section",
+   "fieldtype": "Section Break",
+   "label": "Insurance Details"
+  },
+  {
+   "fieldname": "insured_name",
+   "fieldtype": "Data",
+   "label": "Insured Name"
+  },
+  {
+   "fieldname": "date_of_insurance",
+   "fieldtype": "Data",
+   "label": "Date of Insurance"
+  },
+  {
+   "fieldname": "ins_company",
+   "fieldtype": "Link",
+   "label": "Insurance Company",
+   "options": "Insurance Company",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "branch.company",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch"
+  },
+  {
+   "fetch_from": "ins_company.address",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Data",
+   "label": "Manufacturer"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-19 16:19:29.169024",
+ "modified": "2022-08-25 17:50:20.846824",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Items",
@@ -49,7 +120,8 @@
   }
  ],
  "quick_entry": 1,
- "search_fields": "item_name",
+ "search_fields": "item_code, item_name",
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "item_code"
 }

@@ -8,7 +8,6 @@
  "field_order": [
   "site",
   "udise_code",
-  "tcl_code",
   "school_name",
   "column_break_5",
   "district",
@@ -21,25 +20,26 @@
   {
    "fieldname": "site",
    "fieldtype": "Link",
-   "label": "School",
-   "options": "School"
+   "in_list_view": 1,
+   "label": "TCL Code",
+   "options": "School",
+   "reqd": 1
   },
   {
    "fetch_from": "site.udise",
    "fieldname": "udise_code",
    "fieldtype": "Data",
-   "label": "UDISE code"
-  },
-  {
-   "fieldname": "tcl_code",
-   "fieldtype": "Data",
-   "label": "TCL Code"
+   "in_list_view": 1,
+   "label": "UDISE code",
+   "reqd": 1
   },
   {
    "fetch_from": "site.site_name",
    "fieldname": "school_name",
    "fieldtype": "Data",
-   "label": "School name"
+   "in_list_view": 1,
+   "label": "School name",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_5",
@@ -49,19 +49,23 @@
    "fetch_from": "site.district",
    "fieldname": "district",
    "fieldtype": "Data",
-   "label": "District"
+   "in_list_view": 1,
+   "label": "District",
+   "reqd": 1
   },
   {
    "fetch_from": "site.block",
    "fieldname": "block",
    "fieldtype": "Data",
-   "label": "Block"
+   "label": "Block",
+   "reqd": 1
   },
   {
    "fetch_from": "site.pin_code",
    "fieldname": "pin_code",
    "fieldtype": "Data",
-   "label": "Pin Code"
+   "label": "Pin Code",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_9",
@@ -76,7 +80,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-19 17:46:48.424118",
+ "modified": "2022-08-25 17:27:50.316095",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Consent form for Teacher Training",
@@ -95,6 +99,8 @@
    "write": 1
   }
  ],
+ "search_fields": "site, school_name, udise_code",
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "site"
 }

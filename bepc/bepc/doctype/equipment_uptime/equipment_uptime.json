@@ -9,7 +9,6 @@
  "field_order": [
   "site",
   "udise_code",
-  "tcl_code",
   "site_name",
   "column_break_5",
   "district",
@@ -79,7 +78,7 @@
    "fieldname": "site",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "School",
+   "label": "TCL Code",
    "options": "School",
    "reqd": 1
   },
@@ -152,11 +151,6 @@
    "label": "UDISE code"
   },
   {
-   "fieldname": "tcl_code",
-   "fieldtype": "Data",
-   "label": "TCL Code"
-  },
-  {
    "fieldname": "column_break_5",
    "fieldtype": "Column Break"
   },
@@ -175,7 +169,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-19 16:18:06.652276",
+ "modified": "2022-08-25 16:52:29.858331",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Equipment Uptime",

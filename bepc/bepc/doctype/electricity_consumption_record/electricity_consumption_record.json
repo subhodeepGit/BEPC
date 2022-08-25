@@ -9,7 +9,6 @@
  "field_order": [
   "site",
   "udise_code",
-  "tcl_code",
   "site_name",
   "column_break_7",
   "district",
@@ -20,11 +19,9 @@
   "meter_reading",
   "total_billable_unit",
   "column_break_14",
+  "date",
   "reading_image",
-  "total_bill_amount",
-  "sub_meter_reading_section",
-  "table_17",
-  "submeter_total_current_unit"
+  "total_bill_amount"
  ],
  "fields": [
   {
@@ -53,7 +50,7 @@
    "fieldname": "site",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "School",
+   "label": "TCL Code",
    "options": "School",
    "reqd": 1
   },
@@ -94,7 +91,7 @@
   {
    "fieldname": "total_billable_unit",
    "fieldtype": "Float",
-   "label": "Total Billable Unit",
+   "label": "Sub meter reading",
    "read_only": 1
   },
   {
@@ -105,35 +102,21 @@
    "read_only": 1
   },
   {
-   "fieldname": "tcl_code",
-   "fieldtype": "Data",
-   "label": "TCL Code"
-  },
-  {
    "fieldname": "total_bill_amount",
    "fieldtype": "Data",
    "label": "Total Bill Amount"
   },
   {
-   "fieldname": "sub_meter_reading_section",
-   "fieldtype": "Section Break",
-   "label": "Sub meter reading"
-  },
-  {
-   "fieldname": "table_17",
-   "fieldtype": "Table",
-   "options": "Sub Meter Records"
-  },
-  {
-   "fieldname": "submeter_total_current_unit",
-   "fieldtype": "Float",
-   "label": "Submeter Total Current Unit",
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
    "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-19 13:27:00.510163",
+ "modified": "2022-08-25 17:43:26.841028",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",

@@ -225,7 +225,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Item",
-   "link_to": "Item",
+   "link_to": "Items",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -242,43 +242,17 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Theft & Insurance Transaction",
+   "label": "School-Wise Equipment List",
+   "link_to": "School wise Equipment List",
    "link_type": "DocType",
    "onboard": 0,
-   "type": "Card Break"
+   "type": "Link"
   },
   {
    "hidden": 0,
    "is_query_report": 0,
    "label": "Theft Case record",
    "link_to": "Theft Case record",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Theft Incident",
-   "link_to": "Theft Incident",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Insurance Details",
-   "link_to": "Insurance Detail Form",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Insurance Claim Status",
-   "link_to": "Insurance Claim Status",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -357,7 +331,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-08-22 12:19:48.665747",
+ "modified": "2022-08-25 17:56:34.755608",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",

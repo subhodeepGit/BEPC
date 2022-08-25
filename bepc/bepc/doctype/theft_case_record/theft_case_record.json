@@ -9,13 +9,11 @@
  "field_order": [
   "item",
   "udise_code",
-  "tcl_code",
   "apple",
   "column_break_5",
   "district",
   "block",
   "pincode",
-  "amended_from",
   "section_break_10",
   "euipment_lost",
   "equipment_name",
@@ -27,18 +25,17 @@
   "covered_under_insurance",
   "attachments_section",
   "fir_copy",
-  "ncr_copy",
-  "delivery_challan_receipt",
+  "ntr_copy",
   "column_break_23",
-  "insurance_receipt",
-  "insurance_claim_receipt"
+  "insurance_claim_receipt",
+  "delivery_challan_receipt"
  ],
  "fields": [
   {
    "fieldname": "item",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "School",
+   "label": "TCL Code",
    "options": "School",
    "reqd": 1
   },
@@ -46,20 +43,13 @@
    "fetch_from": "item.udise",
    "fieldname": "udise_code",
    "fieldtype": "Data",
-   "label": "UDISE code",
-   "read_only": 1
-  },
-  {
-   "fieldname": "tcl_code",
-   "fieldtype": "Data",
-   "label": "TCL Code"
+   "label": "UDISE code"
   },
   {
    "fetch_from": "item.site_name",
    "fieldname": "apple",
    "fieldtype": "Data",
-   "label": "School Name",
-   "read_only": 1
+   "label": "School Name"
   },
   {
    "fieldname": "column_break_5",
@@ -69,31 +59,19 @@
    "fetch_from": "item.district",
    "fieldname": "district",
    "fieldtype": "Data",
-   "label": "District",
-   "read_only": 1
+   "label": "District"
   },
   {
    "fetch_from": "item.block",
    "fieldname": "block",
    "fieldtype": "Data",
-   "label": "Block",
-   "read_only": 1
+   "label": "Block"
   },
   {
    "fetch_from": "item.pin_code",
    "fieldname": "pincode",
    "fieldtype": "Data",
-   "label": "Pincode",
-   "read_only": 1
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Theft Case record",
-   "print_hide": 1,
-   "read_only": 1
+   "label": "Pincode"
   },
   {
    "fieldname": "section_break_10",
@@ -129,7 +107,7 @@
    "fieldname": "reason",
    "fieldtype": "Select",
    "label": "Reason",
-   "options": "\nTheft\nNatural Calamity\nRat Bitten\nPhysical Damage"
+   "options": "\nTheft\nBurglary\nNatural Calamity\nRat Bitten\nPhysical Damage"
   },
   {
    "fieldname": "equipment_insured",
@@ -145,6 +123,7 @@
    "options": "\nYes\nNo"
   },
   {
+   "depends_on": "eval:doc.covered_under_insurance == 'Yes'",
    "fieldname": "attachments_section",
    "fieldtype": "Section Break",
    "label": "Attachments"
@@ -153,16 +132,6 @@
    "fieldname": "fir_copy",
    "fieldtype": "Attach",
    "label": "FIR Copy"
-  },
-  {
-   "fieldname": "ncr_copy",
-   "fieldtype": "Attach",
-   "label": "NCR Copy"
-  },
-  {
-   "fieldname": "insurance_receipt",
-   "fieldtype": "Attach",
-   "label": "Insurance receipt"
   },
   {
    "fieldname": "insurance_claim_receipt",
@@ -177,12 +146,16 @@
   {
    "fieldname": "column_break_23",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ntr_copy",
+   "fieldtype": "Attach",
+   "label": "NTR Copy"
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2022-08-22 12:17:25.680586",
+ "modified": "2022-08-25 17:31:28.011430",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Case record",

@@ -8,8 +8,8 @@ class ElectricityConsumptionRecord(Document):
 	def validate(self):
 		self.cal()
 
-		if(self.meter_reading != self.submeter_total_current_unit):
-			frappe.throw("<b>Mainmeter Current reading</b> not Maching with <b>SubMeter Total Current reading</b>")	
+		# if(self.meter_reading != self.submeter_total_current_unit):
+		# 	frappe.throw("<b>Mainmeter Current reading</b> not Maching with <b>SubMeter Total Current reading</b>")	
 	
 	def cal(self):
 		a = self.meter_reading

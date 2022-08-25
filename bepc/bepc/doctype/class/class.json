@@ -10,6 +10,10 @@
   "section_name",
   "total_boys",
   "total_girls",
+  "general_students",
+  "obc_students",
+  "sc_students",
+  "st_students",
   "total_student"
  ],
  "fields": [
@@ -41,12 +45,32 @@
    "fieldname": "total_girls",
    "fieldtype": "Data",
    "label": "Total Girls"
+  },
+  {
+   "fieldname": "general_students",
+   "fieldtype": "Data",
+   "label": "General Students"
+  },
+  {
+   "fieldname": "obc_students",
+   "fieldtype": "Data",
+   "label": "OBC Students"
+  },
+  {
+   "fieldname": "sc_students",
+   "fieldtype": "Data",
+   "label": "SC Students"
+  },
+  {
+   "fieldname": "st_students",
+   "fieldtype": "Data",
+   "label": "ST Students"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-08-24 15:56:27.346663",
+ "modified": "2022-08-25 17:10:22.072491",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Class",

@@ -9,14 +9,15 @@
  "field_order": [
   "site",
   "udise_code",
-  "tcl_code",
   "siteschool_name",
   "column_break_5",
   "district",
   "block",
   "pin_code",
   "section_break_9",
+  "date",
   "internet_service_provider",
+  "column_break_11",
   "data_usage",
   "monthly_bill_amount"
  ],
@@ -53,7 +54,7 @@
   {
    "fieldname": "site",
    "fieldtype": "Link",
-   "label": "School",
+   "label": "TCL Code",
    "options": "School"
   },
   {
@@ -61,11 +62,6 @@
    "fieldname": "udise_code",
    "fieldtype": "Data",
    "label": "UDISE code"
-  },
-  {
-   "fieldname": "tcl_code",
-   "fieldtype": "Data",
-   "label": "TCL Code"
   },
   {
    "fieldname": "column_break_5",
@@ -86,11 +82,22 @@
   {
    "fieldname": "section_break_9",
    "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-19 14:48:17.865497",
+ "modified": "2022-08-25 16:51:47.027321",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",

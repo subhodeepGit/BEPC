@@ -17,17 +17,20 @@
   "date",
   "end_date",
   "column_break_9",
+  "training_venue",
   "training_on",
   "participants_section",
   "teachers_group",
-  "column_break_22",
   "teacher_group_name",
+  "column_break_22",
+  "school_consent",
   "section_break_17",
   "training_photos_attachment",
   "training_attendance_attachment",
   "training_recording_attachment",
   "training_assessment_attachment",
-  "feedback_attachment"
+  "feedback_attachment",
+  "venue_pictures_attachment"
  ],
  "fields": [
   {
@@ -141,11 +144,28 @@
    "fieldtype": "Table",
    "label": "Feedback Attachment",
    "options": "Feedback Attachment"
+  },
+  {
+   "fieldname": "venue_pictures_attachment",
+   "fieldtype": "Table",
+   "label": "Venue Pictures attachment",
+   "options": "Venue Pictures attachment"
+  },
+  {
+   "fieldname": "school_consent",
+   "fieldtype": "Link",
+   "label": "School Consent",
+   "options": "School Consent form for Teacher Training"
+  },
+  {
+   "fieldname": "training_venue",
+   "fieldtype": "Data",
+   "label": "Training Venue"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-19 17:41:41.406588",
+ "modified": "2022-08-25 17:05:50.264205",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",
