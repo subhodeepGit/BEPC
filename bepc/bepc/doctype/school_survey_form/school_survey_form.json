@@ -211,25 +211,28 @@
   {
    "fetch_from": "school_code.state",
    "fieldname": "state",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "State",
+   "options": "State",
    "read_only": 1
   },
   {
    "fetch_from": "school_code.district",
    "fieldname": "district",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "District",
+   "options": "Districts",
    "read_only": 1
   },
   {
    "fetch_from": "school_code.block",
    "fieldname": "block",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Block",
+   "options": "Block",
    "read_only": 1
   },
   {
@@ -242,7 +245,7 @@
   {
    "fetch_from": "school_code.pin_code",
    "fieldname": "pin_code",
-   "fieldtype": "Data",
+   "fieldtype": "Int",
    "label": "Pin Code",
    "read_only": 1
   },
@@ -253,17 +256,17 @@
   },
   {
    "fieldname": "medium",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Medium"
   },
   {
    "fieldname": "school_typegovtgovt_aided",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "School type"
   },
   {
    "fieldname": "education_typeboysgirlsco_ed",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Education type"
   },
   {
@@ -286,57 +289,57 @@
   {
    "fetch_from": "school_code.school_contact_no",
    "fieldname": "school_contact_no",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "School Contact No.",
    "read_only": 1
   },
   {
    "fetch_from": "school_code.principal_name",
    "fieldname": "name_of_headmaster_head_mistress",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Name of Headmaster/ Head Mistress",
    "read_only": 1
   },
   {
    "fetch_from": "school_code.principle_mobile_number",
    "fieldname": "headmaster_head_mistress_contact_no",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Headmaster/ Head Mistress Contact No",
    "read_only": 1
   },
   {
    "fetch_from": "school_code.name_of_asst_hmhms",
    "fieldname": "name_of_asst_hmhms",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Name of Asst Hm/Hms",
    "read_only": 1
   },
   {
    "fieldname": "asst_contact_no",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Asst Contact No"
   },
   {
    "fieldname": "name_of_incharge",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Name of incharge"
   },
   {
    "fieldname": "incharge_contact_no",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Incharge Contact No"
   },
   {
    "fetch_from": "school_code.name_of_president",
    "fieldname": "name_of_presidentsecretary",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Name Of President/Secretary",
    "read_only": 1
   },
   {
    "fetch_from": "school_code.president_contact_no",
    "fieldname": "presidentsecretary_contact_no",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "President/Secretary Contact No",
    "read_only": 1
   },
@@ -356,27 +359,27 @@
   },
   {
    "fieldname": "total_class_rooms",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Total class rooms"
   },
   {
    "fieldname": "select_room_condition",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Room condition"
   },
   {
    "fieldname": "full_time_teacher",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Full time teacher"
   },
   {
    "fieldname": "para_teachers",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Para Teachers"
   },
   {
    "fieldname": "availibility_of_computer_teacher",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Availibility of computer teacher"
   },
   {
@@ -390,48 +393,48 @@
   },
   {
    "fieldname": "nos_of_computer_lab_in_school",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Nos of Computer lab in school"
   },
   {
    "fieldname": "nos_of_computer",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Nos of Computer"
   },
   {
    "fieldname": "nos_of_projector",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Nos of Projector"
   },
   {
    "fieldname": "nos_of_ups",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Nos of UPS"
   },
   {
    "fieldname": "nos_of_printer",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Nos of Printer"
   },
   {
    "fieldname": "othe_equipment",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Othe Equipment"
   },
   {
    "fieldname": "internet_availibility",
-   "fieldtype": "Text",
+   "fieldtype": "Select",
    "label": "Internet availibility",
    "options": "\nYes\nNo"
   },
   {
    "fieldname": "internet_type",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Internet type"
   },
   {
    "fieldname": "isp_name",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "ISP Name"
   },
   {
@@ -444,17 +447,17 @@
   },
   {
    "fieldname": "name_of_existing_project_name",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Name Of existing project Name"
   },
   {
    "fieldname": "total_nos_of_teachers_using_project",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Total Nos of teachers using Project"
   },
   {
    "fieldname": "year_of_start__project",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Year of Start  project "
   },
   {
@@ -464,32 +467,32 @@
   },
   {
    "fieldname": "connection__details",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Connection  Details"
   },
   {
    "fieldname": "average_load_shedding",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Average Load shedding"
   },
   {
    "fieldname": "distance_from_meter_to_proposed_roomft",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Distance from Meter to Proposed Room(Ft.)"
   },
   {
    "fieldname": "generator_facility_available_in_school",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Generator Facility Available in School"
   },
   {
    "fieldname": "voltage_condition_in_school_and_room",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Voltage Condition in School and Room"
   },
   {
    "fieldname": "earthling_condition_in_proposed_class_rooms",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Earthling condition in Proposed Class Rooms"
   },
   {
@@ -503,32 +506,32 @@
   },
   {
    "fieldname": "name_of_nearest_police_station",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Name of Nearest Police Station"
   },
   {
    "fieldname": "name_of_nearest_post_office",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Name of Nearest Post Office"
   },
   {
    "fieldname": "name_of_nearest_rail_station",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Name of Nearest Rail Station"
   },
   {
    "fieldname": "name_of_nearest_bus_stand",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Name of Nearest Bus Stand"
   },
   {
    "fieldname": "nearest_landmark",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Nearest Landmark"
   },
   {
    "fieldname": "best_route_to_reach_school",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Best route to reach School"
   },
   {
@@ -542,7 +545,7 @@
   },
   {
    "fieldname": "prefer_better_isp",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Prefer Better ISP"
   },
   {
@@ -552,27 +555,28 @@
   },
   {
    "fieldname": "theft_reported_in_last_05_years",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Theft Reported in last 05 Years"
   },
   {
    "fieldname": "night__guard_available",
-   "fieldtype": "Text",
-   "label": "Night  Guard Available"
+   "fieldtype": "Select",
+   "label": "Night  Guard Available",
+   "options": "\nYES\nNO"
   },
   {
    "fieldname": "flood_status_in_last_five_year",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Flood status in last five year"
   },
   {
    "fieldname": "types_of_flood_affect_at_school",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Types of Flood affect at school"
   },
   {
    "fieldname": "availability_of_boundary_wall",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Availability of Boundary Wall"
   },
   {
@@ -586,12 +590,12 @@
   },
   {
    "fieldname": "bank_name",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Bank Name"
   },
   {
    "fieldname": "ifsc_code",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "IFSC Code"
   },
   {
@@ -600,12 +604,12 @@
   },
   {
    "fieldname": "ac_name",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "A/C Name"
   },
   {
    "fieldname": "ac_no",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "A/C No"
   },
   {
@@ -615,12 +619,12 @@
   },
   {
    "fieldname": "name_of_the_deo",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Name Of the DEO"
   },
   {
    "fieldname": "address",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Address"
   },
   {
@@ -629,12 +633,12 @@
   },
   {
    "fieldname": "mob_no",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Mob No"
   },
   {
    "fieldname": "office_no",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Office No"
   },
   {
@@ -649,8 +653,9 @@
   },
   {
    "fieldname": "remarks",
-   "fieldtype": "Text",
-   "label": "Remarks"
+   "fieldtype": "Long Text",
+   "label": "Remarks",
+   "width": "20px"
   },
   {
    "fieldname": "column_break_3",
@@ -677,52 +682,52 @@
   },
   {
    "fieldname": "school_timing",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "School Timing"
   },
   {
    "fieldname": "class_details",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Class Details(From-to)"
   },
   {
    "fieldname": "class_vbg",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Class V(B/G)"
   },
   {
    "fieldname": "class_vibg",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Class VI(B/G)"
   },
   {
    "fieldname": "class_viibg",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Class VII(B/G)"
   },
   {
    "fieldname": "class_viiibg",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Class VIII(B/G)"
   },
   {
    "fieldname": "class_ixbg",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Class IX(B/G)"
   },
   {
    "fieldname": "class_xbg",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Class X(B/G)"
   },
   {
    "fieldname": "class_xibg",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Class XI(B/G)"
   },
   {
    "fieldname": "class_xiibg",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Class XII(B/G)"
   },
   {
@@ -731,32 +736,32 @@
   },
   {
    "fieldname": "room_no",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Room No"
   },
   {
    "fieldname": "room_condition",
-   "fieldtype": "Text",
+   "fieldtype": "Date",
    "label": "Room Condition"
   },
   {
    "fieldname": "room_available_to_setup_computer_lab",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Room Available to Setup Computer lab"
   },
   {
    "fieldname": "selected_room_floor_no",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Selected room Floor No"
   },
   {
    "fieldname": "room_dimensions",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Room Dimensions Length* Width* Height "
   },
   {
    "fieldname": "wall_type",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Wall Type"
   },
   {
@@ -765,27 +770,27 @@
   },
   {
    "fieldname": "ceiling_type",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Ceiling Type"
   },
   {
    "fieldname": "electricity_available_in_school",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Electricity Available in school"
   },
   {
    "fieldname": "electricity_available_in_lab",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Electricity Available in lab"
   },
   {
    "fieldname": "total_nos_of_doors",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Total Nos of Doors"
   },
   {
    "fieldname": "total_nos_of_window",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Total Nos of Window"
   },
   {
@@ -795,32 +800,32 @@
   },
   {
    "fieldname": "room_no2",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Room No"
   },
   {
    "fieldname": "room_condition2",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Room Condition"
   },
   {
    "fieldname": "room_available_to_setup_computer_lab2",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Room Available to Setup Computer lab"
   },
   {
    "fieldname": "selected_room_floor_no2",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Selected room Floor No"
   },
   {
    "fieldname": "room_dimensions2",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Room Dimensions Length* Width* Height"
   },
   {
    "fieldname": "wall_type2",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Wall Type"
   },
   {
@@ -829,37 +834,37 @@
   },
   {
    "fieldname": "ceiling_type2",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Ceiling Type"
   },
   {
    "fieldname": "electricity_available_in_school2",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Electricity Available in school"
   },
   {
    "fieldname": "electricity_available_in_lab2",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Electricity Available in lab"
   },
   {
    "fieldname": "total_nos_of_doors2",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Total Nos of Doors"
   },
   {
    "fieldname": "total_nos_of_window2",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Total Nos of Window"
   },
   {
    "fieldname": "trainer_name",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Trainer-1 Name"
   },
   {
    "fieldname": "contact_number",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Contact Number"
   },
   {
@@ -868,12 +873,12 @@
   },
   {
    "fieldname": "trainer_name2",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Trainer-2 Name"
   },
   {
    "fieldname": "contact_number2",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Contact Number"
   },
   {
@@ -882,18 +887,18 @@
   },
   {
    "fieldname": "trainer_name3",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Trainer-3 Name"
   },
   {
    "fieldname": "contact_number3",
-   "fieldtype": "Text",
+   "fieldtype": "Int",
    "label": "Contact Number"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 11:26:49.387970",
+ "modified": "2022-08-25 12:12:42.632130",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
