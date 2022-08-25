@@ -252,9 +252,8 @@
   },
   {
    "fieldname": "school_typegovtgovt_aided",
-   "fieldtype": "Select",
-   "label": "School type",
-   "options": "Government\nGovernment. Aided"
+   "fieldtype": "Text",
+   "label": "School type"
   },
   {
    "fieldname": "education_typeboysgirlsco_ed",
@@ -357,9 +356,8 @@
   },
   {
    "fieldname": "select_room_condition",
-   "fieldtype": "Select",
-   "label": "Room condition",
-   "options": "\nGood\nPoor"
+   "fieldtype": "Text",
+   "label": "Room condition"
   },
   {
    "fieldname": "full_time_teacher",
@@ -373,9 +371,8 @@
   },
   {
    "fieldname": "availibility_of_computer_teacher",
-   "fieldtype": "Select",
-   "label": "Availibility of computer teacher",
-   "options": "\nYes\nNo"
+   "fieldtype": "Text",
+   "label": "Availibility of computer teacher"
   },
   {
    "fieldname": "column_break_41",
@@ -418,7 +415,7 @@
   },
   {
    "fieldname": "internet_availibility",
-   "fieldtype": "Select",
+   "fieldtype": "Text",
    "label": "Internet availibility",
    "options": "\nYes\nNo"
   },
@@ -565,9 +562,8 @@
   },
   {
    "fieldname": "types_of_flood_affect_at_school",
-   "fieldtype": "Select",
-   "label": "Types of Flood affect at school",
-   "options": "\nNormal\nMedium\nHigh"
+   "fieldtype": "Text",
+   "label": "Types of Flood affect at school"
   },
   {
    "fieldname": "availability_of_boundary_wall",
@@ -892,7 +888,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 09:41:59.677426",
+ "modified": "2022-08-25 10:52:16.669749",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",

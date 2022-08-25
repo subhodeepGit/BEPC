@@ -1,14 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{data_33}-{site_name}",
+ "autoname": "field:data_33",
  "creation": "2022-07-06 16:34:53.349658",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "data_33",
-  "column_break_2",
   "site_name",
   "address_section",
   "udise",
@@ -163,7 +162,8 @@
    "fieldname": "data_33",
    "fieldtype": "Data",
    "label": "School Code",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "contact_details_section",
@@ -187,15 +187,11 @@
   {
    "fieldname": "column_break_27",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_2",
-   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-24 14:19:12.932430",
+ "modified": "2022-08-25 10:47:11.116794",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
