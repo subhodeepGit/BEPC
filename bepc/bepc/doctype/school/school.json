@@ -93,12 +93,15 @@
   {
    "fieldname": "block",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Block",
    "options": "Block"
   },
   {
    "fieldname": "udise",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "UDISE",
    "reqd": 1
   },
@@ -161,6 +164,8 @@
   {
    "fieldname": "data_33",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "School Code",
    "reqd": 1,
    "unique": 1
@@ -191,7 +196,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 10:47:11.116794",
+ "modified": "2022-08-25 11:23:19.770524",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
@@ -210,7 +215,7 @@
    "write": 1
   }
  ],
- "search_fields": "site_name",
+ "search_fields": "data_33, site_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "site_name"
