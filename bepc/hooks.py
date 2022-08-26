@@ -165,7 +165,7 @@ after_migrate = [
 # 			]
 # 		]
 # 	]},
-	# {"dt" : "Workflow"},
+# 	{"dt" : "Workflow"}
 	# {"dt": "Workflow Action Master"},
 	# {"dt" : "Workflow State"},
 # 	{"dt" : "Role"},
