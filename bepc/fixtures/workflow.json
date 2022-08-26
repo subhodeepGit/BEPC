@@ -308,7 +308,7 @@
   "doctype": "Workflow",
   "document_type": "School Survey Form",
   "is_active": 1,
-  "modified": "2022-08-26 11:38:51.764857",
+  "modified": "2022-08-26 12:58:43.851536",
   "name": "BEPC Survey Workflow",
   "override_status": 0,
   "parent": null,
@@ -370,7 +370,7 @@
    },
    {
     "allow_edit": "Approver II",
-    "doc_status": "2",
+    "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
     "next_action_email_template": null,
@@ -396,7 +396,7 @@
    },
    {
     "allow_edit": "Approver II",
-    "doc_status": "2",
+    "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
     "next_action_email_template": null,
@@ -409,7 +409,7 @@
    },
    {
     "allow_edit": "Approver II",
-    "doc_status": "1",
+    "doc_status": "0",
     "is_optional_state": 0,
     "message": null,
     "next_action_email_template": null,
@@ -497,7 +497,7 @@
     "parent": "BEPC Survey Workflow",
     "parentfield": "transitions",
     "parenttype": "Workflow",
-    "state": "Approved by Approver II"
+    "state": "Pending Approval by Approver II"
    }
   ],
   "workflow_name": "BEPC Survey Workflow",
