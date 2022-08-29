@@ -109,23 +109,30 @@ doctype_js = {
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"bepc.tasks.all"
-# 	],
-# 	"daily": [
-# 		"bepc.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"bepc.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"bepc.tasks.weekly"
-# 	]
-# 	"monthly": [
-# 		"bepc.tasks.monthly"
-# 	]
-# }
+scheduler_events = {
+
+	"cron": {
+		"* * * * *": [
+			"bepc.tasks.cron"
+		]
+	},
+
+	"all": [
+		"bepc.tasks.all"
+	],
+	"daily": [
+		"bepc.tasks.daily"
+	],
+	"hourly": [
+		"bepc.tasks.hourly"
+	],
+	"weekly": [
+		"bepc.tasks.weekly"
+	],
+	"monthly": [
+		"bepc.tasks.monthly"
+	],
+}
 
 # Testing
 # -------
