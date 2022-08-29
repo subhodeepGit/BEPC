@@ -5,15 +5,22 @@ import frappe
 from frappe.model.document import Document
 
 class SchoolSurveyForm(Document):
-    pass
-	# def validate(doc):
+	pass
+	# def on_change(doc):
+	# 	user_role=frappe.db.get_value("User",{"name":frappe.session.user},["role_profile_name"])
+	# 	print("\n\n\n\n\n\n")
+	# 	print(user_role)
 		# mobile_number_validation(doc)
 		# mobile_number(doc)
 		# mobile(doc)
-        
+		
 		# contact(doc)
 		# contact2(doc)
 		# contact3(doc)
+@frappe.whitelist()
+def get_user_role(doc):
+	user_role=frappe.db.get_value("User",{"name":frappe.session.user},["role_profile_name"])
+	return user_role
 
 # def mobile_number_validation(doc):
 #     if doc.asst_contact_no:

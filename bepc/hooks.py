@@ -165,12 +165,12 @@ after_migrate = [
 # 			]
 # 		]
 # 	]},
-# 	{"dt" : "Workflow"}
+	# {"dt" : "Workflow"},
 	# {"dt": "Workflow Action Master"},
 	# {"dt" : "Workflow State"},
 # 	{"dt" : "Role"},
-# 	# {"dt" : "Module Profile"},
-# 	{"dt" : "Role Profile"},
+# 	{"dt" : "Module Profile"},
+	# {"dt" : "Role Profile"}
 # ]
 
 # User Data Protection

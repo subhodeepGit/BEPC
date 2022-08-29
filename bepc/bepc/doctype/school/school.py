@@ -6,6 +6,11 @@ from frappe.model.document import Document
 
 class School(Document):
 	pass
+
+@frappe.whitelist()
+def get_user_role(doc):
+	user_role=frappe.db.get_value("User",{"name":frappe.session.user},["role_profile_name"])
+	return user_role
 	# def validate(doc):
 	# 	# mobile_number_validation(doc)
 	# 	# mobile_number(doc)

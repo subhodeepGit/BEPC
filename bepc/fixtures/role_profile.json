@@ -52,5 +52,59 @@
     "role": "Employee"
    }
   ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2022-08-29 11:18:49.266178",
+  "name": "Level-I",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "role_profile": "Level-I",
+  "roles": [
+   {
+    "parent": "Level-I",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Data Entry Operator"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2022-08-29 11:19:29.043747",
+  "name": "Level-II",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "role_profile": "Level-II",
+  "roles": [
+   {
+    "parent": "Level-II",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Approver I"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2022-08-29 11:22:59.161631",
+  "name": "Level-III",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "role_profile": "Level-III",
+  "roles": [
+   {
+    "parent": "Level-III",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Approver II"
+   }
+  ]
  }
 ]

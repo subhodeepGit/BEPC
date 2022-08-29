@@ -492,7 +492,7 @@
   {
    "fieldname": "earthling_condition_in_proposed_class_rooms",
    "fieldtype": "Data",
-   "label": "Earthling condition in Proposed Class Rooms"
+   "label": "Earthing condition in Proposed Class Rooms"
   },
   {
    "fieldname": "column_break_64",
@@ -897,7 +897,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-26 13:01:47.240179",
+ "modified": "2022-08-29 13:38:29.202935",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
@@ -917,5 +917,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "track_changes": 1
 }
