@@ -98,13 +98,11 @@ doctype_js = {
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Issue": {
+		"validate": "bepc.bepc.doctype.issue.validate",
+	}
+}
 
 # Scheduled Tasks
 # ---------------
