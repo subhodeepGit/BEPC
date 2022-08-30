@@ -62,7 +62,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "District",
-   "options": "Districts"
+   "options": "Districts",
+   "reqd": 1
   },
   {
    "fieldname": "state",
@@ -74,7 +75,8 @@
   {
    "fieldname": "pin_code",
    "fieldtype": "Data",
-   "label": "Pin Code"
+   "label": "Pin Code",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_9",
@@ -83,19 +85,22 @@
   {
    "fieldname": "principal_name",
    "fieldtype": "Data",
-   "label": "Name of Headmaster/Head Mistress"
+   "label": "Name of Headmaster/Head Mistress",
+   "reqd": 1
   },
   {
    "fieldname": "principle_mobile_number",
    "fieldtype": "Data",
-   "label": "Headmaster/Head Mistress Contact No"
+   "label": "Headmaster/Head Mistress Contact No",
+   "reqd": 1
   },
   {
    "fieldname": "block",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Block",
-   "options": "Block"
+   "options": "Block",
+   "reqd": 1
   },
   {
    "fieldname": "udise",
@@ -108,17 +113,20 @@
   {
    "fieldname": "zone",
    "fieldtype": "Data",
-   "label": "Zone"
+   "label": "Zone",
+   "reqd": 1
   },
   {
    "fieldname": "panchayat",
    "fieldtype": "Data",
-   "label": "Panchayat"
+   "label": "Panchayat",
+   "reqd": 1
   },
   {
    "fieldname": "cluster_name",
    "fieldtype": "Data",
-   "label": "Cluster Name "
+   "label": "Cluster Name ",
+   "reqd": 1
   },
   {
    "fieldname": "near_landmark",
@@ -129,17 +137,20 @@
    "fieldname": "school_mail_id",
    "fieldtype": "Data",
    "label": "School Mail ID ",
-   "options": "Email"
+   "options": "Email",
+   "reqd": 1
   },
   {
    "fieldname": "school_contact_no",
    "fieldtype": "Data",
-   "label": "School Contact No."
+   "label": "School Contact No.",
+   "reqd": 1
   },
   {
    "fieldname": "name_of_asst_hmhms",
    "fieldtype": "Data",
-   "label": "Name of Asst (HM/HMS)"
+   "label": "Name of Asst (HM/HMS)",
+   "reqd": 1
   },
   {
    "fieldname": "name_of_president",
@@ -182,7 +193,8 @@
   {
    "fieldname": "asst_contact_number",
    "fieldtype": "Data",
-   "label": "Asst Contact number"
+   "label": "Asst Contact number",
+   "reqd": 1
   },
   {
    "fieldname": "geolocation_section",
@@ -196,7 +208,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-30 09:55:09.546110",
+ "modified": "2022-08-30 17:42:35.079815",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",

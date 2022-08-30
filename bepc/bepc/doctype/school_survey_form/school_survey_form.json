@@ -154,7 +154,9 @@
   {
    "fieldname": "school_code",
    "fieldtype": "Link",
+   "in_global_search": 1,
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "School code",
    "options": "School",
    "reqd": 1
@@ -173,7 +175,9 @@
    "fetch_from": "school_code.udise",
    "fieldname": "udise",
    "fieldtype": "Data",
+   "in_global_search": 1,
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "UDISE",
    "read_only": 1,
    "reqd": 1
@@ -183,7 +187,8 @@
    "fieldname": "zone",
    "fieldtype": "Data",
    "label": "Zone",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "address_section",
@@ -224,7 +229,8 @@
    "in_standard_filter": 1,
    "label": "District",
    "options": "Districts",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fetch_from": "school_code.block",
@@ -233,21 +239,24 @@
    "in_list_view": 1,
    "label": "Block",
    "options": "Block",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fetch_from": "school_code.panchayat",
    "fieldname": "panchayat",
    "fieldtype": "Data",
    "label": "Panchayat",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fetch_from": "school_code.pin_code",
    "fieldname": "pin_code",
    "fieldtype": "Int",
    "label": "Pin Code",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "school_details_section",
@@ -257,7 +266,8 @@
   {
    "fieldname": "medium",
    "fieldtype": "Data",
-   "label": "Medium"
+   "label": "Medium",
+   "reqd": 1
   },
   {
    "fieldname": "school_typegovtgovt_aided",
@@ -267,7 +277,8 @@
   {
    "fieldname": "education_typeboysgirlsco_ed",
    "fieldtype": "Data",
-   "label": "Education type"
+   "label": "Education type",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_20",
@@ -284,28 +295,32 @@
    "fieldtype": "Data",
    "label": "School Mail Id",
    "options": "Email",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fetch_from": "school_code.school_contact_no",
    "fieldname": "school_contact_no",
    "fieldtype": "Data",
    "label": "School Contact No.",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fetch_from": "school_code.principal_name",
    "fieldname": "name_of_headmaster_head_mistress",
    "fieldtype": "Data",
    "label": "Name of Headmaster/ Head Mistress",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fetch_from": "school_code.principle_mobile_number",
    "fieldname": "headmaster_head_mistress_contact_no",
    "fieldtype": "Data",
    "label": "Headmaster/ Head Mistress Contact No",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fetch_from": "school_code.name_of_asst_hmhms",
@@ -322,12 +337,14 @@
   {
    "fieldname": "name_of_incharge",
    "fieldtype": "Data",
-   "label": "Name of incharge"
+   "label": "Name of incharge",
+   "reqd": 1
   },
   {
    "fieldname": "incharge_contact_no",
    "fieldtype": "Data",
-   "label": "Incharge Contact No"
+   "label": "Incharge Contact No",
+   "reqd": 1
   },
   {
    "fetch_from": "school_code.name_of_president",
@@ -360,7 +377,8 @@
   {
    "fieldname": "total_class_rooms",
    "fieldtype": "Int",
-   "label": "Total class rooms"
+   "label": "Total class rooms",
+   "reqd": 1
   },
   {
    "fieldname": "select_room_condition",
@@ -370,17 +388,20 @@
   {
    "fieldname": "full_time_teacher",
    "fieldtype": "Int",
-   "label": "Full time teacher"
+   "label": "Full time teacher",
+   "reqd": 1
   },
   {
    "fieldname": "para_teachers",
    "fieldtype": "Data",
-   "label": "Para Teachers"
+   "label": "Para Teachers",
+   "reqd": 1
   },
   {
    "fieldname": "availibility_of_computer_teacher",
    "fieldtype": "Data",
-   "label": "Availibility of computer teacher"
+   "label": "Availibility of computer teacher",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_41",
@@ -394,7 +415,8 @@
   {
    "fieldname": "nos_of_computer_lab_in_school",
    "fieldtype": "Data",
-   "label": "Nos of Computer lab in school"
+   "label": "Nos of Computer lab in school",
+   "reqd": 1
   },
   {
    "fieldname": "nos_of_computer",
@@ -434,7 +456,8 @@
   {
    "fieldname": "isp_name",
    "fieldtype": "Data",
-   "label": "ISP Name"
+   "label": "ISP Name",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_55",
@@ -467,12 +490,14 @@
   {
    "fieldname": "connection__details",
    "fieldtype": "Data",
-   "label": "Connection  Details"
+   "label": "Connection  Details",
+   "reqd": 1
   },
   {
    "fieldname": "average_load_shedding",
    "fieldtype": "Data",
-   "label": "Average Load shedding"
+   "label": "Average Load shedding",
+   "reqd": 1
   },
   {
    "fieldname": "distance_from_meter_to_proposed_roomft",
@@ -487,7 +512,8 @@
   {
    "fieldname": "voltage_condition_in_school_and_room",
    "fieldtype": "Data",
-   "label": "Voltage Condition in School and Room"
+   "label": "Voltage Condition in School and Room",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_64",
@@ -501,32 +527,38 @@
   {
    "fieldname": "name_of_nearest_police_station",
    "fieldtype": "Data",
-   "label": "Name of Nearest Police Station"
+   "label": "Name of Nearest Police Station",
+   "reqd": 1
   },
   {
    "fieldname": "name_of_nearest_post_office",
    "fieldtype": "Data",
-   "label": "Name of Nearest Post Office"
+   "label": "Name of Nearest Post Office",
+   "reqd": 1
   },
   {
    "fieldname": "name_of_nearest_rail_station",
    "fieldtype": "Data",
-   "label": "Name of Nearest Rail Station"
+   "label": "Name of Nearest Rail Station",
+   "reqd": 1
   },
   {
    "fieldname": "name_of_nearest_bus_stand",
    "fieldtype": "Data",
-   "label": "Name of Nearest Bus Stand"
+   "label": "Name of Nearest Bus Stand",
+   "reqd": 1
   },
   {
    "fieldname": "nearest_landmark",
    "fieldtype": "Data",
-   "label": "Nearest Landmark"
+   "label": "Nearest Landmark",
+   "reqd": 1
   },
   {
    "fieldname": "best_route_to_reach_school",
    "fieldtype": "Data",
-   "label": "Best route to reach School"
+   "label": "Best route to reach School",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_72",
@@ -550,18 +582,21 @@
   {
    "fieldname": "theft_reported_in_last_05_years",
    "fieldtype": "Int",
-   "label": "Theft Reported in last 05 Years"
+   "label": "Theft Reported in last 05 Years",
+   "reqd": 1
   },
   {
    "fieldname": "night__guard_available",
    "fieldtype": "Select",
    "label": "Night  Guard Available",
-   "options": "\nYES\nNO"
+   "options": "\nYES\nNO",
+   "reqd": 1
   },
   {
    "fieldname": "flood_status_in_last_five_year",
    "fieldtype": "Data",
-   "label": "Flood status in last five year"
+   "label": "Flood status in last five year",
+   "reqd": 1
   },
   {
    "fieldname": "types_of_flood_affect_at_school",
@@ -585,12 +620,14 @@
   {
    "fieldname": "bank_name",
    "fieldtype": "Data",
-   "label": "Bank Name"
+   "label": "Bank Name",
+   "reqd": 1
   },
   {
    "fieldname": "ifsc_code",
    "fieldtype": "Data",
-   "label": "IFSC Code"
+   "label": "IFSC Code",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_114",
@@ -599,12 +636,14 @@
   {
    "fieldname": "ac_name",
    "fieldtype": "Data",
-   "label": "A/C Name"
+   "label": "A/C Name",
+   "reqd": 1
   },
   {
    "fieldname": "ac_no",
    "fieldtype": "Data",
-   "label": "A/C No"
+   "label": "A/C No",
+   "reqd": 1
   },
   {
    "fieldname": "district_monitoring_section",
@@ -614,12 +653,14 @@
   {
    "fieldname": "name_of_the_deo",
    "fieldtype": "Data",
-   "label": "Name Of the DEO"
+   "label": "Name Of the DEO",
+   "reqd": 1
   },
   {
    "fieldname": "address",
    "fieldtype": "Data",
-   "label": "Address"
+   "label": "Address",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_120",
@@ -628,12 +669,14 @@
   {
    "fieldname": "mob_no",
    "fieldtype": "Data",
-   "label": "Mob No"
+   "label": "Mob No",
+   "reqd": 1
   },
   {
    "fieldname": "office_no",
    "fieldtype": "Data",
-   "label": "Office No"
+   "label": "Office No",
+   "reqd": 1
   },
   {
    "fieldname": "teachers_name_for_training_section",
@@ -682,47 +725,56 @@
   {
    "fieldname": "class_details",
    "fieldtype": "Data",
-   "label": "Class Details(From-to)"
+   "label": "Class Details(From-to)",
+   "reqd": 1
   },
   {
    "fieldname": "class_vbg",
    "fieldtype": "Int",
-   "label": "Class V(B/G)"
+   "label": "Class V(B/G)",
+   "reqd": 1
   },
   {
    "fieldname": "class_vibg",
    "fieldtype": "Int",
-   "label": "Class VI(B/G)"
+   "label": "Class VI(B/G)",
+   "reqd": 1
   },
   {
    "fieldname": "class_viibg",
    "fieldtype": "Int",
-   "label": "Class VII(B/G)"
+   "label": "Class VII(B/G)",
+   "reqd": 1
   },
   {
    "fieldname": "class_viiibg",
    "fieldtype": "Int",
-   "label": "Class VIII(B/G)"
+   "label": "Class VIII(B/G)",
+   "reqd": 1
   },
   {
    "fieldname": "class_ixbg",
    "fieldtype": "Int",
-   "label": "Class IX(B/G)"
+   "label": "Class IX(B/G)",
+   "reqd": 1
   },
   {
    "fieldname": "class_xbg",
    "fieldtype": "Int",
-   "label": "Class X(B/G)"
+   "label": "Class X(B/G)",
+   "reqd": 1
   },
   {
    "fieldname": "class_xibg",
    "fieldtype": "Int",
-   "label": "Class XI(B/G)"
+   "label": "Class XI(B/G)",
+   "reqd": 1
   },
   {
    "fieldname": "class_xiibg",
    "fieldtype": "Int",
-   "label": "Class XII(B/G)"
+   "label": "Class XII(B/G)",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_50",
@@ -751,12 +803,14 @@
   {
    "fieldname": "room_dimensions",
    "fieldtype": "Data",
-   "label": "Room Dimensions Length* Width* Height "
+   "label": "Room Dimensions Length* Width* Height ",
+   "reqd": 1
   },
   {
    "fieldname": "wall_type",
    "fieldtype": "Data",
-   "label": "Wall Type"
+   "label": "Wall Type",
+   "reqd": 1
   },
   {
    "fieldname": "data_134",
@@ -815,12 +869,14 @@
   {
    "fieldname": "room_dimensions2",
    "fieldtype": "Data",
-   "label": "Room Dimensions Length* Width* Height"
+   "label": "Room Dimensions Length* Width* Height",
+   "reqd": 1
   },
   {
    "fieldname": "wall_type2",
    "fieldtype": "Data",
-   "label": "Wall Type"
+   "label": "Wall Type",
+   "reqd": 1
   },
   {
    "fieldname": "data_133",
@@ -829,37 +885,44 @@
   {
    "fieldname": "ceiling_type2",
    "fieldtype": "Data",
-   "label": "Ceiling Type"
+   "label": "Ceiling Type",
+   "reqd": 1
   },
   {
    "fieldname": "electricity_available_in_school2",
    "fieldtype": "Data",
-   "label": "Electricity Available in school"
+   "label": "Electricity Available in school",
+   "reqd": 1
   },
   {
    "fieldname": "electricity_available_in_lab2",
    "fieldtype": "Data",
-   "label": "Electricity Available in lab"
+   "label": "Electricity Available in lab",
+   "reqd": 1
   },
   {
    "fieldname": "total_nos_of_doors2",
    "fieldtype": "Int",
-   "label": "Total Nos of Doors"
+   "label": "Total Nos of Doors",
+   "reqd": 1
   },
   {
    "fieldname": "total_nos_of_window2",
    "fieldtype": "Int",
-   "label": "Total Nos of Window"
+   "label": "Total Nos of Window",
+   "reqd": 1
   },
   {
    "fieldname": "trainer_name",
    "fieldtype": "Data",
-   "label": "Trainer-1 Name"
+   "label": "Trainer-1 Name",
+   "reqd": 1
   },
   {
    "fieldname": "contact_number",
    "fieldtype": "Data",
-   "label": "Contact Number"
+   "label": "Contact Number",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_136",
@@ -868,12 +931,14 @@
   {
    "fieldname": "trainer_name2",
    "fieldtype": "Data",
-   "label": "Trainer-2 Name"
+   "label": "Trainer-2 Name",
+   "reqd": 1
   },
   {
    "fieldname": "contact_number2",
    "fieldtype": "Data",
-   "label": "Contact Number"
+   "label": "Contact Number",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_139",
@@ -882,22 +947,25 @@
   {
    "fieldname": "trainer_name3",
    "fieldtype": "Data",
-   "label": "Trainer-3 Name"
+   "label": "Trainer-3 Name",
+   "reqd": 1
   },
   {
    "fieldname": "contact_number3",
    "fieldtype": "Data",
-   "label": "Contact Number"
+   "label": "Contact Number",
+   "reqd": 1
   },
   {
    "fieldname": "earthing_condition_in_proposed_class_rooms",
    "fieldtype": "Data",
-   "label": "Earthing condition in Proposed Class Rooms"
+   "label": "Earthing condition in Proposed Class Rooms",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-30 09:53:42.134163",
+ "modified": "2022-08-30 17:39:43.515674",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
