@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "ITM.-No.-.#####",
  "creation": "2022-08-22 17:18:12.658479",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -35,7 +36,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-22 17:18:12.658479",
+ "modified": "2022-08-30 15:17:04.837010",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Test Item",
