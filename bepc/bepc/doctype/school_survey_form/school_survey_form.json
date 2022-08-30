@@ -82,7 +82,7 @@
   "column_break_64",
   "generator_facility_available_in_school",
   "voltage_condition_in_school_and_room",
-  "earthling_condition_in_proposed_class_rooms",
+  "earthing_condition_in_proposed_class_rooms",
   "school_route_details_section",
   "name_of_nearest_police_station",
   "name_of_nearest_post_office",
@@ -490,11 +490,6 @@
    "label": "Voltage Condition in School and Room"
   },
   {
-   "fieldname": "earthling_condition_in_proposed_class_rooms",
-   "fieldtype": "Data",
-   "label": "Earthing condition in Proposed Class Rooms"
-  },
-  {
    "fieldname": "column_break_64",
    "fieldtype": "Column Break"
   },
@@ -893,11 +888,16 @@
    "fieldname": "contact_number3",
    "fieldtype": "Data",
    "label": "Contact Number"
+  },
+  {
+   "fieldname": "earthing_condition_in_proposed_class_rooms",
+   "fieldtype": "Data",
+   "label": "Earthing condition in Proposed Class Rooms"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-29 13:38:29.202935",
+ "modified": "2022-08-30 09:27:10.790499",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",

@@ -75,24 +75,24 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2022-08-29 14:46:41.668632",
+  "modified": "2022-08-29 17:25:05.799622",
   "name": "Pending Approval by Level-III",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
-  "style": "Warning",
+  "style": "Danger",
   "workflow_state_name": "Pending Approval by Level-III"
  },
  {
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2022-08-29 14:47:06.934101",
+  "modified": "2022-08-29 17:24:39.620901",
   "name": "Approved by Level-II",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
-  "style": "Info",
+  "style": "Primary",
   "workflow_state_name": "Approved by Level-II"
  },
  {

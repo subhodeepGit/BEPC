@@ -236,7 +236,7 @@
   "doctype": "Workflow",
   "document_type": "School",
   "is_active": 1,
-  "modified": "2022-08-29 14:44:35.119089",
+  "modified": "2022-08-29 17:21:51.549445",
   "name": "BEPC School Workflow",
   "override_status": 0,
   "parent": null,
@@ -312,7 +312,7 @@
   ],
   "transitions": [
    {
-    "action": "Send For Approval",
+    "action": "Send For Approval to Level-II",
     "allow_self_approval": 1,
     "allowed": "Data Entry Operator",
     "condition": null,
@@ -334,7 +334,7 @@
     "state": "Pending Approval by Level-II"
    },
    {
-    "action": "Send For Approval",
+    "action": "Send For Approval to Level-III",
     "allow_self_approval": 1,
     "allowed": "Approver I",
     "condition": null,

@@ -59,6 +59,7 @@
    "fieldname": "district",
    "fieldtype": "Link",
    "in_global_search": 1,
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "District",
    "options": "Districts"
@@ -66,7 +67,6 @@
   {
    "fieldname": "state",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "State",
    "options": "State"
@@ -196,7 +196,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 11:23:19.770524",
+ "modified": "2022-08-30 09:24:33.868941",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
