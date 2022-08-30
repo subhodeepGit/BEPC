@@ -23,27 +23,27 @@ def validate(self,method):
         t["district_"]=self.district_
         t["block"]=self.block
         t["school"]=self.school
-        t["customer_email"]=self.customer_email
+        t["district_collector"]=self.district_collector
         t["project_manager"]=self.project_manager
         t["school_name"]=self.school_name
         t["priority"]=self.priority
         t["issue_type"]=self.issue_type
         issue_notification_mail(t)
         # cron(self)
-def cron(self):
-    print("\n\n\nfirst data")
-    data=frappe.get_all("Items Detail",{"parent":self.name,"disabled":0},["item","manufactrurer","serial_no","description","oem_email_address","disabled"])
-    print(data)
-    for t in data:
-        t["subject"]=self.subject
-        t["state_"]=self.state_
-        t["district_"]=self.district_
-        t["block"]=self.block
-        t["school"]=self.school
-        t["customer_email"]=self.customer_email
-        t["project_manager"]=self.project_manager
-        t["school_name"]=self.school_name
-        t["priority"]=self.priority
-        t["issue_type"]=self.issue_type
-        issue_notification(t)
+# def cron(self):
+#     print("\n\n\nfirst data")
+#     data=frappe.get_all("Items Detail",{"parent":self.name,"disabled":0},["item","manufactrurer","serial_no","description","oem_email_address","disabled"])
+#     print(data)
+#     for t in data:
+#         t["subject"]=self.subject
+#         t["state_"]=self.state_
+#         t["district_"]=self.district_
+#         t["block"]=self.block
+#         t["school"]=self.school
+#         t["customer_email"]=self.customer_email
+#         t["project_manager"]=self.project_manager
+#         t["school_name"]=self.school_name
+#         t["priority"]=self.priority
+#         t["issue_type"]=self.issue_type
+#         issue_notification(t)
         

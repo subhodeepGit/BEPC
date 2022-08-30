@@ -17,7 +17,7 @@ def has_default_email_acc():
 def issue_notification_mail(doc):
     # {'item': '08b50badef', 'manufactrurer': 'HP Company', 'serial_no': 'SL-HP-01', 'description': 'sadsfa', 'oem_email_address': 'tousiff.taj@soulunileaders.com', 'disabled': 0}
     sub="""<p><b>Issue Ticket</b></p><br>"""
-    cc=doc["customer_email"],doc["project_manager"]
+    cc=doc["district_collector"],doc["project_manager"]
     msg="""<b>---------------------Issue Details---------------------</b><br>"""
     msg+="""<b>Subject:</b>  {0}<br>""".format(doc["subject"])
     msg+="""<b>State:</b>  {0}<br>""".format(doc["state_"])
@@ -35,7 +35,7 @@ def issue_notification_mail(doc):
 def issue_notification(doc):
     # {'item': '08b50badef', 'manufactrurer': 'HP Company', 'serial_no': 'SL-HP-01', 'description': 'sadsfa', 'oem_email_address': 'tousiff.taj@soulunileaders.com', 'disabled': 0}
     sub="""Issue Reminder"""
-    cc=doc["customer_email"],doc["project_manager"]
+    cc=doc["district_collector"],doc["project_manager"]
     msg="""<b>---------------------Issue Details---------------------</b><br>"""
     msg+="""<b>Subject:</b>  {0}<br>""".format(doc["subject"])
     msg+="""<b>State:</b>  {0}<br>""".format(doc["state_"])

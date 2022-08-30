@@ -110,7 +110,7 @@ doc_events = {
 scheduler_events = {
 
 	"cron": {
-		"* * * * *": [
+		"00 09 * * 1,2,3,4,5,6,7": [
 			"bepc.tasks.cron"
 		]
 	},
