@@ -196,7 +196,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-30 09:24:33.868941",
+ "modified": "2022-08-30 09:55:09.546110",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
@@ -216,7 +216,7 @@
   }
  ],
  "search_fields": "data_33, site_name",
- "sort_field": "modified",
- "sort_order": "DESC",
+ "sort_field": "data_33",
+ "sort_order": "ASC",
  "title_field": "site_name"
 }
