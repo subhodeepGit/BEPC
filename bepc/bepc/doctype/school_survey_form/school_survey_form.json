@@ -579,7 +579,7 @@
   },
   {
    "fieldname": "theft_reported_in_last_05_years",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Theft Reported in last 05 Years",
    "reqd": 1
   },
@@ -958,7 +958,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-01 13:09:44.253624",
+ "modified": "2022-09-01 13:41:40.146957",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
