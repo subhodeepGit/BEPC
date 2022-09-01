@@ -32,7 +32,7 @@
   }
  ],
  "links": [],
- "modified": "2022-08-04 17:12:22.928115",
+ "modified": "2022-09-01 17:41:37.631434",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Sessional Year",
@@ -52,7 +52,6 @@
   }
  ],
  "quick_entry": 1,
- "restrict_to_domain": "Education",
  "sort_field": "modified",
  "sort_order": "DESC"
 }
