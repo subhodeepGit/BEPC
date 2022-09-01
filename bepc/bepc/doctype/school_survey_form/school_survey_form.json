@@ -8,10 +8,8 @@
  "engine": "InnoDB",
  "field_order": [
   "school_code",
-  "name_of_school",
   "column_break_3",
-  "survey_start_date",
-  "survey_end_date",
+  "name_of_school",
   "address_section",
   "udise",
   "zone",
@@ -704,16 +702,6 @@
    "label": "Room Details for Lab-1"
   },
   {
-   "fieldname": "survey_start_date",
-   "fieldtype": "Date",
-   "label": "Survey Start date"
-  },
-  {
-   "fieldname": "survey_end_date",
-   "fieldtype": "Date",
-   "label": "Survey End date"
-  },
-  {
    "fieldname": "column_break_61",
    "fieldtype": "Column Break"
   },
@@ -965,7 +953,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-30 17:39:43.515674",
+ "modified": "2022-09-01 12:59:30.272482",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
