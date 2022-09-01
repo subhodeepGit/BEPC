@@ -807,27 +807,32 @@
   {
    "fieldname": "ceiling_type",
    "fieldtype": "Data",
-   "label": "Ceiling Type"
+   "label": "Ceiling Type",
+   "reqd": 1
   },
   {
    "fieldname": "electricity_available_in_school",
    "fieldtype": "Data",
-   "label": "Electricity Available in school"
+   "label": "Electricity Available in school",
+   "reqd": 1
   },
   {
    "fieldname": "electricity_available_in_lab",
    "fieldtype": "Data",
-   "label": "Electricity Available in lab"
+   "label": "Electricity Available in lab",
+   "reqd": 1
   },
   {
    "fieldname": "total_nos_of_doors",
    "fieldtype": "Int",
-   "label": "Total Nos of Doors"
+   "label": "Total Nos of Doors",
+   "reqd": 1
   },
   {
    "fieldname": "total_nos_of_window",
    "fieldtype": "Int",
-   "label": "Total Nos of Window"
+   "label": "Total Nos of Window",
+   "reqd": 1
   },
   {
    "fieldname": "room_details_for_lab2_section",
@@ -953,7 +958,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-01 12:59:30.272482",
+ "modified": "2022-09-01 13:09:44.253624",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
