@@ -8,6 +8,8 @@
  "engine": "InnoDB",
  "field_order": [
   "data_33",
+  "school_code",
+  "column_break_3",
   "site_name",
   "address_section",
   "udise",
@@ -202,6 +204,16 @@
   {
    "fieldname": "column_break_27",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "school_code",
+   "fieldtype": "Data",
+   "label": "School Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -257,7 +269,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2022-09-02 16:32:42.558733",
+ "modified": "2022-09-02 17:48:53.395418",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",

@@ -12,6 +12,8 @@ class School(Document):
 		asst_number_validation(doc)
 		pincode(doc)
 
+		doc.school_code=doc.data_33
+
 @frappe.whitelist()
 def get_user_role(doc):
 	user_role=frappe.db.get_value("User",{"name":frappe.session.user},["role_profile_name"])
