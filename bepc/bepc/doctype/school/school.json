@@ -205,8 +205,59 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2022-09-02 12:36:35.323570",
+ "links": [
+  {
+   "group": "Survey Form",
+   "link_doctype": "School Survey Form",
+   "link_fieldname": "school_code"
+  },
+  {
+   "group": "Electricity Consumption Record",
+   "link_doctype": "Electricity Consumption Record",
+   "link_fieldname": "site"
+  },
+  {
+   "group": "Internet consumption Record",
+   "link_doctype": "Internet consumption Record",
+   "link_fieldname": "site"
+  },
+  {
+   "group": "Internet consumption Record",
+   "link_doctype": "Equipment Uptime",
+   "link_fieldname": "site"
+  },
+  {
+   "group": "Teacher",
+   "link_doctype": "Teacher",
+   "link_fieldname": "site"
+  },
+  {
+   "group": "Teacher",
+   "link_doctype": "Teacher Group",
+   "link_fieldname": "school"
+  },
+  {
+   "group": "Teacher",
+   "link_doctype": "School Consent form for Teacher Training",
+   "link_fieldname": "site"
+  },
+  {
+   "group": "Student Details",
+   "link_doctype": "Student Entry",
+   "link_fieldname": "site"
+  },
+  {
+   "group": "Equipment Data",
+   "link_doctype": "School wise Equipment List",
+   "link_fieldname": "site"
+  },
+  {
+   "group": "Equipment Data",
+   "link_doctype": "Theft Case record",
+   "link_fieldname": "item"
+  }
+ ],
+ "modified": "2022-09-02 16:29:48.457950",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
