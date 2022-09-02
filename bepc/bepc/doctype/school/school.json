@@ -149,8 +149,7 @@
   {
    "fieldname": "name_of_asst_hmhms",
    "fieldtype": "Data",
-   "label": "Name of Asst (HM/HMS)",
-   "reqd": 1
+   "label": "Name of Asst (HM/HMS)"
   },
   {
    "fieldname": "name_of_president",
@@ -193,8 +192,7 @@
   {
    "fieldname": "asst_contact_number",
    "fieldtype": "Data",
-   "label": "Asst Contact number",
-   "reqd": 1
+   "label": "Asst Contact number"
   },
   {
    "fieldname": "geolocation_section",
@@ -208,7 +206,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-30 17:42:35.079815",
+ "modified": "2022-09-02 12:36:35.323570",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",

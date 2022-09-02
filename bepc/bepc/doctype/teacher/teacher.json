@@ -85,17 +85,19 @@
   {
    "fetch_from": "site.district",
    "fieldname": "district",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "District"
+   "label": "District",
+   "options": "Districts"
   },
   {
    "fetch_from": "site.block",
    "fieldname": "block",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Block"
+   "label": "Block",
+   "options": "Block"
   },
   {
    "fetch_from": "site.pin_code",
@@ -116,7 +118,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 16:53:11.869683",
+ "modified": "2022-09-02 11:24:12.965517",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher",
