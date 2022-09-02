@@ -222,7 +222,7 @@
    "link_fieldname": "site"
   },
   {
-   "group": "Internet consumption Record",
+   "group": "Equipment Data",
    "link_doctype": "Equipment Uptime",
    "link_fieldname": "site"
   },
@@ -257,7 +257,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2022-09-02 16:29:48.457950",
+ "modified": "2022-09-02 16:32:42.558733",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
