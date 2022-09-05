@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "EQNA.-.#####",
+ "autoname": "field:item_code",
  "creation": "2022-08-04 17:27:11.445990",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -73,8 +73,8 @@
    "fieldname": "ins_company",
    "fieldtype": "Link",
    "label": "Insurance Company",
-   "options": "Insurance Company",
-   "reqd": 1
+   "mandatory_depends_on": "eval:doc.is_insured == 1",
+   "options": "Insurance Company"
   },
   {
    "fetch_from": "branch.company",
@@ -100,10 +100,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 17:50:20.846824",
+ "modified": "2022-08-31 13:52:09.872470",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Items",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -123,5 +124,6 @@
  "search_fields": "item_code, item_name",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "title_field": "item_code"
 }
