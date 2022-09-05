@@ -175,7 +175,7 @@ after_migrate = [
 	# {"dt" : "Workflow State"}
 # 	{"dt" : "Role"},
 # 	{"dt" : "Module Profile"},
-	# {"dt" : "Role Profile"}
+# 	{"dt" : "Role Profile"}
 # ]
 
 # User Data Protection

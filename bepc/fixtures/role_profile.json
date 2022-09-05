@@ -106,5 +106,41 @@
     "role": "Approver II"
    }
   ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2022-09-05 12:24:32.595545",
+  "name": "Super admin",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "role_profile": "Super admin",
+  "roles": [
+   {
+    "parent": "Super admin",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Approver I"
+   },
+   {
+    "parent": "Super admin",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Approver II"
+   },
+   {
+    "parent": "Super admin",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Data Entry Approver"
+   },
+   {
+    "parent": "Super admin",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Data Entry Operator"
+   }
+  ]
  }
 ]

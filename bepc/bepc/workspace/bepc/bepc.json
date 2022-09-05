@@ -101,8 +101,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Survey Status Report",
-   "link_to": "Survey Status Report",
+   "label": "Survey Form Update Status",
+   "link_to": "School Survey Form Status",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
@@ -110,17 +110,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "District Wise Survey Status Report",
-   "link_to": "District Wise Survey Status Report",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Equipment Uptime report",
-   "link_to": "Equipment Uptime report",
+   "label": "School Form Update Status",
+   "link_to": "School Master Status",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
@@ -331,7 +322,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-08-25 17:56:34.755608",
+ "modified": "2022-09-05 12:19:43.298743",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",
