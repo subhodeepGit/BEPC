@@ -9,6 +9,8 @@ class SchoolSurveyForm(Document):
 		asst_number_validation(doc)
 		incharge_mobile_number(doc)
 		deo_mobile_number(doc)
+		visiter_mobile_number(doc)
+		school_contact_person_other_than_above(doc)
 		
 
 @frappe.whitelist()
@@ -18,27 +20,45 @@ def get_user_role(doc):
 
 def asst_number_validation(doc):
 	if doc.asst_contact_no:
-	    if not (doc.asst_contact_no).isdigit():
-	        frappe.throw("Field <b>Asst. Contact Number</b> Accept Digits Only")
-	    if len(doc.asst_contact_no)>10:
-	        frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
-	    if len(doc.asst_contact_no)<10:
-	        frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
+		if not (doc.asst_contact_no).isdigit():
+			frappe.throw("Field <b>Asst. Contact Number</b> Accept Digits Only")
+		if len(doc.asst_contact_no)>10:
+			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
+		if len(doc.asst_contact_no)<10:
+			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
 
 def incharge_mobile_number(doc):
 	if doc.incharge_contact_no:
-	    if not (doc.incharge_contact_no).isdigit():
-	        frappe.throw("Field <b>Incharge Contact Number</b> Accept Digits Only")
-	    if len(doc.incharge_contact_no)>10:
-	        frappe.throw("Field <b>Incharge Contact Number</b> must be 10 Digits")
-	    if len(doc.incharge_contact_no)<10:
-	        frappe.throw("Field <b>Incharge Contact Number</b> must be 10 Digits")
+		if not (doc.incharge_contact_no).isdigit():
+			frappe.throw("Field <b>Incharge Contact Number</b> Accept Digits Only")
+		if len(doc.incharge_contact_no)>10:
+			frappe.throw("Field <b>Incharge Contact Number</b> must be 10 Digits")
+		if len(doc.incharge_contact_no)<10:
+			frappe.throw("Field <b>Incharge Contact Number</b> must be 10 Digits")
 
 def deo_mobile_number(doc):
-    if doc.mob_no:
-        if not (doc.mob_no).isdigit():
-            frappe.throw("Field <b>Mobile Number</b> Accept Digits Only")
-        if len(doc.mob_no)>10:
-            frappe.throw("Field <b>Mobile Number</b> must be 10 Digits")
-        if len(doc.mob_no)<10:
-            frappe.throw("Field <b>Mobile Number</b> must be 10 Digits")
+	if doc.mob_no:
+		if not (doc.mob_no).isdigit():
+			frappe.throw("Field <b>Mobile Number</b> Accept Digits Only")
+		if len(doc.mob_no)>10:
+			frappe.throw("Field <b>Mobile Number</b> must be 10 Digits")
+		if len(doc.mob_no)<10:
+			frappe.throw("Field <b>Mobile Number</b> must be 10 Digits")
+
+def visiter_mobile_number(doc):
+	if doc.visiter_mobile_number:
+		if not (doc.visiter_mobile_number).isdigit():
+			frappe.throw("Field <b>Visitor Mobile Number</b> Accept Digits Only")
+		if len(doc.visiter_mobile_number)>10:
+			frappe.throw("Field <b>Visitor Mobile Number</b> must be 10 Digits")
+		if len(doc.visiter_mobile_number)<10:
+			frappe.throw("Field <b>Visitor Mobile Number</b> must be 10 Digits")
+
+def school_contact_person_other_than_above(doc):
+	if doc.school_contact_person_other_than_above:
+		if not (doc.school_contact_person_other_than_above).isdigit():
+			frappe.throw("Field <b>Other Contact Person Mobile Number</b> Accept Digits Only")
+		if len(doc.school_contact_person_other_than_above)>10:
+			frappe.throw("Field <b>Other Contact Person Mobile Number</b> must be 10 Digits")
+		if len(doc.school_contact_person_other_than_above)<10:
+			frappe.throw("Field <b>Other Contact Person Mobile Number</b> must be 10 Digits")
