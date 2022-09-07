@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "fieldLequipment_group",
+ "autoname": "field:equipment_group",
  "creation": "2022-08-04 17:26:31.508668",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -13,12 +13,13 @@
   {
    "fieldname": "equipment_group",
    "fieldtype": "Data",
-   "label": "Equipment Group"
+   "label": "Equipment Group",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-04 17:26:31.508668",
+ "modified": "2022-09-06 17:25:51.563511",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Equipment Group",

@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:item_code",
+ "autoname": "EQNA.-.#####",
  "creation": "2022-08-04 17:27:11.445990",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,10 +9,13 @@
  "field_order": [
   "item_code",
   "item_name",
+  "manufacturer",
+  "mac_id",
   "is_insured",
   "data_3",
   "item_group",
-  "manufacturer",
+  "serial_number",
+  "manufacturer_email",
   "insurance_details_section",
   "ins_company",
   "branch",
@@ -55,6 +58,7 @@
    "label": "Is Insured"
   },
   {
+   "depends_on": "eval:doc.is_insured == '1'",
    "fieldname": "insurance_details_section",
    "fieldtype": "Section Break",
    "label": "Insurance Details"
@@ -73,7 +77,7 @@
    "fieldname": "ins_company",
    "fieldtype": "Link",
    "label": "Insurance Company",
-   "mandatory_depends_on": "eval:doc.is_insured == 1",
+   "mandatory_depends_on": "eval:doc.is_insured == '1'",
    "options": "Insurance Company"
   },
   {
@@ -96,15 +100,30 @@
   {
    "fieldname": "column_break_11",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "manufacturer_email",
+   "fieldtype": "Data",
+   "label": "Manufacturer Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "mac_id",
+   "fieldtype": "Data",
+   "label": "MAC ID"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-31 13:52:09.872470",
+ "modified": "2022-09-06 17:27:36.393059",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Items",
- "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -124,6 +143,5 @@
  "search_fields": "item_code, item_name",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
  "title_field": "item_code"
 }

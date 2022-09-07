@@ -10,6 +10,8 @@
   "item_code",
   "item_name",
   "vendor",
+  "serial_number",
+  "mac_id",
   "quantity",
   "installation_date"
  ],
@@ -23,7 +25,7 @@
    "reqd": 1
   },
   {
-   "fetch_from": "item.Item_code",
+   "fetch_from": "item.item_code",
    "fieldname": "item_code",
    "fieldtype": "Data",
    "label": "Item Code"
@@ -48,13 +50,25 @@
    "fetch_from": "item.manufacturer",
    "fieldname": "vendor",
    "fieldtype": "Data",
-   "label": "Vendor"
+   "label": "Manufacturer"
+  },
+  {
+   "fetch_from": "item.serial_number",
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial number"
+  },
+  {
+   "fetch_from": "item.mac_id",
+   "fieldname": "mac_id",
+   "fieldtype": "Data",
+   "label": "MAC ID"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-08-25 17:54:31.283278",
+ "modified": "2022-09-06 17:28:46.490331",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Schoolwise Equipment List childtable",

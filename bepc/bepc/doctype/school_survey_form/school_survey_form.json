@@ -262,7 +262,7 @@
    "fetch_from": "school_code.near_landmark",
    "fieldname": "near_landmark",
    "fieldtype": "Data",
-   "label": "Near Landmark "
+   "label": "Near Landmark"
   },
   {
    "fetch_from": "school_code.post_office",
@@ -323,7 +323,7 @@
    "fieldname": "medium",
    "fieldtype": "Data",
    "label": "Medium",
-   "length": 40,
+   "length": 20,
    "reqd": 1
   },
   {
@@ -1028,14 +1028,13 @@
    "fieldname": "visited_by",
    "fieldtype": "Data",
    "label": "Visited By",
-   "length": 10,
    "reqd": 1
   },
   {
    "fieldname": "visiter_mobile_number",
    "fieldtype": "Data",
    "label": "Visiter Mobile number",
-   "length": 10,
+   "length": 11,
    "reqd": 1
   },
   {
@@ -1043,6 +1042,7 @@
    "fieldname": "latitude",
    "fieldtype": "Data",
    "label": "Latitude",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -1050,6 +1050,7 @@
    "fieldname": "longitude",
    "fieldtype": "Data",
    "label": "Longitude",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -1392,7 +1393,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-06 15:30:57.093567",
+ "modified": "2022-09-07 11:20:50.462030",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
