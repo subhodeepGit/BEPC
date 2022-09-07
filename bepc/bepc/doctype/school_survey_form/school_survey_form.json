@@ -279,6 +279,7 @@
    "fieldname": "state",
    "fieldtype": "Link",
    "label": "State",
+   "length": 20,
    "options": "State"
   },
   {
@@ -288,6 +289,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "District",
+   "length": 20,
    "options": "Districts",
    "reqd": 1
   },
@@ -297,6 +299,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Block",
+   "length": 20,
    "options": "Block",
    "reqd": 1
   },
@@ -362,6 +365,7 @@
    "fieldname": "school_contact_no",
    "fieldtype": "Data",
    "label": "School Contact No.",
+   "length": 10,
    "reqd": 1
   },
   {
@@ -369,6 +373,7 @@
    "fieldname": "name_of_headmaster_head_mistress",
    "fieldtype": "Data",
    "label": "Name of Headmaster/ Head Mistress",
+   "length": 100,
    "reqd": 1
   },
   {
@@ -376,13 +381,15 @@
    "fieldname": "headmaster_head_mistress_contact_no",
    "fieldtype": "Data",
    "label": "Headmaster/ Head Mistress Contact No",
+   "length": 10,
    "reqd": 1
   },
   {
    "fetch_from": "school_code.name_of_asst_hmhms",
    "fieldname": "name_of_asst_hmhms",
    "fieldtype": "Data",
-   "label": "Name of Asst Hm/Hms"
+   "label": "Name of Asst Hm/Hms",
+   "length": 100
   },
   {
    "fieldname": "asst_contact_no",
@@ -393,6 +400,7 @@
    "fieldname": "name_of_incharge",
    "fieldtype": "Data",
    "label": "Name of incharge",
+   "length": 100,
    "reqd": 1
   },
   {
@@ -405,13 +413,15 @@
    "fetch_from": "school_code.name_of_president",
    "fieldname": "name_of_presidentsecretary",
    "fieldtype": "Data",
-   "label": "Name Of President/Secretary"
+   "label": "Name Of President/Secretary",
+   "length": 100
   },
   {
    "fetch_from": "school_code.president_contact_no",
    "fieldname": "presidentsecretary_contact_no",
    "fieldtype": "Data",
-   "label": "President/Secretary Contact No"
+   "label": "President/Secretary Contact No",
+   "length": 10
   },
   {
    "fieldname": "column_break_27",
@@ -431,6 +441,7 @@
    "fieldname": "total_class_rooms",
    "fieldtype": "Int",
    "label": "No. of total class rooms",
+   "length": 5,
    "reqd": 1
   },
   {
@@ -442,12 +453,14 @@
    "fieldname": "full_time_teacher",
    "fieldtype": "Int",
    "label": "Full time teacher",
+   "length": 5,
    "reqd": 1
   },
   {
    "fieldname": "para_teachers",
    "fieldtype": "Data",
    "label": "Para Teachers",
+   "length": 10,
    "reqd": 1
   },
   {
@@ -488,7 +501,8 @@
   {
    "fieldname": "nos_of_ups",
    "fieldtype": "Data",
-   "label": "Nos of UPS"
+   "label": "Nos of UPS",
+   "length": 10
   },
   {
    "fieldname": "nos_of_printer",
@@ -517,6 +531,7 @@
    "fieldname": "isp_name",
    "fieldtype": "Data",
    "label": "Name of Internet Service Provider",
+   "length": 100,
    "reqd": 1
   },
   {
@@ -555,6 +570,7 @@
    "fieldname": "average_load_shedding",
    "fieldtype": "Data",
    "label": "Average Load shedding in School hours",
+   "length": 30,
    "reqd": 1
   },
   {
@@ -565,7 +581,8 @@
   {
    "fieldname": "generator_facility_available_in_school",
    "fieldtype": "Data",
-   "label": "Generator Facility Available in School"
+   "label": "Generator Facility Available in School",
+   "length": 10
   },
   {
    "fieldname": "voltage_condition_in_school_and_room",
@@ -674,12 +691,14 @@
    "fieldname": "bank_name",
    "fieldtype": "Data",
    "label": "Bank Name",
+   "length": 100,
    "reqd": 1
   },
   {
    "fieldname": "ifsc_code",
    "fieldtype": "Data",
    "label": "IFSC Code",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -696,6 +715,7 @@
    "fieldname": "ac_no",
    "fieldtype": "Data",
    "label": "A/C No",
+   "length": 40,
    "reqd": 1
   },
   {
@@ -743,7 +763,7 @@
   },
   {
    "fieldname": "remarks",
-   "fieldtype": "Long Text",
+   "fieldtype": "Text",
    "label": "Remarks",
    "width": "20px"
   },
@@ -777,48 +797,56 @@
    "fieldname": "class_vbg",
    "fieldtype": "Int",
    "label": "Class V(B/G)",
+   "length": 5,
    "reqd": 1
   },
   {
    "fieldname": "class_vibg",
    "fieldtype": "Int",
    "label": "Class VI(B/G)",
+   "length": 5,
    "reqd": 1
   },
   {
    "fieldname": "class_viibg",
    "fieldtype": "Int",
    "label": "Class VII(B/G)",
+   "length": 5,
    "reqd": 1
   },
   {
    "fieldname": "class_viiibg",
    "fieldtype": "Int",
    "label": "Class VIII(B/G)",
+   "length": 5,
    "reqd": 1
   },
   {
    "fieldname": "class_ixbg",
    "fieldtype": "Int",
    "label": "Class IX(B/G)",
+   "length": 5,
    "reqd": 1
   },
   {
    "fieldname": "class_xbg",
    "fieldtype": "Int",
    "label": "Class X(B/G)",
+   "length": 5,
    "reqd": 1
   },
   {
    "fieldname": "class_xibg",
    "fieldtype": "Int",
    "label": "Class XI(B/G)",
+   "length": 5,
    "reqd": 1
   },
   {
    "fieldname": "class_xiibg",
    "fieldtype": "Int",
    "label": "Class XII(B/G)",
+   "length": 5,
    "reqd": 1
   },
   {
@@ -857,6 +885,7 @@
    "fieldname": "wall_type",
    "fieldtype": "Data",
    "label": "Wall Type",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -915,7 +944,8 @@
   {
    "fieldname": "room_available_to_setup_computer_lab2",
    "fieldtype": "Data",
-   "label": "Room Available to Setup Computer lab"
+   "label": "Room Available to Setup Computer lab",
+   "length": 20
   },
   {
    "fieldname": "selected_room_floor_no2",
@@ -932,6 +962,7 @@
    "fieldname": "wall_type2",
    "fieldtype": "Data",
    "label": "Wall Type",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -1063,67 +1094,80 @@
   {
    "fieldname": "school_contact_person_nameother_than_above",
    "fieldtype": "Data",
-   "label": "School Contact Person name(Other than above)"
+   "label": "School Contact Person name(Other than above)",
+   "length": 100
   },
   {
    "fieldname": "boys",
    "fieldtype": "Int",
-   "label": "Boys"
+   "label": "Boys",
+   "length": 5
   },
   {
    "fieldname": "girls",
    "fieldtype": "Int",
-   "label": "Girls"
+   "label": "Girls",
+   "length": 5
   },
   {
    "fieldname": "total_students",
    "fieldtype": "Int",
-   "label": "Total Students"
+   "label": "Total Students",
+   "length": 10
   },
   {
    "fieldname": "sc",
    "fieldtype": "Int",
-   "label": "SC"
+   "label": "SC",
+   "length": 5
   },
   {
    "fieldname": "st",
    "fieldtype": "Int",
-   "label": "ST"
+   "label": "ST",
+   "length": 5
   },
   {
    "fieldname": "obc",
    "fieldtype": "Int",
-   "label": "OBC"
+   "label": "OBC",
+   "length": 5
   },
   {
    "fieldname": "minority_students",
    "fieldtype": "Int",
-   "label": "Minority Students"
+   "label": "Minority Students",
+   "length": 5
   },
   {
    "fieldname": "total_students_for_class_v_to_class_viii",
    "fieldtype": "Int",
-   "label": "Total Students for Class V to Class VIII"
+   "label": "Total Students for Class V to Class VIII",
+   "length": 5
   },
   {
    "fieldname": "total_students_for_class_ix_to_class_x",
    "fieldtype": "Int",
-   "label": "Total Students for Class IX to Class X"
+   "label": "Total Students for Class IX to Class X",
+   "length": 5
   },
   {
    "fieldname": "total_students_for_class_xi_to_class_xii",
    "fieldtype": "Int",
-   "label": "Total Students for Class XI to Class XII"
+   "label": "Total Students for Class XI to Class XII",
+   "length": 5
   },
   {
    "fieldname": "no_of_computer_teachers",
    "fieldtype": "Int",
-   "label": "No. of Computer Teachers"
+   "label": "No. of Computer Teachers",
+   "length": 5
   },
   {
    "fieldname": "teachers_exposed_to_computer_opertaion",
    "fieldtype": "Int",
-   "label": "Teachers Exposed to Computer Opertaion"
+   "label": "Teachers Exposed to Computer Opertaion",
+   "length": 5
   },
   {
    "fieldname": "any_paid_cep_course_running",
@@ -1165,6 +1209,7 @@
    "fieldname": "roomdimension_electricitydetails",
    "fieldtype": "Data",
    "label": "Room Dimensions Length*Width*Height",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -1393,7 +1438,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-07 11:20:50.462030",
+ "modified": "2022-09-07 11:44:06.525688",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
