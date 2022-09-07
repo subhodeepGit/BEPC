@@ -45,6 +45,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "site.district",
    "fieldname": "district",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -83,17 +84,20 @@
    "reqd": 1
   },
   {
+   "fetch_from": "site.udise",
    "fieldname": "udise_code",
    "fieldtype": "Data",
    "label": "UDISE Code"
   },
   {
+   "fetch_from": "site.block",
    "fieldname": "block",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Block"
   },
   {
+   "fetch_from": "site.pin_code",
    "fieldname": "pin_code",
    "fieldtype": "Data",
    "label": "Pin Code"
@@ -101,7 +105,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-01 17:41:08.093289",
+ "modified": "2022-09-07 14:55:37.265864",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Student Entry",
