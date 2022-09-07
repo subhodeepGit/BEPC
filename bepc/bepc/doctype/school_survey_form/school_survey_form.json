@@ -320,16 +320,16 @@
   },
   {
    "fieldname": "school_typegovtgovt_aided",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "School type",
-   "options": "\nGovt. School\nGovt. Aided School\nGovt. Sponsored School",
+   "length": 60,
    "reqd": 1
   },
   {
    "fieldname": "education_typeboysgirlsco_ed",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Education type",
-   "options": "\nCO- EDUACTION\nNO\nBOYS\nGIRLS",
+   "length": 30,
    "reqd": 1
   },
   {
@@ -449,9 +449,9 @@
   },
   {
    "fieldname": "availibility_of_computer_teacher",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Availibility of computer teacher",
-   "options": "\nYES\nNO",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -501,15 +501,15 @@
   },
   {
    "fieldname": "internet_availibility",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Availability & Type of Internet Facilty",
-   "options": "\nYES\nNO"
+   "length": 20
   },
   {
    "fieldname": "internet_type",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Internet type",
-   "options": "\nYES\nNO\nBroad Band\nDongle"
+   "length": 20
   },
   {
    "fieldname": "isp_name",
@@ -545,9 +545,9 @@
   },
   {
    "fieldname": "connection__details",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "School Electricity Connection  Details",
-   "options": "\nSINGLE\n3 PHASE",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -570,9 +570,9 @@
   },
   {
    "fieldname": "voltage_condition_in_school_and_room",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Voltage Condition in School and Room",
-   "options": "\nPOOR\nAVERAGE\nPOOR\nNOT CHECKED",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -632,16 +632,16 @@
   },
   {
    "fieldname": "theft_reported_in_last_05_years",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Theft Reported in last 05 Years",
-   "options": "\nYES\nNO",
+   "length": 20,
    "reqd": 1
   },
   {
    "fieldname": "night__guard_available",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Night  Guard Available",
-   "options": "\nYES\nNO",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -652,15 +652,15 @@
   },
   {
    "fieldname": "types_of_flood_affect_at_school",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Types of Flood affect at school",
-   "options": "\nPOOR\nNORMAL\nHIGH"
+   "length": 20
   },
   {
    "fieldname": "availability_of_boundary_wall",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Availability of Boundary Wall",
-   "options": "\nYES\nNO"
+   "length": 20
   },
   {
    "fieldname": "column_break_108",
@@ -675,14 +675,12 @@
    "fieldname": "bank_name",
    "fieldtype": "Data",
    "label": "Bank Name",
-   "length": 100,
    "reqd": 1
   },
   {
    "fieldname": "ifsc_code",
    "fieldtype": "Data",
    "label": "IFSC Code",
-   "length": 20,
    "reqd": 1
   },
   {
@@ -699,7 +697,6 @@
    "fieldname": "ac_no",
    "fieldtype": "Data",
    "label": "A/C No",
-   "length": 40,
    "reqd": 1
   },
   {
@@ -726,14 +723,12 @@
    "fieldname": "mob_no",
    "fieldtype": "Data",
    "label": "Contact No(Off/Mob)",
-   "length": 10,
    "reqd": 1
   },
   {
    "fieldname": "office_no",
    "fieldtype": "Data",
-   "label": "Contact number",
-   "length": 10
+   "label": "Contact number"
   },
   {
    "fieldname": "teachers_name_for_training_section",
@@ -772,9 +767,9 @@
   },
   {
    "fieldname": "class_details",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Class Details(From-to)",
-   "options": "\nV TO VIII\nHigh School\nHigher Secondary School",
+   "length": 30,
    "reqd": 1
   },
   {
@@ -844,9 +839,9 @@
   },
   {
    "fieldname": "room_condition",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Room Condition",
-   "options": "\nOK\nNOT OK\nUNDER CONSTRUCTION"
+   "length": 40
   },
   {
    "fieldname": "room_available_to_setup_computer_lab",
@@ -878,23 +873,23 @@
   },
   {
    "fieldname": "ceiling_type",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Ceiling Type",
-   "options": "\nRCC\nASBESTOS\nOTHERS",
+   "length": 30,
    "reqd": 1
   },
   {
    "fieldname": "electricity_available_in_school",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Electricity Available in school Compound",
-   "options": "\nYES\nNO",
+   "length": 20,
    "reqd": 1
   },
   {
    "fieldname": "electricity_available_in_lab",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Electricity Available in Proposed Room",
-   "options": "\nYES\nNO",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -921,9 +916,9 @@
   },
   {
    "fieldname": "room_condition2",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Room Condition",
-   "options": "\nOK\nNOT OK\nUNDER CONSTRUCTION"
+   "length": 30
   },
   {
    "fieldname": "room_available_to_setup_computer_lab2",
@@ -951,23 +946,23 @@
   },
   {
    "fieldname": "ceiling_type2",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Ceiling Type",
-   "options": "\nRCC\nASBESTOS\nOTHERS",
+   "length": 20,
    "reqd": 1
   },
   {
    "fieldname": "electricity_available_in_school2",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Electricity Available in school Compound",
-   "options": "\nYES\nNO",
+   "length": 20,
    "reqd": 1
   },
   {
    "fieldname": "electricity_available_in_lab2",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Electricity Available in Proposed room",
-   "options": "\nYES\nNO",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -1028,9 +1023,9 @@
   },
   {
    "fieldname": "earthing_condition_in_proposed_class_rooms",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Earthing condition in Proposed Class Rooms",
-   "options": "\nNORMAL\nAVERAGE\nNOT CHECKED\nNOT PRESENT",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -1155,9 +1150,8 @@
   },
   {
    "fieldname": "any_paid_cep_course_running",
-   "fieldtype": "Select",
-   "label": "Any Paid CEP Course running",
-   "options": "\nYES\nNO"
+   "fieldtype": "Data",
+   "label": "Any Paid CEP Course running"
   },
   {
    "depends_on": "eval:doc.any_paid_cep_course_running == 'YES'",
@@ -1198,24 +1192,23 @@
   },
   {
    "fieldname": "walltype_electrictydetails",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Wall Type",
-   "options": "\nBrick Wall\nStone Wall\nWooden Wall\nOthers",
+   "length": 30,
    "reqd": 1
   },
   {
    "depends_on": "eval:doc.walltype_electrictydetails == 'Others'",
    "fieldname": "others",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "If any Window/Pillar/Cemented Boarder coming on front wall",
-   "length": 60,
-   "options": "\nYES\nNO"
+   "length": 20
   },
   {
    "fieldname": "roads_available_till_school",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Roads Available Till School",
-   "options": "\nYES\nNo",
+   "length": 20,
    "reqd": 1
   },
   {
@@ -1241,9 +1234,9 @@
   },
   {
    "fieldname": "floor_type",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Floor Type",
-   "options": "\nCONCRETE\nCHIPS\nOTHERS"
+   "length": 30
   },
   {
    "fieldname": "orientation_of_pallah_door",
@@ -1275,9 +1268,9 @@
   },
   {
    "fieldname": "floor_type_2",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "Floor Type",
-   "options": "\nCONCRETE\nCHIPS\nOTHERS"
+   "length": 20
   },
   {
    "fieldname": "orientation_of_door2",
@@ -1320,9 +1313,9 @@
   },
   {
    "fieldname": "school_prone_to_floodcalamities_in_last_5_years",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "School Prone to Flood/Calamities in last 5 years",
-   "options": "\nYES\nNO"
+   "length": 20
   },
   {
    "fieldname": "name_of_block_education_off",
@@ -1379,9 +1372,9 @@
   },
   {
    "fieldname": "it_infrastructure_in_school",
-   "fieldtype": "Select",
+   "fieldtype": "Data",
    "label": "IT Infrastructure in School",
-   "options": "\nYES\nNO"
+   "length": 20
   },
   {
    "fieldname": "column_break_100",
@@ -1390,7 +1383,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-07 14:40:25.118313",
+ "modified": "2022-09-07 15:18:21.754473",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
