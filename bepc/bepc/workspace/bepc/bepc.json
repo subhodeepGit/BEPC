@@ -102,7 +102,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Reports",
+   "label": "Date wise Status Reports",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -313,6 +313,15 @@
   },
   {
    "hidden": 0,
+   "is_query_report": 0,
+   "label": "Schoolwise Equipment List",
+   "link_to": "Schoolwise Equipment",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
    "is_query_report": 1,
    "label": "Theft Item Report",
    "link_to": "Theft Item Report",
@@ -366,7 +375,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-09-07 15:45:22.316618",
+ "modified": "2022-09-07 18:05:31.093221",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",
@@ -383,7 +392,13 @@
   {
    "doc_view": "",
    "label": "Survey Form",
-   "link_to": "Survey Form",
+   "link_to": "School Survey Form",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "School Form",
+   "link_to": "School",
    "type": "DocType"
   },
   {
@@ -400,9 +415,9 @@
   },
   {
    "doc_view": "",
-   "label": "Survey Status Report",
-   "link_to": "Survey Status Report",
-   "type": "Report"
+   "label": "Issue",
+   "link_to": "Issue",
+   "type": "DocType"
   }
  ]
 }
