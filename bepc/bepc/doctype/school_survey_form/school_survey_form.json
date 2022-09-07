@@ -51,19 +51,13 @@
   "education_typeboysgirlsco_ed",
   "class_wise_students_section",
   "class_vbg",
-  "column_break_48",
   "class_vibg",
-  "column_break_47",
   "class_viibg",
-  "column_break_49",
   "class_viiibg",
   "column_break_51",
   "class_ixbg",
-  "column_break_53",
   "class_xbg",
-  "column_break_55",
   "class_xibg",
-  "column_break_57",
   "class_xiibg",
   "total_boys_and_girls_in_school_section",
   "boys",
@@ -73,11 +67,9 @@
   "total_students",
   "category_wise_students_section",
   "sc",
-  "column_break_67",
   "st",
   "column_break_69",
   "obc",
-  "column_break_71",
   "minority_students",
   "total_students_group_wise_class_section",
   "total_students_for_class_v_to_class_viii",
@@ -1347,33 +1339,9 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_48",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_47",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_49",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_53",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "total_boys_and_girls_in_school_section",
    "fieldtype": "Section Break",
    "label": "Total Boys and Girls in school"
-  },
-  {
-   "fieldname": "column_break_55",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_57",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "column_break_86",
@@ -1389,15 +1357,7 @@
    "label": "Category Wise students"
   },
   {
-   "fieldname": "column_break_67",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "column_break_69",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_71",
    "fieldtype": "Column Break"
   },
   {
@@ -1430,7 +1390,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-07 12:47:10.871840",
+ "modified": "2022-09-07 14:40:25.118313",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
