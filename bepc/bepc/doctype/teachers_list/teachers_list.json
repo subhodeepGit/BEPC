@@ -20,56 +20,80 @@
    "fetch_from": "teacher.contact_number",
    "fieldname": "contact_number",
    "fieldtype": "Data",
-   "label": "Contact Number"
+   "in_list_view": 1,
+   "label": "Contact Number",
+   "print_width": "10",
+   "width": "2px"
   },
   {
    "fetch_from": "teacher.email",
    "fieldname": "email_id",
    "fieldtype": "Data",
-   "label": "Email Id"
+   "in_list_view": 1,
+   "label": "Email Id",
+   "print_width": "10",
+   "width": "2px"
   },
   {
    "fieldname": "teacher",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Teacher",
-   "options": "Teacher"
+   "options": "Teacher",
+   "print_width": "10",
+   "width": "1px"
   },
   {
    "fetch_from": "teacher.full_name",
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Teacher Full Name"
+   "in_list_view": 1,
+   "label": "Teacher Full Name",
+   "print_width": "10",
+   "width": "1px"
   },
   {
    "fetch_from": "teacher.school_name",
    "fieldname": "school_name",
    "fieldtype": "Data",
-   "label": "School"
+   "in_list_view": 1,
+   "label": "School",
+   "print_width": "10",
+   "width": "1px"
   },
   {
    "fetch_from": "teacher.district",
    "fieldname": "district",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "District",
-   "options": "Districts"
+   "options": "Districts",
+   "print_width": "10",
+   "width": "1px"
   },
   {
    "fetch_from": "teacher.block",
    "fieldname": "block",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Block",
-   "options": "Block"
+   "options": "Block",
+   "print_width": "10",
+   "width": "1px"
   },
   {
    "fieldname": "subject",
    "fieldtype": "Data",
-   "label": "Subject"
+   "in_list_view": 1,
+   "label": "Subject",
+   "print_width": "10",
+   "width": "1px"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-09-02 11:38:16.512217",
+ "modified": "2022-09-07 16:12:13.038774",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teachers List",

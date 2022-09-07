@@ -208,7 +208,7 @@
   {
    "fieldname": "school_code",
    "fieldtype": "Data",
-   "label": "School Code",
+   "label": "TCIL Code",
    "read_only": 1
   },
   {
@@ -269,7 +269,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2022-09-02 17:48:53.395418",
+ "modified": "2022-09-07 16:31:50.438669",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",

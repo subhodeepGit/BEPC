@@ -24,6 +24,7 @@
    "fieldname": "district",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "District",
    "options": "Districts",
    "reqd": 1
@@ -32,6 +33,7 @@
    "fieldname": "block",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Block",
    "reqd": 1,
    "unique": 1
@@ -39,7 +41,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-29 11:56:56.653513",
+ "modified": "2022-09-07 16:08:55.616744",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Block",

@@ -22,7 +22,11 @@
   "address",
   "column_break_11",
   "insured_name",
-  "date_of_insurance"
+  "date_of_insurance",
+  "warranty_details_section",
+  "warranty_period",
+  "column_break_19",
+  "warranty_ends_on"
  ],
  "fields": [
   {
@@ -95,6 +99,8 @@
   {
    "fieldname": "manufacturer",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Manufacturer"
   },
   {
@@ -104,6 +110,7 @@
   {
    "fieldname": "serial_number",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Serial Number"
   },
   {
@@ -115,12 +122,32 @@
   {
    "fieldname": "mac_id",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "MAC ID"
+  },
+  {
+   "fieldname": "warranty_details_section",
+   "fieldtype": "Section Break",
+   "label": "Warranty Details"
+  },
+  {
+   "fieldname": "warranty_period",
+   "fieldtype": "Data",
+   "label": "Warranty Period"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warranty_ends_on",
+   "fieldtype": "Date",
+   "label": "Warranty Ends on"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-06 17:27:36.393059",
+ "modified": "2022-09-07 16:24:57.144796",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Items",

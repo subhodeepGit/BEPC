@@ -38,6 +38,8 @@
    "fetch_from": "site.site_name",
    "fieldname": "site_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "School Name",
    "read_only": 1
   },
@@ -50,7 +52,7 @@
    "fieldname": "site",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "TCL Code",
+   "label": "TCIL Code",
    "options": "School",
    "reqd": 1
   },
@@ -70,6 +72,8 @@
    "fetch_from": "site.district",
    "fieldname": "district",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "District",
    "read_only": 1
   },
@@ -77,6 +81,8 @@
    "fetch_from": "site.block",
    "fieldname": "block",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Block",
    "read_only": 1
   },
@@ -98,6 +104,8 @@
    "fetch_from": "site.udise",
    "fieldname": "udise_code",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "UDISE code",
    "read_only": 1
   },
@@ -116,7 +124,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 17:43:26.841028",
+ "modified": "2022-09-07 16:32:27.055314",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",

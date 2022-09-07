@@ -21,7 +21,8 @@
    "fieldname": "site",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "TCL Code",
+   "in_standard_filter": 1,
+   "label": "TCIL Code",
    "options": "School",
    "reqd": 1
   },
@@ -38,6 +39,7 @@
    "fieldname": "school_name",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "School name",
    "reqd": 1
   },
@@ -50,6 +52,7 @@
    "fieldname": "district",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "District",
    "reqd": 1
   },
@@ -57,6 +60,8 @@
    "fetch_from": "site.block",
    "fieldname": "block",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Block",
    "reqd": 1
   },
@@ -80,7 +85,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 17:27:50.316095",
+ "modified": "2022-09-07 16:13:18.065435",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Consent form for Teacher Training",
@@ -102,5 +107,7 @@
  "search_fields": "site, school_name, udise_code",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "site"
+ "title_field": "site",
+ "track_changes": 1,
+ "track_seen": 1
 }

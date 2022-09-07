@@ -15,22 +15,27 @@
   {
    "fieldname": "company_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Company Name"
   },
   {
    "fieldname": "branch",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Branch"
   },
   {
    "fieldname": "address",
    "fieldtype": "Small Text",
+   "in_list_view": 1,
    "label": "Address"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-22 15:26:18.197841",
+ "modified": "2022-09-07 16:25:26.641685",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Insurance Company",

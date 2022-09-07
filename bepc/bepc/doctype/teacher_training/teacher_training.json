@@ -41,6 +41,7 @@
   {
    "fieldname": "date",
    "fieldtype": "Datetime",
+   "in_list_view": 1,
    "label": "From Date"
   },
   {
@@ -55,6 +56,7 @@
   {
    "fieldname": "end_date",
    "fieldtype": "Datetime",
+   "in_list_view": 1,
    "label": "End date "
   },
   {
@@ -160,12 +162,13 @@
   {
    "fieldname": "training_venue",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Training Venue"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 17:05:50.264205",
+ "modified": "2022-09-07 16:20:41.133182",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",
@@ -185,5 +188,7 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
 }

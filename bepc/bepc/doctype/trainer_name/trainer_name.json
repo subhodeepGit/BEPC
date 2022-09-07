@@ -14,24 +14,33 @@
   {
    "fieldname": "trainer_number",
    "fieldtype": "Data",
-   "label": "Trainer Number"
+   "in_list_view": 1,
+   "label": "Trainer Number",
+   "print_width": "10",
+   "width": "3px"
   },
   {
    "fieldname": "email_id",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Email Id",
-   "options": "Email"
+   "options": "Email",
+   "print_width": "10",
+   "width": "4px"
   },
   {
    "fieldname": "contact_number",
    "fieldtype": "Data",
-   "label": "Contact Number"
+   "in_list_view": 1,
+   "label": "Contact Number",
+   "print_width": "10",
+   "width": "3px"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-08-19 17:30:59.199927",
+ "modified": "2022-09-07 16:16:22.040641",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Trainer Name",

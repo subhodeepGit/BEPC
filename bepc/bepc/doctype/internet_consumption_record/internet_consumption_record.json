@@ -31,6 +31,8 @@
    "fetch_from": "site.site_name",
    "fieldname": "siteschool_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "School name",
    "read_only": 1
   },
@@ -38,6 +40,8 @@
    "fetch_from": "site.district",
    "fieldname": "district",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "District",
    "read_only": 1
   },
@@ -54,13 +58,15 @@
   {
    "fieldname": "site",
    "fieldtype": "Link",
-   "label": "TCL Code",
+   "label": "TCIL Code",
    "options": "School"
   },
   {
    "fetch_from": "site.udise",
    "fieldname": "udise_code",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "UDISE code"
   },
   {
@@ -71,6 +77,8 @@
    "fetch_from": "site.block",
    "fieldname": "block",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Block"
   },
   {
@@ -97,7 +105,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-25 16:51:47.027321",
+ "modified": "2022-09-07 16:32:39.109993",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",

@@ -27,13 +27,14 @@
    "fieldname": "full_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "in_standard_filter": 1,
    "label": "Teacher Full Name",
    "reqd": 1
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Status",
    "options": "\nActive\nInactive",
    "reqd": 1
@@ -64,7 +65,7 @@
   {
    "fieldname": "site",
    "fieldtype": "Link",
-   "label": "TCL Code",
+   "label": "TCIL Code",
    "options": "School",
    "reqd": 1
   },
@@ -72,6 +73,8 @@
    "fetch_from": "site.udise",
    "fieldname": "udise_code",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "UDISE Code"
   },
   {
@@ -96,6 +99,7 @@
    "fieldname": "block",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Block",
    "options": "Block"
   },
@@ -118,7 +122,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-02 11:24:12.965517",
+ "modified": "2022-09-07 16:33:20.254355",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher",

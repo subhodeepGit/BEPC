@@ -93,6 +93,15 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "School wise Equipment List",
+   "link_to": "School wise Equipment List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Reports",
    "link_type": "DocType",
    "onboard": 0,
@@ -233,15 +242,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "School-Wise Equipment List",
-   "link_to": "School wise Equipment List",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Theft Case record",
    "link_to": "Theft Case record",
    "link_type": "DocType",
@@ -320,9 +320,53 @@
    "onboard": 0,
    "only_for": "",
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Support",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Issue",
+   "link_to": "Issue",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Issue Type",
+   "link_to": "Issue Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Issue Priority",
+   "link_to": "Issue Priority",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Support Settings",
+   "link_to": "Support Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-09-05 12:19:43.298743",
+ "modified": "2022-09-07 15:45:22.316618",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",

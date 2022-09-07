@@ -22,55 +22,80 @@
    "fieldname": "class",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Class "
+   "label": "Class ",
+   "print_width": "10",
+   "width": "2px"
   },
   {
    "fieldname": "total_student",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Total Student"
+   "label": "Total Student",
+   "print_width": "10",
+   "width": "1px"
   },
   {
    "fetch_from": "section.section",
    "fieldname": "section_name",
    "fieldtype": "Data",
-   "label": "Section"
+   "in_list_view": 1,
+   "label": "Section",
+   "print_width": "10",
+   "width": "1px"
   },
   {
    "fieldname": "total_boys",
    "fieldtype": "Data",
-   "label": "Total Boys"
+   "in_list_view": 1,
+   "label": "Total Boys",
+   "print_width": "10",
+   "width": "1px"
   },
   {
    "fieldname": "total_girls",
    "fieldtype": "Data",
-   "label": "Total Girls"
+   "in_list_view": 1,
+   "label": "Total Girls",
+   "print_width": "10",
+   "width": "1px"
   },
   {
    "fieldname": "general_students",
    "fieldtype": "Data",
-   "label": "General Students"
+   "in_list_view": 1,
+   "label": "General Students",
+   "print_width": "10",
+   "width": "1px"
   },
   {
    "fieldname": "obc_students",
    "fieldtype": "Data",
-   "label": "OBC Students"
+   "in_list_view": 1,
+   "label": "OBC Students",
+   "print_width": "10",
+   "width": "1px"
   },
   {
    "fieldname": "sc_students",
    "fieldtype": "Data",
-   "label": "SC Students"
+   "in_list_view": 1,
+   "label": "SC Students",
+   "print_width": "10",
+   "width": "1px"
   },
   {
    "fieldname": "st_students",
    "fieldtype": "Data",
-   "label": "ST Students"
+   "label": "ST Students",
+   "print_width": "10",
+   "search_index": 1,
+   "width": "1px"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-08-25 17:10:22.072491",
+ "modified": "2022-09-07 16:22:38.416823",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Class",
