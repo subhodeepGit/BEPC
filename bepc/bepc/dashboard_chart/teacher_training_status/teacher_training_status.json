@@ -1,0 +1,32 @@
+{
+ "chart_name": "Teacher Training Status",
+ "chart_type": "Report",
+ "creation": "2022-09-08 16:51:02.838485",
+ "custom_options": "{\"x_field\": \"status\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"no._of_trainings\", \"color\": \"#ED6396\"}], \"y_fields\": [\"no._of_trainings\"], \"colors\": [\"#ED6396\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2022-09-08 17:02:07.003739",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Teacher Training Status",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Teacher Training Status",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Donut",
+ "use_report_chart": 0,
+ "x_field": "status",
+ "y_axis": [
+  {
+   "color": "#ED6396",
+   "y_field": "no._of_trainings"
+  }
+ ]
+}

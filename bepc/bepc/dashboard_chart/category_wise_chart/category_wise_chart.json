@@ -1,0 +1,48 @@
+{
+ "chart_name": "Category Wise Chart",
+ "chart_type": "Report",
+ "creation": "2022-09-08 15:51:22.594815",
+ "custom_options": "{\"x_field\": \"school_name\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"total_general_students\", \"color\": \"#449CF0\"}, {\"idx\": 2, \"__islocal\": true, \"name\": \"row 2\", \"y_field\": \"total_obc_students\", \"color\": \"#ECAD4B\"}, {\"idx\": 3, \"__islocal\": true, \"name\": \"row 3\", \"y_field\": \"total_sc_students\", \"color\": \"#29CD42\"}, {\"idx\": 4, \"__islocal\": true, \"name\": \"row 4\", \"y_field\": \"total_st_students\", \"color\": \"#761ACB\"}, {\"idx\": 5, \"__islocal\": true, \"name\": \"row 5\", \"y_field\": \"total_student\", \"color\": \"#CB2929\"}], \"y_fields\": [\"total_general_students\", \"total_obc_students\", \"total_sc_students\", \"total_st_students\", \"total_student\"], \"colors\": [\"#449CF0\", \"#ECAD4B\", \"#29CD42\", \"#761ACB\", \"#CB2929\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2022-09-08 15:51:22.905953",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Category Wise Chart",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "School Wise student",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "school_name",
+ "y_axis": [
+  {
+   "color": "#449CF0",
+   "y_field": "total_general_students"
+  },
+  {
+   "color": "#ECAD4B",
+   "y_field": "total_obc_students"
+  },
+  {
+   "color": "#29CD42",
+   "y_field": "total_sc_students"
+  },
+  {
+   "color": "#761ACB",
+   "y_field": "total_st_students"
+  },
+  {
+   "color": "#CB2929",
+   "y_field": "total_student"
+  }
+ ]
+}

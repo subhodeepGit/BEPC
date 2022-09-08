@@ -1,0 +1,32 @@
+{
+ "chart_name": "School-Wise Data Usage",
+ "chart_type": "Report",
+ "creation": "2022-09-08 16:01:58.009183",
+ "custom_options": "{\"x_field\": \"school_name\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"data_usage_(gb)\", \"color\": \"#EC864B\"}], \"y_fields\": [\"data_usage_(gb)\"], \"colors\": [\"#EC864B\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2022-09-08 16:01:58.172624",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "School-Wise Data Usage",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Internet Usage details",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "school_name",
+ "y_axis": [
+  {
+   "color": "#EC864B",
+   "y_field": "data_usage_(gb)"
+  }
+ ]
+}

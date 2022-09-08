@@ -1,0 +1,40 @@
+{
+ "chart_name": "School-Gender Wise Chart",
+ "chart_type": "Report",
+ "creation": "2022-09-08 15:49:28.528932",
+ "custom_options": "{\"x_field\": \"school_name\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"total_boys\", \"color\": \"#ECAD4B\"}, {\"idx\": 2, \"__islocal\": true, \"name\": \"row 2\", \"y_field\": \"total_girls\", \"color\": \"#449CF0\"}, {\"idx\": 3, \"__islocal\": true, \"name\": \"row 3\", \"y_field\": \"total_student\", \"color\": \"#CB2929\"}], \"y_fields\": [\"total_boys\", \"total_girls\", \"total_student\"], \"colors\": [\"#ECAD4B\", \"#449CF0\", \"#CB2929\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2022-09-08 15:49:28.680347",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "School-Gender Wise Chart",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "School Wise student",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "school_name",
+ "y_axis": [
+  {
+   "color": "#ECAD4B",
+   "y_field": "total_boys"
+  },
+  {
+   "color": "#449CF0",
+   "y_field": "total_girls"
+  },
+  {
+   "color": "#CB2929",
+   "y_field": "total_student"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "chart_name": "SchoolWise Internet Bill",
+ "chart_type": "Report",
+ "creation": "2022-09-08 16:02:27.282486",
+ "custom_options": "{\"x_field\": \"school_name\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"monthly_bill_amount\", \"color\": \"#4463F0\"}], \"y_fields\": [\"monthly_bill_amount\"], \"colors\": [\"#4463F0\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2022-09-08 16:02:27.775450",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "SchoolWise Internet Bill",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Internet Usage details",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "school_name",
+ "y_axis": [
+  {
+   "color": "#4463F0",
+   "y_field": "monthly_bill_amount"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "chart_name": "Theft Case records",
+ "chart_type": "Report",
+ "creation": "2022-09-08 17:01:16.386426",
+ "custom_options": "{\"x_field\": \"status\", \"chart_type\": \"Pie\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"no._of_cases\", \"color\": \"#449CF0\"}], \"y_fields\": [\"no._of_cases\"], \"colors\": [\"#449CF0\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2022-09-08 17:01:16.553168",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Theft Case records",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Theft Case record status",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Pie",
+ "use_report_chart": 0,
+ "x_field": "status",
+ "y_axis": [
+  {
+   "color": "#449CF0",
+   "y_field": "no._of_cases"
+  }
+ ]
+}

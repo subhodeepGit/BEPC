@@ -7,6 +7,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "status",
   "item",
   "udise_code",
   "apple",
@@ -160,11 +161,17 @@
    "fieldname": "ntr_copy",
    "fieldtype": "Attach",
    "label": "NTR Copy"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nSettled\nNot Settled"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-07 16:29:37.192096",
+ "modified": "2022-09-08 16:56:44.425566",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Case record",
