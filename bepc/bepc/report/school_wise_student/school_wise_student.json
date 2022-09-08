@@ -1,0 +1,39 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-09-08 11:21:31.189521",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-09-08 11:56:18.903300",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "School Wise student",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select\n    sl.site as \"TCIL Code\",\n    sl.udise_code as \"UDISE Code\",\n    sl.school_name as \"School Name\",\n    sl.academic_year as \"Academic Year\",\n    sl.district as \"District\",\n    sl.block as \"Block\",\n    sum(sr.total_boys) as \"Total Boys\",\n    sum(sr.total_girls) as \"Total Girls\",\n    sum(sr.general_students) as \"Total General Students\",\n    sum(sr.obc_students) as \"Total OBC Students\",\n    sum(sr.sc_students) as \"Total SC Students\",\n    sum(sr.st_students) as \"Total ST Students\",\n    Sum(sr.total_student) as \"Total Student\"\nfrom\n    `tabStudent Entry`sl,\n    `tabClass`sr\n    \nwhere\nsr.parent = sl.name\n\nGROUP BY sl.school_name",
+ "ref_doctype": "Student Entry",
+ "report_name": "School Wise student",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Approver I"
+  },
+  {
+   "role": "Approver II"
+  },
+  {
+   "role": "Data Entry Approver"
+  },
+  {
+   "role": "Data Entry Operator"
+  }
+ ]
+}

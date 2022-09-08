@@ -32,7 +32,8 @@
   {
    "fieldname": "meter_reading",
    "fieldtype": "Float",
-   "label": "Main meter Current Meter reading"
+   "label": "Main meter Current Meter reading",
+   "reqd": 1
   },
   {
    "fetch_from": "site.site_name",
@@ -41,12 +42,14 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "School Name",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "previous_meter_reading",
    "fieldtype": "Float",
-   "label": "Main meter Previous Meter reading"
+   "label": "Main meter Previous Meter reading",
+   "reqd": 1
   },
   {
    "fieldname": "site",
@@ -75,7 +78,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "District",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fetch_from": "site.block",
@@ -84,7 +88,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Block",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "column_break_14",
@@ -107,12 +112,14 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "UDISE code",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "total_bill_amount",
    "fieldtype": "Data",
-   "label": "Total Bill Amount"
+   "label": "Total Bill Amount",
+   "reqd": 1
   },
   {
    "default": "Today",
@@ -124,7 +131,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-07 16:32:27.055314",
+ "modified": "2022-09-08 12:16:57.699036",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",

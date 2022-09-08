@@ -39,10 +39,11 @@
   {
    "fetch_from": "site.district",
    "fieldname": "district",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "District",
+   "options": "Districts",
    "read_only": 1
   },
   {
@@ -76,10 +77,11 @@
   {
    "fetch_from": "site.block",
    "fieldname": "block",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Block"
+   "label": "Block",
+   "options": "Block"
   },
   {
    "fetch_from": "site.pin_code",
@@ -105,7 +107,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-07 16:32:39.109993",
+ "modified": "2022-09-08 12:31:56.319720",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",

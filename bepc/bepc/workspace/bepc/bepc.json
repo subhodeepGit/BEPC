@@ -259,18 +259,8 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Student List Report",
-   "link_to": "Student LIST Report",
-   "link_type": "Report",
-   "onboard": 0,
-   "only_for": "",
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Teacher Enrollment Report",
-   "link_to": "Teacher Enrollment Report",
+   "label": "School Wise student",
+   "link_to": "School Wise student",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
@@ -278,8 +268,8 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Electricity Consumption Record",
-   "link_to": "Electricity Consumption Record Report",
+   "label": "Electricity Usage details",
+   "link_to": "Electricity Usage details",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
@@ -287,8 +277,8 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Internet consumption Record",
-   "link_to": "Internet consumption Record Report",
+   "label": "Internet Usage details",
+   "link_to": "Internet Usage details",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
@@ -296,8 +286,8 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Equipment detailed Report",
-   "link_to": "Equipment detailed Report",
+   "label": "School-wise Equipment List",
+   "link_to": "School-wise Equipment List",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
@@ -306,28 +296,19 @@
    "hidden": 0,
    "is_query_report": 1,
    "label": "Teacher Training Report",
-   "link_to": "Teacher Training Report",
+   "link_to": "Teacher Training",
    "link_type": "Report",
    "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Schoolwise Equipment List",
-   "link_to": "Schoolwise Equipment",
-   "link_type": "Report",
-   "onboard": 0,
+   "only_for": "",
    "type": "Link"
   },
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "Theft Item Report",
-   "link_to": "Theft Item Report",
+   "label": "Theft report",
+   "link_to": "Theft report",
    "link_type": "Report",
    "onboard": 0,
-   "only_for": "",
    "type": "Link"
   },
   {
@@ -375,7 +356,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-09-07 18:05:31.093221",
+ "modified": "2022-09-08 15:25:40.127539",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",
@@ -383,12 +364,6 @@
  "pin_to_bottom": 0,
  "pin_to_top": 0,
  "shortcuts": [
-  {
-   "doc_view": "",
-   "label": "BEPC Dashboard",
-   "link_to": "BEPC Dashboard",
-   "type": "Dashboard"
-  },
   {
    "doc_view": "",
    "label": "Survey Form",

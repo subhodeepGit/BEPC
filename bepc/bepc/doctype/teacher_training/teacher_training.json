@@ -36,11 +36,12 @@
   {
    "fieldname": "training_on",
    "fieldtype": "Small Text",
+   "in_list_view": 1,
    "label": "Training Topic"
   },
   {
    "fieldname": "date",
-   "fieldtype": "Datetime",
+   "fieldtype": "Date",
    "in_list_view": 1,
    "label": "From Date"
   },
@@ -55,7 +56,7 @@
   },
   {
    "fieldname": "end_date",
-   "fieldtype": "Datetime",
+   "fieldtype": "Date",
    "in_list_view": 1,
    "label": "End date "
   },
@@ -168,7 +169,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-07 16:20:41.133182",
+ "modified": "2022-09-08 14:16:39.317961",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",
