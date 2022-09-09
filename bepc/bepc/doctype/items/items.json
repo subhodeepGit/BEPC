@@ -72,7 +72,7 @@
   },
   {
    "fieldname": "date_of_insurance",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Date of Insurance"
   },
   {
@@ -135,7 +135,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-09 15:34:01.026719",
+ "modified": "2022-09-09 15:36:58.455267",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Items",
