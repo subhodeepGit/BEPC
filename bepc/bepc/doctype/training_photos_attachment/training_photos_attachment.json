@@ -12,19 +12,25 @@
  "fields": [
   {
    "fieldname": "attach_photos",
-   "fieldtype": "Attach Image",
-   "label": "Attach photos"
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attach photos",
+   "print_width": "10",
+   "width": "5px"
   },
   {
    "fieldname": "comments",
    "fieldtype": "Data",
-   "label": "Comments"
+   "in_list_view": 1,
+   "label": "Comments",
+   "print_width": "10",
+   "width": "5px"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-08-19 17:38:04.811918",
+ "modified": "2022-09-09 13:16:18.109449",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Training Photos Attachment",

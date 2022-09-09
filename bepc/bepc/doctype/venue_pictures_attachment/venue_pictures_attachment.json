@@ -13,18 +13,24 @@
   {
    "fieldname": "attach_photos",
    "fieldtype": "Attach",
-   "label": "Attach Photos"
+   "in_list_view": 1,
+   "label": "Attach Photos",
+   "print_width": "10",
+   "width": "5px"
   },
   {
    "fieldname": "comments",
    "fieldtype": "Data",
-   "label": "Comments"
+   "in_list_view": 1,
+   "label": "Comments",
+   "print_width": "10",
+   "width": "5px"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-08-25 17:03:15.281446",
+ "modified": "2022-09-09 13:13:27.344578",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Venue Pictures attachment",
