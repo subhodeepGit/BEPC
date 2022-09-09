@@ -7,7 +7,7 @@ frappe.ui.form.on('Equipment Uptime', {
         frm.set_query("equipment", function() {
             return {
                 filters: {
-                    "item_group":frm.doc.equipment_type
+                    "equipment_group":frm.doc.equipment_type
                 }
             };
         });
