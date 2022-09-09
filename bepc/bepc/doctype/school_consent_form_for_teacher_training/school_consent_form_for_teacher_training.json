@@ -69,8 +69,7 @@
    "fetch_from": "site.pin_code",
    "fieldname": "pin_code",
    "fieldtype": "Data",
-   "label": "Pin Code",
-   "reqd": 1
+   "label": "Pin Code"
   },
   {
    "fieldname": "section_break_9",
@@ -85,7 +84,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-07 16:13:18.065435",
+ "modified": "2022-09-09 13:07:50.773684",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Consent form for Teacher Training",
