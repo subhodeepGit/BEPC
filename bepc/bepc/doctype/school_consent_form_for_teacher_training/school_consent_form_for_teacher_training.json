@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "SCH.CONS.-.#####",
  "creation": "2022-08-19 17:46:48.424118",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -84,7 +85,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-09 13:07:50.773684",
+ "modified": "2022-09-09 13:10:29.079051",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Consent form for Teacher Training",
