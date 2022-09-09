@@ -129,13 +129,13 @@
   },
   {
    "fieldname": "warranty_ends_on",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Warranty Ends on"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-09 15:30:31.659487",
+ "modified": "2022-09-09 15:34:01.026719",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Items",
