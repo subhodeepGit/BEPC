@@ -10,11 +10,9 @@
   "item_code",
   "item_name",
   "manufacturer",
-  "mac_id",
   "is_insured",
   "data_3",
   "item_group",
-  "serial_number",
   "manufacturer_email",
   "insurance_details_section",
   "ins_company",
@@ -109,31 +107,11 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "serial_number",
-   "fieldtype": "Data",
-   "in_global_search": 1,
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Serial Number",
-   "reqd": 1,
-   "unique": 1
-  },
-  {
    "fieldname": "manufacturer_email",
    "fieldtype": "Data",
    "label": "Manufacturer Email",
    "options": "Email",
    "reqd": 1
-  },
-  {
-   "fieldname": "mac_id",
-   "fieldtype": "Data",
-   "in_global_search": 1,
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "MAC ID",
-   "reqd": 1,
-   "unique": 1
   },
   {
    "fieldname": "warranty_details_section",
@@ -157,7 +135,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-09 13:01:10.745947",
+ "modified": "2022-09-09 15:30:31.659487",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Items",
