@@ -1053,16 +1053,14 @@
    "fieldname": "latitude",
    "fieldtype": "Data",
    "label": "Latitude",
-   "length": 20,
-   "reqd": 1
+   "length": 20
   },
   {
    "fetch_from": "school_code.longitude",
    "fieldname": "longitude",
    "fieldtype": "Data",
    "label": "Longitude",
-   "length": 20,
-   "reqd": 1
+   "length": 20
   },
   {
    "fieldname": "school_contact_person_other_than_above",
@@ -1383,7 +1381,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-07 15:18:21.754473",
+ "modified": "2022-09-12 17:43:49.990660",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
