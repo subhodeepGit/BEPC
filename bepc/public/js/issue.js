@@ -24,5 +24,25 @@ frappe.ui.form.on('Issue', {
                 }
             };
         });
-    }
+        
+    
+    },
+//     refresh:function(frm){
+//         if (!frm.is_new()){
+//             frm.add_custom_button(__('Submit'), function() {
+//                 frappe.call({
+//                     method: "bepc.bepc.doctype.issue.mail",
+//                     doc:frm.doc,
+//                     args:{
+//                         name:frm.doc.name,
+//                     },
+//                     callback: function() {
+//                         frm.refresh();
+//                     }
+//                 });
+//             }).addClass('btn-primary');;
+//         }
+        
+//     }
 });
+

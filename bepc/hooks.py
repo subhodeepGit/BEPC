@@ -101,36 +101,37 @@ doctype_js = {
 doc_events = {
 	"Issue": {
 		"validate": "bepc.bepc.doctype.issue.validate",
+		"before_save":"bepc.bepc.doctype.issue.before_save",
 	}
 }
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 
-# 	"cron": {
-# 		"00 09 * * 1,2,3,4,5,6,7": [
-# 			"bepc.tasks.cron"
-# 		]
-# 	},
+	"cron": {
+		"* * * * *": [
+			"bepc.tasks.cron"
+		]
+	},
 
-# 	"all": [
-# 		"bepc.tasks.all"
-# 	],
-# 	"daily": [
-# 		"bepc.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"bepc.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"bepc.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"bepc.tasks.monthly"
-# 	],
-# }
+	"all": [
+		"bepc.tasks.all"
+	],
+	"daily": [
+		"bepc.tasks.daily"
+	],
+	"hourly": [
+		"bepc.tasks.hourly"
+	],
+	"weekly": [
+		"bepc.tasks.weekly"
+	],
+	"monthly": [
+		"bepc.tasks.monthly"
+	],
+}
 
 # Testing
 # -------
@@ -175,7 +176,7 @@ after_migrate = [
 	# {"dt" : "Workflow State"}
 # 	{"dt" : "Role"},
 # 	{"dt" : "Module Profile"},
-# 	{"dt" : "Role Profile"}
+	# {"dt" : "Role Profile"}
 # ]
 
 # User Data Protection
