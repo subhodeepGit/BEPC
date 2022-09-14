@@ -9,8 +9,10 @@
  "field_order": [
   "data_33",
   "school_code",
+  "go_live_date",
   "column_break_3",
   "site_name",
+  "project_end_date",
   "address_section",
   "udise",
   "zone",
@@ -214,6 +216,17 @@
   {
    "fieldname": "column_break_3",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "go_live_date",
+   "fieldtype": "Date",
+   "label": "Go Live Date"
+  },
+  {
+   "fieldname": "project_end_date",
+   "fieldtype": "Date",
+   "label": "Project End date",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
@@ -269,7 +282,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2022-09-07 16:31:50.438669",
+ "modified": "2022-09-14 11:12:17.398099",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
@@ -291,5 +304,6 @@
  "search_fields": "data_33, site_name",
  "sort_field": "data_33",
  "sort_order": "ASC",
- "title_field": "site_name"
+ "title_field": "site_name",
+ "track_changes": 1
 }

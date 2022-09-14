@@ -11,7 +11,10 @@
   "school_name",
   "district",
   "block",
-  "pin_code"
+  "pin_code",
+  "state",
+  "school_contact_number",
+  "school_address"
  ],
  "fields": [
   {
@@ -72,12 +75,38 @@
    "label": "Pin Code",
    "print_width": "10",
    "width": "2px"
+  },
+  {
+   "fetch_from": "site.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fetch_from": "site.school_contact_no",
+   "fieldname": "school_contact_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "School Contact Number",
+   "print_width": "10",
+   "width": "1px"
+  },
+  {
+   "fetch_from": "site.post_office",
+   "fieldname": "school_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "School Address",
+   "print_width": "10",
+   "width": "1px"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-09-07 16:20:58.630814",
+ "modified": "2022-09-12 12:27:23.393520",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School List",

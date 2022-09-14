@@ -3,6 +3,7 @@
 
 import frappe
 from frappe.model.document import Document
+from datetime import date, timedelta
 
 class School(Document):
 	def validate(doc):
@@ -13,6 +14,8 @@ class School(Document):
 		pincode(doc)
 
 		doc.school_code=doc.data_33
+		doc.project_end_date = doc.go_live_date + timedelta(days=1800)
+
 
 @frappe.whitelist()
 def get_user_role(doc):

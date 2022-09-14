@@ -204,7 +204,8 @@
   "trainer_name3",
   "contact_number3",
   "remarks_section",
-  "remarks"
+  "remarks",
+  "upload_survey_form_physical_copy"
  ],
  "fields": [
   {
@@ -1377,11 +1378,16 @@
   {
    "fieldname": "column_break_100",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "upload_survey_form_physical_copy",
+   "fieldtype": "Attach",
+   "label": "Upload Survey Form Physical Copy"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-12 17:43:49.990660",
+ "modified": "2022-09-14 15:29:38.136753",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",

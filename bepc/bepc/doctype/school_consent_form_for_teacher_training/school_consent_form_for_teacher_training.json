@@ -10,12 +10,18 @@
   "site",
   "udise_code",
   "school_name",
+  "school_contact_number",
+  "school_address",
+  "go_live_date",
   "column_break_5",
+  "state",
   "district",
   "block",
   "pin_code",
+  "project_end_date",
   "section_break_9",
-  "teacher_to_be_trained"
+  "teacher_to_be_trained",
+  "date"
  ],
  "fields": [
   {
@@ -81,11 +87,54 @@
    "fieldtype": "Table",
    "label": "Teacher To be trained",
    "options": "Teachers List"
+  },
+  {
+   "fetch_from": "site.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fetch_from": "site.school_contact_no",
+   "fieldname": "school_contact_number",
+   "fieldtype": "Data",
+   "label": "School Contact Number"
+  },
+  {
+   "fetch_from": "site.post_office",
+   "fieldname": "school_address",
+   "fieldtype": "Data",
+   "label": "School Address"
+  },
+  {
+   "fetch_from": "site.go_live_date",
+   "fieldname": "go_live_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Go Live Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.project_end_date",
+   "fieldname": "project_end_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Project End Date",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Date",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-09 13:10:29.079051",
+ "modified": "2022-09-14 11:48:16.562509",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Consent form for Teacher Training",

@@ -10,7 +10,10 @@
   "site",
   "udise_code",
   "site_name",
+  "school_contact_number",
+  "school_address",
   "column_break_5",
+  "state",
   "district",
   "block",
   "pin_code",
@@ -173,11 +176,30 @@
    "fieldname": "pin_code",
    "fieldtype": "Data",
    "label": "Pin Code"
+  },
+  {
+   "fetch_from": "site.school_contact_no",
+   "fieldname": "school_contact_number",
+   "fieldtype": "Data",
+   "label": "School Contact Number"
+  },
+  {
+   "fetch_from": "site.post_office",
+   "fieldname": "school_address",
+   "fieldtype": "Data",
+   "label": "School Address"
+  },
+  {
+   "fetch_from": "site.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-07 16:32:51.587144",
+ "modified": "2022-09-12 12:21:44.843818",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Equipment Uptime",

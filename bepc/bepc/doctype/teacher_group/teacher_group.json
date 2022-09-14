@@ -89,7 +89,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-08-19 17:04:30.717267",
+ "modified": "2022-09-14 16:13:46.543825",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Group",
@@ -111,5 +111,6 @@
  "search_fields": "teacher_group_name",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "teacher_group_name"
+ "title_field": "teacher_group_name",
+ "track_changes": 1
 }

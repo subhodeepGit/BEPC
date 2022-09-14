@@ -6,6 +6,7 @@ from frappe.model.document import Document
 
 class Teacher(Document):
 	def validate(doc):
+		School_number_validation(doc)
 		mobile_number_validation(doc)
 
 def mobile_number_validation(doc):
@@ -15,4 +16,14 @@ def mobile_number_validation(doc):
 		if len(doc.contact_number)>10:
 			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
 		if len(doc.contact_number)<10:
+			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
+		
+
+def School_number_validation(doc):
+	if doc.school_contact_number:
+		if not (doc.school_contact_number).isdigit():
+			frappe.throw("Field <b>Asst. Contact Number</b> Accept Digits Only")
+		if len(doc.school_contact_number)>10:
+			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
+		if len(doc.school_contact_number)<10:
 			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")

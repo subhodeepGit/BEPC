@@ -339,7 +339,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-09-08 17:19:18.565949",
+ "modified": "2022-09-12 11:57:12.676834",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",
@@ -355,18 +355,6 @@
   },
   {
    "doc_view": "",
-   "label": "Survey Form",
-   "link_to": "School Survey Form",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
-   "label": "School Form",
-   "link_to": "School",
-   "type": "DocType"
-  },
-  {
-   "doc_view": "",
    "label": "Internet consumption Record",
    "link_to": "Internet consumption Record",
    "type": "DocType"
@@ -375,6 +363,18 @@
    "doc_view": "",
    "label": "Electricity Consumption Record",
    "link_to": "Electricity Consumption Record",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Equipment Uptime",
+   "link_to": "Equipment Uptime",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Teacher Training",
+   "link_to": "Teacher Training",
    "type": "DocType"
   },
   {

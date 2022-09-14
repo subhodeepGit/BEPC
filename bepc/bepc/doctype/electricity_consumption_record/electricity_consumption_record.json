@@ -10,10 +10,15 @@
   "site",
   "udise_code",
   "site_name",
+  "school_contact_number",
+  "school_address",
+  "go_live_date",
   "column_break_7",
+  "state",
   "district",
   "block",
   "pin_code",
+  "project_end_date",
   "data_8",
   "previous_meter_reading",
   "meter_reading",
@@ -21,13 +26,17 @@
   "column_break_14",
   "date",
   "reading_image",
-  "total_bill_amount"
+  "total_bill_amount",
+  "payment_deatils_section",
+  "payment_date",
+  "column_break_23",
+  "transaction_id"
  ],
  "fields": [
   {
    "fieldname": "reading_image",
    "fieldtype": "Attach Image",
-   "label": "Reading Image"
+   "label": "Upload Electricity bill hardcopy"
   },
   {
    "fieldname": "meter_reading",
@@ -42,7 +51,6 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "School Name",
-   "read_only": 1,
    "reqd": 1
   },
   {
@@ -68,8 +76,7 @@
    "fetch_from": "site.pin_code",
    "fieldname": "pin_code",
    "fieldtype": "Data",
-   "label": "Pin code",
-   "read_only": 1
+   "label": "Pin code"
   },
   {
    "fetch_from": "site.district",
@@ -78,7 +85,6 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "District",
-   "read_only": 1,
    "reqd": 1
   },
   {
@@ -88,7 +94,6 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Block",
-   "read_only": 1,
    "reqd": 1
   },
   {
@@ -112,7 +117,6 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "UDISE code",
-   "read_only": 1,
    "reqd": 1
   },
   {
@@ -125,13 +129,66 @@
    "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date",
+   "label": "Bill Posting Date",
    "read_only": 1
+  },
+  {
+   "fetch_from": "site.school_contact_no",
+   "fieldname": "school_contact_number",
+   "fieldtype": "Data",
+   "label": "School Contact Number"
+  },
+  {
+   "fetch_from": "site.post_office",
+   "fieldname": "school_address",
+   "fieldtype": "Data",
+   "label": "School Address"
+  },
+  {
+   "fetch_from": "site.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fetch_from": "site.go_live_date",
+   "fieldname": "go_live_date",
+   "fieldtype": "Date",
+   "label": "Go Live Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.project_end_date",
+   "fieldname": "project_end_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Project End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_deatils_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Date",
+   "label": "Payment Date"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transaction_id",
+   "fieldtype": "Data",
+   "label": "Transaction ID"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-08 16:03:49.545934",
+ "modified": "2022-09-14 15:49:24.685794",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",

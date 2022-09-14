@@ -8,6 +8,9 @@ from datetime import datetime
 from frappe.utils import date_diff
 
 class EquipmentUptime(Document):
+	def on_change(doc):
+		School_number_validation(doc)
+		
 	def validate(self):
 		date_format = "%Y-%m-%d"
 		# delta = date_diff(self.from_date_and_time, self.to_date_and_time)
@@ -19,3 +22,12 @@ class EquipmentUptime(Document):
 		delta1 = date_diff(self.to_time, self.from_time)
 		total_uptime = delta1-delta
 		self.total_uptime = total_uptime
+
+def School_number_validation(doc):
+	if doc.school_contact_number:
+		if not (doc.school_contact_number).isdigit():
+			frappe.throw("Field <b>Asst. Contact Number</b> Accept Digits Only")
+		if len(doc.school_contact_number)>10:
+			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
+		if len(doc.school_contact_number)<10:
+			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")

@@ -11,25 +11,32 @@
   "item",
   "udise_code",
   "apple",
+  "school_contact_number",
+  "school_address",
   "column_break_5",
+  "state",
   "district",
   "block",
   "pincode",
   "section_break_10",
   "euipment_lost",
   "equipment_name",
-  "date_of_incident",
+  "date",
+  "time_of_incident",
   "quantity_stolen",
   "column_break_15",
   "reason",
-  "equipment_insured",
   "covered_under_insurance",
+  "next_process",
   "attachments_section",
   "fir_copy",
   "ntr_copy",
+  "police_station_acknowledgement_receipt",
   "column_break_23",
   "insurance_claim_receipt",
-  "delivery_challan_receipt"
+  "delivery_challan_receipt",
+  "go_live_date",
+  "project_end_date"
  ],
  "fields": [
   {
@@ -91,18 +98,14 @@
    "fieldname": "euipment_lost",
    "fieldtype": "Link",
    "label": "Equipment Lost",
-   "options": "Items"
+   "options": "Items",
+   "reqd": 1
   },
   {
    "fetch_from": "euipment_lost.item_name",
    "fieldname": "equipment_name",
    "fieldtype": "Data",
    "label": "Equipment Name"
-  },
-  {
-   "fieldname": "date_of_incident",
-   "fieldtype": "Datetime",
-   "label": "Date of Incident"
   },
   {
    "fieldname": "quantity_stolen",
@@ -117,20 +120,13 @@
    "fieldname": "reason",
    "fieldtype": "Select",
    "label": "Reason",
-   "options": "\nTheft\nBurglary\nNatural Calamity\nRat Bitten\nPhysical Damage"
+   "options": "\nTheft\nBurglary\nNatural Calamity\nRodent Damage\nPhysical Damage"
   },
   {
-   "fieldname": "equipment_insured",
-   "fieldtype": "Select",
-   "label": "Equipment Insured",
-   "options": "\nYes\nNo"
-  },
-  {
-   "depends_on": "eval:doc.equipment_insured == 'Yes'",
    "fieldname": "covered_under_insurance",
-   "fieldtype": "Select",
-   "label": "Covered Under Insurance",
-   "options": "\nYes\nNo"
+   "fieldtype": "Data",
+   "label": "Comes Under Insurance",
+   "read_only": 1
   },
   {
    "depends_on": "eval:doc.covered_under_insurance == 'Yes'",
@@ -167,11 +163,68 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "\nSettled\nNot Settled"
+  },
+  {
+   "fetch_from": "site.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fetch_from": "site.school_contact_no",
+   "fieldname": "school_contact_number",
+   "fieldtype": "Data",
+   "label": "School Contact Number"
+  },
+  {
+   "fetch_from": "site.post_office",
+   "fieldname": "school_address",
+   "fieldtype": "Data",
+   "label": "School Address"
+  },
+  {
+   "fetch_from": "item.go_live_date",
+   "fieldname": "go_live_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Go Live Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item.project_end_date",
+   "fieldname": "project_end_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Project End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date of Incident",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_of_incident",
+   "fieldtype": "Time",
+   "label": "Time of Incident"
+  },
+  {
+   "depends_on": "eval:doc.covered_under_insurance == 'No'",
+   "fieldname": "next_process",
+   "fieldtype": "Small Text",
+   "label": "Next Process"
+  },
+  {
+   "fieldname": "police_station_acknowledgement_receipt",
+   "fieldtype": "Attach",
+   "label": "Police Station Acknowledgement receipt"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-08 16:56:44.425566",
+ "modified": "2022-09-14 17:19:29.168637",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Case record",
@@ -191,5 +244,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "track_changes": 1
 }
