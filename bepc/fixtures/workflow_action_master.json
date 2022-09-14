@@ -2,7 +2,7 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2022-08-02 10:51:08.956248",
+  "modified": "2022-08-29 17:56:50.241908",
   "name": "Approve",
   "parent": null,
   "parentfield": null,
@@ -12,7 +12,7 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2022-08-02 10:51:08.960036",
+  "modified": "2022-08-29 17:56:50.245789",
   "name": "Reject",
   "parent": null,
   "parentfield": null,
@@ -22,7 +22,7 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2022-08-02 10:51:08.963237",
+  "modified": "2022-08-29 17:56:50.249641",
   "name": "Review",
   "parent": null,
   "parentfield": null,
@@ -68,5 +68,15 @@
   "parentfield": null,
   "parenttype": null,
   "workflow_action_name": "Send For Approval to Level-III"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2022-09-13 11:48:18.815842",
+  "name": "Submit",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "workflow_action_name": "Submit"
  }
 ]
