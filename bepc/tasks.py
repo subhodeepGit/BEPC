@@ -18,10 +18,10 @@ def cron():
         for t in items_detail_info:
             issue_parent_name.append(t['parent'])
         if len(issue_parent_name)==1:    
-            issue_info=frappe.get_all("Issue",filters=[["name","=",issue_parent_name[0]]],fields=['name','school','school_name','district_','block','resolution_by','sla_status','project_manager','district_collector'])
+            issue_info=frappe.get_all("Issue",filters=[["name","=",issue_parent_name[0]]],fields=['name','school','school_name','district','block','resolution_by','sla_status','project_manager','district_collector'])
             
         else:
-            issue_info=frappe.get_all("Issue",filters=[["name","in",tuple(issue_parent_name)]],fields=['name','school','school_name','district_','block','resolution_by','sla_status','project_manager','district_collector'])
+            issue_info=frappe.get_all("Issue",filters=[["name","in",tuple(issue_parent_name)]],fields=['name','school','school_name','district','block','resolution_by','sla_status','project_manager','district_collector'])
            
            
 
@@ -42,7 +42,7 @@ def cron():
                 for res1 in items_detail_info:
                     for t in issue_info:
                         if t["name"]==res1["parent"]:
-                            msg += "<tr><td>" + """{0}""".format(str(t.get('name'))) + "</td><td>" + str(t.get('district_')) + "</td><td>" + str(t.get('block'))  + "</td><td>" + str(t.get('school')) + "</td><td>" + str(t.get('school_name')) + "</td><td>" + str(res1.get('item'))  + "</td><td>" + str(res1.get('manufactrurer')) + "</td><td>" + str(res1.get('serial_no')) + "</td><td>" + str(t.get('resolution_by'))  + "</td><td>" + str(t.get('sla_status'))  + "</td></tr>"
+                            msg += "<tr><td>" + """{0}""".format(str(t.get('name'))) + "</td><td>" + str(t.get('district')) + "</td><td>" + str(t.get('block'))  + "</td><td>" + str(t.get('school')) + "</td><td>" + str(t.get('school_name')) + "</td><td>" + str(res1.get('item'))  + "</td><td>" + str(res1.get('manufactrurer')) + "</td><td>" + str(res1.get('serial_no')) + "</td><td>" + str(t.get('resolution_by'))  + "</td><td>" + str(t.get('sla_status'))  + "</td></tr>"
                 msg += "</table>"
                 send_mail([oem_email_address],sub,msg)  
             else:
@@ -62,7 +62,7 @@ def cron():
                     for t in issue_info:
                         if t["name"]==res1["parent"]:
 
-                            msg += "<tr><td>" + """{0}""".format(str(t.get('name'))) + "</td><td>" + str(t.get('district_')) + "</td><td>" + str(t.get('block'))  + "</td><td>" + str(t.get('school')) + "</td><td>" + str(t.get('school_name')) + "</td><td>" + str(res1.get('item'))  + "</td><td>" + str(res1.get('manufactrurer')) + "</td><td>" + str(res1.get('serial_no')) + "</td><td>" + str(t.get('resolution_by'))  + "</td><td>" + str(t.get('sla_status'))  + "</td></tr>"
+                            msg += "<tr><td>" + """{0}""".format(str(t.get('name'))) + "</td><td>" + str(t.get('district')) + "</td><td>" + str(t.get('block'))  + "</td><td>" + str(t.get('school')) + "</td><td>" + str(t.get('school_name')) + "</td><td>" + str(res1.get('item'))  + "</td><td>" + str(res1.get('manufactrurer')) + "</td><td>" + str(res1.get('serial_no')) + "</td><td>" + str(t.get('resolution_by'))  + "</td><td>" + str(t.get('sla_status'))  + "</td></tr>"
                 msg += "</table>"
 
                 send_mail_cc([oem_email_address],[cc],sub,msg)    

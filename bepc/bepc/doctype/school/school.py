@@ -12,7 +12,7 @@ class School(Document):
 		president_number_validation(doc)
 		asst_number_validation(doc)
 		pincode(doc)
-
+		
 		doc.school_code=doc.data_33
 		doc.project_end_date = doc.go_live_date + timedelta(days=1800)
 

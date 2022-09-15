@@ -15,15 +15,32 @@ from frappe.model.mapper import get_mapped_doc
 from bepc.bepc.notification.custom_notification import issue_notification_mail, internal_mail
 from frappe.utils.data import getdate
 from frappe.utils import nowdate, now_datetime
-
+from frappe.model.document import Document
+from datetime import datetime
+import datetime
 def validate(self,method):
+    form_valid(self)
     print("\n\n")
     print(self.name)
     if self.issue_type=="External":
         external_mail(self)
     elif self.issue_type=="Internal":
         internal_mail(self)
-            
+    
+
+def form_valid(self):
+    d1=self.go_live_date
+    d2=self.opening_date
+    d3=self.project_end_date
+    start_date = d1.strftime("%Y-%m-%d")
+    dt_obj = datetime.datetime.strptime(d2,"%Y-%m-%d")
+    today_date = datetime.datetime.strftime(dt_obj, "%Y-%m-%d")
+    end_date = d3.strftime("%Y-%m-%d")
+    if (today_date >= start_date) and (end_date >= today_date):
+        pass
+    else:
+        frappe.throw("Project Date Expired")
+        
 
 def before_save(self,method):
     pass
@@ -45,8 +62,8 @@ def external_mail(self):
             data["disabled"]=t.disabled
             data["oem_email_address"]=t.oem_email_address
             data["subject"]=self.subject
-            data["state_"]=self.state_
-            data["district_"]=self.district_
+            data["state"]=self.state
+            data["district"]=self.district
             data["block"]=self.block
             data["school"]=self.school
             data["school_address"]=self.school_address
@@ -57,6 +74,7 @@ def external_mail(self):
             data["priority"]=self.priority
             data["issue_type"]=self.issue_type
             data["helpdesk_email"]=self.helpdesk_email
+            data["opening_date"]=self.opening_date
             issue_notification_mail(data)
 
 

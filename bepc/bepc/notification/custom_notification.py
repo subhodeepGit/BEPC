@@ -16,24 +16,23 @@ def has_default_email_acc():
 
 def issue_notification_mail(doc):
     # {'item': '08b50badef', 'manufactrurer': 'HP Company', 'serial_no': 'SL-HP-01', 'description': 'sadsfa', 'oem_email_address': 'tousiff.taj@soulunileaders.com', 'disabled': 0}
-    sub="""<p><b>Issue Ticket</b></p><br>"""
+    sub="Complaint Lodged for {0} on {1}".format(doc["item"],doc["opening_date"])
     cc=doc["district_collector"],doc["project_manager"]
     msg="""<b>---------------------Issue Details---------------------</b><br>"""
-    msg+="""<b>Subject:</b>  {0}<br>""".format(doc["subject"])
-    msg+="""<b>State:</b>  {0}<br>""".format(doc["state_"])
-    msg+="""<b>District:</b>  {0}<br>""".format(doc["district_"])
+    msg+="""<b>State:</b>  {0}<br>""".format(doc["state"])
+    msg+="""<b>District:</b>  {0}<br>""".format(doc["district"])
     msg+="""<b>Block:</b>  {0}<br>""".format(doc["block"])
     msg+="""<b>School Id:</b>  {0}<br>""".format(doc["school"])
     msg+="""<b>School Name:</b>  {0}<br>""".format(doc["school_name"])
     msg+="""<b>School Address:</b>  {0}<br>""".format(doc["school_address"])
     msg+="""<b>School Contact:</b>  {0}<br>""".format(doc["school_contact_no"])
-    msg+="""<b>Item:</b>  {0}<br>""".format(doc['item'])
+    msg+="""<b>Item Name:</b>  {0}<br>""".format(doc['item'])
     msg+="""<b>Manufacturer:</b>  {0}<br>""".format(doc['manufactrurer'])
     msg+="""<b>Serial No:</b>  {0}<br>""".format(doc['serial_no'])
     msg+="""<b>Description:</b>  {0}<br>""".format(doc['description'])
     msg+="""<b>Issue Type:</b>  {0}<br>""".format(doc['issue_type'])
     msg+="""<b>Priority:</b>  {0}<br>""".format(doc['priority'])
-    send_mail([doc['oem_email_address']],cc,'New Issue',msg)
+    send_mail([doc['oem_email_address']],cc,sub,msg)
 
 def internal_mail(doc):
     # {'item': '08b50badef', 'manufactrurer': 'HP Company', 'serial_no': 'SL-HP-01', 'description': 'sadsfa', 'oem_email_address': 'tousiff.taj@soulunileaders.com', 'disabled': 0}
