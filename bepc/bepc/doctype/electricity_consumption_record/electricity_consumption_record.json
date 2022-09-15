@@ -12,17 +12,23 @@
   "site_name",
   "school_contact_number",
   "school_address",
-  "go_live_date",
+  "project_end_date",
   "column_break_7",
   "state",
   "district",
   "block",
   "pin_code",
-  "project_end_date",
+  "go_live_date",
+  "section_break_13",
+  "main_meter_previous_reading",
+  "total_consumed_unit",
+  "column_break_15",
+  "main_meter_current_reading",
   "data_8",
   "previous_meter_reading",
   "meter_reading",
   "total_billable_unit",
+  "price_per_unit",
   "column_break_14",
   "date",
   "reading_image",
@@ -41,7 +47,7 @@
   {
    "fieldname": "meter_reading",
    "fieldtype": "Float",
-   "label": "Main meter Current Meter reading",
+   "label": "Sub meter current reading",
    "reqd": 1
   },
   {
@@ -56,7 +62,7 @@
   {
    "fieldname": "previous_meter_reading",
    "fieldtype": "Float",
-   "label": "Main meter Previous Meter reading",
+   "label": "Sub meter previous reading",
    "reqd": 1
   },
   {
@@ -70,7 +76,7 @@
   {
    "fieldname": "data_8",
    "fieldtype": "Section Break",
-   "label": "Main meter reading"
+   "label": "Sub Meter reading"
   },
   {
    "fetch_from": "site.pin_code",
@@ -107,7 +113,7 @@
   {
    "fieldname": "total_billable_unit",
    "fieldtype": "Float",
-   "label": "Sub meter reading",
+   "label": "Total Billable Unit",
    "read_only": 1
   },
   {
@@ -122,8 +128,7 @@
   {
    "fieldname": "total_bill_amount",
    "fieldtype": "Float",
-   "label": "Total Bill Amount",
-   "reqd": 1
+   "label": "Total Bill Amount"
   },
   {
    "default": "Today",
@@ -184,11 +189,42 @@
    "fieldname": "transaction_id",
    "fieldtype": "Data",
    "label": "Transaction ID"
+  },
+  {
+   "fieldname": "price_per_unit",
+   "fieldtype": "Float",
+   "label": "Price per unit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break",
+   "label": "Main Meter reading"
+  },
+  {
+   "fieldname": "main_meter_previous_reading",
+   "fieldtype": "Float",
+   "label": "Main meter Previous reading"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "main_meter_current_reading",
+   "fieldtype": "Float",
+   "label": "Main meter Current reading"
+  },
+  {
+   "fieldname": "total_consumed_unit",
+   "fieldtype": "Float",
+   "label": "Total consumed unit",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-14 15:49:24.685794",
+ "modified": "2022-09-15 17:14:45.454931",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",

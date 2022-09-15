@@ -24,19 +24,27 @@ class ElectricityConsumptionRecord(Document):
 		School_number_validation(self)
 
 	def validate(self):
-		# self.cal()
+		self.cal()
+		self.total_price()
+		self.mainmeter()
 		self.form_valid()
 
 
 		# if(self.meter_reading != self.submeter_total_current_unit):
 		# 	frappe.throw("<b>Mainmeter Current reading</b> not Maching with <b>SubMeter Total Current reading</b>")	
 	
-	# def cal(self):
-	# 	a = self.meter_reading
-	# 	print("\n\n\n\n\n")
-	# 	b = self.previous_meter_reading
-	# 	c = a-b
-	# 	self.total_billable_unit=c
+	def cal(self):
+		a = self.meter_reading
+		print("\n\n\n\n\n")
+		b = self.previous_meter_reading
+		c = a-b
+		self.total_billable_unit=c
+
+	def mainmeter(self):
+		self.total_consumed_unit = self.main_meter_current_reading - self.main_meter_previous_reading
+
+	def total_price(self):
+		self.total_bill_amount = self.total_billable_unit * self.price_per_unit
 
 def School_number_validation(self):
 	if self.school_contact_number:

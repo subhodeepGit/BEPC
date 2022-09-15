@@ -2,7 +2,7 @@
  "cards": [],
  "charts": [
   {
-   "chart": "Survey forms Status",
+   "chart": "Ongoing-Survey Form Status",
    "width": "Half"
   },
   {
@@ -22,19 +22,15 @@
    "width": "Half"
   },
   {
+   "chart": "School-Wise Electricty Bill",
+   "width": "Half"
+  },
+  {
    "chart": "School-Wise Data Usage",
    "width": "Half"
   },
   {
    "chart": "SchoolWise Internet Bill",
-   "width": "Half"
-  },
-  {
-   "chart": "School-Wise Electricity Bill",
-   "width": "Half"
-  },
-  {
-   "chart": "School-wise Total Equipments",
    "width": "Half"
   },
   {
@@ -44,6 +40,10 @@
   {
    "chart": "Theft Case records",
    "width": "Half"
+  },
+  {
+   "chart": "Item wise issue list",
+   "width": "Half"
   }
  ],
  "creation": "2022-09-08 15:49:18.011009",
@@ -51,9 +51,9 @@
  "docstatus": 0,
  "doctype": "Dashboard",
  "idx": 0,
- "is_default": 1,
+ "is_default": 0,
  "is_standard": 1,
- "modified": "2022-09-08 17:43:50.364955",
+ "modified": "2022-09-15 18:33:34.682205",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",
