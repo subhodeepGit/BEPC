@@ -3,6 +3,8 @@
 
 import frappe
 from frappe.model.document import Document
+import datetime
+from datetime import date, timedelta
 from datetime import date, timedelta
 
 class School(Document):
@@ -14,7 +16,16 @@ class School(Document):
 		pincode(doc)
 		
 		doc.school_code=doc.data_33
-		doc.project_end_date = doc.go_live_date + timedelta(days=1800)
+		print("\n\n\n\n\n\n\n")
+		print(type(doc.go_live_date))	
+		d2=str(doc.go_live_date)
+		print(type(d2))
+		dt_obj = datetime.datetime.strptime(d2,"%Y-%m-%d")
+		print(type(dt_obj))
+		today_date =dt_obj.date()				
+		# today_date = datetime.datetime.strftime(dt_obj, "%Y-%m-%d")
+		# print(type(today_date))			//str
+		doc.project_end_date = today_date + timedelta(days=1800)
 
 
 @frappe.whitelist()
