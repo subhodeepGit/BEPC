@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "TFT.REC.-.#####",
+ "autoname": "TC.REC.-.#####",
  "creation": "2022-08-22 11:56:17.774260",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -36,7 +36,9 @@
   "insurance_claim_receipt",
   "delivery_challan_receipt",
   "go_live_date",
-  "project_end_date"
+  "project_end_date",
+  "district_coordinator_1",
+  "district_coordinator_2"
  ],
  "fields": [
   {
@@ -220,11 +222,27 @@
    "fieldname": "police_station_acknowledgement_receipt",
    "fieldtype": "Attach",
    "label": "Police Station Acknowledgement receipt"
+  },
+  {
+   "fetch_from": "item.district_coordinator",
+   "fieldname": "district_coordinator_1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "District Coordinator 1",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item.district_coordinator_2",
+   "fieldname": "district_coordinator_2",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "District Coordinator 2",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-14 17:19:29.168637",
+ "modified": "2022-09-16 12:09:15.169659",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Case record",

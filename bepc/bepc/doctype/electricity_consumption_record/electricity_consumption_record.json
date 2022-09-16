@@ -36,7 +36,9 @@
   "payment_deatils_section",
   "payment_date",
   "column_break_23",
-  "transaction_id"
+  "transaction_id",
+  "district_coordinator_1",
+  "district_coordinator_2"
  ],
  "fields": [
   {
@@ -220,11 +222,27 @@
    "fieldtype": "Float",
    "label": "Total consumed unit",
    "read_only": 1
+  },
+  {
+   "fetch_from": "site.district_coordinator",
+   "fieldname": "district_coordinator_1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "District Coordinator 1",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.district_coordinator_2",
+   "fieldname": "district_coordinator_2",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "District Coordinator 2",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-15 17:14:45.454931",
+ "modified": "2022-09-16 11:58:11.231495",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",

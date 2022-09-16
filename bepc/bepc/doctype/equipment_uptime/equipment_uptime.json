@@ -32,7 +32,9 @@
   "from_date_and_time",
   "to_date_and_time",
   "column_break_9",
-  "total_downtime"
+  "total_downtime",
+  "district_coordinator_1",
+  "district_coordinator_2"
  ],
  "fields": [
   {
@@ -195,11 +197,27 @@
    "fieldtype": "Link",
    "label": "State",
    "options": "State"
+  },
+  {
+   "fetch_from": "site.district_coordinator",
+   "fieldname": "district_coordinator_1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "District Coordinator 1",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.district_coordinator_2",
+   "fieldname": "district_coordinator_2",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "District Coordinator 2",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-12 12:21:44.843818",
+ "modified": "2022-09-16 12:02:16.739056",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Equipment Uptime",

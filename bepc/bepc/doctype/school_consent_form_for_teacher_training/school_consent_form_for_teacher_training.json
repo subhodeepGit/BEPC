@@ -21,7 +21,9 @@
   "project_end_date",
   "section_break_9",
   "teacher_to_be_trained",
-  "date"
+  "date",
+  "district_coordinator_1",
+  "district_coordinator_2"
  ],
  "fields": [
   {
@@ -130,11 +132,27 @@
    "hidden": 1,
    "label": "Date",
    "read_only": 1
+  },
+  {
+   "fetch_from": "site.district_coordinator",
+   "fieldname": "district_coordinator_1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "District Coordinator 1",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.district_coordinator_2",
+   "fieldname": "district_coordinator_2",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "District Coordinator 2",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-14 11:48:16.562509",
+ "modified": "2022-09-16 12:04:05.897732",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Consent form for Teacher Training",

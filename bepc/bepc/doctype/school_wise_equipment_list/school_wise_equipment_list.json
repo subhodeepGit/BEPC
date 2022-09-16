@@ -21,7 +21,9 @@
   "project_end_date",
   "date",
   "section_break_8",
-  "table_9"
+  "table_9",
+  "district_coordinator_1",
+  "district_coordinator_2"
  ],
  "fields": [
   {
@@ -124,11 +126,27 @@
    "hidden": 1,
    "label": "Date",
    "read_only": 1
+  },
+  {
+   "fetch_from": "site.district_coordinator",
+   "fieldname": "district_coordinator_1",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "District Coordinator 1",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "site.district_coordinator_2",
+   "fieldname": "district_coordinator_2",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "District Coordinator 2",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-14 11:47:07.450607",
+ "modified": "2022-09-16 12:00:57.302943",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School wise Equipment List",
