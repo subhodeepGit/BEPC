@@ -10,10 +10,12 @@
   "item_code",
   "item_name",
   "manufacturer",
+  "manufacturer_email",
   "is_insured",
   "data_3",
   "item_group",
-  "manufacturer_email",
+  "serial_number",
+  "mac_id",
   "insurance_details_section",
   "ins_company",
   "branch",
@@ -131,11 +133,21 @@
    "fieldname": "warranty_ends_on",
    "fieldtype": "Data",
    "label": "Warranty Ends on"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "mac_id",
+   "fieldtype": "Data",
+   "label": "Mac ID"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-09 15:36:58.455267",
+ "modified": "2022-09-16 14:21:03.411186",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Items",

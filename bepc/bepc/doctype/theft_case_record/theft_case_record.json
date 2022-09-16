@@ -56,7 +56,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "UDISE code"
+   "label": "UDISE code",
+   "reqd": 1
   },
   {
    "fetch_from": "item.site_name",
@@ -64,7 +65,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "School Name"
+   "label": "School Name",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_5",
@@ -76,7 +78,8 @@
    "fieldtype": "Data",
    "in_global_search": 1,
    "in_standard_filter": 1,
-   "label": "District"
+   "label": "District",
+   "reqd": 1
   },
   {
    "fetch_from": "item.block",
@@ -84,7 +87,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Block"
+   "label": "Block",
+   "reqd": 1
   },
   {
    "fetch_from": "item.pin_code",
@@ -112,7 +116,8 @@
   {
    "fieldname": "quantity_stolen",
    "fieldtype": "Data",
-   "label": "Quantity Stolen"
+   "label": "Quantity Stolen",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_15",
@@ -122,7 +127,8 @@
    "fieldname": "reason",
    "fieldtype": "Select",
    "label": "Reason",
-   "options": "\nTheft\nBurglary\nNatural Calamity\nRodent Damage\nPhysical Damage"
+   "options": "\nTheft\nBurglary\nNatural Calamity\nRodent Damage\nPhysical Damage",
+   "reqd": 1
   },
   {
    "fieldname": "covered_under_insurance",
@@ -171,13 +177,15 @@
    "fieldname": "state",
    "fieldtype": "Link",
    "label": "State",
-   "options": "State"
+   "options": "State",
+   "reqd": 1
   },
   {
    "fetch_from": "site.school_contact_no",
    "fieldname": "school_contact_number",
    "fieldtype": "Data",
-   "label": "School Contact Number"
+   "label": "School Contact Number",
+   "reqd": 1
   },
   {
    "fetch_from": "site.post_office",
@@ -242,7 +250,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-16 12:09:15.169659",
+ "modified": "2022-09-16 14:27:32.315634",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Case record",

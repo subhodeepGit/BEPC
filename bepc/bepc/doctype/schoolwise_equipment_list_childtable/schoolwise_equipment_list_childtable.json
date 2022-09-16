@@ -67,6 +67,7 @@
    "width": "1px"
   },
   {
+   "fetch_from": "item.serial_number",
    "fieldname": "serial_number",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -75,6 +76,7 @@
    "width": "2px"
   },
   {
+   "fetch_from": "item.mac_id",
    "fieldname": "mac_id",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -86,7 +88,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-09-09 15:40:02.336421",
+ "modified": "2022-09-16 14:21:47.206979",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Schoolwise Equipment List childtable",

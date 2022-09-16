@@ -19,10 +19,11 @@
   "pin_code",
   "equipment_details_section",
   "equipment",
+  "equipment_name",
   "equipment_type",
   "column_break_4",
   "mac_id",
-  "equipment_name",
+  "serial_number",
   "equipment_uptime_section",
   "from_time",
   "to_time",
@@ -50,6 +51,7 @@
    "label": "Equipment Group"
   },
   {
+   "fetch_from": "equipment.mac_id",
    "fieldname": "mac_id",
    "fieldtype": "Data",
    "label": "Mac Id"
@@ -61,7 +63,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "School name",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "to_date_and_time",
@@ -96,7 +99,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "District",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "equipment_downtime_section",
@@ -159,7 +163,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "UDISE code"
+   "label": "UDISE code",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_5",
@@ -171,19 +176,22 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Block"
+   "label": "Block",
+   "reqd": 1
   },
   {
    "fetch_from": "site.pin_code",
    "fieldname": "pin_code",
    "fieldtype": "Data",
-   "label": "Pin Code"
+   "label": "Pin Code",
+   "reqd": 1
   },
   {
    "fetch_from": "site.school_contact_no",
    "fieldname": "school_contact_number",
    "fieldtype": "Data",
-   "label": "School Contact Number"
+   "label": "School Contact Number",
+   "reqd": 1
   },
   {
    "fetch_from": "site.post_office",
@@ -213,11 +221,17 @@
    "hidden": 1,
    "label": "District Coordinator 2",
    "read_only": 1
+  },
+  {
+   "fetch_from": "equipment.serial_number",
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "label": "Serial number"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-16 12:02:16.739056",
+ "modified": "2022-09-16 14:24:44.876825",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Equipment Uptime",
@@ -237,5 +251,6 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "track_changes": 1
 }

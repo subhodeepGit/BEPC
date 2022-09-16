@@ -39,7 +39,9 @@
   "latitude",
   "column_break_27",
   "longitude",
+  "district_coordinators_section",
   "district_coordinator",
+  "column_break_35",
   "district_coordinator_2"
  ],
  "fields": [
@@ -241,6 +243,15 @@
    "fieldtype": "Data",
    "label": "District Coordinator 2",
    "options": "Email"
+  },
+  {
+   "fieldname": "district_coordinators_section",
+   "fieldtype": "Section Break",
+   "label": "District Coordinators"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -296,7 +307,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2022-09-16 11:15:53.884929",
+ "modified": "2022-09-16 14:16:38.784336",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
