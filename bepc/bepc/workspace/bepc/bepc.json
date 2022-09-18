@@ -233,8 +233,8 @@
   {
    "hidden": 0,
    "is_query_report": 1,
-   "label": "School Wise student",
-   "link_to": "School Wise student",
+   "label": "Schoolwise Student List",
+   "link_to": "Schoolwise Student List",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
@@ -339,7 +339,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-09-12 11:57:12.676834",
+ "modified": "2022-09-18 13:49:32.523647",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC",

@@ -128,7 +128,7 @@
  {
   "docstatus": 0,
   "doctype": "Role Profile",
-  "modified": "2022-09-16 14:06:10.016270",
+  "modified": "2022-09-18 12:51:07.144443",
   "name": "Level-II",
   "parent": null,
   "parentfield": null,
@@ -140,6 +140,42 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "Excecutive Helpdesk"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2022-09-18 12:55:30.133299",
+  "name": "District Coordinator",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "role_profile": "District Coordinator",
+  "roles": [
+   {
+    "parent": "District Coordinator",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "District Coordinator"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2022-09-18 12:55:52.774806",
+  "name": "Management",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "role_profile": "Management",
+  "roles": [
+   {
+    "parent": "Management",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Management"
    }
   ]
  }

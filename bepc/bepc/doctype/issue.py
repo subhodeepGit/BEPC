@@ -19,7 +19,7 @@ from frappe.model.document import Document
 from datetime import datetime
 import datetime
 def validate(self,method):
-    form_valid(self)
+    # form_valid(self)
     print("\n\n")
     print(self.name)
     if self.issue_type=="External":
@@ -28,18 +28,18 @@ def validate(self,method):
         internal_mail(self)
     
 
-def form_valid(self):
-    d1=self.go_live_date
-    d2=self.opening_date
-    d3=self.project_end_date
-    start_date = d1.strftime("%Y-%m-%d")
-    dt_obj = datetime.datetime.strptime(d2,"%Y-%m-%d")
-    today_date = datetime.datetime.strftime(dt_obj, "%Y-%m-%d")
-    end_date = d3.strftime("%Y-%m-%d")
-    if (today_date >= start_date) and (end_date >= today_date):
-        pass
-    else:
-        frappe.throw("Project Date Expired")
+# def form_valid(self):
+#     d1=self.go_live_date
+#     d2=self.opening_date
+#     d3=self.project_end_date
+#     start_date = d1.strftime("%Y-%m-%d")
+#     dt_obj = datetime.datetime.strptime(d2,"%Y-%m-%d")
+#     today_date = datetime.datetime.strftime(dt_obj, "%Y-%m-%d")
+#     end_date = d3.strftime("%Y-%m-%d")
+#     if (today_date >= start_date) and (end_date >= today_date):
+#         pass
+#     else:
+#         frappe.throw("Project Date Expired")
         
 
 def before_save(self,method):

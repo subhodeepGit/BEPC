@@ -7,18 +7,18 @@ from datetime import datetime
 import datetime
 
 class ElectricityConsumptionRecord(Document):
-	def form_valid(self):
-		d1=self.go_live_date
-		d2=self.date
-		d3=self.project_end_date
-		start_date = d1.strftime("%Y-%m-%d")
-		dt_obj = datetime.datetime.strptime(d2,"%Y-%m-%d")
-		today_date = datetime.datetime.strftime(dt_obj, "%Y-%m-%d")
-		end_date = d3.strftime("%Y-%m-%d")
-		if (today_date >= start_date) and (end_date >= today_date):
-			pass
-		else:
-			frappe.throw("Project Date Expired")
+	# def form_valid(self):
+	# 	d1=self.go_live_date
+	# 	d2=self.date
+	# 	d3=self.project_end_date
+	# 	start_date = d1.strftime("%Y-%m-%d")
+	# 	dt_obj = datetime.datetime.strptime(d2,"%Y-%m-%d")
+	# 	today_date = datetime.datetime.strftime(dt_obj, "%Y-%m-%d")
+	# 	end_date = d3.strftime("%Y-%m-%d")
+	# 	if (today_date >= start_date) and (end_date >= today_date):
+	# 		pass
+	# 	else:
+	# 		frappe.throw("Project Date Expired")
 
 	def on_change(self):
 		School_number_validation(self)
@@ -27,7 +27,7 @@ class ElectricityConsumptionRecord(Document):
 		self.cal()
 		self.total_price()
 		self.mainmeter()
-		self.form_valid()
+		# self.form_valid()
 
 
 		# if(self.meter_reading != self.submeter_total_current_unit):

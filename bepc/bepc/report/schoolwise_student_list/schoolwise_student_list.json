@@ -1,0 +1,39 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-09-17 13:53:41.215145",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-09-17 14:03:18.513626",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Schoolwise Student List",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select\n    school_code as \"TCIL Code\",\n    udise as \"UDISE Code\",\n    name_of_school as \"School Name\",\n    district as \"District\",\n    block as \"Block\",\n    pin_code as \"Pin Code\",\n    class_vbg as \"Class V Students\",\n    class_vibg as \"Class VI Students\",\n    class_viibg as \"Class VII Students\",\n    class_viiibg as \"Class VIII Students\",\n    sum(class_vbg + class_vibg + class_viibg + class_viiibg) as \"Total Students Students\"\nfrom\n    `tabSchool Survey Form`\nGroup BY school_code",
+ "ref_doctype": "School Survey Form",
+ "report_name": "Schoolwise Student List",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Approver I"
+  },
+  {
+   "role": "Approver II"
+  },
+  {
+   "role": "Data Entry Approver"
+  },
+  {
+   "role": "Data Entry Operator"
+  }
+ ]
+}

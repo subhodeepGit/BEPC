@@ -8,17 +8,17 @@ from datetime import date, timedelta
 from datetime import datetime
 
 class School(Document):
-	pass
 	def validate(doc):
 		school_number_validation(doc)
 		principle_number_validation(doc)
 		president_number_validation(doc)
 		asst_number_validation(doc)
 		pincode(doc)
-		
 		doc.school_code=doc.data_33
-	# 	print("\n\n\n\n\n\n\n")
-	# 	print(type(doc.go_live_date))	
+		
+
+		# print("\n\n\n\n\n\n\n")
+		# print(type(doc.go_live_date))	
 		# d2=str(doc.go_live_date)
 		# print(type(d2))
 		# dt_obj = datetime.strptime(d2,"%Y-%m-%d")
