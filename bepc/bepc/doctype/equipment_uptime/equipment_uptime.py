@@ -1,15 +1,15 @@
 # Copyright (c) 2022, SOUL and contributors
 # For license information, please see license.txt
 
-# import frappe
+import frappe
 from frappe.model.document import Document
 from frappe.utils.data import getdate
 from datetime import datetime
 from frappe.utils import date_diff
 
 class EquipmentUptime(Document):
-	def on_change(doc):
-		School_number_validation(doc)
+	def on_change(self):
+		School_number_validation(self)
 		
 	def validate(self):
 		date_format = "%Y-%m-%d"
@@ -23,11 +23,11 @@ class EquipmentUptime(Document):
 		total_uptime = delta1-delta
 		self.total_uptime = total_uptime
 
-def School_number_validation(doc):
-	if doc.school_contact_number:
-		if not (doc.school_contact_number).isdigit():
+def School_number_validation(self):
+	if self.school_contact_number:
+		if not (self.school_contact_number).isdigit():
 			frappe.throw("Field <b>Asst. Contact Number</b> Accept Digits Only")
-		if len(doc.school_contact_number)>10:
+		if len(self.school_contact_number)>10:
 			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
-		if len(doc.school_contact_number)<10:
+		if len(self.school_contact_number)<10:
 			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")

@@ -18,6 +18,14 @@ frappe.ui.form.on('School', 'onload', function(frm) {
                 }
             };
         });
+        frm.set_query("district_coordinator", function() {
+            return {
+                filters: {
+                    "district":frm.doc.district
+                }
+            };
+        });
+
     }
 
     frappe.call({

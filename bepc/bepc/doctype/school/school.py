@@ -1,12 +1,9 @@
-# Copyright (c) 2022, SOUL and contributors
-# For license information, please see license.txt
-
 import frappe
 from frappe.model.document import Document
 from datetime import date, timedelta
 from datetime import date, timedelta
 from datetime import datetime
-
+from bepc.bepc.doctype.user_permission import add_user_permission,delete_ref_doctype_permissions
 class School(Document):
 	def validate(doc):
 		school_number_validation(doc)
@@ -14,11 +11,11 @@ class School(Document):
 		president_number_validation(doc)
 		asst_number_validation(doc)
 		pincode(doc)
-		doc.school_code=doc.data_33
+		create_user_permission(doc)
 		
-
-		# print("\n\n\n\n\n\n\n")
-		# print(type(doc.go_live_date))	
+		doc.school_code=doc.data_33
+		print("\n\n\n\n\n\n\n")
+		print(type(doc.go_live_date))	
 		# d2=str(doc.go_live_date)
 		# print(type(d2))
 		# dt_obj = datetime.strptime(d2,"%Y-%m-%d")
@@ -78,3 +75,8 @@ def asst_number_validation(doc):
 			frappe.throw("Field <b>Asst Contact Number</b> must be 10 Digits")
 		if len(doc.asst_contact_number)<10:
 			frappe.throw("Field <b>Asst Contact Number</b> must be 10 Digits")
+
+def create_user_permission(doc):
+	for stu in frappe.get_all("District Coordinator",{"name":doc.district_coordinator},['email']):
+		add_user_permission("School",doc.name, stu.email,doc)
+	print(doc.name)		
