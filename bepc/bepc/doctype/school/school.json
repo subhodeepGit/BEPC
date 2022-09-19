@@ -53,7 +53,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "School Name",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "address_section",
@@ -73,7 +73,7 @@
    "in_standard_filter": 1,
    "label": "District",
    "options": "Districts",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "state",
@@ -86,7 +86,7 @@
    "fieldname": "pin_code",
    "fieldtype": "Data",
    "label": "Pin Code",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "column_break_9",
@@ -96,13 +96,13 @@
    "fieldname": "principal_name",
    "fieldtype": "Data",
    "label": "Name of Headmaster/Head Mistress",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "principle_mobile_number",
    "fieldtype": "Data",
    "label": "Headmaster/Head Mistress Contact No",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "block",
@@ -110,7 +110,7 @@
    "in_list_view": 1,
    "label": "Block",
    "options": "Block",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "udise",
@@ -118,25 +118,25 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "UDISE",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "zone",
    "fieldtype": "Data",
    "label": "Zone",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "panchayat",
    "fieldtype": "Data",
    "label": "Panchayat",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "cluster_name",
    "fieldtype": "Data",
    "label": "Cluster Name ",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "near_landmark",
@@ -148,13 +148,13 @@
    "fieldtype": "Data",
    "label": "School Mail ID ",
    "options": "Email",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "school_contact_no",
    "fieldtype": "Data",
    "label": "School Contact No.",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fieldname": "name_of_asst_hmhms",
@@ -187,7 +187,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "School Code",
-   "reqd": 1,
+   "reqd": 0,
    "unique": 1
   },
   {
