@@ -5,14 +5,13 @@ from datetime import date, timedelta
 from datetime import datetime
 from bepc.bepc.doctype.user_permission import add_user_permission,delete_ref_doctype_permissions
 class School(Document):
-	pass
-	# def validate(doc):
+	def validate(doc):
 	# 	school_number_validation(doc)
 	# 	principle_number_validation(doc)
 	# 	president_number_validation(doc)
 	# 	asst_number_validation(doc)
 	# 	pincode(doc)
-	# 	create_user_permission(doc)
+		create_user_permission(doc)
 		
 	# 	doc.school_code=doc.data_33
 	# 	print("\n\n\n\n\n\n\n")
