@@ -43,7 +43,8 @@
   "district_coordinator",
   "email",
   "column_break_35",
-  "district_coordinator_2"
+  "district_coordinator_2",
+  "serial_no"
  ],
  "fields": [
   {
@@ -52,7 +53,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "School Name",
-   "reqd": 0
+   "reqd": 1
   },
   {
    "fieldname": "address_section",
@@ -72,7 +73,7 @@
    "in_standard_filter": 1,
    "label": "District",
    "options": "Districts",
-   "reqd": 0
+   "reqd": 1
   },
   {
    "fieldname": "state",
@@ -85,7 +86,7 @@
    "fieldname": "pin_code",
    "fieldtype": "Data",
    "label": "Pin Code",
-   "reqd": 0
+   "reqd": 1
   },
   {
    "fieldname": "column_break_9",
@@ -95,13 +96,13 @@
    "fieldname": "principal_name",
    "fieldtype": "Data",
    "label": "Name of Headmaster/Head Mistress",
-   "reqd": 0
+   "reqd": 1
   },
   {
    "fieldname": "principle_mobile_number",
    "fieldtype": "Data",
    "label": "Headmaster/Head Mistress Contact No",
-   "reqd": 0
+   "reqd": 1
   },
   {
    "fieldname": "block",
@@ -109,7 +110,7 @@
    "in_list_view": 1,
    "label": "Block",
    "options": "Block",
-   "reqd": 0
+   "reqd": 1
   },
   {
    "fieldname": "udise",
@@ -117,25 +118,25 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "UDISE",
-   "reqd": 0
+   "reqd": 1
   },
   {
    "fieldname": "zone",
    "fieldtype": "Data",
    "label": "Zone",
-   "reqd": 0
+   "reqd": 1
   },
   {
    "fieldname": "panchayat",
    "fieldtype": "Data",
    "label": "Panchayat",
-   "reqd": 0
+   "reqd": 1
   },
   {
    "fieldname": "cluster_name",
    "fieldtype": "Data",
    "label": "Cluster Name ",
-   "reqd": 0
+   "reqd": 1
   },
   {
    "fieldname": "near_landmark",
@@ -147,13 +148,13 @@
    "fieldtype": "Data",
    "label": "School Mail ID ",
    "options": "Email",
-   "reqd": 0
+   "reqd": 1
   },
   {
    "fieldname": "school_contact_no",
    "fieldtype": "Data",
    "label": "School Contact No.",
-   "reqd": 0
+   "reqd": 1
   },
   {
    "fieldname": "name_of_asst_hmhms",
@@ -186,7 +187,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "School Code",
-   "reqd": 0,
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -259,6 +260,13 @@
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "email"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Serial No",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
@@ -314,7 +322,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2022-09-16 15:51:32.636414",
+ "modified": "2022-09-19 17:03:32.127663",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
