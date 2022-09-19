@@ -131,7 +131,8 @@
   {
    "fieldname": "total_bill_amount",
    "fieldtype": "Float",
-   "label": "Total Bill Amount"
+   "label": "Total Bill Amount",
+   "read_only": 1
   },
   {
    "default": "Today",
@@ -245,7 +246,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-16 14:15:02.601006",
+ "modified": "2022-09-19 17:47:58.110404",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",
