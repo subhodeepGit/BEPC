@@ -22,17 +22,17 @@ class TheftCaserecord(Document):
 	# 		frappe.throw("Project Date Expired")
 
 	def validate(self):
-			School_number_validation(doc)
+			School_number_validation(self)
 		# self.project_end_date = self.go_live_date + timedelta(days=1920)
 		# self.form_valid()
 
 
 
-def School_number_validation(doc):
-	if doc.school_contact_number:
-		if not (doc.school_contact_number).isdigit():
+def School_number_validation(self):
+	if self.school_contact_number:
+		if not (self.school_contact_number).isdigit():
 			frappe.throw("Field <b>Asst. Contact Number</b> Accept Digits Only")
-		if len(doc.school_contact_number)>10:
+		if len(self.school_contact_number)>10:
 			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
-		if len(doc.school_contact_number)<10:
+		if len(self.school_contact_number)<10:
 			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
