@@ -102,6 +102,9 @@ doc_events = {
 	"Issue": {
 		"validate": "bepc.bepc.doctype.issue.validate",
 		"before_save":"bepc.bepc.doctype.issue.before_save",
+	},
+	"File": {
+		"validate": "bepc.bepc.validations.file.validate",
 	}
 }
 
