@@ -1,0 +1,39 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2022-07-29 11:29:41.398890",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2022-09-22 16:38:14.831422",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Internet consumption Record Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select \n    `tabInternet consumption Record`.internet_service_provider as \"Internet Service Provider:Select/Network Provider\",\n    `tabInternet consumption Record`.data_usage as \"Data Usage (Gb):Float/Data Usage (Gb)\",\n    `tabInternet consumption Record`.siteschool_name as \"Site School name:Data/Site School name\",\n    `tabInternet consumption Record`.district as \"District:Data/District\",\n     `tabInternet consumption Record`.monthly_bill_amount as \"Monthly Bill amount:Float/Monthly Bill Amount\",\n    count(siteschool_name) as \"Total School\"\nfrom `tabInternet consumption Record`\nGroup by 'siteschool_name';",
+ "ref_doctype": "Internet consumption Record",
+ "report_name": "Internet consumption Record Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Approver I"
+  },
+  {
+   "role": "Data Entry Operator"
+  },
+  {
+   "role": "Data Entry Approver"
+  },
+  {
+   "role": "Approver II"
+  }
+ ]
+}
