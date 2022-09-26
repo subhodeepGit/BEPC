@@ -33,6 +33,7 @@
   "ntr_copy",
   "police_station_acknowledgement_receipt",
   "column_break_23",
+  "letter_posting_date",
   "insurance_claim_receipt",
   "delivery_challan_receipt",
   "go_live_date",
@@ -246,11 +247,16 @@
    "hidden": 1,
    "label": "District Coordinator 2",
    "read_only": 1
+  },
+  {
+   "fieldname": "letter_posting_date",
+   "fieldtype": "Date",
+   "label": "Letter Posting date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-16 14:27:32.315634",
+ "modified": "2022-09-26 12:33:32.066007",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Case record",
