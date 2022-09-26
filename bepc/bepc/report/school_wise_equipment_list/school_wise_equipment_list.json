@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2022-09-08 13:07:59.338056",
+ "modified": "2022-09-26 15:17:34.861879",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School-wise Equipment List",
@@ -24,16 +24,10 @@
    "role": "System Manager"
   },
   {
-   "role": "Approver I"
+   "role": "Management"
   },
   {
-   "role": "Approver II"
-  },
-  {
-   "role": "Data Entry Approver"
-  },
-  {
-   "role": "Data Entry Operator"
+   "role": "Project Manager"
   }
  ]
 }

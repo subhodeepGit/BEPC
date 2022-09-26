@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2022-09-08 12:35:08.484029",
+ "modified": "2022-09-26 15:17:09.941009",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet Usage details",
@@ -24,16 +24,10 @@
    "role": "System Manager"
   },
   {
-   "role": "Approver I"
+   "role": "Management"
   },
   {
-   "role": "Data Entry Operator"
-  },
-  {
-   "role": "Data Entry Approver"
-  },
-  {
-   "role": "Approver II"
+   "role": "Project Manager"
   }
  ]
 }

@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2022-09-08 15:05:28.299624",
+ "modified": "2022-09-26 15:18:37.814486",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",
@@ -17,23 +17,17 @@
  "prepared_report": 0,
  "query": "select\n    sl.site as \"TCIL Code\",\n    sl.udise_code as \"UDISE Code\",\n    sl.school_name as \"School Name\",\n    sl.district as \"District\",\n    sl.block as \"Block\",\n    sl.pin_code as \"Pin Code\",\n    tn.trainer_number as \"Trainer Number\",\n    tn.email_id as \"Email Id\",\n    tn.contact_number as \"Contact Number\",\n    sr.total_teacher_to_be_trained as \"Total Participants\",\n    sr.date as \"Date\",\n    sr.training_venue as \"Training Venue\",\n    sr.training_on as \"Training Topic\",\n    sr.teacher_group_name as \"Teachers Group\",\n    sr.school_consent as \"School Consent\"\nfrom\n    `tabTeacher Training`sr, `tabTrainer Name`tn, `tabSchool List`sl\nwhere\n    sr.name = tn.parent AND sr.name = sl.parent;",
  "ref_doctype": "Teacher Training",
- "report_name": "Teacher Training ",
+ "report_name": "Teacher Training",
  "report_type": "Query Report",
  "roles": [
   {
    "role": "System Manager"
   },
   {
-   "role": "Approver I"
+   "role": "Management"
   },
   {
-   "role": "Approver II"
-  },
-  {
-   "role": "Data Entry Approver"
-  },
-  {
-   "role": "Data Entry Operator"
+   "role": "Project Manager"
   }
  ]
 }

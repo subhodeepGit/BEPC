@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2022-09-17 14:27:34.405213",
+ "modified": "2022-09-26 15:19:18.762366",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft report",
@@ -24,16 +24,10 @@
    "role": "System Manager"
   },
   {
-   "role": "Approver I"
+   "role": "Management"
   },
   {
-   "role": "Approver II"
-  },
-  {
-   "role": "Data Entry Approver"
-  },
-  {
-   "role": "Data Entry Operator"
+   "role": "Project Manager"
   }
  ]
 }
