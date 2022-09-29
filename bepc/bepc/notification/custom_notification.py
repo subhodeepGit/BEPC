@@ -51,7 +51,7 @@ def internal_mail(doc):
        
     for d in doc.get("items_detail"):
         msg += "<tr><td>" + """{0}""".format(str(d.get('item'))) + "</td><td>" + str(d.get('serial_no') or '') + "</td><td>" + str(d.get('description')) + "</td><td>" + str(d.get('manufactrurer'))  + "</td></tr>"
-        msg += "</table>"
+    msg += "</table>"
     
     send_mail(recipients,cc,'Issue',msg)
     
