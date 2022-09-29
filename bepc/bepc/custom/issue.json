@@ -377,7 +377,7 @@
    "description": null,
    "docstatus": 0,
    "dt": "Issue",
-   "fetch_from": null,
+   "fetch_from": "tcil.email",
    "fetch_if_empty": 0,
    "fieldname": "district_collector",
    "fieldtype": "Data",
