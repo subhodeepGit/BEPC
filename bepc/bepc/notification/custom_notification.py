@@ -40,8 +40,8 @@ def internal_mail(doc):
     # recipients="helpdesk@gmail.com"
     cc="tousiff.taj@soulunileaders.com"
     msg="""<p>--------Issue Details----------</p>"""
-    msg+="""<p>State : {0}</p>""".format(doc.state_)
-    msg+="""<p>District:{0}</p>""".format(doc.district_)
+    msg+="""<p>State : {0}</p>""".format(doc.state)
+    msg+="""<p>District:{0}</p>""".format(doc.district)
     msg+="""<p>Block:{0}</p>""".format(doc.block)
     msg+="""<p>School Id: {0}</p>""".format(doc.school)
     msg+="""<p>School Address:{0}</p>""".format(doc.school_name)
