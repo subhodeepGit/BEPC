@@ -26563,7 +26563,7 @@
   "role": "Excecutive Helpdesk",
   "select": 1,
   "set_user_permissions": 0,
-  "share": 0,
+  "share": 1,
   "submit": 0,
   "write": 1
  },
