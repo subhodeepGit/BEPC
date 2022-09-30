@@ -26860,7 +26860,7 @@
   "role": "Project Manager",
   "select": 1,
   "set_user_permissions": 0,
-  "share": 1,
+  "share": 0,
   "submit": 0,
   "write": 1
  },
