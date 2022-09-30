@@ -1,5 +1,5 @@
 # from msilib.schema import tables
-from erpnext.support.doctype.issue.issue import Issue
+from bepcsupport.support.doctype.issue.issue import Issue
 import frappe
 import string
 import random
