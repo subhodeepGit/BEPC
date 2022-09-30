@@ -10,9 +10,9 @@ def all():
     pass
 
 def cron():
-    for data in frappe.db.get_all("Items Detail",{"disabled":0},['name','oem_email_address']):
+    for data in frappe.db.get_all("Item Detail",{"disabled":0},['name','oem_email_address']):
         oem_email_address=data["oem_email_address"]
-        items_detail_info=frappe.get_all("Items Detail",{'parenttype':"Issue",'oem_email_address':oem_email_address,'disabled':0},
+        items_detail_info=frappe.get_all("Item Detail",{'parenttype':"Issue",'oem_email_address':oem_email_address,'disabled':0},
                                                         ['item','manufactrurer','serial_no','oem_email_address','parenttype','parent'])
         issue_parent_name=[]
         for t in items_detail_info:
