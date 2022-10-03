@@ -26,7 +26,13 @@
   "data_usage",
   "monthly_bill_amount",
   "district_coordinator_1",
-  "district_coordinator_2"
+  "district_coordinator_2",
+  "quarter",
+  "last_payment_date",
+  "section_break_23",
+  "payment_date",
+  "column_break_25",
+  "payment_details"
  ],
  "fields": [
   {
@@ -171,11 +177,43 @@
    "hidden": 1,
    "label": "District Coordinator 2",
    "read_only": 1
+  },
+  {
+   "fieldname": "quarter",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Quarter",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_payment_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Last Payment Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Date",
+   "label": "Payment Date"
+  },
+  {
+   "fieldname": "payment_details",
+   "fieldtype": "Data",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-16 14:17:39.348842",
+ "modified": "2022-09-29 19:12:55.750652",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",

@@ -38,7 +38,9 @@
   "column_break_23",
   "transaction_id",
   "district_coordinator_1",
-  "district_coordinator_2"
+  "district_coordinator_2",
+  "quarter",
+  "last_payment_date"
  ],
  "fields": [
   {
@@ -132,13 +134,6 @@
    "fieldname": "total_bill_amount",
    "fieldtype": "Float",
    "label": "Total Bill Amount",
-   "read_only": 1
-  },
-  {
-   "default": "Today",
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Bill Posting Date",
    "read_only": 1
   },
   {
@@ -242,11 +237,32 @@
    "hidden": 1,
    "label": "District Coordinator 2",
    "read_only": 1
+  },
+  {
+   "fieldname": "quarter",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Quarter",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_payment_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Last Payment date",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Bill Posting Date",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-19 17:47:58.110404",
+ "modified": "2022-09-29 19:12:12.295716",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",

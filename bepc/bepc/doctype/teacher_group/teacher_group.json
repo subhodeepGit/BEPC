@@ -9,7 +9,6 @@
  "field_order": [
   "group_based_on",
   "school",
-  "district",
   "block",
   "column_break_5",
   "teacher_group_name",
@@ -23,7 +22,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Group Based On",
-   "options": "\nSchool\nDistrict\nBlock",
+   "options": "\nSchool\nBlock",
    "reqd": 1
   },
   {
@@ -69,15 +68,6 @@
    "options": "School"
   },
   {
-   "depends_on": "eval:doc.group_based_on == 'District'",
-   "fieldname": "district",
-   "fieldtype": "Link",
-   "in_global_search": 1,
-   "in_standard_filter": 1,
-   "label": "District",
-   "options": "Districts"
-  },
-  {
    "depends_on": "eval:doc.group_based_on == 'Block'",
    "fieldname": "block",
    "fieldtype": "Link",
@@ -89,7 +79,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-14 16:13:46.543825",
+ "modified": "2022-09-29 15:32:52.617174",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Group",

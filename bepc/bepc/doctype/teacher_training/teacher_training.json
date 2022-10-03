@@ -175,6 +175,7 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "\nCompleted\nUpcoming"
   },
@@ -213,7 +214,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-16 12:06:58.073643",
+ "modified": "2022-09-29 16:14:30.848297",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",

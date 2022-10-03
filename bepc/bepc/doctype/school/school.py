@@ -22,9 +22,9 @@ class School(Document):
 		# dt_obj = datetime.strptime(d2,"%Y-%m-%d")
 		# print(type(dt_obj))
 		# today_date =dt_obj.date()				
-		# # today_date = datetime.datetime.strftime(dt_obj, "%Y-%m-%d")
-		# # print(type(today_date))			//str
-		# doc.project_end_date = today_date + timedelta(days=1800)
+		# today_date = datetime.datetime.strftime(dt_obj, "%Y-%m-%d")
+		# print(type(today_date))			//str
+		# doc.project_end_date = today_date + timedelta(days=1825)
 
 
 @frappe.whitelist()
