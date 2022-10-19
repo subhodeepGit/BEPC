@@ -111,30 +111,30 @@ doc_events = {
 # Scheduled Tasks
 # ---------------
 
-scheduler_events = {
+# scheduler_events = {
 
-	"cron": {
-		"* * * * *": [
-			"bepc.tasks.cron"
-		]
-	},
+# 	"cron": {
+# 		"* * * * *": [
+# 			"bepc.tasks.cron"
+# 		]
+# 	},
 
-	"all": [
-		"bepc.tasks.all"
-	],
-	"daily": [
-		"bepc.tasks.daily"
-	],
-	"hourly": [
-		"bepc.tasks.hourly"
-	],
-	"weekly": [
-		"bepc.tasks.weekly"
-	],
-	"monthly": [
-		"bepc.tasks.monthly"
-	],
-}
+# 	"all": [
+# 		"bepc.tasks.all"
+# 	],
+# 	"daily": [
+# 		"bepc.tasks.daily"
+# 	],
+# 	"hourly": [
+# 		"bepc.tasks.hourly"
+# 	],
+# 	"weekly": [
+# 		"bepc.tasks.weekly"
+# 	],
+# 	"monthly": [
+# 		"bepc.tasks.monthly"
+# 	],
+# }
 
 # Testing
 # -------
