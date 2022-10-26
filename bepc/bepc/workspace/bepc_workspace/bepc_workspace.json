@@ -330,7 +330,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-10-03 16:59:37.053764",
+ "modified": "2022-10-26 16:12:05.647144",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC-Workspace",
@@ -367,6 +367,18 @@
    "label": "Issue",
    "link_to": "Issue",
    "type": "DocType"
+  },
+  {
+   "doc_view": "Report Builder",
+   "label": "School Survey Form Status",
+   "link_to": "School Survey Form Status",
+   "type": "Report"
+  },
+  {
+   "doc_view": "Report Builder",
+   "label": "School Form Update Status",
+   "link_to": "School Master Status",
+   "type": "Report"
   }
  ]
 }
