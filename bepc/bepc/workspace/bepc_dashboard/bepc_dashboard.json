@@ -1,7 +1,7 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">BEPC-Dashboard</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"BEPC Dashboard\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internet consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Electricity Consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment Uptime\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teacher Training\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Survey Form Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Master Status\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Electricity Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Internet Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Equipment Uptime Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Theft &amp; Insurance Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Support\",\"col\":4}}]",
- "creation": "2022-11-14 15:38:17.123418",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">BEPC-Dashboard</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internet consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Electricity Consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment Uptime\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teacher Training\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Survey Form Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Master Status\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Electricity Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Internet Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Equipment Uptime Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Theft &amp; Insurance Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Support\",\"col\":4}}]",
+ "creation": "2022-11-14 17:00:38.517079",
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
@@ -143,7 +143,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "School Masters",
-   "link_count": 3,
+   "link_count": 4,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -162,6 +162,16 @@
    "is_query_report": 0,
    "label": "Teacher Group",
    "link_count": 0,
+   "link_to": "Teacher Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "School Consent for TT",
+   "link_count": 0,
    "link_to": "School Consent form for Teacher Training",
    "link_type": "DocType",
    "onboard": 0,
@@ -172,7 +182,7 @@
    "is_query_report": 0,
    "label": "Teacher Training",
    "link_count": 0,
-   "link_to": "Teacher Training Attendance",
+   "link_to": "Teacher Training",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -304,9 +314,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Issue Type",
+   "label": "Issue Priority",
    "link_count": 0,
-   "link_to": "Issue Type",
+   "link_to": "Issue Priority",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -314,9 +324,9 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Issue Priority",
+   "label": "Issue Type",
    "link_count": 0,
-   "link_to": "Issue Priority",
+   "link_to": "Issue Type",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -342,7 +352,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-11-14 16:01:17.854026",
+ "modified": "2022-11-14 17:44:22.383056",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC-Dashboard",
@@ -352,13 +362,13 @@
  "quick_lists": [],
  "roles": [
   {
-   "role": "District Coordinator"
-  },
-  {
    "role": "Excecutive Helpdesk"
   },
   {
    "role": "Project Manager"
+  },
+  {
+   "role": "District Coordinator"
   }
  ],
  "sequence_id": 30.0,
@@ -413,5 +423,5 @@
    "type": "Report"
   }
  ],
- "title": "BEPC Dashboard-Master"
+ "title": "BEPC-Dashboard"
 }
