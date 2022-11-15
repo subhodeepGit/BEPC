@@ -235,7 +235,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Schoolwise Student List",
    "link_count": 0,
    "link_to": "Schoolwise Student List",
@@ -245,7 +245,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Electricity Usage details",
    "link_count": 0,
    "link_to": "Electricity Usage details",
@@ -255,7 +255,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Internet Usage details",
    "link_count": 0,
    "link_to": "Internet Usage details",
@@ -265,7 +265,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "School-wise Equipment List",
    "link_count": 0,
    "link_to": "School-wise Equipment List",
@@ -275,7 +275,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Teacher Training Report",
    "link_count": 0,
    "link_to": "Teacher Training Report",
@@ -285,7 +285,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Theft report",
    "link_count": 0,
    "link_to": "Theft report",
@@ -352,7 +352,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-11-14 17:44:22.383056",
+ "modified": "2022-11-15 13:13:24.910719",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC-Dashboard",

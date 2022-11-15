@@ -88,7 +88,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "School Name"
+   "label": "School Name",
+   "read_only": 1
   },
   {
    "fetch_from": "site.district",
@@ -97,7 +98,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "District",
-   "options": "Districts"
+   "options": "Districts",
+   "read_only": 1
   },
   {
    "fetch_from": "site.block",
@@ -106,7 +108,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Block",
-   "options": "Block"
+   "options": "Block",
+   "read_only": 1
   },
   {
    "fetch_from": "site.pin_code",
@@ -114,7 +117,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Pin Code"
+   "label": "Pin Code",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_9",
@@ -128,20 +132,23 @@
    "fetch_from": "site.school_contact_no",
    "fieldname": "school_contact_number",
    "fieldtype": "Data",
-   "label": "School Contact Number"
+   "label": "School Contact Number",
+   "read_only": 1
   },
   {
    "fetch_from": "site.post_office",
    "fieldname": "school_address",
    "fieldtype": "Data",
-   "label": "School Address"
+   "label": "School Address",
+   "read_only": 1
   },
   {
    "fetch_from": "site.state",
    "fieldname": "state",
    "fieldtype": "Link",
    "label": "State",
-   "options": "State"
+   "options": "State",
+   "read_only": 1
   },
   {
    "fetch_from": "site.district_coordinator",
@@ -162,10 +169,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-16 12:03:05.163434",
+ "modified": "2022-11-15 13:15:21.136570",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -184,5 +192,6 @@
  "search_fields": "full_name, school_name",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }
