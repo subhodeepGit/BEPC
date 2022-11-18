@@ -6,12 +6,11 @@ from frappe.model.document import Document
 
 class SchoolSurveyForm(Document):
 	def on_change(doc):
-		pass
-		# asst_number_validation(doc)
-		# incharge_mobile_number(doc)
-		# deo_mobile_number(doc)
-		# visiter_mobile_number(doc)
-		# school_contact_person_other_than_above(doc)
+		asst_number_validation(doc)
+		incharge_mobile_number(doc)
+		deo_mobile_number(doc)
+		visiter_mobile_number(doc)
+		school_contact_person_other_than_above(doc)
 		
 
 @frappe.whitelist()
