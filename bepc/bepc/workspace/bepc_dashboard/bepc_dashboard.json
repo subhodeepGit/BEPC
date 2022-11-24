@@ -352,7 +352,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-11-15 13:13:24.910719",
+ "modified": "2022-11-24 17:35:00.720784",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC-Dashboard",
@@ -369,6 +369,9 @@
   },
   {
    "role": "District Coordinator"
+  },
+  {
+   "role": "Management"
   }
  ],
  "sequence_id": 30.0,
