@@ -6,11 +6,11 @@ from datetime import datetime
 from bepc.bepc.doctype.user_permission import add_user_permission,delete_ref_doctype_permissions
 class School(Document):
 	def validate(doc):
-		school_number_validation(doc)
-		principle_number_validation(doc)
-		president_number_validation(doc)
-		asst_number_validation(doc)
-		pincode(doc)
+		# school_number_validation(doc)
+		# principle_number_validation(doc)
+		# president_number_validation(doc)
+		# asst_number_validation(doc)
+		# pincode(doc)
 		create_user_permission(doc)
 		
 
