@@ -1,0 +1,418 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">BEPC Dashboard-Master</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"BEPC\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internet consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Electricity Consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment Uptime\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teacher Training\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Survey Form Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Master Status\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Electricity Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Internet Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Equipment Uptime Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Theft &amp; Insurance Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Support\",\"col\":4}}]",
+ "creation": "2022-11-14 17:13:26.167794",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "idx": 0,
+ "label": "BEPC Dashboard-Master",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Survey",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "School Master Form",
+   "link_count": 0,
+   "link_to": "School",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "School Survey Form",
+   "link_count": 0,
+   "link_to": "School Survey Form",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Electricity Data Management",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Electricity Consumption Record",
+   "link_count": 0,
+   "link_to": "Electricity Consumption Record",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Internet Data Management",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Internet consumption Record",
+   "link_count": 0,
+   "link_to": "Internet consumption Record",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Equipment Uptime Management",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Equipment Uptime",
+   "link_count": 0,
+   "link_to": "Equipment Uptime",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "School wise Equipment List",
+   "link_count": 0,
+   "link_to": "School wise Equipment List",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Survey Master",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "State",
+   "link_count": 0,
+   "link_to": "State",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "District",
+   "link_count": 0,
+   "link_to": "Districts",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Block",
+   "link_count": 0,
+   "link_to": "Block",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "School Masters",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Teacher",
+   "link_count": 0,
+   "link_to": "Teacher",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Teacher Group",
+   "link_count": 0,
+   "link_to": "Teacher Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "School Consent for TT",
+   "link_count": 0,
+   "link_to": "School Consent form for Teacher Training",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Teacher Training",
+   "link_count": 0,
+   "link_to": "Teacher Training",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Theft &amp; Insurance Master",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Items",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Company",
+   "link_count": 0,
+   "link_to": "Insurance Company",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Theft Case record",
+   "link_count": 0,
+   "link_to": "Theft Case record",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Support",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Issue",
+   "link_count": 0,
+   "link_to": "Issue",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Issue Type",
+   "link_count": 0,
+   "link_to": "Issue Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Issue Priority",
+   "link_count": 0,
+   "link_to": "Issue Priority",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Service Level Agreement",
+   "link_count": 0,
+   "link_to": "Service Level Agreement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Support Settings",
+   "link_count": 0,
+   "link_to": "Support Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Schoolwise Student List",
+   "link_count": 0,
+   "link_to": "Schoolwise Student List",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Electricity Usage details",
+   "link_count": 0,
+   "link_to": "Electricity Usage details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Internet Usage details",
+   "link_count": 0,
+   "link_to": "Internet Usage details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "School-wise Equipment List",
+   "link_count": 0,
+   "link_to": "School-wise Equipment List",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Theft report",
+   "link_count": 0,
+   "link_to": "Theft report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-12-16 16:00:21.180754",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "BEPC Dashboard-Master",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Management"
+  }
+ ],
+ "sequence_id": 31.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "Dashboard",
+   "label": "BEPC",
+   "link_to": "BEPC",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Internet consumption Record",
+   "link_to": "Internet consumption Record",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Electricity Consumption Record",
+   "link_to": "Electricity Consumption Record",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Equipment Uptime",
+   "link_to": "Equipment Uptime",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Teacher Training",
+   "link_to": "Teacher Training",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Issue",
+   "link_to": "Issue",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "Report Builder",
+   "label": "School Survey Form Status",
+   "link_to": "School Survey Form Status",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "Report Builder",
+   "label": "School Master Status",
+   "link_to": "School Master Status",
+   "type": "Report"
+  }
+ ],
+ "title": "BEPC Dashboard-Master"
+}
