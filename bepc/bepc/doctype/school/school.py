@@ -11,7 +11,6 @@ class School(Document):
 		president_number_validation(doc)
 		asst_number_validation(doc)
 		pincode(doc)
-		create_user_permission(doc)
 		
 
 		# d2=str(doc.go_live_date)
@@ -22,6 +21,9 @@ class School(Document):
 		# today_date = datetime.datetime.strftime(dt_obj, "%Y-%m-%d")
 		# print(type(today_date))			//str
 		# doc.project_end_date = today_date + timedelta(days=1825)
+
+	def after_save(doc):
+		create_user_permission(doc)
 
 
 @frappe.whitelist()
