@@ -33,8 +33,8 @@ class ElectricityConsumptionRecord(Document):
 		self.mainmeter()
 		# self.form_valid()
 		# self.quarter_calculation()
-		# posting_date = datetime.datetime.strptime(self.date, "%Y-%m-%d")
-		# self.last_payment_date = posting_date + datetime.timedelta(days=5)
+		posting_date = datetime.datetime.strptime(self.date, "%Y-%m-%d")
+		self.last_payment_date = posting_date + datetime.timedelta(days=5)
 
 	
 	def cal(self):

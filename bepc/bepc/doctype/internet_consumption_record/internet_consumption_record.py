@@ -25,8 +25,8 @@ class InternetconsumptionRecord(Document):
 	def validate(self):
 		School_number_validation(self)
 	# 	self.form_valid()
-		# posting_date = datetime.datetime.strptime(self.date, "%Y-%m-%d")
-		# self.last_payment_date = posting_date + datetime.timedelta(days=5)
+		posting_date = datetime.datetime.strptime(self.date, "%Y-%m-%d")
+		self.last_payment_date = posting_date + datetime.timedelta(days=5)
 		# self.quarter_calculation()
 
 	def quarter_calculation(self):

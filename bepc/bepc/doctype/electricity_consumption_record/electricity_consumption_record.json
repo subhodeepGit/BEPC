@@ -256,16 +256,16 @@
    "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Bill Posting Date",
-   "read_only": 1
+   "label": "Bill Posting Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-29 19:12:12.295716",
+ "modified": "2023-01-20 12:33:50.316863",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -283,6 +283,7 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1,
  "track_seen": 1
 }
