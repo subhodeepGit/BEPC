@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-11-16 15:27:55.207885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "district",
+  "district_coordinator",
+  "click",
+  "iframe"
+ ],
+ "fields": [
+  {
+   "fieldname": "click",
+   "fieldtype": "Button",
+   "label": "Click"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "District Coordinator"
+  },
+  {
+   "fetch_from": "district.dc",
+   "fieldname": "district_coordinator",
+   "fieldtype": "Data",
+   "label": "District Coordinator"
+  },
+  {
+   "fieldname": "iframe",
+   "fieldtype": "HTML",
+   "label": "iFrame"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-18 16:25:33.715474",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Show Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
