@@ -300,7 +300,7 @@
    "fieldname": "panchayat",
    "fieldtype": "Data",
    "label": "Panchayat",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fetch_from": "school_code.pin_code",
@@ -350,7 +350,7 @@
    "fieldtype": "Data",
    "label": "School Mail Id",
    "options": "Email",
-   "reqd": 1
+   "reqd": 0
   },
   {
    "fetch_from": "school_code.school_contact_no",
