@@ -129,8 +129,7 @@
   {
    "fieldname": "panchayat",
    "fieldtype": "Data",
-   "label": "Panchayat",
-   "reqd": 1
+   "label": "Panchayat"
   },
   {
    "fieldname": "cluster_name",
@@ -147,8 +146,7 @@
    "fieldname": "school_mail_id",
    "fieldtype": "Data",
    "label": "School Mail ID ",
-   "options": "Email",
-   "reqd": 1
+   "options": "Email"
   },
   {
    "fieldname": "school_contact_no",
@@ -322,10 +320,11 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2022-09-19 17:03:32.127663",
+ "modified": "2023-01-23 12:41:31.470503",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -344,6 +343,7 @@
  "search_fields": "data_33, site_name",
  "sort_field": "data_33",
  "sort_order": "ASC",
+ "states": [],
  "title_field": "site_name",
  "track_changes": 1
 }

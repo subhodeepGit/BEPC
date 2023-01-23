@@ -27,7 +27,6 @@ class ElectricityConsumptionRecord(Document):
 		School_number_validation(self)
 
 	def validate(self):
-		# self.last_payment_date = self.date + timedelta(days=5)
 		self.cal()
 		self.total_price()
 		self.mainmeter()
