@@ -1,13 +1,13 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">BEPC-Dashboard</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internet consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Electricity Consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment Uptime\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teacher Training\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Survey Form Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Master Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment report\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Electricity Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Internet Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Equipment Uptime Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Theft &amp; Insurance Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Support\",\"col\":4}}]",
- "creation": "2022-11-14 17:00:38.517079",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">BEPC-Home</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment report\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internet consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Electricity Consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment Uptime\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teacher Training\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Master Status\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Electricity Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Internet Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Equipment Uptime Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Theft and Insurance Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Support\",\"col\":4}}]",
+ "creation": "2023-01-23 16:45:18.251095",
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
  "idx": 0,
- "label": "BEPC-Dashboard",
+ "label": "BEPC-Home",
  "links": [
   {
    "hidden": 0,
@@ -143,7 +143,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "School Masters",
-   "link_count": 4,
+   "link_count": 3,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -180,17 +180,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Teacher Training",
-   "link_count": 0,
-   "link_to": "Teacher Training",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Theft &amp; Insurance Master",
+   "label": "Theft and Insurance Master",
    "link_count": 3,
    "onboard": 0,
    "type": "Card Break"
@@ -235,7 +225,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 1,
+   "is_query_report": 0,
    "label": "Schoolwise Student List",
    "link_count": 0,
    "link_to": "Schoolwise Student List",
@@ -245,7 +235,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 1,
+   "is_query_report": 0,
    "label": "Electricity Usage details",
    "link_count": 0,
    "link_to": "Electricity Usage details",
@@ -255,7 +245,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 1,
+   "is_query_report": 0,
    "label": "Internet Usage details",
    "link_count": 0,
    "link_to": "Internet Usage details",
@@ -265,7 +255,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 1,
+   "is_query_report": 0,
    "label": "School-wise Equipment List",
    "link_count": 0,
    "link_to": "School-wise Equipment List",
@@ -275,7 +265,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 1,
+   "is_query_report": 0,
    "label": "Teacher Training Report",
    "link_count": 0,
    "link_to": "Teacher Training Report",
@@ -285,7 +275,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 1,
+   "is_query_report": 0,
    "label": "Theft report",
    "link_count": 0,
    "link_to": "Theft report",
@@ -352,16 +342,29 @@
    "type": "Link"
   }
  ],
- "modified": "2023-01-23 17:04:55.223944",
+ "modified": "2023-01-23 17:07:09.631046",
  "modified_by": "Administrator",
  "module": "Bepc",
- "name": "BEPC-Dashboard",
+ "name": "BEPC-Home",
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [],
- "sequence_id": 30.0,
+ "roles": [
+  {
+   "role": "Management"
+  },
+  {
+   "role": "Project Manager"
+  },
+  {
+   "role": "District Coordinator"
+  },
+  {
+   "role": "Excecutive Helpdesk"
+  }
+ ],
+ "sequence_id": 34.0,
  "shortcuts": [
   {
    "color": "Grey",
@@ -403,22 +406,15 @@
    "doc_view": "List",
    "label": "Issue",
    "link_to": "Issue",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "Report Builder",
-   "label": "School Survey Form Status",
-   "link_to": "School Survey Form Status",
    "type": "Report"
   },
   {
    "color": "Grey",
-   "doc_view": "Report Builder",
+   "doc_view": "List",
    "label": "School Master Status",
    "link_to": "School Master Status",
    "type": "Report"
   }
  ],
- "title": "BEPC-Dashboard"
+ "title": "BEPC-Home"
 }
