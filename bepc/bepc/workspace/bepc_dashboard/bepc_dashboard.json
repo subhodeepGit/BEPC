@@ -228,74 +228,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Reports",
-   "link_count": 6,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Schoolwise Student List",
-   "link_count": 0,
-   "link_to": "Schoolwise Student List",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Electricity Usage details",
-   "link_count": 0,
-   "link_to": "Electricity Usage details",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Internet Usage details",
-   "link_count": 0,
-   "link_to": "Internet Usage details",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "School-wise Equipment List",
-   "link_count": 0,
-   "link_to": "School-wise Equipment List",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Teacher Training Report",
-   "link_count": 0,
-   "link_to": "Teacher Training Report",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Theft report",
-   "link_count": 0,
-   "link_to": "Theft report",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Support",
    "link_count": 5,
    "onboard": 0,
@@ -350,9 +282,67 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Schoolwise Student List",
+   "link_count": 0,
+   "link_to": "SchoolWise Students",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Electricity Usage details",
+   "link_count": 0,
+   "link_to": "Electricity Usage details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Internet Usage details",
+   "link_count": 0,
+   "link_to": "Internet Usage details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "School-wise Equipment List",
+   "link_count": 0,
+   "link_to": "School-wise Equipment List",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Theft report",
+   "link_count": 0,
+   "link_to": "Theft report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-01-23 17:04:55.223944",
+ "modified": "2023-01-24 17:14:24.016088",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC-Dashboard",
