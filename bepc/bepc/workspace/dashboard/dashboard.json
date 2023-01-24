@@ -1,24 +1,24 @@
 {
  "charts": [
   {
+   "chart_name": "Electricity Usage School-New",
+   "label": "School-Wise Electricity Usage"
+  },
+  {
    "chart_name": "Ongoing-Survey Form Status",
    "label": "Ongoing-Survey Form Status"
   },
   {
+   "chart_name": "Internet Chart-new",
+   "label": "School-Wise Internet Usage"
+  },
+  {
+   "chart_name": "Schoolwise Total Student",
+   "label": "School Wise Total Student"
+  },
+  {
    "chart_name": "School Form Status",
    "label": "School Form Status"
-  },
-  {
-   "chart_name": "Classwise Student Chart",
-   "label": "Classwise Student Chart"
-  },
-  {
-   "chart_name": "School-Wise Electricity Consumption",
-   "label": "School-Wise Electricity Consumption"
-  },
-  {
-   "chart_name": "School-Wise Data Usage",
-   "label": "School-Wise Data Usage"
   },
   {
    "chart_name": "Teacher Training Status",
@@ -33,7 +33,7 @@
    "label": "Item wise issue list"
   }
  ],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Ongoing-Survey Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Classwise Student Chart\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Electricity Consumption\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Data Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Teacher Training Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Theft Case record\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Item wise issue list\",\"col\":12}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Ongoing-Survey Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Wise Total Student\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Electricity Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Internet Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Teacher Training Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Theft Case record\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Item wise issue list\",\"col\":12}}]",
  "creation": "2022-11-24 17:10:59.371082",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -42,7 +42,7 @@
  "idx": 0,
  "label": "Dashboard",
  "links": [],
- "modified": "2022-11-24 17:18:40.361752",
+ "modified": "2023-01-24 17:04:20.101718",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Dashboard",

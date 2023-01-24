@@ -1,0 +1,49 @@
+{
+ "chart_name": "Schoolwise Total Student",
+ "chart_type": "Report",
+ "creation": "2023-01-24 16:15:01.851210",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{\"district\":\"AURANGABAD\"}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2023-01-24 16:16:56.565124",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Schoolwise Total Student",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "SchoolWise Students",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "name_of_school",
+ "y_axis": [
+  {
+   "color": "#449CF0",
+   "y_field": "class_vbg"
+  },
+  {
+   "color": "#ECAD4B",
+   "y_field": "class_vibg"
+  },
+  {
+   "color": "#4463F0",
+   "y_field": "class_viibg"
+  },
+  {
+   "color": "#EC864B",
+   "y_field": "class_viiibg"
+  },
+  {
+   "color": "#B4CD29",
+   "y_field": "total_students"
+  }
+ ]
+}

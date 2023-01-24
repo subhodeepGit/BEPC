@@ -7,9 +7,9 @@
  "docstatus": 0,
  "doctype": "Report",
  "filters": [],
- "idx": 0,
+ "idx": 1,
  "is_standard": "Yes",
- "modified": "2022-09-29 15:30:35.687985",
+ "modified": "2023-01-24 16:19:52.123087",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Usage details",
@@ -18,7 +18,7 @@
  "query": "select\n    site as \"TCIL Code\",\n    udise_code as \"UDISE Code\",\n    site_name as \"School Name\",\n    district as \"District\",\n    block as \"Block\",\n    pin_code as \"Pin code\",\n    school_contact_number as \"School Contact\",\n    school_address as \"School Address\",\n    date as \"Date\",\n    main_meter_previous_reading as \"Main meter Previous reading\",\n    main_meter_current_reading as \"Main meter Current Reading\",\n    previous_meter_reading as \"Sub-meter Previous Meter reading\",\n    meter_reading as \"Sub-meter Current Meter reading\",\n    total_billable_unit as \"Total billable Unit\",\n    price_per_unit as \"Price per unit\",\n    total_bill_amount as \"Total Bill Amount\",\n    quarter as \"Quarter\",\n    payment_date as \"Payment Date\",\n    transaction_id as \"Transaction Id\"\nfrom `tabElectricity Consumption Record`;",
  "ref_doctype": "Electricity Consumption Record",
  "report_name": "Electricity Usage details",
- "report_type": "Query Report",
+ "report_type": "Script Report",
  "roles": [
   {
    "role": "System Manager"

@@ -118,7 +118,6 @@
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date",
-   "read_only": 1,
    "reqd": 1
   },
   {
@@ -150,7 +149,6 @@
    "fetch_from": "site.go_live_date",
    "fieldname": "go_live_date",
    "fieldtype": "Date",
-   "hidden": 1,
    "label": "Go Live Date",
    "read_only": 1
   },
@@ -204,7 +202,7 @@
   {
    "fieldname": "payment_details",
    "fieldtype": "Data",
-   "label": "Payment Details"
+   "label": "Transaction ID"
   },
   {
    "fieldname": "column_break_25",
@@ -213,10 +211,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-29 19:12:55.750652",
+ "modified": "2023-01-24 16:55:31.510366",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -234,5 +233,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

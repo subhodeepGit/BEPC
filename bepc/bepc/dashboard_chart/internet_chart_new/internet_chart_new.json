@@ -1,0 +1,37 @@
+{
+ "chart_name": "Internet Chart-new",
+ "chart_type": "Report",
+ "creation": "2023-01-24 17:02:38.338639",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{\"district\":\"AURANGABAD\"}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2023-01-24 17:02:38.338639",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Internet Chart-new",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Internet Usage details",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Line",
+ "use_report_chart": 0,
+ "x_field": "site_name",
+ "y_axis": [
+  {
+   "color": "#4463F0",
+   "y_field": "data_usage"
+  },
+  {
+   "color": "#EC864B",
+   "y_field": "monthly_bill_amount"
+  }
+ ]
+}

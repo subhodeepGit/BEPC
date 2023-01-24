@@ -7,9 +7,9 @@
  "docstatus": 0,
  "doctype": "Report",
  "filters": [],
- "idx": 0,
+ "idx": 1,
  "is_standard": "Yes",
- "modified": "2022-09-29 15:29:16.375371",
+ "modified": "2023-01-24 16:47:16.108176",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet Usage details",
@@ -18,7 +18,7 @@
  "query": "select\n    site as \"TCIL Code\",\n    udise_code as \"UDISE Code\",\n    siteschool_name as \"School Name\",\n    district as \"District\",\n    block as \"Block\",\n    pin_code as \"Pin code\",\n    date as \"Date\",\n    internet_service_provider as \"Internet service provider\",\n    data_usage as \"Data Usage (Gb)\",\n    monthly_bill_amount as \"Monthly Bill Amount\",\n    quarter as \"Quarter\"\nfrom `tabInternet consumption Record`;",
  "ref_doctype": "Internet consumption Record",
  "report_name": "Internet Usage details",
- "report_type": "Query Report",
+ "report_type": "Script Report",
  "roles": [
   {
    "role": "System Manager"
