@@ -1,20 +1,20 @@
 {
- "chart_name": "Theft Case records",
+ "chart_name": "Theft Case",
  "chart_type": "Report",
- "creation": "2022-09-08 17:01:16.386426",
- "custom_options": "{\"x_field\": \"status\", \"chart_type\": \"Pie\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"name\": \"row 1\", \"y_field\": \"no._of_cases\", \"color\": \"#449CF0\"}], \"y_fields\": [\"no._of_cases\"], \"colors\": [\"#449CF0\"]}",
+ "creation": "2023-01-24 18:01:02.030561",
+ "custom_options": "",
  "docstatus": 0,
  "doctype": "Dashboard Chart",
- "dynamic_filters_json": "",
+ "dynamic_filters_json": "{}",
  "filters_json": "{\"district\":\"ARARIA\"}",
  "group_by_type": "Count",
  "idx": 0,
  "is_public": 0,
  "is_standard": 1,
- "modified": "2023-01-24 17:59:42.394162",
+ "modified": "2023-01-24 18:01:02.030561",
  "modified_by": "Administrator",
  "module": "Bepc",
- "name": "Theft Case records",
+ "name": "Theft Case",
  "number_of_groups": 0,
  "owner": "Administrator",
  "report_name": "Theft Case record status",
@@ -27,8 +27,8 @@
  "x_field": "status",
  "y_axis": [
   {
-   "color": "#449CF0",
-   "y_field": "no._of_cases"
+   "color": "#ED6396",
+   "y_field": "count(status)"
   }
  ]
 }

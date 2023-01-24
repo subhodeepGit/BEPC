@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2022-09-26 15:23:43.277432",
+ "modified": "2023-01-24 17:40:56.776745",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Case record status",
@@ -18,7 +18,7 @@
  "query": "select\n    status as \"Status\",\n    count(status) as \"No. of Cases\"\nfrom `tabTheft Case record`\nGroup By status;",
  "ref_doctype": "Theft Case record",
  "report_name": "Theft Case record status",
- "report_type": "Query Report",
+ "report_type": "Script Report",
  "roles": [
   {
    "role": "System Manager"

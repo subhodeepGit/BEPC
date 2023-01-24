@@ -5,6 +5,10 @@
    "label": "School-Wise Electricity Usage"
   },
   {
+   "chart_name": "Theft Case",
+   "label": "Theft Case record"
+  },
+  {
    "chart_name": "Ongoing-Survey Form Status",
    "label": "Ongoing-Survey Form Status"
   },
@@ -25,10 +29,6 @@
    "label": "Teacher Training Status"
   },
   {
-   "chart_name": "Theft Case records",
-   "label": "Theft Case record"
-  },
-  {
    "chart_name": "Item wise issue list",
    "label": "Item wise issue list"
   }
@@ -42,7 +42,7 @@
  "idx": 0,
  "label": "Dashboard",
  "links": [],
- "modified": "2023-01-24 17:04:20.101718",
+ "modified": "2023-01-24 18:02:24.479527",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Dashboard",
