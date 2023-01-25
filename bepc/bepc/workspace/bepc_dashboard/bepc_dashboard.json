@@ -287,7 +287,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Reports",
-   "link_count": 5,
+   "link_count": 6,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -340,9 +340,19 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "SLA Status report",
+   "link_count": 0,
+   "link_to": "Issue report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-01-24 17:14:24.016088",
+ "modified": "2023-01-25 13:10:49.834836",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC-Dashboard",

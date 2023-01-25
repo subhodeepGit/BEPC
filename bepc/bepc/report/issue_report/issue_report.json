@@ -9,16 +9,16 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2022-09-26 15:24:21.640478",
+ "modified": "2023-01-25 12:23:09.244083",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Issue report",
  "owner": "Administrator",
  "prepared_report": 0,
- "query": "select\n    sr.item as \"Item\",\n    count(sr.item) as \"total open issue\"\nfrom\n    `tabIssue`sl,\n    `tabItems Detail`sr\n    \nwhere\nsr.parent = sl.name\nGROUP BY sr.item, sl.status;",
+ "query": "select count(Ongoing\nFulfilled\nFailed",
  "ref_doctype": "Issue",
  "report_name": "Issue report",
- "report_type": "Query Report",
+ "report_type": "Script Report",
  "roles": [
   {
    "role": "Support Team"

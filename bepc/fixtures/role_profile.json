@@ -4,9 +4,6 @@
   "doctype": "Role Profile",
   "modified": "2022-07-19 15:20:32.543619",
   "name": "Support Team",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "role_profile": "Support Team",
   "roles": [
    {
@@ -28,9 +25,6 @@
   "doctype": "Role Profile",
   "modified": "2022-07-19 15:21:19.480926",
   "name": "HelpDesk Admin",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "role_profile": "HelpDesk Admin",
   "roles": [
    {
@@ -58,9 +52,6 @@
   "doctype": "Role Profile",
   "modified": "2022-08-29 11:18:49.266178",
   "name": "Level-I",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "role_profile": "Level-I",
   "roles": [
    {
@@ -76,9 +67,6 @@
   "doctype": "Role Profile",
   "modified": "2022-09-05 12:24:32.595545",
   "name": "Super admin",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "role_profile": "Super admin",
   "roles": [
    {
@@ -112,9 +100,6 @@
   "doctype": "Role Profile",
   "modified": "2022-09-16 14:05:24.912492",
   "name": "Level-III",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "role_profile": "Level-III",
   "roles": [
    {
@@ -130,9 +115,6 @@
   "doctype": "Role Profile",
   "modified": "2022-09-18 12:51:07.144443",
   "name": "Level-II",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "role_profile": "Level-II",
   "roles": [
    {
@@ -148,9 +130,6 @@
   "doctype": "Role Profile",
   "modified": "2022-09-18 12:55:30.133299",
   "name": "District Coordinator",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "role_profile": "District Coordinator",
   "roles": [
    {
@@ -166,9 +145,6 @@
   "doctype": "Role Profile",
   "modified": "2022-09-18 12:55:52.774806",
   "name": "Management",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
   "role_profile": "Management",
   "roles": [
    {
@@ -176,6 +152,21 @@
     "parentfield": "roles",
     "parenttype": "Role Profile",
     "role": "Management"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-01-25 16:27:24.742918",
+  "name": "Department",
+  "role_profile": "Department",
+  "roles": [
+   {
+    "parent": "Department",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Department"
    }
   ]
  }

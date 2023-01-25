@@ -1,6 +1,10 @@
 {
  "charts": [
   {
+   "chart_name": "SLA Status Chart",
+   "label": "SLA Status Chart"
+  },
+  {
    "chart_name": "Electricity Usage School-New",
    "label": "School-Wise Electricity Usage"
   },
@@ -27,13 +31,9 @@
   {
    "chart_name": "Teacher Training Status",
    "label": "Teacher Training Status"
-  },
-  {
-   "chart_name": "Item wise issue list",
-   "label": "Item wise issue list"
   }
  ],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Ongoing-Survey Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Wise Total Student\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Electricity Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Internet Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Teacher Training Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Theft Case record\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Item wise issue list\",\"col\":12}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Ongoing-Survey Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Wise Total Student\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Electricity Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Internet Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Teacher Training Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Theft Case record\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"SLA Status Chart\",\"col\":12}}]",
  "creation": "2022-11-24 17:10:59.371082",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -42,7 +42,7 @@
  "idx": 0,
  "label": "Dashboard",
  "links": [],
- "modified": "2023-01-24 18:02:24.479527",
+ "modified": "2023-01-25 13:18:52.049405",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Dashboard",

@@ -142,44 +142,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "School Masters",
-   "link_count": 3,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Teacher",
-   "link_count": 0,
-   "link_to": "Teacher",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Teacher Group",
-   "link_count": 0,
-   "link_to": "Teacher Group",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "School Consent for TT",
-   "link_count": 0,
-   "link_to": "School Consent form for Teacher Training",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Theft and Insurance Master",
    "link_count": 3,
    "onboard": 0,
@@ -276,8 +238,56 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "School Masters",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Teacher",
+   "link_count": 0,
+   "link_to": "Teacher",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Teacher Group",
+   "link_count": 0,
+   "link_to": "Teacher Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "School Consent for TT",
+   "link_count": 0,
+   "link_to": "School Consent form for Teacher Training",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Teacher Training",
+   "link_count": 0,
+   "link_to": "Teacher Training",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Reports",
-   "link_count": 5,
+   "link_count": 6,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -330,9 +340,19 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "SLA Status report",
+   "link_count": 0,
+   "link_to": "Issue report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-01-24 17:17:33.536041",
+ "modified": "2023-01-25 13:10:27.709562",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC-Home",
