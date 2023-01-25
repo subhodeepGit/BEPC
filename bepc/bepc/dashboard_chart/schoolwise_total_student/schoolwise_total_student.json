@@ -10,14 +10,18 @@
  "idx": 0,
  "is_public": 0,
  "is_standard": 1,
- "modified": "2023-01-24 16:16:56.565124",
+ "modified": "2023-01-25 17:49:36.811431",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Schoolwise Total Student",
  "number_of_groups": 0,
  "owner": "Administrator",
  "report_name": "SchoolWise Students",
- "roles": [],
+ "roles": [
+  {
+   "role": "Department"
+  }
+ ],
  "time_interval": "Yearly",
  "timeseries": 0,
  "timespan": "Last Year",

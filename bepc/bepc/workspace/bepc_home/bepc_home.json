@@ -343,7 +343,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "SLA Status report",
    "link_count": 0,
    "link_to": "Issue report",
@@ -352,7 +352,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-01-25 13:10:27.709562",
+ "modified": "2023-01-25 17:47:59.559588",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC-Home",
@@ -372,6 +372,9 @@
   },
   {
    "role": "Excecutive Helpdesk"
+  },
+  {
+   "role": "Department"
   }
  ],
  "sequence_id": 34.0,
