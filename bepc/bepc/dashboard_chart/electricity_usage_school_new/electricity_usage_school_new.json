@@ -10,14 +10,18 @@
  "idx": 0,
  "is_public": 0,
  "is_standard": 1,
- "modified": "2023-01-24 17:01:23.811942",
+ "modified": "2023-01-25 17:48:40.328862",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Usage School-New",
  "number_of_groups": 0,
  "owner": "Administrator",
  "report_name": "Electricity Usage details",
- "roles": [],
+ "roles": [
+  {
+   "role": "Department"
+  }
+ ],
  "time_interval": "Yearly",
  "timeseries": 0,
  "timespan": "Last Year",

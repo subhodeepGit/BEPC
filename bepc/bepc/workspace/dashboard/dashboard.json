@@ -42,7 +42,7 @@
  "idx": 0,
  "label": "Dashboard",
  "links": [],
- "modified": "2023-01-25 13:18:52.049405",
+ "modified": "2023-01-25 17:50:19.534573",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Dashboard",
@@ -53,6 +53,9 @@
  "roles": [
   {
    "role": "Management"
+  },
+  {
+   "role": "Department"
   }
  ],
  "sequence_id": 32.0,
