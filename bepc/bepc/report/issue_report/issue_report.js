@@ -13,18 +13,18 @@ frappe.query_reports["Issue report"] = {
 			"reqd": 0,
 			"default":"ARARIA"
 	
-		}
-		// {
-		// 	"fieldname": "resolution_date",
-		// 	"label": __("Resolution Date"),
-		// 	"fieldtype": "Datetime",
-		// 	"width": 150,	
-		// },
-		// {
-		// 	"fieldname": "resolution_date",
-		// 	"label": __("Resolution Date"),
-		// 	"fieldtype": "Datetime",
-		// 	"width": 150,	
-		// },
+		},
+		{
+			"fieldname": "from_date",
+			"label": __("From date"),
+			"fieldtype": "Datetime",
+			"width": 150,	
+		},
+		{
+			"fieldname": "to_date",
+			"label": __("To Date"),
+			"fieldtype": "Datetime",
+			"width": 150,	
+		},
 	]
 };
