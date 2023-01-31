@@ -10,8 +10,8 @@
   "item_code",
   "item_name",
   "vendor",
-  "serial_number",
   "mac_id",
+  "serial_number",
   "quantity",
   "installation_date"
  ],
@@ -70,6 +70,7 @@
    "label": "OEM Email",
    "options": "Email",
    "print_width": "10",
+   "reqd": 1,
    "width": "2px"
   },
   {
@@ -89,7 +90,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-01-31 18:01:47.862960",
+ "modified": "2023-01-31 18:18:59.692983",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Schoolwise Equiupment Childtable2",
