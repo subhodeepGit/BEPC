@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "EQNA.-.#####",
+ "autoname": "ITEM.-.#####",
  "creation": "2022-08-04 17:27:11.445990",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -147,10 +147,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-16 14:21:03.411186",
+ "modified": "2023-01-31 17:55:11.712709",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Items",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -169,6 +170,7 @@
  "search_fields": "item_code, item_name",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "title_field": "item_code",
  "track_changes": 1
 }
