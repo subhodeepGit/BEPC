@@ -42,7 +42,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Item Name"
+   "label": "Item Name",
+   "reqd": 1
   },
   {
    "fieldname": "item_group",
@@ -56,7 +57,6 @@
    "fieldname": "item_code",
    "fieldtype": "Data",
    "label": "Item Code",
-   "reqd": 1,
    "unique": 1
   },
   {
@@ -145,7 +145,8 @@
   {
    "fieldname": "serial_number",
    "fieldtype": "Data",
-   "label": "Serial Number"
+   "label": "Serial Number",
+   "reqd": 1
   },
   {
    "fieldname": "mac_id",
@@ -200,7 +201,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-01 10:53:02.399189",
+ "modified": "2023-02-01 15:43:53.968615",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Items",
