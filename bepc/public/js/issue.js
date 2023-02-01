@@ -24,7 +24,13 @@ frappe.ui.form.on('Issue', {
                 }
             };
         });
-        
+        frm.set_query('item', 'items_detail', function() {
+            return {
+                filters: {
+                    "tcil_code":frm.doc.tcil
+                }
+            };
+        });
     
     },
 //     refresh:function(frm){

@@ -32,3 +32,10 @@ def School_number_validation(self):
 			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
 		if len(self.school_contact_number)<10:
 			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
+
+@frappe.whitelist()
+def item_fetch(site):
+	data = frappe.get_all('Items',{"tcil_code":site},["item_code","item_name","lab","manufacturer","manufacturer_email","serial_number"])
+	for t in  data:
+		if t:
+			return data

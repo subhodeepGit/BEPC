@@ -7,6 +7,14 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "tcil_code",
+  "udise_code",
+  "district",
+  "column_break_3",
+  "lab",
+  "school_name",
+  "block",
+  "section_break_6",
   "item_code",
   "item_name",
   "manufacturer",
@@ -143,11 +151,56 @@
    "fieldname": "mac_id",
    "fieldtype": "Data",
    "label": "Mac ID"
+  },
+  {
+   "fieldname": "tcil_code",
+   "fieldtype": "Link",
+   "label": "TCIL Code",
+   "options": "School",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "tcil_code.udise",
+   "fieldname": "udise_code",
+   "fieldtype": "Data",
+   "label": "UDISE Code"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lab",
+   "fieldtype": "Select",
+   "label": "Lab",
+   "options": "\nLab-1\nLab-2"
+  },
+  {
+   "fetch_from": "tcil_code.site_name",
+   "fieldname": "school_name",
+   "fieldtype": "Data",
+   "label": "School Name"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "tcil_code.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fetch_from": "tcil_code.block",
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-31 17:55:11.712709",
+ "modified": "2023-02-01 10:53:02.399189",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Items",

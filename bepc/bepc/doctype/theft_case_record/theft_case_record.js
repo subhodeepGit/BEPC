@@ -2,6 +2,18 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Theft Case record', {
+	
+	setup:function(frm)
+    {
+		frm.set_query('euipment_lost', function() {
+			return {
+				filters: {
+					"tcil_code":frm.doc.item
+				}
+			};
+		});
+	},
+
 	reason: function(frm) {
 		if(frm.doc.reason === "Theft"){
 			frm.refresh_field("reason");

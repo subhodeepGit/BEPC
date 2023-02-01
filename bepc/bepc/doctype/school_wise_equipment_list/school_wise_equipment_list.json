@@ -22,8 +22,6 @@
   "date",
   "section_break_8",
   "table_9",
-  "section_break_16",
-  "table_17",
   "district_coordinator_1",
   "district_coordinator_2"
  ],
@@ -85,7 +83,7 @@
   {
    "fieldname": "section_break_8",
    "fieldtype": "Section Break",
-   "label": "Equipments Installed in Lab-1"
+   "label": "Equipments Installed in Labs"
   },
   {
    "fieldname": "table_9",
@@ -152,24 +150,15 @@
    "hidden": 1,
    "label": "District Coordinator 2",
    "read_only": 1
-  },
-  {
-   "fieldname": "section_break_16",
-   "fieldtype": "Section Break",
-   "label": "Equipments Installed in Lab-2"
-  },
-  {
-   "fieldname": "table_17",
-   "fieldtype": "Table",
-   "options": "Schoolwise Equiupment Childtable2"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-21 16:31:54.998183",
+ "modified": "2023-02-01 15:09:33.670009",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School wise Equipment List",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -188,5 +177,6 @@
  "search_fields": "site, udise_code, school_name",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

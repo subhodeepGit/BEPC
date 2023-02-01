@@ -6,7 +6,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "item",
+  "lab",
   "item_code",
   "item_name",
   "vendor",
@@ -16,16 +16,6 @@
   "installation_date"
  ],
  "fields": [
-  {
-   "fieldname": "item",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Item",
-   "options": "\nMini PC\nProjector\nCamera\nMic\nSpeaker",
-   "print_width": "10",
-   "reqd": 1,
-   "width": "1px"
-  },
   {
    "fetch_from": "item.item_code",
    "fieldname": "item_code",
@@ -85,12 +75,17 @@
    "print_width": "10",
    "reqd": 1,
    "width": "2px"
+  },
+  {
+   "fieldname": "lab",
+   "fieldtype": "Data",
+   "label": "Lab"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-01-31 18:20:23.123985",
+ "modified": "2023-02-01 11:23:16.276042",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Schoolwise Equipment List childtable",
