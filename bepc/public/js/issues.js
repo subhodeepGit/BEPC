@@ -1,4 +1,4 @@
-frappe.ui.form.on('Issue', {
+frappe.ui.form.on('issues', {
     
 	setup:function(frm)
     {
@@ -31,7 +31,6 @@ frappe.ui.form.on('Issue', {
                 }
             };
         });
-    
     },
 //     refresh:function(frm){
 //         if (!frm.is_new()){
@@ -51,4 +50,3 @@ frappe.ui.form.on('Issue', {
         
 //     }
 });
-

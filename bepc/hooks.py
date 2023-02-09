@@ -32,9 +32,9 @@ app_license = "MIT"
 
 # include js in doctype views
 doctype_js = {
-	           "Issue" : "public/js/issue.js"
+	           "issues" : "public/js/issues.js"
 			#    "File" : "public/js/file.js"
-			   }
+			}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -99,9 +99,9 @@ doctype_js = {
 # Hook on document methods and events
 
 doc_events = {
-	"Issue": {
-		"validate": "bepc.bepc.doctype.issue.validate",
-		"before_save":"bepc.bepc.doctype.issue.before_save",
+	"issues": {
+		"validate": "bepc.bepc.doctype.issues.validate",
+		"before_save":"bepc.bepc.doctype.issues.before_save"
 	},
 	"File": {
 		"validate": "bepc.bepc.validations.file.validate",
@@ -173,7 +173,7 @@ after_migrate = [
 # 				"DocType"
 # 			]
 # 		]
-# 	]},
+# 	]}
 # 	{"dt" : "Workflow"},
 	# {"dt": "Workflow Action Master"},
 	# {"dt" : "Workflow State"}
