@@ -1,0 +1,27 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-02-13 14:45:26.600047",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-02-13 15:03:31.300684",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Smart Class Status",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select school_code as \"School Code\", site_name as \"School Name\", workflow_state as \"Status\", udise as \"UDISE\",cluster_name as \"Cluster Name\", zone as \"Zone\", district as \"District\", block as \"Block\"\nfrom `tabSchool`;",
+ "ref_doctype": "School",
+ "report_name": "Smart Class Status",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "All"
+  }
+ ]
+}

@@ -2,17 +2,16 @@
 // For license information, please see license.txt
 /* eslint-disable */
 
-frappe.query_reports["SchoolWise Students"] = {
+frappe.query_reports["Teacher Completed Training"] = {
 	"filters": [
-		// {
-		// 	"fieldname": "name_of_school",
-		// 	"label": __("name_of_school"),
-		// 	"fieldtype": "Link",
-		// 	"options": "School",
-		// 	"width": 150,
-		// 	"reqd": 1,
-	
-		// },
+		{
+			"fieldname": "name_of_school",
+			"label": __("name_of_school"),
+			"fieldtype": "Link",
+			"options": "School",
+			"width": 150,
+			"reqd": 1,
+		},
 		{
 			"fieldname": "district",
 			"label": __("District"),
@@ -20,7 +19,6 @@ frappe.query_reports["SchoolWise Students"] = {
 			"options": "Districts",
 			"width": 150,
 			"reqd": 1,
-	
 		},
 		{
 			"fieldname": "block",

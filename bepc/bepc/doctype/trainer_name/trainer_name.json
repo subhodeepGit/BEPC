@@ -15,7 +15,7 @@
    "fieldname": "trainer_number",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Trainer Number",
+   "label": "Trainer Name",
    "print_width": "10",
    "width": "3px"
   },
@@ -40,12 +40,13 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-09-08 14:10:57.843191",
+ "modified": "2023-02-13 16:34:53.394590",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Trainer Name",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "states": []
 }
