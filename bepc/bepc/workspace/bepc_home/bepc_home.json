@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">BEPC-Home</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internet consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Electricity Consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment Uptime\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teacher Training\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Survey Form Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Master Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment report\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Electricity Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Internet Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Equipment Uptime Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Theft and Insurance Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Support\",\"col\":4}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">BEPC-Home</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internet consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Electricity Consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment Uptime\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teacher Training\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Survey Form Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Master Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment report\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Electricity Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Internet Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Equipment Uptime Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Theft and Insurance Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Support\",\"col\":4}}]",
  "creation": "2023-01-23 16:45:18.251095",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -200,64 +200,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Reports",
-   "link_count": 5,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Schoolwise Student List",
-   "link_count": 0,
-   "link_to": "SchoolWise Students",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Electricity Usage details",
-   "link_count": 0,
-   "link_to": "Electricity Usage details",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Internet Usage details",
-   "link_count": 0,
-   "link_to": "Internet Usage details",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Theft report",
-   "link_count": 0,
-   "link_to": "Theft report",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "SLA Status report",
-   "link_count": 0,
-   "link_to": "Issue report",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Equipment Uptime Management",
    "link_count": 1,
    "onboard": 0,
@@ -332,7 +274,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-02-09 13:13:49.519671",
+ "modified": "2023-02-14 15:53:55.830076",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC-Home",

@@ -1,0 +1,240 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Reports<br></span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Smart Class Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Wise Equipment list\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teacher List\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Wise issue Report\",\"col\":3}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Wise Report\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Teacher Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Theft Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Status Report\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Usage Report\",\"col\":4}}]",
+ "creation": "2023-02-14 12:40:13.092726",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "idx": 0,
+ "label": "Reports",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "School Wise Report",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Schoolwise Student List",
+   "link_count": 0,
+   "link_to": "Schoolwise Student List",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "School Wise issue Report",
+   "link_count": 0,
+   "link_to": "School Wise issue Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "School Wise Equipment list",
+   "link_count": 0,
+   "link_to": "School Wise Equipment list",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Teacher Reports",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Teacher List",
+   "link_count": 0,
+   "link_to": "Teacher List",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Teacher Completed Training",
+   "link_count": 0,
+   "link_to": "Teacher Completed Training",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Theft Reports",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Theft report",
+   "link_count": 0,
+   "link_to": "Theft report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Theft Case record",
+   "link_count": 0,
+   "link_to": "Theft Case record",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Status Report",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Smart Class Status",
+   "link_count": 0,
+   "link_to": "Smart Class Status",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "SLA Status report",
+   "link_count": 0,
+   "link_to": "Issue report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Open Issue Record",
+   "link_count": 0,
+   "link_to": "Open issue",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Closed issue Record",
+   "link_count": 0,
+   "link_to": "Closed issue",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Usage Report",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Internet Usage details",
+   "link_count": 0,
+   "link_to": "Internet Usage details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Electricity Usage details",
+   "link_count": 0,
+   "link_to": "Electricity Usage details",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-02-14 15:52:40.847068",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Reports",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Management"
+  },
+  {
+   "role": "Project Manager"
+  },
+  {
+   "role": "District Coordinator"
+  },
+  {
+   "role": "Excecutive Helpdesk"
+  },
+  {
+   "role": "Department"
+  }
+ ],
+ "sequence_id": 34.1,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Smart Class Status",
+   "link_to": "Smart Class Status",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "School Wise issue Report",
+   "link_to": "School Wise issue Report",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "School Wise Equipment list",
+   "link_to": "School Wise Equipment list",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Teacher List",
+   "link_to": "Teacher List",
+   "type": "Report"
+  }
+ ],
+ "title": "Reports"
+}
