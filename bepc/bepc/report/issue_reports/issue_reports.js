@@ -2,7 +2,7 @@
 // For license information, please see license.txt
 /* eslint-disable */
 
-frappe.query_reports["School Wise Equipment list"] = {
+frappe.query_reports["issue Reports"] = {
 	"filters": [
 		{
 			"fieldname": "name_of_school",

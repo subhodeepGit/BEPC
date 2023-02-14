@@ -6,7 +6,7 @@ frappe.query_reports["Teacher List"] = {
 	"filters": [
 		{
 			"fieldname": "name_of_school",
-			"label": __("name_of_school"),
+			"label": __("Name of School"),
 			"fieldtype": "Link",
 			"options": "School",
 			"width": 150,

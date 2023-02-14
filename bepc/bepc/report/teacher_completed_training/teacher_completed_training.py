@@ -146,7 +146,7 @@ def get_data(filters):
             s['school_consent']=t['school_consent']
             s['teacher_group_name']=t['teacher_group_name']
             final_data.append(s)
-        name=frappe.get_all("Trainer Name",{"parent":t["name"]},['trainer_number','email_id'])
+        # name=frappe.get_all("Trainer Name",{"parent":t["name"]},['trainer_number','email_id'])
         # for s in name:
         #     s['name']=t['name']
         #     s['status']=t['status']
