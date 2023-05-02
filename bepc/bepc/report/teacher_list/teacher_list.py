@@ -72,16 +72,13 @@ def get_columns(filters=None):
 
 def get_data(filters):
     filter=[]
-    
-    if filters.get("name_of_school"):
-        filter.append(['site',"=",filters.get("name_of_school")])
-        if filters.get("district"):
-            filter.append(['district',"=",filters.get("district")])
-            if filters.get("block"):
-                if len(filters.get("block"))==1:
-                    filter.append(['block','=',filters.get("block")[0]])
-                else:
-                    filter.append(['block','in',filters.get("block")[0]])
+    if filters.get("district"):
+        filter.append(['district',"=",filters.get("district")])
+        if filters.get("block"):
+            if len(filters.get("block"))==1:
+                filter.append(['block','=',filters.get("block")[0]])
+            else:
+                filter.append(['block','in',filters.get("block")[0]])
 
     data=frappe.get_all("Teacher",filters=filter,
                                 fields=['site','school_name','udise_code','block','district','full_name','email','gender','status'])

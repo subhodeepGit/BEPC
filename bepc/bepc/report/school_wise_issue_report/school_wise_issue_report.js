@@ -5,14 +5,6 @@
 frappe.query_reports["School Wise issue Report"] = {
 	"filters": [
 		{
-			"fieldname": "name_of_school",
-			"label": __("Name of School"),
-			"fieldtype": "Link",
-			"options": "School",
-			"width": 150,
-			"reqd": 1,
-		},
-		{
 			"fieldname": "district",
 			"label": __("District"),
 			"fieldtype": "Link",
