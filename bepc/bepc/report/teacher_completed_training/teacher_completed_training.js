@@ -10,7 +10,6 @@ frappe.query_reports["Teacher Completed Training"] = {
 			"fieldtype": "Link",
 			"options": "School",
 			"width": 150,
-			"reqd": 1,
 		},
 		{
 			"fieldname": "district",

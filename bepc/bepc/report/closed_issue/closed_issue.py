@@ -110,15 +110,13 @@ def get_columns(filters=None):
 def get_data(filters):
     filter=[]
     filter.append(['status',"=","Closed"])
-    if filters.get("name_of_school"):
-        filter.append(['tcil',"=",filters.get("name_of_school")])
-        if filters.get("district"):
-            filter.append(['district',"=",filters.get("district")])
-            if filters.get("block"):
-                if len(filters.get("block"))==1:
-                    filter.append(['block','=',filters.get("block")[0]])
-                else:
-                    filter.append(['block','in',filters.get("block")[0]])
+    if filters.get("district"):
+        filter.append(['district',"=",filters.get("district")])
+        if filters.get("block"):
+            if len(filters.get("block"))==1:
+                filter.append(['block','=',filters.get("block")[0]])
+            else:
+                filter.append(['block','in',filters.get("block")[0]])
 
     data=frappe.get_all("issues",filters=filter,
                             fields=['name','status','subject','tcil','school_name',
