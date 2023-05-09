@@ -213,8 +213,7 @@
   {
    "fieldname": "main_meter_current_reading",
    "fieldtype": "Float",
-   "label": "Main meter Current reading",
-   "reqd": 1
+   "label": "Main meter Current reading"
   },
   {
    "fieldname": "total_consumed_unit",
@@ -261,7 +260,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-20 12:33:50.316863",
+ "modified": "2023-05-09 15:48:22.592883",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",

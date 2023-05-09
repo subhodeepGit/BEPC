@@ -11,7 +11,7 @@
  "idx": 0,
  "is_public": 0,
  "is_standard": 1,
- "modified": "2023-01-25 17:49:26.030310",
+ "modified": "2023-02-16 15:58:29.825393",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet Chart-new",
@@ -26,9 +26,9 @@
  "time_interval": "Yearly",
  "timeseries": 0,
  "timespan": "Last Year",
- "type": "Line",
+ "type": "Bar",
  "use_report_chart": 0,
- "x_field": "site_name",
+ "x_field": "siteschool_name",
  "y_axis": [
   {
    "color": "#4463F0",

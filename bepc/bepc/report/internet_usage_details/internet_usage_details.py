@@ -28,7 +28,7 @@ def get_columns(filters=None):
     {
         "label": "Name of School",
         "fieldtype": "Data",
-        "fieldname": "site_name",
+        "fieldname": "siteschool_name",
         'width':110
     },
     {

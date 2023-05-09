@@ -10,7 +10,7 @@
  "idx": 0,
  "is_public": 0,
  "is_standard": 1,
- "modified": "2023-01-25 17:49:36.811431",
+ "modified": "2023-02-17 09:57:26.282564",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Schoolwise Total Student",
@@ -30,23 +30,7 @@
  "x_field": "name_of_school",
  "y_axis": [
   {
-   "color": "#449CF0",
-   "y_field": "class_vbg"
-  },
-  {
-   "color": "#ECAD4B",
-   "y_field": "class_vibg"
-  },
-  {
-   "color": "#4463F0",
-   "y_field": "class_viibg"
-  },
-  {
-   "color": "#EC864B",
-   "y_field": "class_viiibg"
-  },
-  {
-   "color": "#B4CD29",
+   "color": "#a66742",
    "y_field": "total_students"
   }
  ]
