@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Reports<br></span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Smart Class Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Wise Equipment list\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teacher List\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Wise issue Report\",\"col\":3}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Implementation report\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Wise Report\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Internet Usage Report\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Electricity Usage Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Theft Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Teacher Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Issue reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Equipment report\",\"col\":4}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Reports<br></span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Smart Class Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Wise Equipment list\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teacher List\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Wise issue Report\",\"col\":3}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Implementation report\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Wise Report\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Internet Usage Report\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Electricity Usage Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Theft Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Teacher Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"District-Wise Issue reports(Call Logs)\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"All Issue report(Call Logs)\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Equipment report\",\"col\":4}}]",
  "creation": "2023-02-14 12:40:13.092726",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -121,54 +121,6 @@
    "label": " Smart Class Status",
    "link_count": 0,
    "link_to": "Smart Class Status",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Issue reports",
-   "link_count": 4,
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "SLA Status report",
-   "link_count": 0,
-   "link_to": "Issue report",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Open Issue Record",
-   "link_count": 0,
-   "link_to": "Open issue",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 1,
-   "label": "Closed issue Record",
-   "link_count": 0,
-   "link_to": "Closed issue",
-   "link_type": "Report",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "School Wise issue Report",
-   "link_count": 0,
-   "link_to": "School Wise issue Report",
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
@@ -322,9 +274,85 @@
    "link_type": "Report",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "District-Wise Issue reports(Call Logs)",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "District-Wise Open Issue Record",
+   "link_count": 0,
+   "link_to": "Open issue",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "District-Wise Closed issue Record",
+   "link_count": 0,
+   "link_to": "Closed issue",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "District-Wise issue Report",
+   "link_count": 0,
+   "link_to": "School Wise issue Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "All Issue report(Call Logs)",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "All Issue",
+   "link_count": 0,
+   "link_to": "All Issue",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "All Open Issue",
+   "link_count": 0,
+   "link_to": "All Open Issue",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "All Closed Issue",
+   "link_count": 0,
+   "link_to": "All Closed Issue",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-05-10 17:40:29.917843",
+ "modified": "2023-05-10 18:56:32.205139",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Reports",
