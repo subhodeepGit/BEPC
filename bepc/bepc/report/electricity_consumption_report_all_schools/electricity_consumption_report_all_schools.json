@@ -1,0 +1,54 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-05-10 17:26:28.003204",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-05-10 17:31:06.978719",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Electricity Consumption report All Schools",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select\n    site as \"TCIL Code\",\n    udise_code as \"UDISE Code\",\n    site_name as \"School name\",\n    district as \"District\",\n    block as \"Block\",\n    date as \"Date of Posting Bill\",\n    main_meter_previous_reading as \"Main Meter Previous month reading\",\n    main_meter_current_reading as \"Main Meter Current month reading\",\n    previous_meter_reading as \"Sub Meter Previous month reading\",\n    meter_reading as \"Sub Meter Current month reading\",\n    price_per_unit as \"Price per unit\",\n    date as \"Bill Posting Date\",\n    payment_date as \"Date of Bill Payment\",\n    transaction_id as \"Transaction ID\"\nfrom `tabElectricity Consumption Record`;",
+ "ref_doctype": "Electricity Consumption Record",
+ "report_name": "Electricity Consumption report All Schools",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Approver I"
+  },
+  {
+   "role": "Approver II"
+  },
+  {
+   "role": "Data Entry Approver"
+  },
+  {
+   "role": "Data Entry Operator"
+  },
+  {
+   "role": "Excecutive Helpdesk"
+  },
+  {
+   "role": "Project Manager"
+  },
+  {
+   "role": "District Coordinator"
+  },
+  {
+   "role": "Management"
+  },
+  {
+   "role": "Department"
+  }
+ ]
+}

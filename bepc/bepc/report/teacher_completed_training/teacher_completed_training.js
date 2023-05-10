@@ -5,13 +5,6 @@
 frappe.query_reports["Teacher Completed Training"] = {
 	"filters": [
 		{
-			"fieldname": "name_of_school",
-			"label": __("Name of School"),
-			"fieldtype": "Link",
-			"options": "School",
-			"width": 150,
-		},
-		{
 			"fieldname": "district",
 			"label": __("District"),
 			"fieldtype": "Link",
@@ -31,6 +24,13 @@ frappe.query_reports["Teacher Completed Training"] = {
 					district: frappe.query_report.get_filter_value("district")
 				});
 			}
+		},
+		{
+			"fieldname": "name_of_school",
+			"label": __("Name of School"),
+			"fieldtype": "Link",
+			"options": "School",
+			"width": 150,
 		},
 	]
 };

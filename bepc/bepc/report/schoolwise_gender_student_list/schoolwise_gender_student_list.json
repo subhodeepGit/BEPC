@@ -1,0 +1,33 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-05-10 17:11:27.781358",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-05-10 17:11:27.781358",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Schoolwise Gender Student List",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select\n    school_code as \"TCIL Code\",\n    udise as \"UDISE Code\",\n    name_of_school as \"School Name\",\n    district as \"District\",\n    block as \"Block\",\n    pin_code as \"Pin Code\",\n    boys as \"No. of Boys\",\n    girls as \"No. of Girls\",\n    total_students as \"Total Students\"\nfrom\n    `tabSchool Survey Form`\nGroup BY school_code",
+ "ref_doctype": "School Survey Form",
+ "report_name": "Schoolwise Gender Student List",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Management"
+  },
+  {
+   "role": "Project Manager"
+  }
+ ]
+}
