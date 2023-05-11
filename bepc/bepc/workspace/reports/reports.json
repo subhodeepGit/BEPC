@@ -155,7 +155,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "School Wise Equipment list",
    "link_count": 0,
    "link_to": "School Wise Equipment list",
@@ -352,7 +352,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-05-10 18:56:32.205139",
+ "modified": "2023-05-11 09:43:55.252169",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Reports",
