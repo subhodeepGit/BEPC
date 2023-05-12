@@ -29,7 +29,7 @@ class ElectricityConsumptionRecord(Document):
 	def validate(self):
 		self.cal()
 		self.total_price()
-		self.mainmeter()
+		# self.mainmeter()
 		# self.form_valid()
 		# self.quarter_calculation()
 		posting_date = datetime.datetime.strptime(self.date, "%Y-%m-%d")
