@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-05-10 17:11:27.781358",
+ "modified": "2023-05-15 17:27:13.268754",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Schoolwise Gender Student List",
@@ -28,6 +28,12 @@
   },
   {
    "role": "Project Manager"
+  },
+  {
+   "role": "Excecutive Helpdesk"
+  },
+  {
+   "role": "Department"
   }
  ]
 }

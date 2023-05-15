@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 1,
  "is_standard": "Yes",
- "modified": "2023-01-24 16:19:52.123087",
+ "modified": "2023-05-15 17:29:34.168262",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Usage details",
@@ -28,6 +28,12 @@
   },
   {
    "role": "Project Manager"
+  },
+  {
+   "role": "Department"
+  },
+  {
+   "role": "Excecutive Helpdesk"
   }
  ]
 }

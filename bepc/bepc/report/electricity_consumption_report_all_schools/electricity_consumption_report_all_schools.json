@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-05-10 17:31:06.978719",
+ "modified": "2023-05-15 17:29:52.225119",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption report All Schools",
@@ -22,18 +22,6 @@
  "roles": [
   {
    "role": "System Manager"
-  },
-  {
-   "role": "Approver I"
-  },
-  {
-   "role": "Approver II"
-  },
-  {
-   "role": "Data Entry Approver"
-  },
-  {
-   "role": "Data Entry Operator"
   },
   {
    "role": "Excecutive Helpdesk"

@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-05-10 17:22:45.218480",
+ "modified": "2023-05-15 17:29:07.986382",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record Report",
@@ -24,16 +24,16 @@
    "role": "System Manager"
   },
   {
-   "role": "Approver I"
+   "role": "Excecutive Helpdesk"
   },
   {
-   "role": "Data Entry Operator"
+   "role": "Project Manager"
   },
   {
-   "role": "Data Entry Approver"
+   "role": "Department"
   },
   {
-   "role": "Approver II"
+   "role": "Management"
   }
  ]
 }
