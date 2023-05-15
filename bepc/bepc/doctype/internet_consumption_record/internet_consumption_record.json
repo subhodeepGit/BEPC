@@ -21,9 +21,11 @@
   "project_end_date",
   "section_break_9",
   "date",
+  "from_date",
   "internet_service_provider",
   "column_break_11",
   "data_usage",
+  "to_date",
   "monthly_bill_amount",
   "district_coordinator_1",
   "district_coordinator_2",
@@ -38,8 +40,7 @@
   {
    "fieldname": "data_usage",
    "fieldtype": "Float",
-   "label": "Data Usage (Gb)",
-   "reqd": 1
+   "label": "Data Usage (Gb)"
   },
   {
    "fetch_from": "site.site_name",
@@ -71,7 +72,8 @@
   {
    "fieldname": "monthly_bill_amount",
    "fieldtype": "Float",
-   "label": "Monthly Bill Amount"
+   "label": "Monthly Bill Amount",
+   "reqd": 1
   },
   {
    "fieldname": "site",
@@ -117,7 +119,7 @@
    "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date",
+   "label": "Monthly Bill Date",
    "reqd": 1
   },
   {
@@ -207,11 +209,21 @@
   {
    "fieldname": "column_break_25",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-01-24 16:55:31.510366",
+ "modified": "2023-05-15 12:59:33.581611",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",
