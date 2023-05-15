@@ -4,13 +4,26 @@
  "docstatus": 0,
  "doctype": "Page",
  "idx": 0,
- "modified": "2022-11-16 15:58:02.302938",
+ "modified": "2023-05-15 17:42:21.266152",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "bi-report",
  "owner": "Administrator",
  "page_name": "bi-report",
- "roles": [],
+ "roles": [
+  {
+   "role": "Excecutive Helpdesk"
+  },
+  {
+   "role": "Project Manager"
+  },
+  {
+   "role": "Department"
+  },
+  {
+   "role": "Management"
+  }
+ ],
  "script": null,
  "standard": "Yes",
  "style": null,
