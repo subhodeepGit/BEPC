@@ -77,6 +77,9 @@
   {
    "fieldname": "site",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "TCIL Code",
    "options": "School",
    "reqd": 1
@@ -222,7 +225,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-15 13:00:56.358671",
+ "modified": "2023-05-15 16:39:16.827936",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",
