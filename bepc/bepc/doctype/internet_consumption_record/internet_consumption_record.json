@@ -72,8 +72,7 @@
   {
    "fieldname": "monthly_bill_amount",
    "fieldtype": "Float",
-   "label": "Monthly Bill Amount",
-   "reqd": 1
+   "label": "Monthly Bill Amount"
   },
   {
    "fieldname": "site",
@@ -223,7 +222,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-15 12:59:33.581611",
+ "modified": "2023-05-15 13:00:56.358671",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",
