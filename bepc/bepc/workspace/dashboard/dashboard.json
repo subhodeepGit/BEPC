@@ -1,10 +1,6 @@
 {
  "charts": [
   {
-   "chart_name": "SLA Status Chart",
-   "label": "SLA Status Chart"
-  },
-  {
    "chart_name": "Electricity Usage School-New",
    "label": "School-Wise Electricity Usage"
   },
@@ -33,7 +29,7 @@
    "label": "Teacher Training Status"
   }
  ],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Ongoing-Survey Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Wise Total Student\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Electricity Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Internet Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Teacher Training Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Theft Case record\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"SLA Status Chart\",\"col\":12}}]",
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Ongoing-Survey Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Wise Total Student\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Electricity Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Internet Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Teacher Training Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Theft Case record\",\"col\":6}}]",
  "creation": "2022-11-24 17:10:59.371082",
  "docstatus": 0,
  "doctype": "Workspace",
@@ -42,7 +38,7 @@
  "idx": 0,
  "label": "Dashboard",
  "links": [],
- "modified": "2023-01-25 17:50:19.534573",
+ "modified": "2023-05-16 15:19:16.430574",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Dashboard",
