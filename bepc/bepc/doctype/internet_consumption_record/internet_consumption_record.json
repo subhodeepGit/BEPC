@@ -232,8 +232,9 @@
   },
   {
    "fieldname": "internet_service_provider_lab_1",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Internet service provider",
+   "options": "\nAIRTEL\nJIO",
    "reqd": 1
   },
   {
@@ -258,8 +259,9 @@
   },
   {
    "fieldname": "internet_service_provider_lab_2",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Internet service provider",
+   "options": "\nAirtel\nJIO",
    "reqd": 1
   },
   {
@@ -275,7 +277,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-17 11:09:27.369303",
+ "modified": "2023-05-17 12:48:37.080678",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",
