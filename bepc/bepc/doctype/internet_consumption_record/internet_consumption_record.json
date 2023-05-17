@@ -20,28 +20,31 @@
   "pin_code",
   "project_end_date",
   "section_break_9",
-  "date",
   "from_date",
-  "internet_service_provider",
-  "column_break_11",
-  "data_usage",
   "to_date",
-  "monthly_bill_amount",
-  "district_coordinator_1",
-  "district_coordinator_2",
-  "quarter",
-  "last_payment_date",
+  "column_break_11",
+  "date",
+  "total_bill_amount",
+  "lab_1_details_section",
+  "data_usage_lab_1",
+  "internet_service_provider_lab_1",
+  "column_break_22",
+  "monthly_bill_amount_lab_1",
+  "lab_2_details_section",
+  "data_usage_lab_2",
+  "internet_service_provider_lab_2",
+  "column_break_27",
+  "monthly_bill_amount_lab_2",
   "section_break_23",
   "payment_date",
   "column_break_25",
-  "payment_details"
+  "payment_details",
+  "district_coordinator_1",
+  "district_coordinator_2",
+  "quarter",
+  "last_payment_date"
  ],
  "fields": [
-  {
-   "fieldname": "data_usage",
-   "fieldtype": "Float",
-   "label": "Data Usage (Gb)"
-  },
   {
    "fetch_from": "site.site_name",
    "fieldname": "siteschool_name",
@@ -62,17 +65,6 @@
    "options": "Districts",
    "read_only": 1,
    "reqd": 1
-  },
-  {
-   "fieldname": "internet_service_provider",
-   "fieldtype": "Data",
-   "label": "Internet service provider",
-   "reqd": 1
-  },
-  {
-   "fieldname": "monthly_bill_amount",
-   "fieldtype": "Float",
-   "label": "Monthly Bill Amount"
   },
   {
    "fieldname": "site",
@@ -221,11 +213,69 @@
    "fieldname": "to_date",
    "fieldtype": "Date",
    "label": "To date"
+  },
+  {
+   "fieldname": "total_bill_amount",
+   "fieldtype": "Float",
+   "label": "Total Bill Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lab_1_details_section",
+   "fieldtype": "Section Break",
+   "label": "Lab 1 Details"
+  },
+  {
+   "fieldname": "data_usage_lab_1",
+   "fieldtype": "Float",
+   "label": "Data Usage (Gb)"
+  },
+  {
+   "fieldname": "internet_service_provider_lab_1",
+   "fieldtype": "Data",
+   "label": "Internet service provider",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "monthly_bill_amount_lab_1",
+   "fieldtype": "Float",
+   "label": "Monthly Bill Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lab_2_details_section",
+   "fieldtype": "Section Break",
+   "label": "Lab 2 Details"
+  },
+  {
+   "fieldname": "data_usage_lab_2",
+   "fieldtype": "Data",
+   "label": "Data Usage (Gb)"
+  },
+  {
+   "fieldname": "internet_service_provider_lab_2",
+   "fieldtype": "Data",
+   "label": "Internet service provider",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "monthly_bill_amount_lab_2",
+   "fieldtype": "Float",
+   "label": "Monthly Bill Amount",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-15 16:39:16.827936",
+ "modified": "2023-05-17 11:09:27.369303",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",

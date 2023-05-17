@@ -24,6 +24,7 @@ class InternetconsumptionRecord(Document):
 	
 	def validate(self):
 		School_number_validation(self)
+		monthly_bill_calculate(self)
 	# 	self.form_valid()
 		posting_date = datetime.datetime.strptime(self.date, "%Y-%m-%d")
 		self.last_payment_date = posting_date + datetime.timedelta(days=5)
@@ -97,3 +98,6 @@ def School_number_validation(self):
 			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
 		if len(self.school_contact_number)<10:
 			frappe.throw("Field <b>Asst. Contact Number</b> must be 10 Digits")
+
+def monthly_bill_calculate(self):
+	self.total_bill_amount = self.monthly_bill_amount_lab_1 + self.monthly_bill_amount_lab_2
