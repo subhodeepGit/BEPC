@@ -32,15 +32,15 @@ def theft():
     """, as_dict=True)
 
     tot_rep = frappe.db.sql("""
-    SELECT count(name) as "Tot_Fir_Log" FROM `tabTheft Case record` where delivery_challan_receipt IS NOT NULL;
+    SELECT count(name) as "Tot_Rep" FROM `tabTheft Case record` where delivery_challan_receipt IS NOT NULL;
     """, as_dict=True)
 
     tot_claim = frappe.db.sql("""
-    SELECT count(name) as "Tot_Rec" FROM `tabTheft Case record` where status = "Settled";
+    SELECT count(name) as "Tot_Claim" FROM `tabTheft Case record` where status = "Settled";
     """, as_dict=True)
 
     tot_to_be_claimed = frappe.db.sql("""
-    SELECT count(name) as "Tot_Rec" FROM `tabTheft Case record` where status = "Not Settled";
+    SELECT count(name) as "Tot_to_be_Claimed" FROM `tabTheft Case record` where status = "Not Settled";
     """, as_dict=True)
 
     return tot_sclass_theft, tot_fir_log, tot_rec, tot_rep, tot_claim, tot_to_be_claimed
@@ -59,7 +59,7 @@ def complaint_log():
     """, as_dict=True)
 
     tot_comp_close = frappe.db.sql("""
-    SELECT count(name) as "Tot_Comp_Open" FROM `tabissues` where status = "Closed";
+    SELECT count(name) as "Tot_Comp_Close" FROM `tabissues` where status = "Closed";
     """, as_dict=True)
 
     tod_comp_log =  frappe.db.sql("""
@@ -67,7 +67,7 @@ def complaint_log():
     """, today, as_dict=True)
 
     tod_comp_close = frappe.db.sql("""
-    SELECT count(name) as "Tod_Comp_Open" FROM `tabissues` where status = "Closed" AND opening_date = %s;
+    SELECT count(name) as "Tod_Comp_Close" FROM `tabissues` where status = "Closed" AND opening_date = %s;
     """, today, as_dict=True)
     
     return tot_comp_log, tot_comp_open, tot_comp_close, tod_comp_log, tod_comp_close
