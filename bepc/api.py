@@ -72,100 +72,116 @@ def complaint_log():
     
     return tot_comp_log, tot_comp_open, tot_comp_close, tod_comp_log, tod_comp_close
 
-try:
-    mydb = mysql.connector.connect(
-        host = "souliot.mariadb.database.azure.com",
-        user = "bepcpdf@souliot.mariadb.database.azure.com",
-        password = "bepc@arm01",
-        database="bepcprod"
-    )
-except Error as e:
-    print("Error connecting to MySQL:", e)
 
-try:  
+try:
     @frappe.whitelist()
     def internet_service():
-        cursor = mydb.cursor()
-        cursor.execute("SELECT COUNT(DISTINCT SerialNo) AS tot_net_not_work FROM schooldata WHERE SerialNo NOT IN (SELECT DISTINCT SerialNo FROM lastdetails);")
-        tot_net_not_work = None  # Initialize a variable to store the first count
-        for x in cursor:
-            tot_net_not_work = x[0]  # Assign the value to the variable
+        mydb = mysql.connector.connect(
+            host="souliot.mariadb.database.azure.com",
+            user="bepcpdf@souliot.mariadb.database.azure.com",
+            password="bepc@arm01",
+            database="bepcprod"
+        )
 
-        cursor1 = mydb.cursor()
-        cursor1.execute("SELECT COUNT(DISTINCT SerialNo) AS Tot_Net_Work FROM lastdetails;")
-        tot_net_work = None  # Initialize a variable to store the second count
-        for y in cursor1:
-            tot_net_work = y[0]  # Assign the value to the variable
+        try:
+            cursor = mydb.cursor()
+            cursor.execute("SELECT COUNT(DISTINCT SerialNo) AS tot_net_not_work FROM schooldata WHERE SerialNo NOT IN (SELECT DISTINCT SerialNo FROM lastdetails);")
+            tot_net_not_work = None  # Initialize a variable to store the first count
+            for x in cursor:
+                tot_net_not_work = x[0]  # Assign the value to the variable
 
-        tot_net_deploy = tot_net_work + tot_net_not_work
+            cursor1 = mydb.cursor()
+            cursor1.execute("SELECT COUNT(DISTINCT SerialNo) AS Tot_Net_Work FROM lastdetails;")
+            tot_net_work = None  # Initialize a variable to store the second count
+            for y in cursor1:
+                tot_net_work = y[0]  # Assign the value to the variable
 
-        return tot_net_not_work, tot_net_work, tot_net_deploy  # Return the values as a tuple
-except Error as e:
-    print("Error in fetching data from lastdetails table", e)
-finally:
-    # Close the connection
-    if mydb.is_connected():
-        mydb.close()
-        print("MySQL connection closed")
+            tot_net_deploy = tot_net_work + tot_net_not_work
 
-try:  
+            return tot_net_not_work, tot_net_work, tot_net_deploy  # Return the values as a tuple
+        except mysql.connector.Error as e:
+            print("Error in fetching data from lastdetails table", e)
+        finally:
+            # Close the connection
+            if mydb.is_connected():
+                mydb.close()
+                print("MySQL connection closed")
+
     @frappe.whitelist()
     def smart_class_established():
-        cursor = mydb.cursor()
-        cursor.execute("select count(distinct SerialNo) as Tot_SClass_Est from lastdetails")
-        tot_sclass_est = None  # Initialize a variable to store the first count
-        for x in cursor:
-            tot_sclass_est = x[0]  # Assign the value to the variable
+        mydb = mysql.connector.connect(
+            host="souliot.mariadb.database.azure.com",
+            user="bepcpdf@souliot.mariadb.database.azure.com",
+            password="bepc@arm01",
+            database="bepcprod"
+        )
 
-        tot_sclass_not_est=1232-tot_sclass_est
+        try:
+            cursor = mydb.cursor()
+            cursor.execute("select count(distinct SerialNo) as Tot_SClass_Est from lastdetails")
+            tot_sclass_est = None  # Initialize a variable to store the first count
+            for x in cursor:
+                tot_sclass_est = x[0]  # Assign the value to the variable
 
-        cursor1 = mydb.cursor()
-        cursor1.execute("select count(distinct SerialNo) as Tot_Fun_SClass from lastdetails where date(Lastactivetime) = date(now())")
-        tot_fun_sclass = None  # Initialize a variable to store the second count
-        for y in cursor1:
-            tot_fun_sclass = y[0]  # Assign the value to the variable
+            tot_sclass_not_est = 1232 - tot_sclass_est
 
-        cursor2 = mydb.cursor()
-        cursor2.execute("select count(distinct SerialNo) as Tot_Not_Fun_SClass from lastdetails where date(Lastactivetime) != date(now())")
-        tot_not_fun_sclass = None  # Initialize a variable to store the second count
-        for z in cursor2:
-            tot_not_fun_sclass = z[0]  # Assign the value to the variable
-        return tot_sclass_est, tot_sclass_not_est, tot_fun_sclass, tot_not_fun_sclass
-except Error as e:
-    print("Error in fetching data from lastdetails table", e)
-finally:
-    # Close the connection
-    if mydb.is_connected():
-        mydb.close()
-        print("MySQL connection closed")
+            cursor1 = mydb.cursor()
+            cursor1.execute("select count(distinct SerialNo) as Tot_Fun_SClass from lastdetails where date(Lastactivetime) = date(now())")
+            tot_fun_sclass = None  # Initialize a variable to store the second count
+            for y in cursor1:
+                tot_fun_sclass = y[0]  # Assign the value to the variable
 
-try:
+            cursor2 = mydb.cursor()
+            cursor2.execute("select count(distinct SerialNo) as Tot_Not_Fun_SClass from lastdetails where date(Lastactivetime) != date(now())")
+            tot_not_fun_sclass = None  # Initialize a variable to store the second count
+            for z in cursor2:
+                tot_not_fun_sclass = z[0]  # Assign the value to the variable
+            return tot_sclass_est, tot_sclass_not_est, tot_fun_sclass, tot_not_fun_sclass
+        except mysql.connector.Error as e:
+            print("Error in fetching data from lastdetails table", e)
+        finally:
+            # Close the connection
+            if mydb.is_connected():
+                mydb.close()
+                print("MySQL connection closed")
+
     @frappe.whitelist()
     def smart_class_functional_nonfunctional():
-        cursor = mydb.cursor()
-        cursor.execute("SELECT sum(Duration/60) as tot_sclass_fun_hrs from dailyaggregation where SystemDate = CURDATE()")
-        tot_sclass_fun_hrs = None  # Initialize a variable to store the second count
-        for x in cursor:
-            tot_sclass_fun_hrs = x[0]  # Assign the value to the variable
+        mydb = mysql.connector.connect(
+            host="souliot.mariadb.database.azure.com",
+            user="bepcpdf@souliot.mariadb.database.azure.com",
+            password="bepc@arm01",
+            database="bepcprod"
+        )
 
-        cursor1 = mydb.cursor()
-        cursor1.execute("SELECT count(distinct SerialNo)*4 as tot_sclass_not_fun_hrs from schooldata where SerialNo not in(select distinct SerialNo from lastdetails)")
-        tot_sclass_not_fun_hrs = None  # Initialize a variable to store the second count
-        for y in cursor1:
-            tot_sclass_not_fun_hrs = y[0]  # Assign the value to the variable
-            print(type(y[0]))
+        try:
+            cursor = mydb.cursor()
+            cursor.execute("SELECT sum(Duration/60) as tot_sclass_fun_hrs from dailyaggregation where SystemDate = CURDATE()")
+            tot_sclass_fun_hrs = None  # Initialize a variable to store the second count
+            for x in cursor:
+                tot_sclass_fun_hrs = x[0]  # Assign the value to the variable
 
-        if tot_sclass_fun_hrs is None:
-            tot_sclass_fun_hrs = 0
-        elif tot_sclass_not_fun_hrs is None:
-            tot_sclass_not_fun_hrs = 0
-        tot_sclass_work_hrs = tot_sclass_fun_hrs+tot_sclass_not_fun_hrs
+            cursor1 = mydb.cursor()
+            cursor1.execute("SELECT count(distinct SerialNo)*4 as tot_sclass_not_fun_hrs from schooldata where SerialNo not in(select distinct SerialNo from lastdetails)")
+            tot_sclass_not_fun_hrs = None  # Initialize a variable to store the second count
+            for y in cursor1:
+                tot_sclass_not_fun_hrs = y[0]  # Assign the value to the variable
+                print(type(y[0]))
 
-        return tot_sclass_fun_hrs, tot_sclass_not_fun_hrs, tot_sclass_work_hrs
-except Error as e:
-    print("Error in fetching data from lastdetails, dailyaggregation table:", e)
-finally:
-    # Close the connection
-    if mydb.is_connected():
-        mydb.close()
-        print("MySQL connection closed")
+            if tot_sclass_fun_hrs is None:
+                tot_sclass_fun_hrs = 0
+            elif tot_sclass_not_fun_hrs is None:
+                tot_sclass_not_fun_hrs = 0
+            tot_sclass_work_hrs = tot_sclass_fun_hrs+tot_sclass_not_fun_hrs
+
+            return tot_sclass_fun_hrs, tot_sclass_not_fun_hrs, tot_sclass_work_hrs
+        except Error as e:
+            print("Error in fetching data from lastdetails, dailyaggregation table:", e)
+        finally:
+            # Close the connection
+            if mydb.is_connected():
+                mydb.close()
+                print("MySQL connection closed")
+
+except mysql.connector.Error as e:
+    print("Error connecting to the database:", e)
