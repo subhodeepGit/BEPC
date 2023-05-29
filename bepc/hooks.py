@@ -111,13 +111,17 @@ doc_events = {
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 
-# 	"cron": {
-# 		"* * * * *": [
-# 			"bepc.tasks.cron"
-# 		]
-# 	},
+	"cron": {
+		"* 12 * * *": [
+			"bepc.api.generateICTDataApi"
+			# "bepc.tasks.cron"
+		],
+		"* 17 * * *": [
+			"bepc.api.generateICTDataApi"
+		]
+	},
 
 # 	"all": [
 # 		"bepc.tasks.all"
@@ -134,7 +138,7 @@ doc_events = {
 # 	"monthly": [
 # 		"bepc.tasks.monthly"
 # 	],
-# }
+}
 
 # Testing
 # -------
