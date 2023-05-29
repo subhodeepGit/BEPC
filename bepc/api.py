@@ -270,7 +270,7 @@ def generateICTDataApi():
       
     headers = {
     'Accept': 'application/json',
-    'api-key': 'eGR6THBQZ0k5amNRMWFGNWRTUlZ1bTVoNC9kMi9OY3RxNERzTzB2REF0S0cvdlhXSC9ldEtKRE5tRE1ZRG5RQw==',
+    'api-key': 'U0F0T2NxYnVoNFVUeU8xd25MZmJuWUlFNGlxNWZwT2JKMisya2R6VEZpaGMxUEwwY0w5cjJjT0dmeUtjZm83SEcxTkxlTElCb0hoSDF5M2Z2S2xNNEE9PQ==',
     'auth-token' : auth_token,
     'Content-Type': 'application/json'
     }
