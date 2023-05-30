@@ -163,8 +163,7 @@
    "fieldname": "school_consent",
    "fieldtype": "Link",
    "label": "School Consent",
-   "options": "School Consent form for Teacher Training",
-   "reqd": 1
+   "options": "School Consent form for Teacher Training"
   },
   {
    "fieldname": "training_venue",
@@ -214,10 +213,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-29 16:14:30.848297",
+ "modified": "2023-05-30 15:01:15.741987",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -235,6 +235,7 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1,
  "track_seen": 1
 }
