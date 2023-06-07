@@ -114,11 +114,11 @@ doc_events = {
 scheduler_events = {
 
 	"cron": {
-		"* 12 * * *": [
+		"0 12 * * *": [
 			"bepc.api.generateICTDataApi"
 			# "bepc.tasks.cron"
 		],
-		"* 17 * * *": [
+		"0 17 * * *": [
 			"bepc.api.generateICTDataApi"
 		]
 	},

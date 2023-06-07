@@ -106,7 +106,8 @@ except mysql.connector.Error as e:
     
 #Auth Token Generation    
 def generate_auth_token():
-    api_url = "http://150.230.143.55/esk-mobile-api/api/getToken"
+    api_url = "https://mappeshikshakosh.bihar.gov.in/api/getToken"
+    # api_url = "http://150.230.143.55/esk-mobile-api/api/getToken"
     api_key = "U0F0T2NxYnVoNFVUeU8xd25MZmJuWUlFNGlxNWZwT2JKMisya2R6VEZpaGMxUEwwY0w5cjJjT0dmeUtjZm83SEcxTkxlTElCb0hoSDF5M2Z2S2xNNEE9PQ=="
     headers = {
         "api-key": api_key
@@ -125,7 +126,8 @@ def generate_auth_token():
     
 #Posting data
 def generateICTDataApi():
-    url = "http://150.230.143.55/esk-mobile-api/api/console/generateICTDataApi"
+    url = "https://mappeshikshakosh.bihar.gov.in/api/console/generateICTDataApi"
+    # url = "http://150.230.143.55/esk-mobile-api/api/console/generateICTDataApi"
 
     # Student record
     total_enrolled_boy_dict=frappe.db.sql("""SELECT CONVERT (sum(boys) , INT) as Total_Enr_Boy FROM `tabSchool Survey Form`""", as_dict=True)
