@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-02-14 09:53:22.365350",
+ "modified": "2023-06-08 21:04:09.716479",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "issue Reports",
@@ -21,7 +21,16 @@
  "report_type": "Script Report",
  "roles": [
   {
-   "role": "All"
+   "role": "Department"
+  },
+  {
+   "role": "Management"
+  },
+  {
+   "role": "District Coordinator"
+  },
+  {
+   "role": "Project Manager"
   }
  ]
 }

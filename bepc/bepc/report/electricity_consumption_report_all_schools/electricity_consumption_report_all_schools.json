@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-05-15 17:29:52.225119",
+ "modified": "2023-06-08 21:14:00.988490",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption report All Schools",
@@ -20,12 +20,6 @@
  "report_name": "Electricity Consumption report All Schools",
  "report_type": "Query Report",
  "roles": [
-  {
-   "role": "System Manager"
-  },
-  {
-   "role": "Excecutive Helpdesk"
-  },
   {
    "role": "Project Manager"
   },

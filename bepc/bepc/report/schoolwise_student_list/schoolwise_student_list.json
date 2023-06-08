@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-05-15 17:27:28.418348",
+ "modified": "2023-06-08 21:08:37.975109",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Schoolwise Student List",
@@ -21,19 +21,16 @@
  "report_type": "Query Report",
  "roles": [
   {
-   "role": "System Manager"
-  },
-  {
    "role": "Management"
   },
   {
    "role": "Project Manager"
   },
   {
-   "role": "Excecutive Helpdesk"
+   "role": "Department"
   },
   {
-   "role": "Department"
+   "role": "District Coordinator"
   }
  ]
 }

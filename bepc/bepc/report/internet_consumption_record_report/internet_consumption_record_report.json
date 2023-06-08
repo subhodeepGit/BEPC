@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-05-15 17:29:07.986382",
+ "modified": "2023-06-08 21:11:30.161198",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record Report",
@@ -20,12 +20,6 @@
  "report_name": "Internet consumption Record Report",
  "report_type": "Query Report",
  "roles": [
-  {
-   "role": "System Manager"
-  },
-  {
-   "role": "Excecutive Helpdesk"
-  },
   {
    "role": "Project Manager"
   },

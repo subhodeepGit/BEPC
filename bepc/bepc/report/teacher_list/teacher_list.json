@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-05-15 17:31:23.718355",
+ "modified": "2023-06-08 21:14:19.778753",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher List",
@@ -19,9 +19,6 @@
  "report_name": "Teacher List",
  "report_type": "Script Report",
  "roles": [
-  {
-   "role": "System Manager"
-  },
   {
    "role": "Project Manager"
   },
@@ -33,9 +30,6 @@
   },
   {
    "role": "Department"
-  },
-  {
-   "role": "Excecutive Helpdesk"
   }
  ]
 }

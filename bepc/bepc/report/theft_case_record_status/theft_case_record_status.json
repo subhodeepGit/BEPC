@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-01-24 17:40:56.776745",
+ "modified": "2023-06-08 21:10:50.475938",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Case record status",
@@ -21,13 +21,13 @@
  "report_type": "Script Report",
  "roles": [
   {
-   "role": "System Manager"
-  },
-  {
    "role": "Management"
   },
   {
    "role": "Project Manager"
+  },
+  {
+   "role": "Department"
   }
  ]
 }

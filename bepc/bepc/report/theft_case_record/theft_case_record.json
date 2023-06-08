@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-05-15 17:30:58.023828",
+ "modified": "2023-06-08 21:03:00.033839",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Case record",
@@ -21,12 +21,6 @@
  "report_type": "Script Report",
  "roles": [
   {
-   "role": "All"
-  },
-  {
-   "role": "Excecutive Helpdesk"
-  },
-  {
    "role": "Project Manager"
   },
   {
@@ -34,6 +28,9 @@
   },
   {
    "role": "Department"
+  },
+  {
+   "role": "District Coordinator"
   }
  ]
 }

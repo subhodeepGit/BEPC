@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 1,
  "is_standard": "Yes",
- "modified": "2023-05-15 17:27:59.395987",
+ "modified": "2023-06-08 21:11:09.204425",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet Usage details",
@@ -21,9 +21,6 @@
  "report_type": "Script Report",
  "roles": [
   {
-   "role": "System Manager"
-  },
-  {
    "role": "Management"
   },
   {
@@ -31,9 +28,6 @@
   },
   {
    "role": "Department"
-  },
-  {
-   "role": "Excecutive Helpdesk"
   }
  ]
 }

@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-05-15 17:24:16.066251",
+ "modified": "2023-06-08 21:05:57.685140",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "All Closed Issue",
@@ -20,9 +20,6 @@
  "report_name": "All Closed Issue",
  "report_type": "Query Report",
  "roles": [
-  {
-   "role": "Excecutive Helpdesk"
-  },
   {
    "role": "Project Manager"
   },

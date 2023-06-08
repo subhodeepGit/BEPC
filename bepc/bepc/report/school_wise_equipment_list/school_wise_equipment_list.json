@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-02-13 15:06:06.045633",
+ "modified": "2023-06-08 21:00:12.206302",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Wise Equipment list",
@@ -21,7 +21,16 @@
  "report_type": "Script Report",
  "roles": [
   {
-   "role": "All"
+   "role": "Department"
+  },
+  {
+   "role": "Management"
+  },
+  {
+   "role": "Project Manager"
+  },
+  {
+   "role": "District Coordinator"
   }
  ]
 }

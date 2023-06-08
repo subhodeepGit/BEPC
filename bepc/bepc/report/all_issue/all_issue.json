@@ -9,7 +9,7 @@
  "filters": [],
  "idx": 0,
  "is_standard": "Yes",
- "modified": "2023-05-10 18:52:04.484534",
+ "modified": "2023-06-08 21:15:45.187563",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "All Issue",
@@ -21,24 +21,6 @@
  "report_type": "Query Report",
  "roles": [
   {
-   "role": "Support Team"
-  },
-  {
-   "role": "Approver I"
-  },
-  {
-   "role": "Approver II"
-  },
-  {
-   "role": "Data Entry Approver"
-  },
-  {
-   "role": "Data Entry Operator"
-  },
-  {
-   "role": "Excecutive Helpdesk"
-  },
-  {
    "role": "Project Manager"
   },
   {
@@ -46,9 +28,6 @@
   },
   {
    "role": "District Coordinator"
-  },
-  {
-   "role": "HelpDesk Admin"
   },
   {
    "role": "Department"
