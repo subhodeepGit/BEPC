@@ -58,8 +58,7 @@
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email",
-   "options": "Email",
-   "reqd": 1
+   "options": "Email"
   },
   {
    "fieldname": "contact_number",
@@ -169,7 +168,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-15 13:15:21.136570",
+ "modified": "2023-06-09 12:28:42.098970",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher",
