@@ -6,8 +6,8 @@ from frappe.model.document import Document
 from datetime import datetime
 import datetime
 from dateutil import relativedelta
-from datetime import date
-from datetime import timedelta
+from datetime import date, timedelta
+from datetime import datetime
 
 class ElectricityConsumptionRecord(Document):
 	# def form_valid(self):
@@ -27,13 +27,27 @@ class ElectricityConsumptionRecord(Document):
 		School_number_validation(self)
 
 	def validate(self):
+		if self.payment_date == None:
+			frappe.throw("Payment date cannot be Empty")
 		self.cal()
 		self.total_price()
 		# self.mainmeter()
 		# self.form_valid()
 		# self.quarter_calculation()
-		posting_date = datetime.datetime.strptime(self.date, "%Y-%m-%d")
-		self.last_payment_date = posting_date + datetime.timedelta(days=5)
+		posting_date = datetime.strptime(self.date, "%Y-%m-%d")
+		self.last_payment_date = posting_date + timedelta(days=5)
+  
+		if self.price_per_unit < 0:
+			frappe.throw("Price per unit cannot be less than 0")
+
+		today = date.today()
+		print(type(today))
+		payment_date = datetime.strptime(self.payment_date, "%Y-%m-%d").date()
+		bill_posting_date = datetime.strptime(self.date, "%Y-%m-%d").date()
+		if bill_posting_date > today:
+			frappe.throw("Bill Posting Date cannot be greater than todays date")
+		if payment_date > today:
+			frappe.throw("Payment date cannot be greater than todays date")
 
 	
 	def cal(self):
