@@ -37,7 +37,10 @@ class InternetconsumptionRecord(Document):
         if self.from_date > self.to_date:
             frappe.throw("From date cannot be greater than to date")
          
-        if self.monthly_bill_amount_lab_1 or self.monthly_bill_amount_lab_2 > 0:
+        if self.monthly_bill_amount_lab_1 < 0:
+            frappe.throw("Bill amount should be greater than 0")
+            
+        if self.monthly_bill_amount_lab_2 < 0:
             frappe.throw("Bill amount should be greater than 0")
    
         posting_date = datetime.strptime(self.date, "%Y-%m-%d")
