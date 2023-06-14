@@ -1,4 +1,6 @@
 from . import __version__ as app_version
+from frappe import local, __version__ as frappe_version
+import frappe.utils.response
 
 app_name = "bepc"
 app_title = "Bepc"
@@ -91,7 +93,7 @@ doctype_js = {
 # Override standard doctype classes
 
 # override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
+# 	"File": "bepc.bepc.doctype.file.File"
 # }
 
 # Document Events
@@ -103,26 +105,34 @@ doc_events = {
 		"validate": "bepc.bepc.doctype.issues.validate",
 		"before_save":"bepc.bepc.doctype.issues.before_save"
 	},
-	"File": {
-		"validate": "bepc.bepc.validations.file.validate",
-	}
 }
 
 # Scheduled Tasks
 # ---------------
 
-scheduler_events = {
+# scheduler_events = {
 
+# 	"cron": {
+# 		# "0 12 * * *": [
+#       	"* * * * *": [
+# 		# 	"bepc.api.generateICTDataApi"
+# 			"bepc.tasks.cron"
+# 		],
+# 		# "0 17 * * *": [
+# 		# 	"bepc.api.generateICTDataApi"
+# 		# ]
+# 	},
+
+scheduler_events = {
 	"cron": {
 		"0 12 * * *": [
-			"bepc.api.generateICTDataApi"
-			# "bepc.tasks.cron"
+			"bepc.tasks.post_data"
 		],
 		"0 17 * * *": [
-			"bepc.api.generateICTDataApi"
+			"bepc.tasks.post_data"
 		]
-	},
-
+	}
+}
 # 	"all": [
 # 		"bepc.tasks.all"
 # 	],
@@ -138,7 +148,7 @@ scheduler_events = {
 # 	"monthly": [
 # 		"bepc.tasks.monthly"
 # 	],
-}
+# }
 
 # Testing
 # -------
@@ -217,3 +227,14 @@ user_data_fields = [
 # 	"bepc.auth.validate"
 # ]
 
+# Set Content Security Policy (CSP)
+# frappe.local.response.headers['Content-Security-Policy'] = "default-src 'self';"
+
+# def set_content_security_policy():
+#     local.response.headers['Content-Security-Policy'] = "script-src 'self';"
+
+# if frappe_version >= "13":
+#     # Register the `set_content_security_policy` function as a Frappe after_request middleware
+#     def after_request(response):
+#         set_content_security_policy()
+#         return response
