@@ -10,7 +10,6 @@ from datetime import datetime
 ##### Priytesh Code Start
 import requests
 import json
-import frappe
 from datetime import date
 import mysql.connector
 from mysql.connector import Error

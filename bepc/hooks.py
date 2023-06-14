@@ -1,6 +1,4 @@
 from . import __version__ as app_version
-from frappe import local, __version__ as frappe_version
-import frappe.utils.response
 
 app_name = "bepc"
 app_title = "Bepc"
@@ -180,21 +178,21 @@ after_migrate = [
 		'bepc.patches.migrate_patch.set_custom_role_permission',
 ]
 
-fixtures = [
-		{"dt": "Custom DocPerm", "filters": [
-		[
-			"parent", "not in", [
-				"DocType"
-			]
-		]
-	]}
+# fixtures = [
+# 		{"dt": "Custom DocPerm", "filters": [
+# 		[
+# 			"parent", "not in", [
+# 				"DocType"
+# 			]
+# 		]
+# 	]}
 # 	{"dt" : "Workflow"},
 	# {"dt": "Workflow Action Master"},
 	# {"dt" : "Workflow State"}
 	# {"dt" : "Role"},
 	# {"dt" : "Module Profile"},
 # 	{"dt" : "Role Profile"}
-]
+# ]
 
 # User Data Protection
 # --------------------
@@ -219,22 +217,3 @@ user_data_fields = [
 		"doctype": "{doctype_4}"
 	}
 ]
-
-# Authentication and authorization
-# --------------------------------
-
-# auth_hooks = [
-# 	"bepc.auth.validate"
-# ]
-
-# Set Content Security Policy (CSP)
-# frappe.local.response.headers['Content-Security-Policy'] = "default-src 'self';"
-
-# def set_content_security_policy():
-#     local.response.headers['Content-Security-Policy'] = "script-src 'self';"
-
-# if frappe_version >= "13":
-#     # Register the `set_content_security_policy` function as a Frappe after_request middleware
-#     def after_request(response):
-#         set_content_security_policy()
-#         return response
