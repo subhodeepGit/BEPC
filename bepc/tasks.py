@@ -362,6 +362,10 @@ def post_data():
 
     response = requests.request("POST", url, headers=headers, data=payload)
 
+    recipients = "priytesh.shah@soulunileaders.com"
+    subject = "API Data Sent"
+    message = response.txt
+    send_mail(recipients,subject,message)
     print("\n\n\n\n")
     print(response.text)
 ##### Priytesh Code End 
