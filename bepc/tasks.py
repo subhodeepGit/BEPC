@@ -367,5 +367,5 @@ def post_data():
     message = response.txt
     send_mail(recipients,subject,message)
     print("\n\n\n\n")
-    print(response.text)
+    print(response.txt)
 ##### Priytesh Code End 
