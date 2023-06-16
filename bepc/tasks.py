@@ -364,7 +364,7 @@ def post_data():
 
     recipients = "priytesh.shah@soulunileaders.com"
     subject = "API Data Sent"
-    message = response.text
+    message = payload
     
     send_mail(recipients,subject,message)
     print("\n\n\n\n")

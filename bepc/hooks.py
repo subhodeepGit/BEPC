@@ -176,6 +176,7 @@ after_migrate = [
         'bepc.patches.migrate_patch.add_roles',
 		'bepc.patches.migrate_patch.add_module_profile',
 		'bepc.patches.migrate_patch.set_custom_role_permission',
+ 		'bepc.security.execute',
 ]
 
 # fixtures = [
