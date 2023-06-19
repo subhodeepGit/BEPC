@@ -145,17 +145,17 @@
   },
   {
    "fieldname": "fir_copy",
-   "fieldtype": "Attach",
+   "fieldtype": "Attach Image",
    "label": "FIR Copy"
   },
   {
    "fieldname": "insurance_claim_receipt",
-   "fieldtype": "Attach",
+   "fieldtype": "Attach Image",
    "label": "Insurance Claim receipt"
   },
   {
    "fieldname": "delivery_challan_receipt",
-   "fieldtype": "Attach",
+   "fieldtype": "Attach Image",
    "label": "Delivery Challan receipt"
   },
   {
@@ -164,7 +164,7 @@
   },
   {
    "fieldname": "ntr_copy",
-   "fieldtype": "Attach",
+   "fieldtype": "Attach Image",
    "label": "NTR Copy"
   },
   {
@@ -229,7 +229,7 @@
   },
   {
    "fieldname": "police_station_acknowledgement_receipt",
-   "fieldtype": "Attach",
+   "fieldtype": "Attach Image",
    "label": "Police Station Acknowledgement receipt"
   },
   {
@@ -256,10 +256,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-26 12:33:32.066007",
+ "modified": "2023-06-19 22:25:51.796907",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Case record",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -277,5 +278,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }

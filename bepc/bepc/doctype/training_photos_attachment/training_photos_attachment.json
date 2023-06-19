@@ -12,8 +12,7 @@
  "fields": [
   {
    "fieldname": "attach_photos",
-   "fieldtype": "Attach",
-   "in_list_view": 1,
+   "fieldtype": "Attach Image",
    "label": "Attach photos",
    "print_width": "10",
    "width": "5px"
@@ -30,12 +29,13 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-09-09 13:16:18.109449",
+ "modified": "2023-06-19 22:21:00.988845",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Training Photos Attachment",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "states": []
 }

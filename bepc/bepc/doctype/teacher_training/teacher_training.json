@@ -28,7 +28,6 @@
   "section_break_17",
   "training_photos_attachment",
   "training_attendance_attachment",
-  "training_recording_attachment",
   "training_assessment_attachment",
   "feedback_attachment",
   "venue_pictures_attachment",
@@ -136,12 +135,6 @@
    "options": "Training Attendance Attachment"
   },
   {
-   "fieldname": "training_recording_attachment",
-   "fieldtype": "Table",
-   "label": "Training Recording Attachment",
-   "options": "Training Recording Attachment"
-  },
-  {
    "fieldname": "training_assessment_attachment",
    "fieldtype": "Table",
    "label": "Training Assessment Attachment",
@@ -213,7 +206,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-30 15:01:15.741987",
+ "modified": "2023-06-19 22:24:41.946820",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Teacher Training",

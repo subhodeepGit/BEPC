@@ -299,8 +299,7 @@
    "fetch_from": "school_code.panchayat",
    "fieldname": "panchayat",
    "fieldtype": "Data",
-   "label": "Panchayat",
-   "reqd": 0
+   "label": "Panchayat"
   },
   {
    "fetch_from": "school_code.pin_code",
@@ -349,8 +348,7 @@
    "fieldname": "school_mail_id",
    "fieldtype": "Data",
    "label": "School Mail Id",
-   "options": "Email",
-   "reqd": 0
+   "options": "Email"
   },
   {
    "fetch_from": "school_code.school_contact_no",
@@ -1383,7 +1381,7 @@
   },
   {
    "fieldname": "upload_survey_form_physical_copy",
-   "fieldtype": "Attach",
+   "fieldtype": "Attach Image",
    "label": "Upload Survey Form Physical Copy"
   },
   {
@@ -1405,10 +1403,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-16 11:56:23.225410",
+ "modified": "2023-06-19 22:17:37.684362",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -1426,5 +1425,6 @@
  ],
  "sort_field": "school_code",
  "sort_order": "ASC",
+ "states": [],
  "track_changes": 1
 }
