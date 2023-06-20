@@ -140,7 +140,7 @@ try:
                 tot_sclass_est_systemcount = x[0]  # Assign the value to the variable
             tot_sclass_est = tot_sclass_est_systemcount
             
-            tot_sclass_not_est = (2462 - tot_sclass_est)
+            tot_sclass_not_est = (2464 - tot_sclass_est)
 
             cursor1 = mydb.cursor()
             cursor1.execute("select count(distinct SerialNo) as Tot_Fun_SClass from lastdetails where date(Lastactivetime) = date(now())")
