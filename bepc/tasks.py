@@ -100,19 +100,20 @@ try:
 
         try:
             cursor = mydb.cursor()
-            cursor.execute("SELECT COUNT(DISTINCT SerialNo) AS tot_net_not_work FROM schooldata WHERE SerialNo NOT IN (SELECT DISTINCT SerialNo FROM lastdetails);")
-            tot_net_not_work = None  # Initialize a variable to store the first count
+            cursor.execute("select count(SerialNo) as Tot_SClass_Est from schooldata")
+            tot_net_deploy = None  # Initialize a variable to store the first count
             for x in cursor:
-                tot_net_not_work = x[0]  # Assign the value to the variable
+                tot_net_deploy = x[0]  # Assign the value to the variable
 
             cursor1 = mydb.cursor()
-            cursor1.execute("SELECT COUNT(DISTINCT SerialNo) AS Tot_Net_Work FROM lastdetails;")
+            cursor1.execute("select count(distinct SerialNo) as Tot_Fun_SClass from lastdetails")
             tot_net_work = None  # Initialize a variable to store the second count
             for y in cursor1:
                 tot_net_work = y[0]  # Assign the value to the variable
             
-            tot_net_deploy = tot_net_work + tot_net_not_work
-
+            tot_net_not_work = tot_net_deploy - tot_net_work
+            
+            # print(tot_net_not_work, tot_net_work, tot_net_deploy)
             return tot_net_not_work, tot_net_work, tot_net_deploy  # Return the values as a tuple
         
         except mysql.connector.Error as e:
@@ -133,13 +134,13 @@ try:
 
         try:
             cursor = mydb.cursor()
-            cursor.execute("select count(distinct SerialNo) as Tot_SClass_Est from lastdetails")
+            cursor.execute("select count(SerialNo) as Tot_SClass_Est from schooldata")
             tot_sclass_est = None  # Initialize a variable to store the first count
             for x in cursor:
                 tot_sclass_est_systemcount = x[0]  # Assign the value to the variable
             tot_sclass_est = tot_sclass_est_systemcount
             
-            tot_sclass_not_est = - (1232 - tot_sclass_est)
+            tot_sclass_not_est = (2462 - tot_sclass_est)
 
             cursor1 = mydb.cursor()
             cursor1.execute("select count(distinct SerialNo) as Tot_Fun_SClass from lastdetails where date(Lastactivetime) = date(now())")
@@ -147,12 +148,17 @@ try:
             for y in cursor1:
                 tot_fun_sclass = y[0]  # Assign the value to the variable
 
-            cursor2 = mydb.cursor()
-            cursor2.execute("select count(distinct SerialNo) as Tot_Not_Fun_SClass from lastdetails where date(Lastactivetime) != date(now())")
-            tot_not_fun_sclass = None  # Initialize a variable to store the second count
-            for z in cursor2:
-                tot_not_fun_sclass = z[0]  # Assign the value to the variable
+            # cursor2 = mydb.cursor()
+            # cursor2.execute("select count(distinct SerialNo) as Tot_Not_Fun_SClass from lastdetails where date(Lastactivetime) != date(now())")
+            # tot_not_fun_sclass = None  # Initialize a variable to store the second count
+            # for z in cursor2:
+            #     tot_not_fun_sclass = z[0]  # Assign the value to the variable
+            
+            tot_not_fun_sclass = tot_sclass_est - tot_fun_sclass
+            
+            # print(tot_sclass_est, tot_sclass_not_est, tot_fun_sclass, tot_not_fun_sclass)
             return tot_sclass_est, tot_sclass_not_est, tot_fun_sclass, tot_not_fun_sclass
+        
         except mysql.connector.Error as e:
             print("Error in fetching data from lastdetails table", e)
         finally:
@@ -160,7 +166,7 @@ try:
             if mydb.is_connected():
                 mydb.close()
 
-
+    #round(area, 2)
     def smart_class_functional():
         mydb = mysql.connector.connect(
             host="souliot.mariadb.database.azure.com",
@@ -169,13 +175,21 @@ try:
             database="bepcprod"
         )
 
+        # tot_fun_sclass_tuple = smart_class_established()
+        # tot_fun_sclass = tot_fun_sclass_tuple[2]
+
+        tot_fun_sclass_tuple = smart_class_established()
+        tot_fun_sclass = tot_fun_sclass_tuple[2]
+    
         try:
             cursor = mydb.cursor()
-            cursor.execute("SELECT sum(Duration/60) as tot_sclass_fun_hrs from dailyaggregation where SystemDate = CURDATE()")
+            cursor.execute("SELECT sum(Duration/60) as tot_sclass_fun_hrs from dailyaggregation where SystemDate = CURDATE()-1")
             tot_sclass_fun_hrs = None  # Initialize a variable to store the second count
             for x in cursor:
-                tot_sclass_fun_hrs = x[0]  # Assign the value to the variable
-            return tot_sclass_fun_hrs
+                tot_sclass_fun = x[0]  # Assign the value to the variable
+                total_sclass_fun_hrs = tot_sclass_fun/tot_fun_sclass
+                # print(round(total_sclass_fun_hrs, 2))
+                return round(total_sclass_fun_hrs, 2)
         
         except Error as e:
             print("Error in fetching data from lastdetails, dailyaggregation table:", e)
@@ -213,20 +227,20 @@ def post_data():
     # url = "http://150.230.143.55/esk-mobile-api/api/console/generateICTDataApi"
 
     # Student record
-    total_enrolled_boy_dict=frappe.db.sql("""SELECT CONVERT (sum(boys) , INT) as Total_Enr_Boy FROM `tabSchool Survey Form`""", as_dict=True)
-    total_enrolled_boy_list = [i['Total_Enr_Boy'] for i in total_enrolled_boy_dict]
-    s = [str(i)for i in total_enrolled_boy_list]
-    total_enrolled_boy = int("".join(s))
+    # total_enrolled_boy_dict=frappe.db.sql("""SELECT CONVERT (sum(boys) , INT) as Total_Enr_Boy FROM `tabSchool Survey Form`""", as_dict=True)
+    # total_enrolled_boy_list = [i['Total_Enr_Boy'] for i in total_enrolled_boy_dict]
+    # s = [str(i)for i in total_enrolled_boy_list]
+    total_enrolled_boy = 256703
     
-    total_enrolled_girl_dict = frappe.db.sql("""SELECT CONVERT (sum(girls) , INT) as "Tot_Enr_Girl" FROM `tabSchool Survey Form`""",as_dict=True)
-    total_enrolled_girl_list = [i['Tot_Enr_Girl'] for i in total_enrolled_girl_dict]
-    s = [str(i)for i in total_enrolled_girl_list]
-    total_enrolled_girl = int("".join(s))
+    # total_enrolled_girl_dict = frappe.db.sql("""SELECT CONVERT (sum(girls) , INT) as "Tot_Enr_Girl" FROM `tabSchool Survey Form`""",as_dict=True)
+    # total_enrolled_girl_list = [i['Tot_Enr_Girl'] for i in total_enrolled_girl_dict]
+    # s = [str(i)for i in total_enrolled_girl_list]
+    total_enrolled_girl = 214099
     
-    total_enrolled_stu_dict  = frappe.db.sql("""SELECT CONVERT (sum(total_students) , INT) as "Tot_Enr_Stud" FROM `tabSchool Survey Form`""",as_dict=True)
-    total_enrolled_stu_list = [i['Tot_Enr_Stud'] for i in total_enrolled_stu_dict]
-    s = [str(i)for i in total_enrolled_stu_list]
-    total_enrolled_stud = int("".join(s))
+    # total_enrolled_stu_dict  = frappe.db.sql("""SELECT CONVERT (sum(total_students) , INT) as "Tot_Enr_Stud" FROM `tabSchool Survey Form`""",as_dict=True)
+    # total_enrolled_stu_list = [i['Tot_Enr_Stud'] for i in total_enrolled_stu_dict]
+    # s = [str(i)for i in total_enrolled_stu_list]
+    total_enrolled_stud = total_enrolled_boy+total_enrolled_girl
 
     # Theft Log
     tot_sclass_theft_dict  = frappe.db.sql(""" SELECT count(name) as "Tot_SClass_Theft" FROM `tabTheft Case record`; """, as_dict=True)
