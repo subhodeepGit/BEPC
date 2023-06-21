@@ -183,13 +183,18 @@ try:
     
         try:
             cursor = mydb.cursor()
-            cursor.execute("SELECT sum(Duration/60) as tot_sclass_fun_hrs from dailyaggregation where SystemDate = CURDATE()-1")
+            cursor.execute("SELECT sum(Duration/60) as tot_sclass_fun_hrs from dailyaggregation where SystemDate = CURDATE()-2")
             tot_sclass_fun_hrs = None  # Initialize a variable to store the second count
             for x in cursor:
                 tot_sclass_fun = x[0]  # Assign the value to the variable
-                total_sclass_fun_hrs = tot_sclass_fun/tot_fun_sclass
-                # print(round(total_sclass_fun_hrs, 2))
-                return round(total_sclass_fun_hrs, 2)
+                # print(tot_sclass_fun)
+                tot_sclass_fun_mm = tot_sclass_fun/ 3600000
+                # print(tot_sclass_fun_mm)
+                # print(tot_fun_sclass)
+                total_sclass_fun_hrs_hr = tot_sclass_fun_mm/tot_fun_sclass
+                total_sclass_fun_hrs = ("{:.2f}".format(total_sclass_fun_hrs_hr))
+                # print(float(total_sclass_fun_hrs))
+                return float(total_sclass_fun_hrs)
         
         except Error as e:
             print("Error in fetching data from lastdetails, dailyaggregation table:", e)

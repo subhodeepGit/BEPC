@@ -170,7 +170,8 @@ def add_file_overrides():
         'image': ['image/jpeg', 'image/png', 'image/gif'],\n\
         'document': ['application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'],\n\
         'pdf': ['application/pdf'],\n\
-        'video': ['video/mp4', 'video/quicktime', 'video/x-msvideo', 'video/x-ms-wmv', 'video/x-matroska']\n\
+        'video': ['video/mp4', 'video/quicktime', 'video/x-msvideo', 'video/x-ms-wmv', 'video/x-matroska'],\n\
+        'excel' : ['application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.ms-excel.sheet.macroEnabled.12', 'application/vnd.openxmlformats-', 'application/vnd.ms-excel.template.macroEnabled.12']\n\
         }\n\
     \ndef check_file_type(file_path):\n\
     mime_type, _ = mimetypes.guess_type(file_path)\n\
