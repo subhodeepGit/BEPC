@@ -103,6 +103,10 @@ doc_events = {
 		"validate": "bepc.bepc.doctype.issues.validate",
 		"before_save":"bepc.bepc.doctype.issues.before_save"
 	},
+ 	"Service Level Agreement": {
+		"validate": "bepc.bepc.doctype.service_level_agreement.validate"
+	}
+	
 }
 
 # Scheduled Tasks
