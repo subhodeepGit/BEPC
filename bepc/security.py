@@ -10,6 +10,14 @@ def execute():
     add_line_commentjs()
     comment_line_commentjs()
     add_line_authpy()
+    create_new_field()
+    modify_user_profile_sidebar_html()
+    modify_workspace_py()
+    modify_user_py()
+    modify_handler_py()
+    workspace_js()
+   
+    
 
 # frappe/frappe/www/login.html change content 
 def add_login_html_overrides():
@@ -321,3 +329,209 @@ def add_line_authpy():
         print("""frappe/frappe/auth.py modified user, pwd = frappe.form_dict.get("usr"), decrypted_password.""")
     
         
+def create_new_field():
+        confirm_password_data=frappe.get_all("DocField",{"parent":"User","fieldname":"confirm__password"},['name','idx'])
+        if not confirm_password_data:
+            confirm_password_data=frappe.get_all("DocField",{"parent":"User","fieldname":"new_password"},['name','idx'])
+            idx_no=confirm_password_data[0]['idx']
+            other_idx=frappe.get_all("DocField",filters=[["parent",'=',"User"],["idx",">",idx_no]],fields=['name','idx'],
+                order_by="idx asc")
+            for t in other_idx:
+                frappe.db.sql(""" UPDATE `tabDocField` SET idx=%s where name='%s' """%(t['idx']+1,t['name']))
+            data=frappe.get_doc("DocType","User")
+            data.append("fields",{
+                'label':"Confirm Password",
+                "fieldtype":"Password",
+                "fieldname":"confirm__password",
+                "idx":idx_no+1
+            })
+            data.save()
+            
+def modify_user_profile_sidebar_html():
+    file_path = "{}/{}".format(BENCH_PATH, "apps/frappe/frappe/desk/page/user_profile/user_profile_sidebar.html")
+    with open(file_path, "r") as file:
+        content = file.readlines()
+
+    updated_content = []
+    for i, line in enumerate(content, start=1):
+        if i == 51 and '<p><a class="edit-profile-link">{%=__("Edit Profile") %}</a></p>' in line:
+            updated_content.append("<!--" + line.strip() + "-->\n")
+        else:
+            updated_content.append(line)
+            
+    with open(file_path) as f:
+        if '<!--<p><a class="edit-profile-link">{%=__("Edit Profile") %}</a></p>-->' in f.read():
+            return
+
+    with open(file_path, "w") as file:
+        file.writelines(updated_content)
+        print("frappe/frappe/desk/page/user_profile/user_profile_sidebar.html modified. 'Edit Profile' line at line 51 commented.")
+        
+def modify_workspace_py():
+    file_path = "{}/{}".format(BENCH_PATH, "apps/frappe/frappe/desk/doctype/workspace/workspace.py")
+    with open(file_path, "a") as file:
+        method_code = '''\n@frappe.whitelist()\ndef get_user_role():\n\tuser_role = frappe.db.get_value("User", {"name": frappe.session.user}, ["name"])\n\treturn user_role\n'''
+        
+        with open(file_path) as f:
+            if 'def get_user_role():' in f.read():
+                return
+        
+        file.write(method_code)
+    
+    print("frappe/frappe/desk/doctype/workspace/workspace.py modified. 'get_user_role' method added.")
+        
+
+def modify_user_py():
+    file_path = "{}/{}".format(BENCH_PATH, "apps/frappe/frappe/core/doctype/user/user.py")
+    with open(file_path, "r") as file:
+        content = file.readlines()
+        
+    target_line1 = 'def validate(self):'
+    new_line1 = """\t\t\tself.confirm__password=None\n"""
+    
+    with open(file_path) as f:
+        if '\t\tif(args.cmd != "login")\n' in f.read():
+            return
+    
+    index = -1
+    for i, line in enumerate(content):
+        if target_line1 in line:
+            index = i
+            break
+        
+    if index != -1:
+        content.insert(index + 7, new_line1)
+        
+    with open(file_path) as f:
+            if 'self.confirm__password=None' in f.read():
+                return
+        
+    with open(file_path, "w") as file:
+        file.writelines(content)
+        print("user.py modified with new lines.")
+
+    updated_content = []
+    replace_start_line = 534
+    replace_end_line = 545
+
+    new_code = [
+        '"""test password strength"""\n',
+        'if self.flags.ignore_password_policy:\n',
+        '\treturn\n',
+        'if self.__new_password:\n',
+        '\tif self.confirm__password == self.__new_password:\n',
+        '\t\tuser_data = (self.first_name, self.middle_name, self.last_name, self.email, self.birth_date)\n',
+        '\t\tresult = test_password_strength(self.__new_password, "", None, user_data)\n',
+        '\t\tfeedback = result.get("feedback", None)\n',
+        '\t\tif feedback and not feedback.get("password_policy_validation_passed", False):\n',
+        '\t\t\thandle_password_test_fail(feedback)\n',
+        'else:\n',
+        '\tfrappe.throw("New Password is not Matched with Confirm Password")\n\n'
+    ]
+
+    for i, line in enumerate(content, start=1):
+        if replace_start_line <= i <= replace_end_line:
+            if i == replace_start_line:
+                indentation = line[:len(line) - len(line.lstrip())]
+                updated_content.extend(indentation + code_line for code_line in new_code)
+            else:
+                continue
+        else:
+            updated_content.append(line)
+
+    with open(file_path, "w") as file:
+        file.writelines(updated_content)
+        print("/apps/frappe/frappe/core/doctype/user/user.py modified. 'password_strength_test' method replaced.")
+
+
+
+def modify_handler_py():
+    file_path = "{}/{}".format(BENCH_PATH, "apps/frappe/frappe/handler.py")
+    with open(file_path, "r") as file:
+        content = file.readlines()
+
+    updated_content = []
+    replace_line_number = 74
+
+    for i, line in enumerate(content, start=1):
+        if i == replace_line_number:
+            updated_content.append('\t\tfrappe.throw("Invalid Parameter")\n')
+        else:
+            updated_content.append(line)
+            
+    with open(file_path) as f:
+        if """frappe.throw("Invalid Parameter""" in f.read():
+            return
+
+    with open(file_path, "w") as file:
+        file.writelines(updated_content)
+        print("/apps/frappe/frappe/handler.py modified. Line 74 replaced.")
+
+
+
+def workspace_js():
+    file_path = "{}/{}".format(BENCH_PATH, "apps/frappe/frappe/public/js/frappe/views/workspace/workspace.js")
+    with open(file_path, "r") as file:
+        content = file.readlines()
+        
+    target_line1 = 'frappe.workspace.show();'
+    new_line1 = """\tvar flag=0\n\tfrappe.call({\n\t\tmethod:"frappe.desk.doctype.workspace.workspace.get_user_role",\n\t\targs: {\n\t\t\tpage: this.page\n\t\t},\n\t\tcallback: function(r){\n\t\t\tvar result = r.message;\n\t\t\tflag=result\n\t\t}\n\t});\n"""
+    
+    with open(file_path) as f:
+        if """method:"frappe.desk.doctype.workspace.workspace.get_user_role",""" in f.read():
+            return
+    
+    index = -1
+    for i, line in enumerate(content):
+        if target_line1 in line:
+            index = i
+            break
+        
+    if index != -1:
+        content.insert(index + 3, new_line1)
+        
+    with open(file_path, "w") as file:
+        file.writelines(content)
+        print("workspace.js modified with top lines.")
+        
+    target_line2 = 'this.make_blocks_sortable();'
+    new_line2 = """\t\t if (flag=='Administrator'){\n"""
+    
+    with open(file_path) as f:
+        if """if (flag=='Administrator'){""" in f.read():
+            return
+    
+    index = -1
+    for i, line in enumerate(content):
+        if target_line2 in line:
+            index = i
+            break
+        
+    if index != -1:
+        content.insert(index + 3, new_line2)
+        
+    with open(file_path, "w") as file:
+        file.writelines(content)
+        print("user.py modified with middle lines.")
+        
+    #####
+       
+    target_line3 = 'this.initialize_new_page();'
+    new_line3 = """\t\t}else{\n\t\t\t$('.actions-btn-group').prop('hidden', true);\n\t\t}\n"""
+    
+    with open(file_path) as f:
+        if """$('.actions-btn-group').prop('hidden', true);""" in f.read():
+            return
+    
+    index = -1
+    for i, line in enumerate(content):
+        if target_line3 in line:
+            index = i
+            break
+        
+    if index != -1:
+        content.insert(index + 2, new_line3)
+        
+    with open(file_path, "w") as file:
+        file.writelines(content)
+        print("user.py modified with end lines.")
