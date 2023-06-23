@@ -425,8 +425,8 @@ def modify_user_py():
         '\t\tfeedback = result.get("feedback", None)\n',
         '\t\tif feedback and not feedback.get("password_policy_validation_passed", False):\n',
         '\t\t\thandle_password_test_fail(feedback)\n',
-        'else:\n',
-        '\tfrappe.throw("New Password is not Matched with Confirm Password")\n\n'
+        '\telse:\n',
+        '\t\tfrappe.throw("New Password is not Matched with Confirm Password")\n\n'
     ]
 
     for i, line in enumerate(content, start=1):
