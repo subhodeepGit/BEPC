@@ -411,8 +411,8 @@ def modify_user_py():
         print("user.py modified with new lines.")
 
     updated_content = []
-    replace_start_line = 534
-    replace_end_line = 545
+    replace_start_line = 545
+    replace_end_line = 556
 
     new_code = [
         '"""test password strength"""\n',
