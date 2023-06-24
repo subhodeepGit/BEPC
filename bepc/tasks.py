@@ -188,13 +188,11 @@ try:
             for x in cursor:
                 tot_sclass_fun = x[0]  # Assign the value to the variable
                 # print(tot_sclass_fun)
-                tot_sclass_fun_mm = tot_sclass_fun/ 3600000
-                # print(tot_sclass_fun_mm)
-                # print(tot_fun_sclass)
-                total_sclass_fun_hrs_hr = tot_sclass_fun_mm/tot_fun_sclass
-                total_sclass_fun_hrs = ("{:.2f}".format(total_sclass_fun_hrs_hr))
+                total_sclass_fun_hrs = tot_sclass_fun/tot_fun_sclass
+                # print(total_sclass_fun_hrs)
+                for_total_sclass_fun = ("{:.2f}".format(total_sclass_fun_hrs))
                 # print(float(total_sclass_fun_hrs))
-                return float(total_sclass_fun_hrs)
+                return float(for_total_sclass_fun)
         
         except Error as e:
             print("Error in fetching data from lastdetails, dailyaggregation table:", e)
