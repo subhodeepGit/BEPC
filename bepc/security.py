@@ -10,10 +10,12 @@ def execute():
     add_line_commentjs()
     comment_line_commentjs()
     add_line_authpy()
+    modify_line_authpy()
+    add_line_authpy2()
     create_new_field()
     modify_user_profile_sidebar_html()
     modify_workspace_py()
-    # modify_user_py()
+    modify_user_py()
     modify_handler_py()
     workspace_js()
    
@@ -36,7 +38,8 @@ def add_login_html_overrides():
         file.write(updated_content)
         print("frappe/frappe/www/login.html modified onpaste='return false;' & autocomplete='off'.")
 
-    code_to_append = '\n<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>'
+    # code_to_append = '\n<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>'
+    code_to_append = '/n<script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.10.0/forge.min.js"></script>'
 
     # Read the file content
     with open(file_path, 'r') as file:
@@ -73,15 +76,18 @@ def add_login_js_overrides():
         lines = file.readlines()
         
     target_line1 = '$(".form-login").on("submit", function (event) {'
-    new_line1 = """\t\tif(args.cmd != "login")\n\t\t\tfrappe.throw('{{ _("Insufficient credentials") }}');\n"""
-    
-    new_line2 ='\t\tvar secretKey="1kHC4+xqy0jvlUzVEmgnpQ==";\n\t\tvar passwordBytes = CryptoJS.enc.Utf8.parse(args.pwd);\n\t\tvar secretKeyBytes = CryptoJS.enc.Utf8.parse(secretKey);\n\t\tvar encrypted = CryptoJS.AES.encrypt(passwordBytes, secretKeyBytes, {\n\t\tmode: CryptoJS.mode.ECB,\n\t\t});\n\t\tvar encrypt=encrypted.toString();\n\t\targs.pwd=encrypt\n'
+    new_line1 = """\t\t$.ajax({url: "http://localhost:8000/api/method/bepc.rsa-algo.rsa_gen_key", success: function(result){\n"""
 
-    existing1='\t\tif(args.cmd != "login")\n'
-    # existing2 = 'var secretKey="1kHC4+xqy0jvlUzVEmgnpQ==";'
+    target_line2 = 'args.usr = frappe.utils.xss_sanitise(($("#login_email").val() || "").trim());'    
+    new_line2 ="""\t\tconst publicKey = result.message['public_key_pem_date']\n\t\tfunction encryptWithRSA(plaintext) {\n\t\t\tconst publicKeyObj = forge.pki.publicKeyFromPem(publicKey);\n\t\t\tconst encrypted = publicKeyObj.encrypt(plaintext, 'RSA-OAEP', {\n\t\t\t\tmd: forge.md.sha256.create()\t\t\t\n\t\t\t});\n\t\t\treturn forge.util.encode64(encrypted);\n\t\t}\n\t\tconst plaintext = args.pwd;\n\t\tconst encryptedData = encryptWithRSA(plaintext).toString("base64");\n\t\targs.pwd = encryptedData\n\t\targs.no=result.message['rsa_no']\n"""
+
+    target_line3 = """frappe.msgprint('{{ _("Both login and password required") }}');"""
+    new_line3 = "});\n"
+
+    new_line4 = "\t}"
 
     with open(file_path) as f:
-        if '\t\tif(args.cmd != "login")\n' in f.read():
+        if '\t\t$.ajax({url: "http://localhost:8000/api/method/bepc.rsa-algo.rsa_gen_key", success: function(result){\n' in f.read():
             return
 
     # if existing1 not in lines:
@@ -92,18 +98,38 @@ def add_login_js_overrides():
             break
 
     if index != -1:
-        lines.insert(index + 4, new_line1)
+        lines.insert(index + 2, new_line1)
       
     index2 = -1
     for i, line in enumerate(lines):
-        if target_line1 in line:
+        if target_line2 in line:
             index2 = i
             break
     if index2 != -1:
-        lines.insert(index2 + 7, new_line2)
+        lines.insert(index2 + 2, new_line2)
+
+    index4 = -1
+    for i, line in enumerate(lines):
+        if target_line3 in line:
+            index4 = i
+            break
+    if index4 != -1:
+        lines.insert(index4 + 5, new_line4)
     
     with open(file_path) as f:
-        if 'var secretKey="1kHC4+xqy0jvlUzVEmgnpQ==";' in f.read():
+        if "const publicKey = result.message['public_key_pem_date']" in f.read():
+            return 
+        
+    index3 = -1
+    for i, line in enumerate(lines):
+        if target_line3 in line:
+            index3 = i
+            break
+    if index3 != -1:
+        lines.insert(index3 + 6, new_line3)
+    
+    with open(file_path) as f:
+        if "const publicKey = result.message['public_key_pem_date']" in f.read():
             return 
         
     with open(file_path, "w") as file:
@@ -291,14 +317,14 @@ def add_line_authpy():
         lines = file.readlines()
         
     target_line1 = 'def authenticate(self, user: str = None, pwd: str = None):'
-    new_line1 = """\t\tfrom Crypto.Cipher import AES\n\t\tfrom Crypto.Util.Padding import unpad\n\t\tfrom base64 import b64decode\n\t\tdef decrypt_password(encrypted_password, secret_key):\n\t\t# Convert the encrypted password and secret key to bytes\n\t\t\tencrypted_bytes = b64decode(encrypted_password)\n\t\t\tsecret_key_bytes = secret_key.encode('utf-8')\n\t\t\t# Decrypt the password using AES\n\t\t\tcipher = AES.new(secret_key_bytes, AES.MODE_ECB)\n\t\t\tdecrypted_bytes = cipher.decrypt(encrypted_bytes)\n\t\t\tdecrypted_password = unpad(decrypted_bytes, AES.block_size).decode('utf-8')\n\t\t\t# Return the decrypted password\n\t\t\treturn decrypted_password\n\t\t# Usage\n\t\tencrypted_password =frappe.form_dict.get("pwd")\n\t\tsecret_key ="1kHC4+xqy0jvlUzVEmgnpQ=="\n\t\tdecrypted_password = decrypt_password(encrypted_password, secret_key)\n"""
+    new_line1 = """\t\tras_data=frappe.db.sql("select private_key_pem_date from `rsa_data` where name='%s' AND flag='1' "%(frappe.form_dict.get('no')),as_dict=True)\n\t\tif ras_data:\n\n\t\t\tfrappe.db.sql("Update `rsa_data` set flag='0' where name='%s' "%(frappe.form_dict.get('no')))\n\t\t\timport base64\n\t\t\tfrom cryptography.hazmat.primitives import serialization\n\t\t\tfrom cryptography.hazmat.primitives.asymmetric import rsa\n\t\t\tfrom cryptography.hazmat.primitives import hashes\n\t\t\tfrom cryptography.hazmat.primitives.asymmetric import padding\n\t\t\tprivate_key_pem=ras_data[0]['private_key_pem_date']\n\t\t\t#put the encrypted data received from the client side\n\t\t\tencrypted_data_base64 = frappe.form_dict.get("pwd")\n\n\t\t\tencrypted_data = base64.b64decode(encrypted_data_base64) # here it is converted into binary\n\t\t\t# creating the loaded private key\n\t\t\tloaded_private_key = serialization.load_pem_private_key(\n\t\t\t\tprivate_key_pem.encode(),\n\t\t\t\tpassword=None\n\t\t\t)\n\t\t\t# decoding\n\t\t\tdecrypted_data = loaded_private_key.decrypt(\n\t\t\t\tencrypted_data,\n\t\t\t\tpadding.OAEP(\n\t\t\t\t\tmgf=padding.MGF1(algorithm=hashes.SHA256()),\n\t\t\t\t\talgorithm=hashes.SHA256(),\n\t\t\t\t\tlabel=None\n\t\t\t\t)\n\t\t\t)\n\t\t\t# Print the decrypted data\n\t\t\tpassword=decrypted_data.decode()\n\t\t\t##################################### end of my code\n"""
     
 
-    existing1='from Crypto.Cipher import AES'
-    existing2 = 'user, pwd = frappe.form_dict.get("usr")'
+    # existing1='from Crypto.Cipher import AES'
+    # existing2 = 'user, pwd = frappe.form_dict.get("usr")'
 
     with open(file_path) as f:
-        if 'from Crypto.Cipher import AES' in f.read():
+        if 'ras_data=frappe.db.sql("select private_key_pem_date from `rsa_data` where name=' in f.read():
             return 
 
     index = -1
@@ -313,20 +339,92 @@ def add_line_authpy():
 
     with open(file_path, "w") as file:
         file.writelines(lines)
-        print("auth.line modified with new line.")
+        print("auth.line modified with new line1")
 
+def modify_line_authpy():
+    file_path = "{}/{}".format(BENCH_PATH,
+                                "apps/frappe/frappe/auth.py")
     with open(file_path, "r") as file:
-        content = file.read()
+        lines = file.readlines()
 
-    updated_content = content.replace('user, pwd = frappe.form_dict.get("usr"), frappe.form_dict.get("pwd")', 'user, pwd = frappe.form_dict.get("usr"), decrypted_password')
+    updated_content = []
+    replace_start_line = 261
+    replace_end_line = 288
+
+    new_code = [
+            '\tfrom frappe.core.doctype.user.user import User\n',
+
+			'\tif not (user and pwd):\n',
+				'\t\tuser, pwd = frappe.form_dict.get("usr"), password\n',
+			'\tif not (user and pwd):\n',
+				'\t\tself.fail(_("Incomplete login details"), user=user)\n',
+
+			'\tuser = User.find_by_credentials(user, pwd)\n',
+
+			'\tif not user:\n',
+				'\t\tself.fail("Invalid login credentials")\n',
+
+        '# Current login flow uses cached credentials for authentication while checking OTP.\n',
+		'# Incase of OTP check, tracker for auth needs to be disabled(If not, it can remove tracker history as it is going to succeed anyway)\n',
+		'# Tracker is activated for 2FA incase of OTP.\n',
+			'\tignore_tracker = should_run_2fa(user.name) and ("otp" in frappe.form_dict)\n',
+			'\ttracker = None if ignore_tracker else get_login_attempt_tracker(user.name)\n',
+			'\tif not user.is_authenticated:\n',
+				'\t\ttracker and tracker.add_failure_attempt()\n',
+				'\t\tself.fail("Invalid login credentials", user=user.name)\n',
+			'\telif not (user.name == "Administrator" or user.enabled):\n',
+				'\t\ttracker and tracker.add_failure_attempt()\n',
+				'\t\tself.fail("User disabled or missing", user=user.name)\n',
+			'\telse:\n',
+				'\t\ttracker and tracker.add_success_attempt()\n',
+			'\tself.user = user.name\n',
+
+    ]
+
+    for i, line in enumerate(lines, start=1):
+        if replace_start_line <= i <= replace_end_line:
+            if i == replace_start_line:
+                indentation = line[:len(line) - len(line.lstrip())]
+                updated_content.extend(indentation + code_line for code_line in new_code)
+            else:
+                continue
+        else:
+            updated_content.append(line)
 
     with open(file_path) as f:
-        if 'user, pwd = frappe.form_dict.get("usr"), decrypted_password' in f.read():
+        if 'user, pwd = frappe.form_dict.get("usr"), password' in f.read():
             return
 
     with open(file_path, "w") as file:
-        file.write(updated_content)
-        print("""frappe/frappe/auth.py modified user, pwd = frappe.form_dict.get("usr"), decrypted_password.""")
+        file.writelines(updated_content)
+        print("/apps/frappe/frappe/core/auth.py modified")
+
+def add_line_authpy2():
+    file_path = "{}/{}".format(BENCH_PATH,
+                                "apps/frappe/frappe/auth.py")
+    with open(file_path, "r") as file:
+        lines = file.readlines()
+        
+    target_line1 = 'self.user = user.name'
+    new_line1 ='\t\telse:\n\t\t\tfrappe.throw("Bad Credentials Contact To Administrator")\n'
+
+    with open(file_path) as f:
+        if 'frappe.throw("Bad Credentials Contact To Administrator")' in f.read():
+            return 
+
+    index = -1
+    for i, line in enumerate(lines):
+        if target_line1 in line:
+            index = i
+            break
+
+    if index != -1:
+        lines.insert(index + 1, new_line1)
+       
+
+    with open(file_path, "w") as file:
+        file.writelines(lines)
+        print("auth.line modified with new line2")
     
         
 def create_new_field():
@@ -381,67 +479,71 @@ def modify_workspace_py():
     print("frappe/frappe/desk/doctype/workspace/workspace.py modified. 'get_user_role' method added.")
         
 
-# def modify_user_py():
-#     file_path = "{}/{}".format(BENCH_PATH, "apps/frappe/frappe/core/doctype/user/user.py")
-#     with open(file_path, "r") as file:
-#         content = file.readlines()
+def modify_user_py():
+    file_path = "{}/{}".format(BENCH_PATH, "apps/frappe/frappe/core/doctype/user/user.py")
+    with open(file_path, "r") as file:
+        content = file.readlines()
         
-#     target_line1 = 'def validate(self):'
-#     new_line1 = """\t\t\tself.confirm__password=None\n"""
+    target_line1 = 'def validate(self):'
+    new_line1 = """\t\t\tself.confirm__password=None\n"""
     
-#     with open(file_path) as f:
-#         if '\t\tif(args.cmd != "login")\n' in f.read():
-#             return
+    with open(file_path) as f:
+        if '\t\tif(args.cmd != "login")\n' in f.read():
+            return
     
-#     index = -1
-#     for i, line in enumerate(content):
-#         if target_line1 in line:
-#             index = i
-#             break
+    index = -1
+    for i, line in enumerate(content):
+        if target_line1 in line:
+            index = i
+            break
         
-#     if index != -1:
-#         content.insert(index + 7, new_line1)
+    if index != -1:
+        content.insert(index + 7, new_line1)
         
-#     with open(file_path) as f:
-#             if 'self.confirm__password=None' in f.read():
-#                 return
+    with open(file_path) as f:
+            if 'self.confirm__password=None' in f.read():
+                return
         
-#     with open(file_path, "w") as file:
-#         file.writelines(content)
-#         print("user.py modified with new lines.")
+    with open(file_path, "w") as file:
+        file.writelines(content)
+        print("user.py modified with new lines.")
 
-#     updated_content = []
-#     replace_start_line = 545
-#     replace_end_line = 556
+    updated_content = []
+    replace_start_line = 545
+    replace_end_line = 556
 
-#     new_code = [
-#         '"""test password strength"""\n',
-#         'if self.flags.ignore_password_policy:\n',
-#         '\treturn\n',
-#         'if self.__new_password:\n',
-#         '\tif self.confirm__password == self.__new_password:\n',
-#         '\t\tuser_data = (self.first_name, self.middle_name, self.last_name, self.email, self.birth_date)\n',
-#         '\t\tresult = test_password_strength(self.__new_password, "", None, user_data)\n',
-#         '\t\tfeedback = result.get("feedback", None)\n',
-#         '\t\tif feedback and not feedback.get("password_policy_validation_passed", False):\n',
-#         '\t\t\thandle_password_test_fail(feedback)\n',
-#         '\telse:\n',
-#         '\t\tfrappe.throw("New Password is not matching with Confirm Password")\n\n'
-#     ]
+    new_code = [
+        '"""test password strength"""\n',
+        'if self.flags.ignore_password_policy:\n',
+        '\treturn\n',
+        'if self.__new_password:\n',
+        '\tif self.confirm__password == self.__new_password:\n',
+        '\t\tuser_data = (self.first_name, self.middle_name, self.last_name, self.email, self.birth_date)\n',
+        '\t\tresult = test_password_strength(self.__new_password, "", None, user_data)\n',
+        '\t\tfeedback = result.get("feedback", None)\n',
+        '\t\tif feedback and not feedback.get("password_policy_validation_passed", False):\n',
+        '\t\t\thandle_password_test_fail(feedback)\n',
+        '\telse:\n',
+        '\t\tfrappe.throw("New Password is not matching with Confirm Password")\n\n'
+    ]
 
-#     for i, line in enumerate(content, start=1):
-#         if replace_start_line <= i <= replace_end_line:
-#             if i == replace_start_line:
-#                 indentation = line[:len(line) - len(line.lstrip())]
-#                 updated_content.extend(indentation + code_line for code_line in new_code)
-#             else:
-#                 continue
-#         else:
-#             updated_content.append(line)
+    for i, line in enumerate(content, start=1):
+        if replace_start_line <= i <= replace_end_line:
+            if i == replace_start_line:
+                indentation = line[:len(line) - len(line.lstrip())]
+                updated_content.extend(indentation + code_line for code_line in new_code)
+            else:
+                continue
+        else:
+            updated_content.append(line)
 
-#     with open(file_path, "w") as file:
-#         file.writelines(updated_content)
-#         print("/apps/frappe/frappe/core/doctype/user/user.py modified. 'password_strength_test' method replaced.")
+    with open(file_path) as f:
+        if 'if self.confirm__password == self.__new_password:' in f.read():
+            return
+
+    with open(file_path, "w") as file:
+        file.writelines(updated_content)
+        print("/apps/frappe/frappe/core/doctype/user/user.py modified. 'password_strength_test' method replaced.")
 
 
 def modify_handler_py():
@@ -511,7 +613,7 @@ def workspace_js():
         
     with open(file_path, "w") as file:
         file.writelines(content)
-        print("user.py modified with middle lines.")
+        print("workspace.js modified with middle lines.")
         
     #####
        
@@ -533,4 +635,4 @@ def workspace_js():
         
     with open(file_path, "w") as file:
         file.writelines(content)
-        print("user.py modified with end lines.")
+        print("workspace.js modified with end lines.")
