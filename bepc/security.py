@@ -15,7 +15,7 @@ def execute():
     create_new_field()
     modify_user_profile_sidebar_html()
     modify_workspace_py()
-    modify_user_py()
+    # modify_user_py()
     modify_handler_py()
     workspace_js()
    
