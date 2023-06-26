@@ -4,14 +4,14 @@ BENCH_PATH = frappe.utils.get_bench_path()
 
 def execute():
     add_login_html_overrides()
-    # add_login_js_overrides()
+    add_login_js_overrides()
     add_file_overrides()
     comment_return_filepath()
     add_line_commentjs()
     comment_line_commentjs()
-    # add_line_authpy()
-    # modify_line_authpy()
-    # add_line_authpy2()
+    add_line_authpy()
+    modify_line_authpy()
+    add_line_authpy2()
     create_new_field()
     modify_user_profile_sidebar_html()
     modify_workspace_py()
@@ -76,7 +76,7 @@ def add_login_js_overrides():
         lines = file.readlines()
         
     target_line1 = '$(".form-login").on("submit", function (event) {'
-    new_line1 = """\t\t$.ajax({url: "http://localhost:8000/api/method/bepc.rsa-algo.rsa_gen_key", success: function(result){\n"""
+    new_line1 = """\t\t$.ajax({url: "https://testbepc.eduleadonline.com/api/method/bepc.rsa-algo.rsa_gen_key", success: function(result){\n"""
 
     target_line2 = 'args.usr = frappe.utils.xss_sanitise(($("#login_email").val() || "").trim());'    
     new_line2 ="""\t\tconst publicKey = result.message['public_key_pem_date']\n\t\tfunction encryptWithRSA(plaintext) {\n\t\t\tconst publicKeyObj = forge.pki.publicKeyFromPem(publicKey);\n\t\t\tconst encrypted = publicKeyObj.encrypt(plaintext, 'RSA-OAEP', {\n\t\t\t\tmd: forge.md.sha256.create()\t\t\t\n\t\t\t});\n\t\t\treturn forge.util.encode64(encrypted);\n\t\t}\n\t\tconst plaintext = args.pwd;\n\t\tconst encryptedData = encryptWithRSA(plaintext).toString("base64");\n\t\targs.pwd = encryptedData\n\t\targs.no=result.message['rsa_no']\n"""
@@ -87,7 +87,7 @@ def add_login_js_overrides():
     new_line4 = "\t}"
 
     with open(file_path) as f:
-        if '\t\t$.ajax({url: "http://localhost:8000/api/method/bepc.rsa-algo.rsa_gen_key", success: function(result){\n' in f.read():
+        if '\t\t$.ajax({url: "https://testbepc.eduleadonline.com/api/method/bepc.rsa-algo.rsa_gen_key", success: function(result){\n' in f.read():
             return
 
     # if existing1 not in lines:
