@@ -76,7 +76,7 @@ def add_login_js_overrides():
         lines = file.readlines()
         
     target_line1 = '$(".form-login").on("submit", function (event) {'
-    new_line1 = """\t\t$.ajax({url: "https://testbepc.eduleadonline.com/api/method/bepc.rsa-algo.rsa_gen_key", success: function(result){\n"""
+    new_line1 = """\t\t$.ajax({url: "https://testbepc.eduleadonline.com/api/method/bepc.rsa_algo.rsa_gen_key", success: function(result){\n"""
 
     target_line2 = 'args.usr = frappe.utils.xss_sanitise(($("#login_email").val() || "").trim());'    
     new_line2 ="""\t\tconst publicKey = result.message['public_key_pem_date']\n\t\tfunction encryptWithRSA(plaintext) {\n\t\t\tconst publicKeyObj = forge.pki.publicKeyFromPem(publicKey);\n\t\t\tconst encrypted = publicKeyObj.encrypt(plaintext, 'RSA-OAEP', {\n\t\t\t\tmd: forge.md.sha256.create()\t\t\t\n\t\t\t});\n\t\t\treturn forge.util.encode64(encrypted);\n\t\t}\n\t\tconst plaintext = args.pwd;\n\t\tconst encryptedData = encryptWithRSA(plaintext).toString("base64");\n\t\targs.pwd = encryptedData\n\t\targs.no=result.message['rsa_no']\n"""
@@ -87,7 +87,7 @@ def add_login_js_overrides():
     new_line4 = "\t}"
 
     with open(file_path) as f:
-        if '\t\t$.ajax({url: "https://testbepc.eduleadonline.com/api/method/bepc.rsa-algo.rsa_gen_key", success: function(result){\n' in f.read():
+        if '\t\t$.ajax({url: "https://testbepc.eduleadonline.com/api/method/bepc.rsa_algo.rsa_gen_key", success: function(result){\n' in f.read():
             return
 
     # if existing1 not in lines:
@@ -317,14 +317,14 @@ def add_line_authpy():
         lines = file.readlines()
         
     target_line1 = 'def authenticate(self, user: str = None, pwd: str = None):'
-    new_line1 = """\t\tras_data=frappe.db.sql("select private_key_pem_date from `rsa_data` where name='%s' AND flag='1' "%(frappe.form_dict.get('no')),as_dict=True)\n\t\tif ras_data:\n\n\t\t\tfrappe.db.sql("Update `rsa_data` set flag='0' where name='%s' "%(frappe.form_dict.get('no')))\n\t\t\timport base64\n\t\t\tfrom cryptography.hazmat.primitives import serialization\n\t\t\tfrom cryptography.hazmat.primitives.asymmetric import rsa\n\t\t\tfrom cryptography.hazmat.primitives import hashes\n\t\t\tfrom cryptography.hazmat.primitives.asymmetric import padding\n\t\t\tprivate_key_pem=ras_data[0]['private_key_pem_date']\n\t\t\t#put the encrypted data received from the client side\n\t\t\tencrypted_data_base64 = frappe.form_dict.get("pwd")\n\n\t\t\tencrypted_data = base64.b64decode(encrypted_data_base64) # here it is converted into binary\n\t\t\t# creating the loaded private key\n\t\t\tloaded_private_key = serialization.load_pem_private_key(\n\t\t\t\tprivate_key_pem.encode(),\n\t\t\t\tpassword=None\n\t\t\t)\n\t\t\t# decoding\n\t\t\tdecrypted_data = loaded_private_key.decrypt(\n\t\t\t\tencrypted_data,\n\t\t\t\tpadding.OAEP(\n\t\t\t\t\tmgf=padding.MGF1(algorithm=hashes.SHA256()),\n\t\t\t\t\talgorithm=hashes.SHA256(),\n\t\t\t\t\tlabel=None\n\t\t\t\t)\n\t\t\t)\n\t\t\t# Print the decrypted data\n\t\t\tpassword=decrypted_data.decode()\n\t\t\t##################################### end of my code\n"""
+    new_line1 = """\t\timport pymysql\n\t\tconn = pymysql.connect(\n\t\thost="localhost",\n\t\tuser="rsa",\n\t\tpassword="0g41POdWFA33P@6q",\n\t\t# database="erpdb1"\n\t\tdatabase="bepcdb"\n\t\t)\n\n\t\tc=conn.cursor()\n\t\tsql="select private_key_pem_date from `rsa_data` where name=%s AND flag=1 "%(frappe.form_dict.get('no'))\n\t\tc.execute(sql)\n\t\tras_data = c.fetchall()\n\t\tc.close()\n\t\t# ras_data=frappe.db.sql("select private_key_pem_date from `rsa_data` where name='%s' AND flag='1' "%(frappe.form_dict.get('no')),as_dict=True)\n\t\tif ras_data:\n\t\t\trsa_No = ras_data[0][0]\n\t\t\t# frappe.db.sql("Update `rsa_data` set flag='0' where name='%s' "%(frappe.form_dict.get('no')))\n\t\t\tsql="Update `rsa_data` set flag='0' where name='%s' "%(frappe.form_dict.get('no'))\n\t\t\tc=conn.cursor()\n\t\t\tc.execute(sql)\n\t\t\tconn.commit()\n\t\t\tc.close()\n\t\t\timport base64\n\t\t\tfrom cryptography.hazmat.primitives import serialization\n\t\t\tfrom cryptography.hazmat.primitives.asymmetric import rsa\n\t\t\tfrom cryptography.hazmat.primitives import hashes\n\t\t\tfrom cryptography.hazmat.primitives.asymmetric import padding\n\t\t\tprivate_key_pem=rsa_No\n\t\t\t#put the encrypted data received from the client side\n\t\t\tencrypted_data_base64 = frappe.form_dict.get("pwd")\n\n\t\t\tencrypted_data = base64.b64decode(encrypted_data_base64) # here it is converted into binary\n\t\t\t# creating the loaded private key\n\t\t\tloaded_private_key = serialization.load_pem_private_key(\n\t\t\t\tprivate_key_pem.encode(),\n\t\t\t\tpassword=None\n\t\t\t\t)\n\t\t\t# decoding\n\t\t\tdecrypted_data = loaded_private_key.decrypt(\n\t\t\t\tencrypted_data,\n\t\t\t\tpadding.OAEP(\n\t\t\t\t\tmgf=padding.MGF1(algorithm=hashes.SHA256()),\n\t\t\t\t\talgorithm=hashes.SHA256(),\n\t\t\t\t\tlabel=None\n\t\t\t\t)\n\t\t\t)\n\t\t\t# Print the decrypted data\n\t\t\tpassword=decrypted_data.decode()\n\t\t\t##################################### end of my code\n"""
     
 
     # existing1='from Crypto.Cipher import AES'
     # existing2 = 'user, pwd = frappe.form_dict.get("usr")'
 
     with open(file_path) as f:
-        if 'ras_data=frappe.db.sql("select private_key_pem_date from `rsa_data` where name=' in f.read():
+        if "select private_key_pem_date from `rsa_data` where name=%s AND flag=1" in f.read():
             return 
 
     index = -1
@@ -348,8 +348,8 @@ def modify_line_authpy():
         lines = file.readlines()
 
     updated_content = []
-    replace_start_line = 261
-    replace_end_line = 288
+    replace_start_line = 280
+    replace_end_line = 307
 
     new_code = [
             '\tfrom frappe.core.doctype.user.user import User\n',
