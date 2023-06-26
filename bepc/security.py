@@ -324,7 +324,7 @@ def add_line_authpy():
     # existing2 = 'user, pwd = frappe.form_dict.get("usr")'
 
     with open(file_path) as f:
-        if "select private_key_pem_date from `rsa_data` where name=%s AND flag=1" in f.read():
+        if "select private_key_pem_date from `rsa_data` where name=%s AND flag=1 " in f.read():
             return 
 
     index = -1
