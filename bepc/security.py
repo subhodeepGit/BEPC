@@ -9,13 +9,13 @@ def execute():
     comment_return_filepath()
     add_line_commentjs()
     comment_line_commentjs()
-    add_line_authpy()
-    modify_line_authpy()
-    add_line_authpy2()
+    # add_line_authpy()
+    # modify_line_authpy()
+    # add_line_authpy2()
     create_new_field()
     modify_user_profile_sidebar_html()
     modify_workspace_py()
-    # modify_user_py()
+    modify_user_py()
     modify_handler_py()
     workspace_js()
    
@@ -508,42 +508,42 @@ def modify_user_py():
         file.writelines(content)
         print("user.py modified with new lines.")
 
-    updated_content = []
-    replace_start_line = 545
-    replace_end_line = 556
+    # updated_content = []
+    # replace_start_line = 545
+    # replace_end_line = 556
 
-    new_code = [
-        '"""test password strength"""\n',
-        'if self.flags.ignore_password_policy:\n',
-        '\treturn\n',
-        'if self.__new_password:\n',
-        '\tif self.confirm__password == self.__new_password:\n',
-        '\t\tuser_data = (self.first_name, self.middle_name, self.last_name, self.email, self.birth_date)\n',
-        '\t\tresult = test_password_strength(self.__new_password, "", None, user_data)\n',
-        '\t\tfeedback = result.get("feedback", None)\n',
-        '\t\tif feedback and not feedback.get("password_policy_validation_passed", False):\n',
-        '\t\t\thandle_password_test_fail(feedback)\n',
-        '\telse:\n',
-        '\t\tfrappe.throw("New Password is not matching with Confirm Password")\n\n'
-    ]
+    # new_code = [
+    #     '"""test password strength"""\n',
+    #     'if self.flags.ignore_password_policy:\n',
+    #     '\treturn\n',
+    #     'if self.__new_password:\n',
+    #     '\tif self.confirm__password == self.__new_password:\n',
+    #     '\t\tuser_data = (self.first_name, self.middle_name, self.last_name, self.email, self.birth_date)\n',
+    #     '\t\tresult = test_password_strength(self.__new_password, "", None, user_data)\n',
+    #     '\t\tfeedback = result.get("feedback", None)\n',
+    #     '\t\tif feedback and not feedback.get("password_policy_validation_passed", False):\n',
+    #     '\t\t\thandle_password_test_fail(feedback)\n',
+    #     '\telse:\n',
+    #     '\t\tfrappe.throw("New Password is not matching with Confirm Password")\n\n'
+    # ]
 
-    for i, line in enumerate(content, start=1):
-        if replace_start_line <= i <= replace_end_line:
-            if i == replace_start_line:
-                indentation = line[:len(line) - len(line.lstrip())]
-                updated_content.extend(indentation + code_line for code_line in new_code)
-            else:
-                continue
-        else:
-            updated_content.append(line)
+    # for i, line in enumerate(content, start=1):
+    #     if replace_start_line <= i <= replace_end_line:
+    #         if i == replace_start_line:
+    #             indentation = line[:len(line) - len(line.lstrip())]
+    #             updated_content.extend(indentation + code_line for code_line in new_code)
+    #         else:
+    #             continue
+    #     else:
+    #         updated_content.append(line)
 
-    with open(file_path) as f:
-        if 'if self.confirm__password == self.__new_password:' in f.read():
-            return
+    # with open(file_path) as f:
+    #     if 'if self.confirm__password == self.__new_password:' in f.read():
+    #         return
 
-    with open(file_path, "w") as file:
-        file.writelines(updated_content)
-        print("/apps/frappe/frappe/core/doctype/user/user.py modified. 'password_strength_test' method replaced.")
+    # with open(file_path, "w") as file:
+    #     file.writelines(updated_content)
+    #     print("/apps/frappe/frappe/core/doctype/user/user.py modified. 'password_strength_test' method replaced.")
 
 
 def modify_handler_py():
