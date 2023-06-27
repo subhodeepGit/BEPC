@@ -1,4 +1,5 @@
 {
+ "_comments": "[{\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"5f37a5cc0b\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"43a62da44d\"}]",
  "actions": [],
  "allow_rename": 1,
  "autoname": "ERC.-.#####",
@@ -18,11 +19,13 @@
   "district",
   "block",
   "pin_code",
+  "quarter_select",
   "go_live_date",
   "section_break_13",
   "main_meter_previous_reading",
   "total_consumed_unit",
   "column_break_15",
+  "date",
   "main_meter_current_reading",
   "data_8",
   "previous_meter_reading",
@@ -30,7 +33,8 @@
   "total_billable_unit",
   "price_per_unit",
   "column_break_14",
-  "date",
+  "from_date",
+  "to_date",
   "reading_image",
   "total_bill_amount",
   "payment_deatils_section",
@@ -254,11 +258,27 @@
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Bill Posting Date"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "quarter_select",
+   "fieldtype": "Select",
+   "label": "Quarter",
+   "options": "\nQuarter 1\nQuarter 2\nQuarter 3\nQuarter 4\nQuarter 5\nQuarter 6\nQuarter 7\nQuarter 8\nQuarter 9\nQuarter 10\nQuarter 11\nQuarter 12\nQuarter 13\nQuarter 14\nQuarter 15\nQuarter 16\nQuarter 17\nQuarter 18\nQuarter 19\nQuarter 20"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-10 11:30:10.027632",
+ "modified": "2023-06-27 16:11:57.344350",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Electricity Consumption Record",

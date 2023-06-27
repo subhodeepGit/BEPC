@@ -31,6 +31,8 @@ class ElectricityConsumptionRecord(Document):
 			frappe.throw("Payment date cannot be Empty")
 		self.cal()
 		self.total_price()
+		if self.from_date > self.to_date:
+			frappe.throw("From date cannot be Greater than To date")
 		# self.mainmeter()
 		# self.form_valid()
 		# self.quarter_calculation()

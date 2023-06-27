@@ -20,9 +20,11 @@
   "pin_code",
   "project_end_date",
   "section_break_9",
+  "month",
   "from_date",
   "to_date",
   "column_break_11",
+  "quarter_select",
   "date",
   "total_bill_amount",
   "lab_1_details_section",
@@ -273,11 +275,23 @@
    "fieldtype": "Float",
    "label": "Monthly Bill Amount",
    "reqd": 1
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "quarter_select",
+   "fieldtype": "Select",
+   "label": "Quarter",
+   "options": "\nQuarter 1\nQuarter 2\nQuarter 3\nQuarter 4\nQuarter 5\nQuarter 6\nQuarter 7\nQuarter 8\nQuarter 9\nQuarter 10\nQuarter 11\nQuarter 12\nQuarter 13\nQuarter 14\nQuarter 15\nQuarter 16\nQuarter 17\nQuarter 18\nQuarter 19\nQuarter 20"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-05-17 12:48:37.080678",
+ "modified": "2023-06-27 16:17:05.752088",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Internet consumption Record",
