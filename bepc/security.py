@@ -76,7 +76,10 @@ def add_login_js_overrides():
         lines = file.readlines()
         
     target_line1 = '$(".form-login").on("submit", function (event) {'
-    new_line1 = """\t\t$.ajax({url: "https://testbepc.eduleadonline.com/api/method/bepc.rsa_algo.rsa_gen_key", success: function(result){\n"""
+
+    new_line0 = """\t\tvar site_name = document.location.origin.split('//')[1].split('.')[0];\n\t\tlet url;\n\t\tconsole.log(site_name);\n\t\tif(site_name == 'localhost:8000'){\n\t\t\tsite_url = 'http://localhost:8000/api/method/bepc.rsa_algo.rsa_gen_key';\n\t\t}\n\t\telse{\n\t\t\tsite_url = 'https' + site_name + '/api/method/bepc.rsa_algo.rsa_gen_key'\n\t\t}\n\t\tconsole.log(site_url)\n"""
+
+    new_line1 = """\t\t$.ajax({url: site_url, success: function(result){\n"""
 
     target_line2 = 'args.usr = frappe.utils.xss_sanitise(($("#login_email").val() || "").trim());'    
     new_line2 ="""\t\tconst publicKey = result.message['public_key_pem_date']\n\t\tfunction encryptWithRSA(plaintext) {\n\t\t\tconst publicKeyObj = forge.pki.publicKeyFromPem(publicKey);\n\t\t\tconst encrypted = publicKeyObj.encrypt(plaintext, 'RSA-OAEP', {\n\t\t\t\tmd: forge.md.sha256.create()\t\t\t\n\t\t\t});\n\t\t\treturn forge.util.encode64(encrypted);\n\t\t}\n\t\tconst plaintext = args.pwd;\n\t\tconst encryptedData = encryptWithRSA(plaintext).toString("base64");\n\t\targs.pwd = encryptedData\n\t\targs.no=result.message['rsa_no']\n"""
@@ -90,7 +93,7 @@ def add_login_js_overrides():
         if '\t\t$.ajax({url: "https://testbepc.eduleadonline.com/api/method/bepc.rsa_algo.rsa_gen_key", success: function(result){\n' in f.read():
             return
 
-    # if existing1 not in lines:
+
     index = -1
     for i, line in enumerate(lines):
         if target_line1 in line:
@@ -98,7 +101,16 @@ def add_login_js_overrides():
             break
 
     if index != -1:
-        lines.insert(index + 2, new_line1)
+        lines.insert(index + 1, new_line0)
+
+    index1 = -1
+    for i, line in enumerate(lines):
+        if target_line1 in line:
+            index1 = i
+            break
+
+    if index1 != -1:
+        lines.insert(index1 + 3, new_line1)
       
     index2 = -1
     for i, line in enumerate(lines):
@@ -128,6 +140,10 @@ def add_login_js_overrides():
     if index3 != -1:
         lines.insert(index3 + 6, new_line3)
     
+    with open(file_path) as f:
+        if "var site_name = document.location.origin.split('//')[1].split('.')[0];" in f.read():
+            return 
+        
     with open(file_path) as f:
         if "const publicKey = result.message['public_key_pem_date']" in f.read():
             return 
