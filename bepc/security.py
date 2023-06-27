@@ -77,7 +77,7 @@ def add_login_js_overrides():
         
     target_line1 = '$(".form-login").on("submit", function (event) {'
 
-    new_line0 = """\t\tvar site_name = document.location.origin.split('//')[1].split('.')[0];\n\t\tlet url;\n\t\tconsole.log(site_name);\n\t\tif(site_name == 'localhost:8000'){\n\t\t\tsite_url = 'http://localhost:8000/api/method/bepc.rsa_algo.rsa_gen_key';\n\t\t}\n\t\telse{\n\t\t\tsite_url = 'https' + site_name + '/api/method/bepc.rsa_algo.rsa_gen_key'\n\t\t}\n\t\tconsole.log(site_url)\n"""
+    new_line0 = """\t\tvar site_name = document.location.origin.split('//')[1].split('.')[0];\n\t\tlet url;\n\t\tif(site_name == 'localhost:8000'){\n\t\t\tsite_url = 'http://localhost:8000/api/method/bepc.rsa_algo.rsa_gen_key';\n\t\t}\n\t\telse{\n\t\t\tsite_url = 'https://' + site_name + '.eduleadonline.com/api/method/bepc.rsa_algo.rsa_gen_key'\n\t\t}\n"""
 
     new_line1 = """\t\t$.ajax({url: site_url, success: function(result){\n"""
 
