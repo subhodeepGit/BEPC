@@ -224,7 +224,7 @@
   {
    "depends_on": "eval:doc.covered_under_insurance == 'No'",
    "fieldname": "next_process",
-   "fieldtype": "Small Text",
+   "fieldtype": "Data",
    "label": "Next Process"
   },
   {
@@ -256,7 +256,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-19 22:25:51.796907",
+ "modified": "2023-06-28 13:13:18.099004",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Theft Case record",

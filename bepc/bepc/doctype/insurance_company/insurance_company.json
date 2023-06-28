@@ -29,17 +29,18 @@
   },
   {
    "fieldname": "address",
-   "fieldtype": "Small Text",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Address"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-09 13:00:09.984368",
+ "modified": "2023-06-28 13:12:51.715487",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Insurance Company",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -57,5 +58,6 @@
  ],
  "search_fields": "company_name,branch",
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "states": []
 }

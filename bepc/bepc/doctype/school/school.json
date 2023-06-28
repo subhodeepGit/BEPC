@@ -1,4 +1,5 @@
 {
+ "_comments": "[{\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"cb1a62c731\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"0d380db857\"}]",
  "actions": [],
  "allow_rename": 1,
  "autoname": "field:data_33",
@@ -35,6 +36,12 @@
   "principle_mobile_number",
   "name_of_asst_hmhms",
   "asst_contact_number",
+  "lab_wise_internet_numbers_section",
+  "lab_1_sim_number",
+  "service_provider_1",
+  "column_break_dey25",
+  "lab_2_sim_number",
+  "service_provider_2",
   "geolocation_section",
   "latitude",
   "column_break_27",
@@ -224,7 +231,8 @@
   {
    "fieldname": "go_live_date",
    "fieldtype": "Date",
-   "label": "Go Live Date"
+   "label": "Go Live Date",
+   "read_only": 1
   },
   {
    "fieldname": "project_end_date",
@@ -265,6 +273,37 @@
    "hidden": 1,
    "label": "Serial No",
    "read_only": 1
+  },
+  {
+   "fieldname": "lab_wise_internet_numbers_section",
+   "fieldtype": "Section Break",
+   "label": "Lab-Wise Internet numbers"
+  },
+  {
+   "fieldname": "lab_1_sim_number",
+   "fieldtype": "Data",
+   "label": "Lab-1 Sim number"
+  },
+  {
+   "fieldname": "service_provider_1",
+   "fieldtype": "Select",
+   "label": "Service Provider",
+   "options": "\nAIRTEL\nJIO"
+  },
+  {
+   "fieldname": "column_break_dey25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lab_2_sim_number",
+   "fieldtype": "Data",
+   "label": "Lab-2 Sim number"
+  },
+  {
+   "fieldname": "service_provider_2",
+   "fieldtype": "Select",
+   "label": "Service Provider",
+   "options": "\nAIRTEL\nJIO"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -320,7 +359,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2023-01-23 12:41:31.470503",
+ "modified": "2023-06-27 16:25:10.383336",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",

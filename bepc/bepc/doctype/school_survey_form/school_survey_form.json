@@ -743,7 +743,7 @@
   },
   {
    "fieldname": "remarks",
-   "fieldtype": "Text",
+   "fieldtype": "Data",
    "label": "Remarks",
    "width": "20px"
   },
@@ -1403,7 +1403,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-19 22:17:37.684362",
+ "modified": "2023-06-28 13:04:47.345853",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School Survey Form",
