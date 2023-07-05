@@ -114,7 +114,7 @@ doc_events = {
 
 scheduler_events = {
 	"cron": {
-		"45 16 * * *": [
+		"0 16 * * *": [
 			"bepc.tasks.post_data"
 		]
 	}
