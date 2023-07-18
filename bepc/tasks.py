@@ -105,16 +105,16 @@ try:
             for x in cursor:
                 tot_net_deploy = x[0]  # Assign the value to the variable
 
-            cursor1 = mydb.cursor()
-            cursor1.execute("select count(distinct SerialNo) as Tot_Fun_SClass from lastdetails")
-            tot_net_work = None  # Initialize a variable to store the second count
-            for y in cursor1:
-                tot_net_work = y[0]  # Assign the value to the variable
+            # cursor1 = mydb.cursor()
+            # cursor1.execute("select count(distinct SerialNo) as Tot_Fun_SClass from lastdetails")
+            # tot_net_work = None  # Initialize a variable to store the second count
+            # for y in cursor1:
+            #     tot_net_work = y[0]  # Assign the value to the variable
             
-            tot_net_not_work = tot_net_deploy - tot_net_work
-            
-            # print(tot_net_not_work, tot_net_work, tot_net_deploy)
-            return tot_net_not_work, tot_net_work, tot_net_deploy  # Return the values as a tuple
+            # tot_net_not_work = tot_net_deploy - tot_net_work
+
+            return tot_net_deploy 
+            # return tot_net_not_work, tot_net_work, tot_net_deploy  # Return the values as a tuple
         
         except mysql.connector.Error as e:
             print("Error in fetching data from lastdetails table", e)
@@ -308,20 +308,24 @@ def post_data():
 	tod_comp_close_list = [i['Tod_Comp_Close'] for i in tod_comp_close_dict]
 	s = [str(i)for i in tod_comp_close_list]
 	tod_comp_close = int("".join(s))
+        
+
+	# Internet deploy
+	# tot_net_not_work, tot_net_work
+
+	tot_net_work_dict = frappe.db.sql("""SELECT count(name)*2 as "Tot_Net_Work" from `tabSchool` where lab_1_sim_number IS NOT NULL AND lab_2_sim_number IS NOT NULL;""", as_dict=True)
+	tot_net_work_list = [i['Tot_Net_Work'] for i in tot_net_work_dict]
+	s = [str(i)for i in tot_net_work_list]
+	tot_net_work = int("".join(s))
+
+	tot_net_not_work_dict = frappe.db.sql("""SELECT count(name)*2 as "Tot_Net_Not_Work" from `tabSchool` where lab_1_sim_number IS NULL AND lab_2_sim_number IS NULL;""", as_dict=True)
+	tot_net_not_work_list = [i['Tot_Net_Not_Work'] for i in tot_net_not_work_dict]
+	s = [str(i)for i in tot_net_not_work_list]
+	tot_net_not_work = int("".join(s))  
 
 	## Calling Functions to fetch data from Azure Database
 	#  Internet_Services
-	tot_net_not_work_tuple = internet_service()
-	tot_net_not_work = tot_net_not_work_tuple[0]
-	# int(''.join(map(str, tot_net_not_work_tuple)))
-	
-	tot_net_work_tuple = internet_service()
-	tot_net_work = tot_net_not_work_tuple[1]
-	# int(''.join(map(str, tot_net_work_tuple)))
-	
-	tot_net_deploy_tuple = internet_service()
-	tot_net_deploy = tot_net_not_work_tuple[2]
-	# int(''.join(map(str, tot_net_deploy_tuple)))
+	tot_net_deploy = internet_service()
 	
 	# smart_class_established
 	tot_sclass_est_tuple = smart_class_established()
