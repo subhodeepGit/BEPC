@@ -252,7 +252,7 @@ def post_data():
 	total_enrolled_stud = total_enrolled_boy+total_enrolled_girl
 
 	# Theft Log
-	tot_sclass_theft_dict  = frappe.db.sql(""" SELECT count(name) as "Tot_SClass_Theft" FROM `tabTheft Case record`; """, as_dict=True)
+	tot_sclass_theft_dict  = frappe.db.sql(""" SELECT count(DISTINCT item) as Tot_SClass_Theft FROM `tabTheft Case record`; """, as_dict=True)
 	tot_sclass_theft_list = [i['Tot_SClass_Theft'] for i in tot_sclass_theft_dict]
 	s = [str(i)for i in tot_sclass_theft_list]
 	tot_sclass_theft = int("".join(s))
