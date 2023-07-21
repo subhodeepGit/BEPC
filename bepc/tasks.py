@@ -389,7 +389,7 @@ def post_data():
 
 	response = requests.request("POST", url, headers=headers, data=payload)
 
-	recipients = "priytesh.shah@soulunileaders.com"
+	recipients = ["priytesh.shah@soulunileaders.com", "pmtcilbepc@gmail.com", "helpdeskbepc.tcil@gmail.com"]
 	subject = "API Data Sent"
 	message = payload
 	
