@@ -1,0 +1,291 @@
+{
+ "_comments": "[{\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"e67746bf67\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"1efb035f5b\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"4a54b474d5\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"c47d4076b6\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"80a28f83ba\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"b4241446e3\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"74582ccd74\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"ae68501210\"}]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{DD}-{MM}-{YYYY}-{##}",
+ "creation": "2023-07-31 12:38:43.135330",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "method",
+  "rpt_type",
+  "column_break_sjrkj",
+  "vendor_code",
+  "rpt_dt",
+  "asmart_class_established_functional_section",
+  "tot_sclass_est",
+  "tot_sclass_not_est",
+  "column_break_9nn3r",
+  "tot_fun_sclass",
+  "tot_not_fun_sclass",
+  "btotal_enrolled_children_section",
+  "tot_enr_stud",
+  "tot_enr_boy",
+  "column_break_mgtt5",
+  "tot_enr_girl",
+  "csmart_class_total_functional_hours_section",
+  "tot_sclass_work_hrs",
+  "dtheft_section",
+  "tot_sclass_theft",
+  "tot_fir_log",
+  "tot_rec",
+  "column_break_fg7pk",
+  "tot_rep",
+  "tot_claim",
+  "tot_to_be_claim",
+  "ecomplaint_log_section",
+  "tot_comp_log",
+  "tot_comp_open",
+  "tot_comp_close",
+  "column_break_c2keg",
+  "tod_comp_log",
+  "tod_comp_close",
+  "finternet_service_section",
+  "tot_net_deploy",
+  "tot_net_work",
+  "column_break_hozxl",
+  "tot_net_not_work"
+ ],
+ "fields": [
+  {
+   "fieldname": "method",
+   "fieldtype": "Data",
+   "label": "Method",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rpt_type",
+   "fieldtype": "Data",
+   "label": "Rpt_Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vendor_code",
+   "fieldtype": "Data",
+   "label": "Vendor Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rpt_dt",
+   "fieldtype": "Date",
+   "label": "Rpt Dt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_sclass_est",
+   "fieldtype": "Int",
+   "label": "Tot SClass Est",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_sclass_not_est",
+   "fieldtype": "Int",
+   "label": "Tot SClass Not Est",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_fun_sclass",
+   "fieldtype": "Int",
+   "label": "Tot Fun Sclass",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_not_fun_sclass",
+   "fieldtype": "Int",
+   "label": "Tot Not Fun Sclass",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_enr_stud",
+   "fieldtype": "Int",
+   "label": "Tot Enr Stud",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_enr_boy",
+   "fieldtype": "Int",
+   "label": "Tot Enr Boy",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_enr_girl",
+   "fieldtype": "Int",
+   "label": "Tot Enr Girl",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_sclass_work_hrs",
+   "fieldtype": "Float",
+   "label": "Tot SClass Work Hrs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_sclass_theft",
+   "fieldtype": "Int",
+   "label": "Tot SClass Theft",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_fir_log",
+   "fieldtype": "Int",
+   "label": "Tot Fir Log",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_rec",
+   "fieldtype": "Int",
+   "label": "Tot Rec",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_rep",
+   "fieldtype": "Int",
+   "label": "Tot Rep",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_claim",
+   "fieldtype": "Int",
+   "label": "Tot Claim",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_to_be_claim",
+   "fieldtype": "Int",
+   "label": "Tot to be Claim",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_comp_log",
+   "fieldtype": "Int",
+   "label": "Tot Comp Log",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_comp_open",
+   "fieldtype": "Int",
+   "label": "Tot Comp Open",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_comp_close",
+   "fieldtype": "Int",
+   "label": "Tot Comp Close",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tod_comp_log",
+   "fieldtype": "Int",
+   "label": "Tod Comp Log",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tod_comp_close",
+   "fieldtype": "Int",
+   "label": "Tod Comp Close",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_net_deploy",
+   "fieldtype": "Int",
+   "label": "Tot Net deploy",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_net_work",
+   "fieldtype": "Int",
+   "label": "Tot Net Work",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tot_net_not_work",
+   "fieldtype": "Int",
+   "label": "Tot Net Not Work",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_sjrkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "asmart_class_established_functional_section",
+   "fieldtype": "Section Break",
+   "label": "A) Smart Class Established /Functional"
+  },
+  {
+   "fieldname": "column_break_9nn3r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "btotal_enrolled_children_section",
+   "fieldtype": "Section Break",
+   "label": "B) Total Enrolled Children"
+  },
+  {
+   "fieldname": "column_break_mgtt5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "csmart_class_total_functional_hours_section",
+   "fieldtype": "Section Break",
+   "label": "C) Smart Class Total Functional hours"
+  },
+  {
+   "fieldname": "dtheft_section",
+   "fieldtype": "Section Break",
+   "label": "D) Theft"
+  },
+  {
+   "fieldname": "column_break_fg7pk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ecomplaint_log_section",
+   "fieldtype": "Section Break",
+   "label": "E) Complaint Log"
+  },
+  {
+   "fieldname": "column_break_c2keg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "finternet_service_section",
+   "fieldtype": "Section Break",
+   "label": "F) Internet Service"
+  },
+  {
+   "fieldname": "column_break_hozxl",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-31 17:55:11.112269",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Daily data sent from API",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

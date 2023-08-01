@@ -1,12 +1,13 @@
 {
  "charts": [],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">BEPC-Home</span>\",\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internet consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Electricity Consumption Record\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment Uptime\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teacher Training\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Survey Form Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Master Status\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment report\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Electricity Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Internet Data Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Equipment Uptime Management\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Survey Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"School Masters\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Theft and Insurance Master\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Support\",\"col\":4}}]",
+ "content": "[{\"id\":\"Kh7KtTIJxS\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">BEPC-Home</span>\",\"col\":12}},{\"id\":\"J4mY36cady\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Internet consumption Record\",\"col\":3}},{\"id\":\"zWVPELV0ph\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Electricity Consumption Record\",\"col\":3}},{\"id\":\"azZR8TTMr2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment Uptime\",\"col\":3}},{\"id\":\"ojFzhi0W4A\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Teacher Training\",\"col\":3}},{\"id\":\"1msYOs9YN7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Issue\",\"col\":3}},{\"id\":\"IhowcyyWXE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Survey Form Status\",\"col\":3}},{\"id\":\"UvL-wOKx8M\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"School Master Status\",\"col\":3}},{\"id\":\"woMpnfSLav\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Equipment report\",\"col\":3}},{\"id\":\"4KEasP7UAe\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"L9ED6dmpNp\",\"type\":\"card\",\"data\":{\"card_name\":\"Survey\",\"col\":4}},{\"id\":\"rvjXH6WWSy\",\"type\":\"card\",\"data\":{\"card_name\":\"Electricity Data Management\",\"col\":4}},{\"id\":\"qZ7Hk3gMMc\",\"type\":\"card\",\"data\":{\"card_name\":\"Internet Data Management\",\"col\":4}},{\"id\":\"PwESHUcnxI\",\"type\":\"card\",\"data\":{\"card_name\":\"Equipment Uptime Management\",\"col\":4}},{\"id\":\"iMhbDAaOlJ\",\"type\":\"card\",\"data\":{\"card_name\":\"Survey Master\",\"col\":4}},{\"id\":\"DhNGE_JRrI\",\"type\":\"card\",\"data\":{\"card_name\":\"School Masters\",\"col\":4}},{\"id\":\"uPqs1t-1uf\",\"type\":\"card\",\"data\":{\"card_name\":\"Theft and Insurance Master\",\"col\":4}},{\"id\":\"kMCpH_O6sp\",\"type\":\"card\",\"data\":{\"card_name\":\"Support\",\"col\":4}},{\"id\":\"VZ07GyVmQh\",\"type\":\"card\",\"data\":{\"card_name\":\"API Data\",\"col\":4}}]",
  "creation": "2023-01-23 16:45:18.251095",
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
  "idx": 0,
+ "is_hidden": 0,
  "label": "BEPC-Home",
  "links": [
   {
@@ -272,12 +273,31 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "API Data",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Daily data sent from API",
+   "link_count": 0,
+   "link_to": "Daily data sent from API",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-02-14 15:53:55.830076",
+ "modified": "2023-07-31 17:51:34.987733",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "BEPC-Home",
+ "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
