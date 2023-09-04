@@ -662,7 +662,7 @@ def integrating_sso_in_loginpy():
     with open(file_path, "r") as file:
         content = file.readlines()
         
-    target_line1 = 'indicator_color="red",'
+    target_line1 = 'def login_via_token(login_token: str):'
     new_line1 = """from datetime import datetime, timedelta\nfrom Crypto.Cipher import AES\nimport hashlib\nimport base64\n\ndef pad(data):
     length = 16 - (len(data) % 16)
     data += chr(length)*length
@@ -721,7 +721,7 @@ def redirect_dashboard():
             break
         
     if index != -1:
-        content.insert(index +2, new_line1)
+        content.insert(index +13, new_line1)
         
     with open(file_path, "w") as file:
         file.writelines(content)
