@@ -372,7 +372,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "SNR School List",
    "link_count": 0,
    "link_to": "SNR School List",
@@ -390,7 +390,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Working Net School List",
    "link_count": 0,
    "link_to": "Working Net School List",
@@ -400,7 +400,7 @@
   },
   {
    "hidden": 0,
-   "is_query_report": 0,
+   "is_query_report": 1,
    "label": "Not Working Net School List",
    "link_count": 0,
    "link_to": "Not Working Net School List",
@@ -409,7 +409,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-09-14 15:52:10.860304",
+ "modified": "2023-09-14 16:30:17.724078",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Reports",
