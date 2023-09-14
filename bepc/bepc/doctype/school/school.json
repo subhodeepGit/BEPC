@@ -1,5 +1,5 @@
 {
- "_comments": "[{\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"cb1a62c731\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"0d380db857\"}]",
+ "_comments": "[{\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"18c15796da\"}]",
  "actions": [],
  "allow_rename": 1,
  "autoname": "field:data_33",
@@ -10,6 +10,7 @@
  "field_order": [
   "data_33",
   "school_code",
+  "status",
   "go_live_date",
   "column_break_3",
   "site_name",
@@ -304,6 +305,14 @@
    "fieldtype": "Select",
    "label": "Service Provider",
    "options": "\nAIRTEL\nJIO"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nEstablished\nNot Established"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -359,7 +368,7 @@
    "link_fieldname": "item"
   }
  ],
- "modified": "2023-06-27 16:25:10.383336",
+ "modified": "2023-09-14 15:13:40.765714",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "School",
