@@ -1,0 +1,103 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"rt23cP_L-B\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Smart Class Established<br></span>\",\"col\":12}},{\"id\":\"5mkUtp-6dX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Smart Class Established\",\"col\":3}},{\"id\":\"cSuy3T_agt\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Smart Class Not Established\",\"col\":3}},{\"id\":\"cr3sIMXmTZ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Total Enrolled Children <br></b></span>\",\"col\":12}},{\"id\":\"4U1qVEBQMN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total number of Students\",\"col\":3}},{\"id\":\"G56n-Z3tvL\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Boys\",\"col\":3}},{\"id\":\"vK-tvw5HfN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Girls\",\"col\":3}},{\"id\":\"p5QP9tsdSe\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Smart Class Functional Time </b></span><span class=\\\"h4\\\"><br></span>\",\"col\":12}},{\"id\":\"89Y3y5EPVf\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Theft <br></b></span>\",\"col\":12}},{\"id\":\"nCK0PsIC_W\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"No. of Smart class where theft has been reported\",\"col\":3}},{\"id\":\"J6G0lDHJSX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total FIR lodged\",\"col\":3}},{\"id\":\"kPuQgK459v\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Recovered\",\"col\":3}},{\"id\":\"5oq7jZUrvk\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Replaced\",\"col\":3}},{\"id\":\"erYo8zPiKw\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Claimed\",\"col\":3}},{\"id\":\"f_FUBW7190\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"To be claimed\",\"col\":3}},{\"id\":\"D82Sjm379b\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Complaint Log <br></b></span>\",\"col\":12}},{\"id\":\"rDVPTHRujK\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Logged Complaints\",\"col\":3}},{\"id\":\"o74o0d5Tva\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total open Complaints\",\"col\":3}},{\"id\":\"Q81gbprctv\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Closed Complaints\",\"col\":3}},{\"id\":\"VBCrQdYl5u\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Today Logged Complaints\",\"col\":3}},{\"id\":\"mxmum-GEMg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Today Closed Complaints\",\"col\":3}},{\"id\":\"1_BoWkny9w\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Internet Service <br></b></span>\",\"col\":12}},{\"id\":\"kLK62ATA5w\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Internet Service Deployed\",\"col\":3}},{\"id\":\"uOQAoY-U3f\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Working status\",\"col\":3}},{\"id\":\"yDdNcByCMA\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Not Working status\",\"col\":3}}]",
+ "creation": "2023-09-21 12:41:35.929984",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Dashboard-Smart Class",
+ "links": [],
+ "modified": "2023-09-21 18:20:25.577267",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Dashboard-Smart Class",
+ "number_cards": [
+  {
+   "label": "Total Girls",
+   "number_card_name": "Total Girls"
+  },
+  {
+   "label": "Today Logged Complaints",
+   "number_card_name": "Today Logged Complaints"
+  },
+  {
+   "label": "Total Logged Complaints",
+   "number_card_name": "Total Logged Complaints"
+  },
+  {
+   "label": "No. of Smart class where theft has been reported",
+   "number_card_name": "No. of Smart class where theft has been reported"
+  },
+  {
+   "label": "Total FIR lodged",
+   "number_card_name": "Total FIR lodged"
+  },
+  {
+   "label": "Total number of Students",
+   "number_card_name": "Total number of Students"
+  },
+  {
+   "label": "Internet Service Deployed",
+   "number_card_name": "Internet Service Deployed"
+  },
+  {
+   "label": "Smart Class Established",
+   "number_card_name": "Smart Class Established"
+  },
+  {
+   "label": "Total Boys",
+   "number_card_name": "Total Boys"
+  },
+  {
+   "label": "Total Recovered",
+   "number_card_name": "Total Recovered"
+  },
+  {
+   "label": "Smart Class Not Established",
+   "number_card_name": "Smart Class Not Established"
+  },
+  {
+   "label": "Total open Complaints",
+   "number_card_name": "Total open Complaints"
+  },
+  {
+   "label": "Working status",
+   "number_card_name": "Working status"
+  },
+  {
+   "label": "Today Closed Complaints",
+   "number_card_name": "Today Closed Complaints"
+  },
+  {
+   "label": "Total Closed Complaints",
+   "number_card_name": "Total Closed Complaints"
+  },
+  {
+   "label": "Not Working status",
+   "number_card_name": "Not Working status"
+  },
+  {
+   "label": "Replaced",
+   "number_card_name": "Replaced"
+  },
+  {
+   "label": "Claimed",
+   "number_card_name": "Claimed"
+  },
+  {
+   "label": "To be claimed",
+   "number_card_name": "To be claimed"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 35.1,
+ "shortcuts": [],
+ "title": "Dashboard-Smart Class"
+}

@@ -1,0 +1,93 @@
+{
+ "_comments": "[{\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"65963a7325\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"5e4e8fa951\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"478337a22a\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"755d9cbdfd\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"5b1cd868aa\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"9e0471d45e\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"c19ce93d1e\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"5741dbf5ec\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"f5dbbe1990\"}]",
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:tcil_code",
+ "creation": "2023-09-22 11:28:30.733270",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tcil_code",
+  "name_of_school",
+  "block",
+  "district",
+  "total_girls",
+  "total_boys",
+  "total_number_of_students"
+ ],
+ "fields": [
+  {
+   "fieldname": "tcil_code",
+   "fieldtype": "Link",
+   "label": "TCIL code",
+   "options": "School",
+   "unique": 1
+  },
+  {
+   "fieldname": "total_boys",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Boys"
+  },
+  {
+   "fieldname": "total_number_of_students",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total number of Students"
+  },
+  {
+   "fieldname": "total_girls",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Girls"
+  },
+  {
+   "fieldname": "name_of_school",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Name of School"
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Block"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "District"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-22 12:56:53.718260",
+ "modified_by": "Administrator",
+ "module": "Bepc",
+ "name": "Total Enrolled Children",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}
