@@ -10,7 +10,7 @@
  "is_hidden": 0,
  "label": "Dashboard-Smart Class",
  "links": [],
- "modified": "2023-09-21 18:20:25.577267",
+ "modified": "2023-09-26 11:09:31.594709",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Dashboard-Smart Class",
@@ -96,7 +96,23 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Department"
+  },
+  {
+   "role": "Excecutive Helpdesk"
+  },
+  {
+   "role": "Project Manager"
+  },
+  {
+   "role": "District Coordinator"
+  },
+  {
+   "role": "Management"
+  }
+ ],
  "sequence_id": 35.1,
  "shortcuts": [],
  "title": "Dashboard-Smart Class"

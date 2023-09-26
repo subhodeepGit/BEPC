@@ -29,19 +29,21 @@
    "label": "Teacher Training Status"
   }
  ],
- "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Ongoing-Survey Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Form Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School Wise Total Student\",\"col\":12}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Electricity Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Internet Usage\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Teacher Training Status\",\"col\":6}},{\"type\":\"chart\",\"data\":{\"chart_name\":\"Theft Case record\",\"col\":6}}]",
+ "content": "[{\"id\":\"jdT1toNLZ_\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Dashboard</span>\",\"col\":12}},{\"id\":\"Um-V_Buo03\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Ongoing-Survey Form Status\",\"col\":6}},{\"id\":\"fRjTVd_kXI\",\"type\":\"chart\",\"data\":{\"chart_name\":\"School Form Status\",\"col\":6}},{\"id\":\"NhwLMVbrrO\",\"type\":\"chart\",\"data\":{\"chart_name\":\"School Wise Total Student\",\"col\":12}},{\"id\":\"uaBhqaXdu2\",\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Electricity Usage\",\"col\":6}},{\"id\":\"bfhrBUNToR\",\"type\":\"chart\",\"data\":{\"chart_name\":\"School-Wise Internet Usage\",\"col\":6}},{\"id\":\"88y23kkcUr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Teacher Training Status\",\"col\":6}},{\"id\":\"uvWb3gTmNn\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Theft Case record\",\"col\":6}}]",
  "creation": "2022-11-24 17:10:59.371082",
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
  "idx": 0,
+ "is_hidden": 0,
  "label": "Dashboard",
  "links": [],
- "modified": "2023-05-16 15:19:16.430574",
+ "modified": "2023-09-26 11:09:47.496039",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Dashboard",
+ "number_cards": [],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
@@ -49,9 +51,6 @@
  "roles": [
   {
    "role": "Management"
-  },
-  {
-   "role": "Department"
   }
  ],
  "sequence_id": 32.0,
