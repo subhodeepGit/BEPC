@@ -612,7 +612,7 @@ def workspace_js():
         file.writelines(content)
         print("workspace.js modified with top lines.")
         
-    target_line2 = 'this.make_blocks_sortable();'
+    target_line2 = 'if (!this.is_read_only) {'
     new_line2 = """\t\t if (flag=='Administrator'){\n"""
     
     with open(file_path) as f:
@@ -626,7 +626,7 @@ def workspace_js():
             break
         
     if index != -1:
-        content.insert(index + 3, new_line2)
+        content.insert(index + 6, new_line2)
         
     with open(file_path, "w") as file:
         file.writelines(content)
