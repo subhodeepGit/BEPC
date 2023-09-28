@@ -118,6 +118,10 @@ scheduler_events = {
 			"bepc.tasks.post_data",
             "bepc.daily_data.update_daily_data"
 		],
+        "30 12 * * *":[
+            "bepc.azure_data.working_smartclass_hours",
+            "bepc.azure_data.functional_nonfunctional"
+		]
 	}
 }
 # 	"all": [
