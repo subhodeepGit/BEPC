@@ -68,7 +68,7 @@ except mysql.connector.Error as e:
 
 
 try:
-	def functional_nonfunctional():
+	def functional():
 	
 		mydb = mysql.connector.connect(
 				host="souliot.mariadb.database.azure.com",
@@ -79,7 +79,11 @@ try:
 		try:
 			cursor = mydb.cursor()
 			cursor.execute("""
-			SELECT lastdetails.SerialNo, lastdetails.Lastactivetime, schooldata.school, schooldata.block, schooldata.district, schooldata.state, schooldata.computerName, schooldata.Lab FROM lastdetails INNER JOIN schooldata ON lastdetails.SerialNo = schooldata.SerialNo WHERE date(lastdetails.Lastactivetime) = date(now());""")
+			SELECT lastdetails.SerialNo, lastdetails.Lastactivetime, schooldata.school, schooldata.block, schooldata.district, schooldata.state, schooldata.computerName, schooldata.Lab 
+				  FROM lastdetails 
+				  INNER JOIN schooldata 
+				  ON lastdetails.SerialNo = schooldata.SerialNo 
+				  WHERE date(lastdetails.Lastactivetime) = date(now());""")
 			SerialNo = None 
 			Lastactivetime = None
 			school = None
@@ -108,6 +112,7 @@ try:
 				doc.state = state
 				doc.computer_name = computerName
 				doc.lab = Lab
+				doc.status = "Functional"
 				doc.save()
 
 		except Error as e:
@@ -118,3 +123,65 @@ try:
 
 except mysql.connector.Error as e:
 	print("Error connecting to the database:", e) 
+
+
+try:
+	def nonfunctional():
+	
+		mydb = mysql.connector.connect(
+				host="souliot.mariadb.database.azure.com",
+				user="bepcpdf@souliot.mariadb.database.azure.com",
+				password="bepc@arm01",
+				database="bepcprod"
+			)
+		try:
+			cursor = mydb.cursor()
+			cursor.execute("""
+			SELECT schooldata.SerialNo, schooldata.school, schooldata.block, schooldata.district, schooldata.state, schooldata.computerName, schooldata.Lab 
+				  FROM schooldata
+				  LEFT JOIN (
+					SELECT lastdetails.SerialNo, lastdetails.Lastactivetime, schooldata.school, schooldata.block, schooldata.district, schooldata.state, schooldata.computerName, schooldata.Lab 
+					FROM lastdetails 
+					INNER JOIN schooldata 
+					ON lastdetails.SerialNo = schooldata.SerialNo 
+					WHERE date(lastdetails.Lastactivetime) = date(now())
+				  ) lastdetails_filtered
+				  ON schooldata.SerialNo = lastdetails_filtered.SerialNo
+				  WHERE lastdetails_filtered.SerialNo IS NULL;""")
+			SerialNo = None 
+			school = None
+			block = None
+			district = None
+			state = None
+			computerName = None
+			Lab = None
+
+			for x in cursor:
+				SerialNo = x[0]
+				school = x[1]
+				block = x[2]
+				district = x[3]
+				state = x[4]
+				computerName = x[5]
+				Lab = x[6]
+
+				doc = frappe.new_doc("Functional Non Functional")
+				doc.serialno = SerialNo
+				doc.lastactivetime = None
+				doc.school = school
+				doc.block = block
+				doc.district = district
+				doc.state = state
+				doc.computer_name = computerName
+				doc.lab = Lab
+				doc.status = "Non-Functional"
+				doc.save()
+
+		except Error as e:
+				print("Error in fetching data from lastdetails, schooldata table:", e)
+		finally:
+				if mydb.is_connected():
+					mydb.close()
+
+except mysql.connector.Error as e:
+	print("Error connecting to the database:", e)
