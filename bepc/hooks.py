@@ -120,7 +120,8 @@ scheduler_events = {
 		],
         "30 12 * * *":[
             "bepc.azure_data.working_smartclass_hours",
-            "bepc.azure_data.functional_nonfunctional"
+            "bepc.azure_data.functional",
+            "bepc.azure_data.nonfunctional"
 		]
 	}
 }
