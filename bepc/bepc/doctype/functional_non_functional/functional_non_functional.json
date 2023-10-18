@@ -1,5 +1,5 @@
 {
- "_comments": "[{\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"2de390eb2a\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"ed11049198\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"830c0d73d7\"}, {\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"9668b50f3c\"}]",
+ "_comments": "[{\"comment\": \"undefinedundefinedundefinedundefinedundefined\", \"by\": \"Administrator\", \"name\": \"d66ee5335c\"}]",
  "actions": [],
  "allow_rename": 1,
  "autoname": "FUN.NON-FUN.-.#####",
@@ -9,10 +9,12 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "posting_date",
   "serialno",
   "lastactivetime",
   "school",
   "block",
+  "column_break_2rjci",
   "district",
   "state",
   "computer_name",
@@ -74,11 +76,20 @@
    "in_standard_filter": 1,
    "label": "Status",
    "options": "\nFunctional\nNon-Functional"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting date"
+  },
+  {
+   "fieldname": "column_break_2rjci",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-29 12:37:43.644262",
+ "modified": "2023-10-18 16:19:32.194024",
  "modified_by": "Administrator",
  "module": "Bepc",
  "name": "Functional Non Functional",

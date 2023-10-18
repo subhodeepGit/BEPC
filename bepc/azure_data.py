@@ -5,6 +5,7 @@ import json
 from datetime import date
 import mysql.connector
 from mysql.connector import Error
+import datetime
 
 try:
 	def working_smartclass_hours():
@@ -94,6 +95,7 @@ try:
 			Lab = None
 
 			for x in cursor:
+				today = datetime.date.today()
 				SerialNo = x[0]
 				Lastactivetime = x[1]
 				school = x[2]
@@ -104,6 +106,7 @@ try:
 				Lab = x[7]
 
 				doc = frappe.new_doc("Functional Non Functional")
+				doc.posting_date = today
 				doc.serialno = SerialNo
 				doc.lastactivetime = Lastactivetime
 				doc.school = school
@@ -164,8 +167,11 @@ try:
 				state = x[4]
 				computerName = x[5]
 				Lab = x[6]
+				today = datetime.date.today()
+
 
 				doc = frappe.new_doc("Functional Non Functional")
+				doc.posting_date = today
 				doc.serialno = SerialNo
 				doc.lastactivetime = None
 				doc.school = school
