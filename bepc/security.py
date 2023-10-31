@@ -695,7 +695,7 @@ def fetch_agency_token(user_id, password):
         encoded_ciphertext = encrypt(token_data, working_key)
         return encoded_ciphertext
     else:
-        return "User ID or Password is mismatched !!"\n  
+        frappe.throw(_("User ID or Password is mismatched"), title=_("Authentication Error"))\n  
 @frappe.whitelist(allow_guest=True)
 def redirect_dashboard():
     encoded_ciphertext = frappe.form_dict.get("data")
